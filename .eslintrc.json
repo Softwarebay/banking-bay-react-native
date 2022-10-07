@@ -1,0 +1,104 @@
+{
+  "root": true,
+  "env": {
+    "react-native/react-native": true
+  },
+  "ignorePatterns": ["node_modules/*", "**/*.js"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react-native/all",
+    "plugin:react/jsx-runtime",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint", 
+    "react-native",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    },
+    {
+      "files": ["*.stories.tsx"],
+      "rules": {
+        "react-native/no-inline-styles": "off"
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "rules": {
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["state"]
+      }
+    ],
+    "sort-imports": ["error", {
+      "ignoreCase": true,
+      "ignoreDeclarationSort": true,
+      "memberSyntaxSortOrder": ["all", "single", "multiple", "none"],
+      "allowSeparatedGroups": true
+    }],
+
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "src/utils/testUtils.tsx",
+          "setupTests.ts",
+          "**/*.test.{js,jsx,ts,tsx}",
+          "**/*.stories.*",
+          "**/.storybook/**/*.*",
+          "**/storybook/**/*.*"
+        ],
+        "peerDependencies": true
+      }
+    ],
+
+    "react/function-component-definition": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/style-prop-object": "off",
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "reservedFirst": true,
+        "shorthandLast": true,
+        "ignoreCase": true,
+        "noSortAlphabetically": false
+      }
+    ],
+
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
+  }
+}
