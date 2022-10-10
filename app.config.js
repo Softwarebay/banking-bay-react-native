@@ -3,12 +3,12 @@ module.exports = {
     slug:"BankingBay",
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/icon.png",
+    icon: "./assets/icon1.png",
     userInterfaceStyle: 'light',
     splash: {
-        image: "./assets/splash.png",
-        resizeMode: 'contain',
-        backgroundColor: '#ffffff'
+        image: "./assets/splash1.png",
+        resizeMode: 'cover',
+        backgroundColor: '#161966'
     },
     updates: {
         fallbackToCacheTimeout: 0
@@ -21,8 +21,8 @@ module.exports = {
     },
     android: {
         adaptiveIcon: {
-            foregroundImage: "./assets/adaptive-icon.png",
-            backgroundColor:"#FFFFFF",
+            foregroundImage: "./assets/adaptive-icon1.png",
+            backgroundColor:"#161966",
         }
     },
     web: {
