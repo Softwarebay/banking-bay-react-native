@@ -6,4 +6,6 @@ export const colors = {
 	buttonLight: '#97DAFF',
 	buttonDark: '#16579D',
 	buttonText: '#FFFFFF',
+	success: '#3EB290',
+	error: '#FF5887',
 };
