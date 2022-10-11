@@ -7,14 +7,20 @@ function loadStories() {
 	require('../src/components/atoms/Button/Button.stories');
 	require('../src/components/atoms/Heading/Heading.stories');
 	require('../src/components/atoms/Logo/Logo.stories');
+	require('../src/components/atoms/Paginator/Paginator.stories');
 	require('../src/components/atoms/Text/Text.stories');
+	require('../src/components/molecules/OnboardingSlide/OnboardingSlide.stories');
+	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
 }
 
 const stories = [
 	'../src/components/atoms/Button/Button.stories',
 	'../src/components/atoms/Heading/Heading.stories',
 	'../src/components/atoms/Logo/Logo.stories',
+	'../src/components/atoms/Paginator/Paginator.stories',
 	'../src/components/atoms/Text/Text.stories',
+	'../src/components/molecules/OnboardingSlide/OnboardingSlide.stories',
+	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
 ];
 
 module.exports = {
