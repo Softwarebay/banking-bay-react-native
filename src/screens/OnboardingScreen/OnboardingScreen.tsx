@@ -3,9 +3,12 @@ import { ImageSourcePropType } from 'react-native';
 
 import { OnboardingTemplate } from 'components/templates';
 
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import bgOnboarding1 from 'assets/bg-onboarding-1.png';
 import bgOnboarding2 from 'assets/bg-onboarding-2.png';
 import bgOnboarding3 from 'assets/bg-onboarding-3.png';
+import { StackParamList } from 'navigator';
 
 interface IOnboardingSlide {
 	id: number;
@@ -40,12 +43,16 @@ const onboardingSlides: IOnboardingSlide[] = [
 
 export const OnboardingScreen = () => {
 	const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+	const navigation = useNavigation<NativeStackNavigationProp<StackParamList>>();
+
 	const onPressOnboardingBtn = () => {
-		console.log('Onboarding btn pressed.');
+		navigation.navigate('SignIn');
 	};
+
 	const onScroll = (index: number) => {
 		setCurrentSlideIndex(index);
 	};
+
 	return (
 		<OnboardingTemplate
 			currentSlideIndex={currentSlideIndex}
