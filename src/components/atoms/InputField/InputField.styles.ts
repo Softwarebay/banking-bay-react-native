@@ -7,6 +7,8 @@ export const styles = StyleSheet.create({
 		backgroundColor: colors.cardBackground,
 		borderRadius: 10,
 		color: colors.mainDark,
+		fontSize: 14,
+		fontWeight: '400',
 		height: 50,
 		paddingHorizontal: 20,
 		paddingVertical: 14,
