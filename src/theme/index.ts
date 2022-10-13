@@ -1,5 +1,15 @@
 interface Colors {
-	[colorName: string]: string;
+	screenBackground: string;
+	mainDark: string;
+	bodyText: string;
+	link: string;
+	buttonLight: string;
+	buttonDark: string;
+	buttonText: string;
+	success: string;
+	error: string;
+	cardBackground: string;
+	shadow: string;
 }
 
 export const colors: Colors = {
