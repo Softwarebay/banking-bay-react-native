@@ -10,6 +10,7 @@ interface Colors {
 	error: string;
 	cardBackground: string;
 	shadow: string;
+	checkbox: string;
 }
 
 export const colors: Colors = {
@@ -24,6 +25,7 @@ export const colors: Colors = {
 	error: '#FF5887',
 	cardBackground: '#FFFFFF',
 	shadow: '#161966',
+	checkbox: '#868698',
 };
 
 interface Shadows {
