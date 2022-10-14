@@ -10,26 +10,31 @@ import {
 } from 'assets/icons';
 
 export interface Props {
-	name: 'facebook' | 'twitter' | 'check' | 'eye-off' | 'google-plus' | 'logo';
-	height?: number;
-	width?: number;
+	name:
+		| 'facebook'
+		| 'twitter'
+		| 'check'
+		| 'eye-off'
+		| 'google-plus'
+		| 'logo'
+		| string;
 	testID?: string;
 }
 
-export const Icon = ({ name, height, width, testID }: Props) => {
+export const Icon = ({ name, testID }: Props) => {
 	switch (name) {
 		case 'facebook':
-			return <Facebook height={height} testID={testID} width={width} />;
+			return <Facebook testID={testID} />;
 		case 'google-plus':
-			return <GooglePlus height={height} testID={testID} width={width} />;
+			return <GooglePlus testID={testID} />;
 		case 'twitter':
-			return <Twitter height={height} testID={testID} width={width} />;
+			return <Twitter testID={testID} />;
 		case 'logo':
-			return <Logo height={height} testID={testID} width={width} />;
+			return <Logo testID={testID} />;
 		case 'check':
-			return <Check height={height} testID={testID} width={width} />;
+			return <Check testID={testID} />;
 		case 'eye-off':
-			return <EyeOff height={height} testID={testID} width={width} />;
+			return <EyeOff testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}

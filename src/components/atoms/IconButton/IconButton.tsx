@@ -9,15 +9,11 @@ interface Props {
 	onPress: () => void;
 	testID: string;
 	btnStyle?: StyleProp<ViewStyle>;
-	iconStyle?: {
-		width: number;
-		height: number;
-	};
 }
 
 export const IconButton = ({
 	iconName,
-	iconStyle,
+
 	btnStyle,
 	testID,
 	onPress,
@@ -29,11 +25,7 @@ export const IconButton = ({
 			testID={testID}
 			onPress={onPress}
 		>
-			<Icon
-				height={iconStyle?.height}
-				name={iconName}
-				width={iconStyle?.width}
-			/>
+			<Icon name={iconName} />
 		</Pressable>
 	);
 };
