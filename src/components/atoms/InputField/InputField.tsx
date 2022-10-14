@@ -1,5 +1,5 @@
 import { forwardRef, useImperativeHandle, useState } from 'react';
-import { TextInput } from 'react-native';
+import { StyleProp, TextInput, TextStyle } from 'react-native';
 
 import { styles } from './InputField.styles';
 
@@ -7,6 +7,7 @@ interface Props {
 	testID: string;
 	placeholder?: string;
 	secureTextEntry?: boolean;
+	style?: StyleProp<TextStyle>;
 }
 
 export interface InputFieldHandle {
@@ -15,7 +16,7 @@ export interface InputFieldHandle {
 }
 
 export const InputField = forwardRef<InputFieldHandle, Props>(
-	({ testID, placeholder, secureTextEntry }, ref) => {
+	({ testID, placeholder, secureTextEntry, style }, ref) => {
 		const [value, setValue] = useState('');
 
 		useImperativeHandle(ref, () => ({
@@ -30,7 +31,7 @@ export const InputField = forwardRef<InputFieldHandle, Props>(
 				autoCorrect={false}
 				placeholder={placeholder}
 				secureTextEntry={secureTextEntry}
-				style={styles.inputField}
+				style={[styles.inputField, style]}
 				testID={testID}
 				value={value}
 				onChangeText={setValue}

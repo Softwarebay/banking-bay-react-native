@@ -8,6 +8,8 @@ export { Icon } from './Icon/Icon';
 export { IconButton } from './IconButton/IconButton';
 export { InputField } from './InputField/InputField';
 export { Link } from './Link/Link';
+export { Card } from './Card/Card';
 
 export type { CheckboxHandle } from './Checkbox/Checkbox';
 export type { InputFieldHandle } from './InputField/InputField';
+export type { Props as IconProps } from './Icon/Icon';
