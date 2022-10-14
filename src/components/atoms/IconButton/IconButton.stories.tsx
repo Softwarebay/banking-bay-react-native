@@ -9,6 +9,7 @@ import { IconButton } from './IconButton';
 const btnStylesKnob = {
 	width: 60,
 	height: 60,
+	borderRadius: 100,
 };
 
 storiesOf('Atoms/IconButton', module)
