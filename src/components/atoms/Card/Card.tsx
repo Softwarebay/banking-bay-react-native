@@ -1,4 +1,6 @@
-import { StyleProp, View, ViewStyle } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
+
+import { Flex } from '../Flex/Flex';
 
 import { styles } from './Card.styles';
 
@@ -10,8 +12,8 @@ interface Props {
 
 export const Card = ({ children, style, testID }: Props) => {
 	return (
-		<View style={[styles.card, style]} testID={testID}>
+		<Flex direction="row" style={[styles.card, style]} testID={testID}>
 			{children}
-		</View>
+		</Flex>
 	);
 };

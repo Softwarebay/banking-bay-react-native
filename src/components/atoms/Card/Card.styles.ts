@@ -16,7 +16,5 @@ export const styles = StyleSheet.create({
 				...shadows.ios,
 			},
 		}),
-		alignItems: 'center',
-		flexDirection: 'row',
 	},
 });

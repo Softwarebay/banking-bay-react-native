@@ -1,6 +1,4 @@
-import { View } from 'react-native';
-
-import { IconButton } from 'components/atoms';
+import { Flex, IconButton } from 'components/atoms';
 
 import { styles } from './AuthViaSocials.styles';
 
@@ -44,7 +42,7 @@ export const AuthViaSocials = ({
 	];
 
 	return (
-		<View style={styles.container}>
+		<Flex direction="row" style={styles.container}>
 			{authViaSocials.map(({ name, iconName, color, onPress }) => (
 				<IconButton
 					key={name}
@@ -54,6 +52,6 @@ export const AuthViaSocials = ({
 					onPress={onPress}
 				/>
 			))}
-		</View>
+		</Flex>
 	);
 };
