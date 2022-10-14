@@ -5,6 +5,7 @@
 
 function loadStories() {
 	require('../src/components/atoms/Button/Button.stories');
+	require('../src/components/atoms/Card/Card.stories');
 	require('../src/components/atoms/Checkbox/Checkbox.stories');
 	require('../src/components/atoms/Heading/Heading.stories');
 	require('../src/components/atoms/Icon/Icon.stories');
@@ -15,12 +16,14 @@ function loadStories() {
 	require('../src/components/atoms/Paginator/Paginator.stories');
 	require('../src/components/atoms/Text/Text.stories');
 	require('../src/components/molecules/OnboardingSlide/OnboardingSlide.stories');
+	require('../src/components/molecules/PasswordInput/PasswordInput.stories');
 	require('../src/components/organisms/AuthViaSocials/AuthViaSocials.stories');
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
 }
 
 const stories = [
 	'../src/components/atoms/Button/Button.stories',
+	'../src/components/atoms/Card/Card.stories',
 	'../src/components/atoms/Checkbox/Checkbox.stories',
 	'../src/components/atoms/Heading/Heading.stories',
 	'../src/components/atoms/Icon/Icon.stories',
@@ -31,6 +34,7 @@ const stories = [
 	'../src/components/atoms/Paginator/Paginator.stories',
 	'../src/components/atoms/Text/Text.stories',
 	'../src/components/molecules/OnboardingSlide/OnboardingSlide.stories',
+	'../src/components/molecules/PasswordInput/PasswordInput.stories',
 	'../src/components/organisms/AuthViaSocials/AuthViaSocials.stories',
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
 ];
