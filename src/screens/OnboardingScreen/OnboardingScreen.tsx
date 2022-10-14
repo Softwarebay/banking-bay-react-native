@@ -7,9 +7,11 @@ import { OnboardingTemplate } from 'components/templates';
 
 import type { StackParamList } from 'navigator';
 
-import bgOnboarding1 from 'assets/bg-onboarding-1.png';
-import bgOnboarding2 from 'assets/bg-onboarding-2.png';
-import bgOnboarding3 from 'assets/bg-onboarding-3.png';
+import {
+	bgOnboarding1,
+	bgOnboarding2,
+	bgOnboarding3,
+} from 'assets/backgrounds';
 
 interface IOnboardingSlide {
 	id: number;

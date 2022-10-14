@@ -3,28 +3,30 @@ import { number } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { CenterStory } from 'utils/storybook/CenterStory';
 
-import bgImg1 from 'assets/bg-onboarding-1.png';
-import bgImg2 from 'assets/bg-onboarding-2.png';
-import bgImg3 from 'assets/bg-onboarding-3.png';
+import {
+	bgOnboarding1,
+	bgOnboarding2,
+	bgOnboarding3,
+} from 'assets/backgrounds';
 
 import { IOnboardingSlide, OnboardingTemplate } from './OnboardingTemplate';
 
 const storySlides: IOnboardingSlide[] = [
 	{
 		id: 1,
-		bgImage: bgImg1,
+		bgImage: bgOnboarding1,
 		title: 'Onboarding Slide Title 1',
 		description: 'Onboarding slide description 1.',
 	},
 	{
 		id: 2,
-		bgImage: bgImg2,
+		bgImage: bgOnboarding2,
 		title: 'Onboarding Slide Title 2',
 		description: 'Onboarding slide description 2.',
 	},
 	{
 		id: 3,
-		bgImage: bgImg3,
+		bgImage: bgOnboarding3,
 		title: 'Onboarding Slide Title 3',
 		description: 'Onboarding slide description 3.',
 	},
