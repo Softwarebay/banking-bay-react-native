@@ -8,6 +8,8 @@ interface Props {
 	placeholder?: string;
 	secureTextEntry?: boolean;
 	style?: StyleProp<TextStyle>;
+	validate?: (text: string) => boolean;
+	setIsValid?: (valid: boolean) => void;
 }
 
 export interface InputFieldHandle {
@@ -16,7 +18,10 @@ export interface InputFieldHandle {
 }
 
 export const InputField = forwardRef<InputFieldHandle, Props>(
-	({ testID, placeholder, secureTextEntry, style }, ref) => {
+	(
+		{ testID, placeholder, secureTextEntry, style, validate, setIsValid },
+		ref
+	) => {
 		const [value, setValue] = useState('');
 
 		useImperativeHandle(ref, () => ({
@@ -26,6 +31,14 @@ export const InputField = forwardRef<InputFieldHandle, Props>(
 			},
 		}));
 
+		const onChangeText = (text: string) => {
+			setValue(text);
+			if (validate && setIsValid) {
+				const isValid = validate(text);
+				setIsValid(isValid);
+			}
+		};
+
 		return (
 			<TextInput
 				autoCorrect={false}
@@ -34,7 +47,7 @@ export const InputField = forwardRef<InputFieldHandle, Props>(
 				style={[styles.inputField, style]}
 				testID={testID}
 				value={value}
-				onChangeText={setValue}
+				onChangeText={onChangeText}
 			/>
 		);
 	}
