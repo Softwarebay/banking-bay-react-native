@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import { forwardRef, useState } from 'react';
 
 import {
 	Card,
@@ -12,25 +12,25 @@ import { styles } from './PasswordInput.styles';
 interface Props {
 	placeholder: string;
 	testID: string;
-	onPressShowPassword: () => void;
 }
 
 export const PasswordInput = forwardRef<InputFieldHandle, Props>(
-	({ placeholder, testID, onPressShowPassword }, ref) => {
+	({ placeholder, testID }, ref) => {
+		const [hidePassword, setHidePassword] = useState(true);
 		return (
 			<Card style={styles.container}>
 				<InputField
 					ref={ref}
 					placeholder={placeholder}
+					secureTextEntry={hidePassword}
 					style={styles.inputField}
 					testID={testID}
-					secureTextEntry
 				/>
 				<IconButton
 					btnStyle={styles.iconBtn}
 					iconName="eye-off"
 					testID={`icon-btn-${testID}`}
-					onPress={onPressShowPassword}
+					onPress={() => setHidePassword((hidden) => !hidden)}
 				/>
 			</Card>
 		);

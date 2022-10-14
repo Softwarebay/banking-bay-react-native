@@ -1,4 +1,3 @@
-import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { CenterStory } from 'utils/storybook/CenterStory';
@@ -11,6 +10,5 @@ storiesOf('Molecules/PasswordInput', module)
 		<PasswordInput
 			placeholder={text('placeholder', 'Enter your password')}
 			testID={text('testID', 'PasswordInput-test-id')}
-			onPressShowPassword={action('onPressShowPassword')}
 		/>
 	));
