@@ -1,16 +1,27 @@
 import { Pressable, StyleProp, ViewStyle } from 'react-native';
-import { SvgProps } from 'react-native-svg';
+
+import { Icon, Props as IconProps } from '../Icon/Icon';
 
 import { styles } from './IconButton.styles';
 
 interface Props {
-	icon: React.ReactElement<SvgProps>;
+	iconName: IconProps['name'];
 	onPress: () => void;
 	testID: string;
 	btnStyle?: StyleProp<ViewStyle>;
+	iconStyle?: {
+		width: number;
+		height: number;
+	};
 }
 
-export const IconButton = ({ icon, testID, onPress, btnStyle }: Props) => {
+export const IconButton = ({
+	iconName,
+	iconStyle,
+	btnStyle,
+	testID,
+	onPress,
+}: Props) => {
 	return (
 		<Pressable
 			hitSlop={10}
@@ -18,7 +29,11 @@ export const IconButton = ({ icon, testID, onPress, btnStyle }: Props) => {
 			testID={testID}
 			onPress={onPress}
 		>
-			{icon}
+			<Icon
+				height={iconStyle?.height}
+				name={iconName}
+				width={iconStyle?.width}
+			/>
 		</Pressable>
 	);
 };

@@ -7,6 +7,7 @@ function loadStories() {
 	require('../src/components/atoms/Button/Button.stories');
 	require('../src/components/atoms/Checkbox/Checkbox.stories');
 	require('../src/components/atoms/Heading/Heading.stories');
+	require('../src/components/atoms/Icon/Icon.stories');
 	require('../src/components/atoms/IconButton/IconButton.stories');
 	require('../src/components/atoms/InputField/InputField.stories');
 	require('../src/components/atoms/Link/Link.stories');
@@ -21,6 +22,7 @@ const stories = [
 	'../src/components/atoms/Button/Button.stories',
 	'../src/components/atoms/Checkbox/Checkbox.stories',
 	'../src/components/atoms/Heading/Heading.stories',
+	'../src/components/atoms/Icon/Icon.stories',
 	'../src/components/atoms/IconButton/IconButton.stories',
 	'../src/components/atoms/InputField/InputField.stories',
 	'../src/components/atoms/Link/Link.stories',

@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react-native';
 
 import { CenterStory } from 'utils/storybook/CenterStory';
 
-import { Facebook, GooglePlus, Twitter } from 'assets/icons';
 import { IconButton } from './IconButton';
 
 const btnStylesKnob = {
@@ -20,7 +19,7 @@ storiesOf('Atoms/IconButton', module)
 				...btnStylesKnob,
 				backgroundColor: '#3B5999',
 			})}
-			icon={<Facebook />}
+			iconName="facebook"
 			testID={text('testID', 'IconButton-test-id')}
 			onPress={action('onPress')}
 		/>
@@ -31,7 +30,7 @@ storiesOf('Atoms/IconButton', module)
 				...btnStylesKnob,
 				backgroundColor: '#55ACEE',
 			})}
-			icon={<Twitter />}
+			iconName="twitter"
 			testID={text('testID', 'IconButton-test-id')}
 			onPress={action('onPress')}
 		/>
@@ -42,7 +41,7 @@ storiesOf('Atoms/IconButton', module)
 				...btnStylesKnob,
 				backgroundColor: '#DD4B39',
 			})}
-			icon={<GooglePlus />}
+			iconName="google-plus"
 			testID={text('testID', 'IconButton-test-id')}
 			onPress={action('onPress')}
 		/>
