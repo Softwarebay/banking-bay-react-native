@@ -4,7 +4,7 @@ import { colors, shadows } from 'theme';
 
 export const styles = StyleSheet.create({
 	inputField: {
-		backgroundColor: colors.cardBackground,
+		backgroundColor: colors.white,
 		borderRadius: 10,
 		color: colors.mainDark,
 		fontSize: 14,

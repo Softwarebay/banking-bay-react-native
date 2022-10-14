@@ -8,7 +8,7 @@ interface Colors {
 	buttonText: string;
 	success: string;
 	error: string;
-	cardBackground: string;
+	white: string;
 	shadow: string;
 	checkbox: string;
 }
@@ -23,7 +23,7 @@ export const colors: Colors = {
 	buttonText: '#FFFFFF',
 	success: '#3EB290',
 	error: '#FF5887',
-	cardBackground: '#FFFFFF',
+	white: '#FFFFFF',
 	shadow: '#161966',
 	checkbox: '#868698',
 };
