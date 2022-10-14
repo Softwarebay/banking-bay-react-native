@@ -14,7 +14,7 @@ interface Colors {
 }
 
 export const colors: Colors = {
-	screenBackground: '#F5f5f5',
+	screenBackground: '#FAFCFF',
 	mainDark: '#1B1D4D',
 	bodyText: '#4C4C60',
 	link: '#FF5887',
