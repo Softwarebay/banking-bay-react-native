@@ -1,5 +1,6 @@
+import { View } from 'react-native';
+
 import { IconButton } from 'components/atoms';
-import { Text, View } from 'react-native';
 
 import { styles } from './AuthViaSocials.styles';
 
