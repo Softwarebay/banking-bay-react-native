@@ -1,6 +1,7 @@
 import { forwardRef, useImperativeHandle, useState } from 'react';
 import { Pressable } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
+
+import { Check } from 'assets/icons';
 
 import { styles } from './Checkbox.styles';
 
@@ -34,9 +35,7 @@ export const Checkbox = forwardRef<CheckboxHandle, Props>(({ testID }, ref) => {
 			testID={testID}
 			onPress={onPress}
 		>
-			{isChecked && (
-				<Ionicons name="checkmark-outline" style={styles.checkIcon} />
-			)}
+			{isChecked && <Check />}
 		</Pressable>
 	);
 });

@@ -1,11 +1,9 @@
-import { Image } from 'react-native';
-
-import logo from 'assets/logo.png';
+import { Logo as LogoIcon } from 'assets/icons';
 
 interface Props {
 	testID?: string;
 }
 
 export const Logo = ({ testID }: Props) => {
-	return <Image source={logo} testID={testID} />;
+	return <LogoIcon testID={testID} />;
 };
