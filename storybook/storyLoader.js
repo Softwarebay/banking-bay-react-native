@@ -22,6 +22,7 @@ function loadStories() {
 	require('../src/components/organisms/AuthViaSocials/AuthViaSocials.stories');
 	require('../src/components/organisms/SignInForm/SignInForm.stories');
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
+	require('../src/components/templates/SignInTemplate/SignInTemplate.stories');
 }
 
 const stories = [
@@ -43,6 +44,7 @@ const stories = [
 	'../src/components/organisms/AuthViaSocials/AuthViaSocials.stories',
 	'../src/components/organisms/SignInForm/SignInForm.stories',
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
+	'../src/components/templates/SignInTemplate/SignInTemplate.stories',
 ];
 
 module.exports = {
