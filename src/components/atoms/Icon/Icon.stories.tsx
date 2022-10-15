@@ -4,7 +4,7 @@ import { CenterStory } from 'utils/storybook/CenterStory';
 
 import { Icon } from './Icon';
 
-storiesOf('Atom/Icon', module)
+storiesOf('Atoms/Icon', module)
 	.addDecorator((getStory) => (
 		<CenterStory style={{ backgroundColor: colors.screenBackground }} center>
 			{getStory()}
