@@ -1,6 +1,10 @@
+import { StatusBar } from 'expo-status-bar';
+import { View } from 'react-native';
+
 import { Flex, Heading, Link, Text } from 'components/atoms';
 import { AuthViaSocials, SignInForm } from 'components/organisms';
-import { View } from 'react-native';
+
+import { colors } from 'theme';
 
 import { styles } from './SignInTemplate.styles';
 
@@ -32,30 +36,34 @@ export const SignInTemplate = ({
 	onPressTwitter,
 }: Props) => {
 	return (
-		<View style={styles.container}>
-			<Heading
-				size="h1"
-				style={styles.heading}
-				testID="sign-in-heading-test-id"
-				text={headingText}
-			/>
-			<SignInForm
-				onRestorePassword={onRestorePassword}
-				onSubmitSignInForm={onSubmitSignInForm}
-			/>
-			<Flex direction="row" style={styles.footer}>
-				<Text testID="sign-in-footer-text-test-id" text={`${footerText} `} />
-				<Link
-					testID="sign-in-footer-link-test-id"
-					text={footerLinkText}
-					onPress={onPressFooterLink}
+		<>
+			<StatusBar backgroundColor={colors.screenBackground} style="dark" />
+
+			<View style={styles.container}>
+				<Heading
+					size="h1"
+					style={styles.heading}
+					testID="sign-in-heading-test-id"
+					text={headingText}
 				/>
-			</Flex>
-			<AuthViaSocials
-				onPressFacebook={onPressFacebook}
-				onPressGooglePlus={onPressGooglePlus}
-				onPressTwitter={onPressTwitter}
-			/>
-		</View>
+				<SignInForm
+					onRestorePassword={onRestorePassword}
+					onSubmitSignInForm={onSubmitSignInForm}
+				/>
+				<Flex direction="row" style={styles.footer}>
+					<Text testID="sign-in-footer-text-test-id" text={`${footerText} `} />
+					<Link
+						testID="sign-in-footer-link-test-id"
+						text={footerLinkText}
+						onPress={onPressFooterLink}
+					/>
+				</Flex>
+				<AuthViaSocials
+					onPressFacebook={onPressFacebook}
+					onPressGooglePlus={onPressGooglePlus}
+					onPressTwitter={onPressTwitter}
+				/>
+			</View>
+		</>
 	);
 };
