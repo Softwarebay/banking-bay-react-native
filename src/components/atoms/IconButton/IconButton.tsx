@@ -20,8 +20,8 @@ export const IconButton = ({
 }: Props) => {
 	return (
 		<Pressable
-			hitSlop={10}
-			style={[styles.btn, btnStyle]}
+			hitSlop={20}
+			style={({ pressed }) => [styles.btn, btnStyle, pressed && styles.pressed]}
 			testID={testID}
 			onPress={onPress}
 		>
