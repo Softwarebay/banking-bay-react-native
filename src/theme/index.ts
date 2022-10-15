@@ -5,7 +5,6 @@ interface Colors {
 	link: string;
 	buttonLight: string;
 	buttonDark: string;
-	buttonText: string;
 	success: string;
 	error: string;
 	white: string;
@@ -20,7 +19,6 @@ export const colors: Colors = {
 	link: '#FF5887',
 	buttonLight: '#97DAFF',
 	buttonDark: '#16579D',
-	buttonText: '#FFFFFF',
 	success: '#3EB290',
 	error: '#FF5887',
 	white: '#FFFFFF',
