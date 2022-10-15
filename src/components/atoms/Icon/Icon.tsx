@@ -2,6 +2,7 @@ import { View } from 'react-native';
 
 import {
 	Check,
+	ChevronLeft,
 	EyeOff,
 	Facebook,
 	GooglePlus,
@@ -17,6 +18,7 @@ export interface Props {
 		| 'eye-off'
 		| 'google-plus'
 		| 'logo'
+		| 'chevron-left'
 		| string;
 	testID?: string;
 }
@@ -35,6 +37,8 @@ export const Icon = ({ name, testID }: Props) => {
 			return <Check testID={testID} />;
 		case 'eye-off':
 			return <EyeOff testID={testID} />;
+		case 'chevron-left':
+			return <ChevronLeft testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}
