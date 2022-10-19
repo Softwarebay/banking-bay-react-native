@@ -23,7 +23,8 @@ module.exports = {
         adaptiveIcon: {
             foregroundImage: "./assets/adaptive-icon1.png",
             backgroundColor:"#161966",
-        }
+        },
+        softwareKeyboardLayoutMode : 'pan'
     },
     web: {
         favicon: "./assets/favicon.png"

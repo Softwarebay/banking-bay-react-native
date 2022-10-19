@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
 		marginTop: 30,
 	},
 	container: {
-		backgroundColor: colors.background,
+		backgroundColor: colors.screenBackground,
 		borderTopLeftRadius: 20,
 		borderTopRightRadius: 20,
 		flex: 1,

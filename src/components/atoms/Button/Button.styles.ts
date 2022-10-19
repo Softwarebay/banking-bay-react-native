@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
 		opacity: 0.8,
 	},
 	text: {
-		color: colors.buttonText,
+		color: colors.white,
 		fontSize: 16,
 	},
 });
