@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { OnboardingScreen, SignInScreen } from 'screens';
+import { DashboardScreen, OnboardingScreen, SignInScreen } from 'screens';
 import { TopNav } from 'components/molecules';
 
 export interface StackParamList extends Record<string, object | undefined> {
@@ -34,6 +34,13 @@ export const Navigator = () => (
 						/>
 					),
 				})}
+			/>
+			<Stack.Screen
+				component={DashboardScreen}
+				name="DashboardTabs"
+				options={{
+					headerShown: false,
+				}}
 			/>
 		</Stack.Navigator>
 	</NavigationContainer>

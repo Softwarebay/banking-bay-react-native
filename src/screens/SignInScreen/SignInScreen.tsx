@@ -1,12 +1,19 @@
+import { NavigationProp, useNavigation } from '@react-navigation/native';
+
+import type { StackParamList } from 'navigator';
+
 import { SignInTemplate } from 'components/templates';
 
 export const SignInScreen = () => {
+	const navigation = useNavigation<NavigationProp<StackParamList>>();
+
 	const signInViaEmailPassword = (userCredentials: {
 		email: string;
 		password: string;
 		persistPassword: boolean;
 	}) => {
 		console.log(userCredentials);
+		navigation.navigate('DashboardTabs');
 	};
 
 	const restorePassword = () => {
