@@ -11,13 +11,7 @@ interface Props {
 	btnStyle?: StyleProp<ViewStyle>;
 }
 
-export const IconButton = ({
-	iconName,
-
-	btnStyle,
-	testID,
-	onPress,
-}: Props) => {
+export const IconButton = ({ iconName, btnStyle, testID, onPress }: Props) => {
 	return (
 		<Pressable
 			hitSlop={20}
