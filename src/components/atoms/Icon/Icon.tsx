@@ -4,11 +4,13 @@ import {
 	Check,
 	ChevronLeft,
 	CreditCard,
+	CreditCards,
 	DollarSign,
 	EyeOff,
 	Facebook,
 	GooglePlus,
 	Logo,
+	ProfileIcon,
 	Repeat,
 	Smartphone,
 	Twitter,
@@ -27,6 +29,8 @@ export interface Props {
 		| 'dollar-sign'
 		| 'repeat'
 		| 'smartphone'
+		| 'profile-icon'
+		| 'credit-cards'
 		| string;
 	color: string | 'none';
 	testID?: string;
@@ -56,6 +60,10 @@ export const Icon = ({ name, testID, color }: Props) => {
 			return <DollarSign color={color} testID={testID} />;
 		case 'repeat':
 			return <Repeat color={color} testID={testID} />;
+		case 'profile-icon':
+			return <ProfileIcon color={color} testID={testID} />;
+		case 'credit-cards':
+			return <CreditCards color={color} testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}

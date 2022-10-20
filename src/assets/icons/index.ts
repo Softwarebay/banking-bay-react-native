@@ -9,6 +9,8 @@ import CreditCard from './credit-card.svg';
 import DollarSign from './dollar-sign.svg';
 import Repeat from './repeat.svg';
 import Smartphone from './smartphone.svg';
+import ProfileIcon from './profile-icon.svg';
+import CreditCards from './credit-cards.svg';
 
 export {
 	Logo,
@@ -22,4 +24,6 @@ export {
 	DollarSign,
 	Repeat,
 	Smartphone,
+	ProfileIcon,
+	CreditCards,
 };
