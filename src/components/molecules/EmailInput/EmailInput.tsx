@@ -10,6 +10,7 @@ import { StyleProp, TextStyle } from 'react-native';
 
 import { Card, Icon, InputField, InputFieldHandle } from 'components/atoms';
 
+import { colors } from 'theme';
 import { styles } from './EmailInput.styles';
 
 interface Props {
@@ -43,7 +44,13 @@ export const EmailInput = forwardRef<InputFieldHandle, Props>(
 					testID={testID}
 					validate={validate}
 				/>
-				{isValid && <Icon name="check" testID={`icon-${testID}`} />}
+				{isValid && (
+					<Icon
+						color={colors.mainDark}
+						name="check"
+						testID={`icon-${testID}`}
+					/>
+				)}
 			</Card>
 		);
 	}

@@ -6,12 +6,19 @@ import { styles } from './IconButton.styles';
 
 interface Props {
 	iconName: IconProps['name'];
+	iconColor: IconProps['color'];
 	onPress: () => void;
 	testID: string;
 	btnStyle?: StyleProp<ViewStyle>;
 }
 
-export const IconButton = ({ iconName, btnStyle, testID, onPress }: Props) => {
+export const IconButton = ({
+	iconName,
+	iconColor,
+	btnStyle,
+	testID,
+	onPress,
+}: Props) => {
 	return (
 		<Pressable
 			hitSlop={20}
@@ -19,7 +26,7 @@ export const IconButton = ({ iconName, btnStyle, testID, onPress }: Props) => {
 			testID={testID}
 			onPress={onPress}
 		>
-			<Icon name={iconName} />
+			<Icon color={iconColor} name={iconName} />
 		</Pressable>
 	);
 };

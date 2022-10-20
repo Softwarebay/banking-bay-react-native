@@ -7,6 +7,7 @@ import {
 	InputFieldHandle,
 } from 'components/atoms';
 
+import { colors } from 'theme';
 import { styles } from './PasswordInput.styles';
 
 interface Props {
@@ -28,6 +29,7 @@ export const PasswordInput = forwardRef<InputFieldHandle, Props>(
 				/>
 				<IconButton
 					btnStyle={styles.iconBtn}
+					iconColor={colors.mainDark}
 					iconName="eye-off"
 					testID={`icon-btn-${testID}`}
 					onPress={() => setHidePassword((hidden) => !hidden)}

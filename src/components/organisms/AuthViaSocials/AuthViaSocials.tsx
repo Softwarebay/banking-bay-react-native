@@ -1,11 +1,13 @@
 import { Flex, IconButton } from 'components/atoms';
+import { colors } from 'theme';
 
 import { styles } from './AuthViaSocials.styles';
 
 interface AuthViaSocialItem {
 	name: string;
-	color: string;
+	btnColor: string;
 	iconName: string;
+	iconColor: string;
 	onPress: () => void;
 }
 
@@ -24,34 +26,40 @@ export const AuthViaSocials = ({
 		{
 			name: 'Facebook',
 			iconName: 'facebook',
-			color: '#3B5999',
+			iconColor: colors.white,
+			btnColor: '#3B5999',
 			onPress: onPressFacebook,
 		},
 		{
 			name: 'Twitter',
 			iconName: 'twitter',
-			color: '#55ACEE',
+			iconColor: colors.white,
+			btnColor: '#55ACEE',
 			onPress: onPressTwitter,
 		},
 		{
 			name: 'GooglePlus',
 			iconName: 'google-plus',
-			color: '#DD4B39',
+			iconColor: colors.white,
+			btnColor: '#DD4B39',
 			onPress: onPressGooglePlus,
 		},
 	];
 
 	return (
 		<Flex direction="row" style={styles.container}>
-			{authViaSocials.map(({ name, iconName, color, onPress }) => (
-				<IconButton
-					key={name}
-					btnStyle={[styles.iconBtn, { backgroundColor: color }]}
-					iconName={iconName}
-					testID={`${name}-btn-test-id`}
-					onPress={onPress}
-				/>
-			))}
+			{authViaSocials.map(
+				({ name, iconName, iconColor, btnColor, onPress }) => (
+					<IconButton
+						key={name}
+						btnStyle={[styles.iconBtn, { backgroundColor: btnColor }]}
+						iconColor={iconColor}
+						iconName={iconName}
+						testID={`${name}-btn-test-id`}
+						onPress={onPress}
+					/>
+				)
+			)}
 		</Flex>
 	);
 };

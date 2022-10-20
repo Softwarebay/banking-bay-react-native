@@ -28,33 +28,34 @@ export interface Props {
 		| 'repeat'
 		| 'smartphone'
 		| string;
+	color: string | 'none';
 	testID?: string;
 }
 
-export const Icon = ({ name, testID }: Props) => {
+export const Icon = ({ name, testID, color }: Props) => {
 	switch (name) {
 		case 'facebook':
-			return <Facebook testID={testID} />;
+			return <Facebook color={color} testID={testID} />;
 		case 'google-plus':
-			return <GooglePlus testID={testID} />;
+			return <GooglePlus color={color} testID={testID} />;
 		case 'twitter':
-			return <Twitter testID={testID} />;
+			return <Twitter color={color} testID={testID} />;
 		case 'logo':
-			return <Logo testID={testID} />;
+			return <Logo color={color} testID={testID} />;
 		case 'check':
-			return <Check testID={testID} />;
+			return <Check color={color} testID={testID} />;
 		case 'eye-off':
-			return <EyeOff testID={testID} />;
+			return <EyeOff color={color} testID={testID} />;
 		case 'chevron-left':
-			return <ChevronLeft testID={testID} />;
+			return <ChevronLeft color={color} testID={testID} />;
 		case 'credit-card':
-			return <CreditCard testID={testID} />;
+			return <CreditCard color={color} testID={testID} />;
 		case 'smartphone':
-			return <Smartphone testID={testID} />;
+			return <Smartphone color={color} testID={testID} />;
 		case 'dollar-sign':
-			return <DollarSign testID={testID} />;
+			return <DollarSign color={color} testID={testID} />;
 		case 'repeat':
-			return <Repeat testID={testID} />;
+			return <Repeat color={color} testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}
