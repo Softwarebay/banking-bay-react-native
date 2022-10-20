@@ -10,6 +10,7 @@ interface Colors {
 	white: string;
 	shadow: string;
 	checkbox: string;
+	divider: string;
 }
 
 export const colors: Colors = {
@@ -24,6 +25,7 @@ export const colors: Colors = {
 	white: '#FFFFFF',
 	shadow: '#161966',
 	checkbox: '#868698',
+	divider: '#CED6E1',
 };
 
 interface Shadows {

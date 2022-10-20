@@ -7,6 +7,7 @@ function loadStories() {
 	require('../src/components/atoms/Button/Button.stories');
 	require('../src/components/atoms/Card/Card.stories');
 	require('../src/components/atoms/Checkbox/Checkbox.stories');
+	require('../src/components/atoms/Divider/Divider.stories');
 	require('../src/components/atoms/Flex/Flex.stories');
 	require('../src/components/atoms/Heading/Heading.stories');
 	require('../src/components/atoms/Icon/Icon.stories');
@@ -31,6 +32,7 @@ const stories = [
 	'../src/components/atoms/Button/Button.stories',
 	'../src/components/atoms/Card/Card.stories',
 	'../src/components/atoms/Checkbox/Checkbox.stories',
+	'../src/components/atoms/Divider/Divider.stories',
 	'../src/components/atoms/Flex/Flex.stories',
 	'../src/components/atoms/Heading/Heading.stories',
 	'../src/components/atoms/Icon/Icon.stories',
