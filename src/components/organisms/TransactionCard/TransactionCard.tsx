@@ -1,7 +1,8 @@
-import { Card, Heading, Icon, IconProps, Text } from 'components/atoms';
-import { View } from 'react-native';
-import { colors } from 'theme';
+import { StyleProp, View, ViewStyle } from 'react-native';
 
+import { Card, Heading, Icon, IconProps, Text } from 'components/atoms';
+
+import { colors } from 'theme';
 import { styles } from './TransactionCard.styles';
 
 interface Props {
@@ -10,8 +11,9 @@ interface Props {
 	iconColor: string;
 	type: 'incoming' | 'outgoing';
 	title: string;
-	subtitle: string;
+	category: string;
 	amount: number;
+	style?: StyleProp<ViewStyle>;
 }
 
 export const TransactionCard = ({
@@ -19,9 +21,10 @@ export const TransactionCard = ({
 	iconName,
 	iconColor,
 	title,
-	subtitle,
+	category,
 	type,
 	amount,
+	style,
 }: Props) => {
 	const amountText = `${type === 'incoming' ? '+' : '-'} ${amount}`;
 	const amountColor = `${
@@ -29,7 +32,7 @@ export const TransactionCard = ({
 	}`;
 
 	return (
-		<Card style={styles.container}>
+		<Card style={[styles.container, style]}>
 			<View style={styles.iconContainer}>
 				<Icon
 					color={iconColor}
@@ -44,9 +47,9 @@ export const TransactionCard = ({
 					text={title}
 				/>
 				<Text
-					style={styles.subtitle}
+					style={styles.category}
 					testID={`${id}-transaction-subtitle-test-id`}
-					text={subtitle}
+					text={category}
 				/>
 			</View>
 			<Heading

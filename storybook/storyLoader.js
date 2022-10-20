@@ -22,6 +22,7 @@ function loadStories() {
 	require('../src/components/molecules/PasswordInput/PasswordInput.stories');
 	require('../src/components/molecules/TopNav/TopNav.stories');
 	require('../src/components/organisms/AuthViaSocials/AuthViaSocials.stories');
+	require('../src/components/organisms/LatestTransactions/LatestTransactions.stories');
 	require('../src/components/organisms/PaymentOptions/PaymentOptions.stories');
 	require('../src/components/organisms/SignInForm/SignInForm.stories');
 	require('../src/components/organisms/TransactionCard/TransactionCard.stories');
@@ -48,6 +49,7 @@ const stories = [
 	'../src/components/molecules/PasswordInput/PasswordInput.stories',
 	'../src/components/molecules/TopNav/TopNav.stories',
 	'../src/components/organisms/AuthViaSocials/AuthViaSocials.stories',
+	'../src/components/organisms/LatestTransactions/LatestTransactions.stories',
 	'../src/components/organisms/PaymentOptions/PaymentOptions.stories',
 	'../src/components/organisms/SignInForm/SignInForm.stories',
 	'../src/components/organisms/TransactionCard/TransactionCard.stories',

@@ -1,8 +1,13 @@
 import { StyleSheet } from 'react-native';
+
 import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	amount: {},
+	category: {
+		fontSize: 12,
+		lineHeight: 19.2,
+	},
 	container: {
 		paddingHorizontal: 10,
 		paddingVertical: 19,
@@ -18,10 +23,5 @@ export const styles = StyleSheet.create({
 		height: 40,
 		justifyContent: 'center',
 		width: 40,
-	},
-
-	subtitle: {
-		fontSize: 12,
-		lineHeight: 19.2,
 	},
 });
