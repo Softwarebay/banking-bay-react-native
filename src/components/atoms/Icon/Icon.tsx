@@ -3,10 +3,14 @@ import { View } from 'react-native';
 import {
 	Check,
 	ChevronLeft,
+	CreditCard,
+	DollarSign,
 	EyeOff,
 	Facebook,
 	GooglePlus,
 	Logo,
+	Repeat,
+	Smartphone,
 	Twitter,
 } from 'assets/icons';
 
@@ -19,6 +23,10 @@ export interface Props {
 		| 'google-plus'
 		| 'logo'
 		| 'chevron-left'
+		| 'credit-card'
+		| 'dollar-sign'
+		| 'repeat'
+		| 'smartphone'
 		| string;
 	testID?: string;
 }
@@ -39,6 +47,14 @@ export const Icon = ({ name, testID }: Props) => {
 			return <EyeOff testID={testID} />;
 		case 'chevron-left':
 			return <ChevronLeft testID={testID} />;
+		case 'credit-card':
+			return <CreditCard testID={testID} />;
+		case 'smartphone':
+			return <Smartphone testID={testID} />;
+		case 'dollar-sign':
+			return <DollarSign testID={testID} />;
+		case 'repeat':
+			return <Repeat testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}
