@@ -99,6 +99,7 @@
         "noSortAlphabetically": false
       }
     ],
+    "react/no-unstable-nested-components": "off",
 
     "jsx-a11y/anchor-is-valid": "off",
 

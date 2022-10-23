@@ -5,13 +5,18 @@ import {
 	ChevronLeft,
 	CreditCard,
 	CreditCards,
+	Deposit,
 	DollarSign,
 	EyeOff,
 	Facebook,
 	GooglePlus,
+	LoanWallet,
 	Logo,
+	MoreTiles,
+	NotificationBell,
 	ProfileIcon,
 	Repeat,
+	Report,
 	Smartphone,
 	Twitter,
 } from 'assets/icons';
@@ -31,6 +36,11 @@ export interface Props {
 		| 'smartphone'
 		| 'profile-icon'
 		| 'credit-cards'
+		| 'deposits'
+		| 'loans'
+		| 'notifications'
+		| 'dashboard'
+		| 'more'
 		| string;
 	color: string | 'none';
 	testID?: string;
@@ -64,6 +74,16 @@ export const Icon = ({ name, testID, color }: Props) => {
 			return <ProfileIcon color={color} testID={testID} />;
 		case 'credit-cards':
 			return <CreditCards color={color} testID={testID} />;
+		case 'deposits':
+			return <Deposit color={color} testID={testID} />;
+		case 'more':
+			return <MoreTiles color={color} testID={testID} />;
+		case 'dashboard':
+			return <Report color={color} testID={testID} />;
+		case 'notifications':
+			return <NotificationBell color={color} testID={testID} />;
+		case 'loans':
+			return <LoanWallet color={color} testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}

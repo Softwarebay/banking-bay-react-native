@@ -1,31 +1,32 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { DashboardScreen, OnboardingScreen, SignInScreen } from 'screens';
+import { OnboardingScreen, SignInScreen } from 'screens';
 import { TopNav } from 'components/molecules';
 
-export interface StackParamList extends Record<string, object | undefined> {
+import { TabNavigator } from './TabNavigator';
+
+export interface RootStackParamList extends Record<string, object | undefined> {
 	Onboarding: undefined;
 	SignIn: undefined;
 }
 
-const Stack = createNativeStackNavigator<StackParamList>();
+const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigator = () => (
 	<NavigationContainer>
-		<Stack.Navigator>
-			<Stack.Screen
+		<RootStack.Navigator>
+			<RootStack.Screen
 				component={OnboardingScreen}
 				name="Onboarding"
 				options={{
 					headerShown: false,
 				}}
 			/>
-			<Stack.Screen
+			<RootStack.Screen
 				component={SignInScreen}
 				name="SignIn"
 				options={() => ({
-					// eslint-disable-next-line react/no-unstable-nested-components
 					header: ({ navigation }) => (
 						<TopNav
 							screenTitle="Sign in"
@@ -35,13 +36,13 @@ export const Navigator = () => (
 					),
 				})}
 			/>
-			<Stack.Screen
-				component={DashboardScreen}
-				name="DashboardTabs"
+			<RootStack.Screen
+				component={TabNavigator}
+				name="MainTabs"
 				options={{
 					headerShown: false,
 				}}
 			/>
-		</Stack.Navigator>
+		</RootStack.Navigator>
 	</NavigationContainer>
 );
