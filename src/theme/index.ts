@@ -11,6 +11,7 @@ interface Colors {
 	shadow: string;
 	checkbox: string;
 	divider: string;
+	transactionCardIcon: string;
 }
 
 export const colors: Colors = {
@@ -26,6 +27,7 @@ export const colors: Colors = {
 	shadow: '#161966',
 	checkbox: '#868698',
 	divider: '#CED6E1',
+	transactionCardIcon: '#F1F5FD',
 };
 
 interface Shadows {
