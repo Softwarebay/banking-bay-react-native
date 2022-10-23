@@ -33,6 +33,7 @@ export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
 
 				return (
 					<Pressable
+						key={route.key}
 						style={({ pressed }) => [styles.tabItem, pressed && styles.pressed]}
 						onLongPress={onLongPress}
 						onPress={onPress}
