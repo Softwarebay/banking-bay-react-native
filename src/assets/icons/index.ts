@@ -16,6 +16,9 @@ import Report from './report.svg';
 import Smartphone from './smartphone.svg';
 import MoreTiles from './tiles-plus.svg';
 import Twitter from './twitter.svg';
+import MoneyTransfer from './money-transfer.svg';
+import Paypal from './paypal.svg';
+import Amazon from './amazon.svg';
 
 export {
 	Logo,
@@ -36,4 +39,7 @@ export {
 	NotificationBell,
 	Report,
 	MoreTiles,
+	Amazon,
+	MoneyTransfer,
+	Paypal,
 };

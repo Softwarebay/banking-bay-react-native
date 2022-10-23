@@ -3,14 +3,12 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	bgImage: {
-		flex: 1,
+		aspectRatio: 1,
 	},
 	container: {
 		borderBottomLeftRadius: 30,
 		borderBottomRightRadius: 30,
-		flex: 1 / 2.5,
 		overflow: 'hidden',
-		width: '100%',
 	},
 	nav: {
 		alignItems: 'center',

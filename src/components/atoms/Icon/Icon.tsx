@@ -1,6 +1,7 @@
 import { View } from 'react-native';
 
 import {
+	Amazon,
 	Check,
 	ChevronLeft,
 	CreditCard,
@@ -12,8 +13,10 @@ import {
 	GooglePlus,
 	LoanWallet,
 	Logo,
+	MoneyTransfer,
 	MoreTiles,
 	NotificationBell,
+	Paypal,
 	ProfileIcon,
 	Repeat,
 	Report,
@@ -41,6 +44,9 @@ export interface Props {
 		| 'notifications'
 		| 'dashboard'
 		| 'more'
+		| 'amazon'
+		| 'money-transfer'
+		| 'paypal'
 		| string;
 	color: string | 'none';
 	testID?: string;
@@ -84,6 +90,12 @@ export const Icon = ({ name, testID, color }: Props) => {
 			return <NotificationBell color={color} testID={testID} />;
 		case 'loans':
 			return <LoanWallet color={color} testID={testID} />;
+		case 'paypal':
+			return <Paypal color={color} testID={testID} />;
+		case 'amazon':
+			return <Amazon color={color} testID={testID} />;
+		case 'money-transfer':
+			return <MoneyTransfer color={color} testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}
