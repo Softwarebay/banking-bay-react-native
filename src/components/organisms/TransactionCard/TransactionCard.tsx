@@ -26,7 +26,7 @@ export const TransactionCard = ({
 	amount,
 	style,
 }: Props) => {
-	const amountText = `${type === 'incoming' ? '+' : '-'} ${amount}`;
+	const amountText = `${type === 'incoming' ? '+' : '-'} ${amount.toFixed(2)}`;
 	const amountColor = `${
 		type === 'incoming' ? colors.success : colors.mainDark
 	}`;
