@@ -65,7 +65,7 @@ export const DashboardScreen = () => {
 		console.log('onPressTopUpPayment');
 	};
 
-	const onPressHeaderLink = () => {
+	const onPressViewAll = () => {
 		console.log('onPressHeaderLink');
 	};
 
@@ -74,12 +74,12 @@ export const DashboardScreen = () => {
 			latestTransactions={latestTransactions}
 			navText="€ 1.08 / 1.12"
 			onPressCreditCardsIconButton={onPressCreditCardsIconButton}
-			onPressHeaderLink={onPressHeaderLink}
 			onPressMakePayment={onPressMakePayment}
 			onPressMobilePayment={onPressMobilePayment}
 			onPressMoneyTransfer={onPressMoneyTransfer}
 			onPressProfileIconButton={onPressProfileIconButton}
 			onPressTopUpPayment={onPressTopUpPayment}
+			onPressViewAll={onPressViewAll}
 		/>
 	);
 };

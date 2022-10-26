@@ -17,13 +17,13 @@ export interface TransactionHistoryItem {
 
 interface Props {
 	latestTransactions: TransactionHistoryItem[];
-	onPressHeaderLink: () => void;
+	onPressViewAll: () => void;
 	style?: StyleProp<ViewStyle>;
 }
 
 export const LatestTransactions = ({
 	latestTransactions,
-	onPressHeaderLink,
+	onPressViewAll,
 	style,
 }: Props) => {
 	return (
@@ -37,7 +37,7 @@ export const LatestTransactions = ({
 				<Link
 					testID="latest-transaction-link"
 					text="View All"
-					onPress={onPressHeaderLink}
+					onPress={onPressViewAll}
 				/>
 			</Flex>
 			{latestTransactions.map(

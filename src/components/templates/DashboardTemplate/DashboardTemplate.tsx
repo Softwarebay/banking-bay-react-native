@@ -29,7 +29,7 @@ interface Props {
 	onPressTopUpPayment: () => void;
 	onPressMobilePayment: () => void;
 	onPressMoneyTransfer: () => void;
-	onPressHeaderLink: () => void;
+	onPressViewAll: () => void;
 }
 
 export const DashboardTemplate = ({
@@ -41,7 +41,7 @@ export const DashboardTemplate = ({
 	onPressTopUpPayment,
 	onPressMobilePayment,
 	onPressMoneyTransfer,
-	onPressHeaderLink,
+	onPressViewAll,
 }: Props) => {
 	return (
 		<>
@@ -64,7 +64,7 @@ export const DashboardTemplate = ({
 				<View style={styles.latestTransactions}>
 					<LatestTransactions
 						latestTransactions={latestTransactions}
-						onPressHeaderLink={onPressHeaderLink}
+						onPressViewAll={onPressViewAll}
 					/>
 				</View>
 			</View>
