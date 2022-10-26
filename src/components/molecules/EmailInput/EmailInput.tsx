@@ -22,6 +22,7 @@ export const EmailInput = forwardRef<InputFieldHandle, Props>(
 			<Card style={[styles.container, style]}>
 				<InputField
 					ref={ref}
+					keyboardType="email-address"
 					placeholder={placeholder}
 					setIsValid={setIsValid}
 					style={styles.inputField}
