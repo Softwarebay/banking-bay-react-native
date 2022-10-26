@@ -1,4 +1,4 @@
-import { Pressable, Text } from 'react-native';
+import { Pressable, StyleProp, Text, ViewStyle } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { colors } from 'theme';
@@ -8,12 +8,13 @@ interface Props {
 	title: string;
 	testID: string;
 	onPress: () => void;
+	style?: StyleProp<ViewStyle>;
 }
 
-export const Button = ({ title, testID, onPress }: Props) => {
+export const Button = ({ title, testID, style, onPress }: Props) => {
 	return (
 		<Pressable
-			style={({ pressed }) => [pressed && styles.pressed]}
+			style={({ pressed }) => [pressed && styles.pressed, style]}
 			testID={testID}
 			onPress={onPress}
 		>
