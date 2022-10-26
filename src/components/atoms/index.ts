@@ -10,6 +10,7 @@ export { InputField } from './InputField/InputField';
 export { Link } from './Link/Link';
 export { Card } from './Card/Card';
 export { Flex } from './Flex/Flex';
+export { Divider } from './Divider/Divider';
 
 export type { CheckboxHandle } from './Checkbox/Checkbox';
 export type { InputFieldHandle } from './InputField/InputField';

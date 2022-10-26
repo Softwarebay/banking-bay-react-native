@@ -1,7 +1,8 @@
 import { forwardRef, useImperativeHandle, useState } from 'react';
 import { Pressable } from 'react-native';
 
-import { Check } from 'assets/icons';
+import { colors } from 'theme';
+import { Icon } from '../Icon/Icon';
 
 import { styles } from './Checkbox.styles';
 
@@ -35,7 +36,7 @@ export const Checkbox = forwardRef<CheckboxHandle, Props>(({ testID }, ref) => {
 			testID={testID}
 			onPress={onPress}
 		>
-			{isChecked && <Check />}
+			{isChecked && <Icon color={colors.mainDark} name="check" />}
 		</Pressable>
 	);
 });

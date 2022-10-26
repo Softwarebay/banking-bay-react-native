@@ -6,8 +6,6 @@ export const styles = StyleSheet.create({
 	card: {
 		backgroundColor: colors.white,
 		borderRadius: 10,
-		paddingHorizontal: 20,
-		paddingVertical: 14,
 		...Platform.select({
 			android: {
 				...shadows.android,

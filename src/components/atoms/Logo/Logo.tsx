@@ -1,9 +1,10 @@
-import { Logo as LogoIcon } from 'assets/icons';
+import { colors } from 'theme';
+import { Icon } from '../Icon/Icon';
 
 interface Props {
 	testID?: string;
 }
 
 export const Logo = ({ testID }: Props) => {
-	return <LogoIcon testID={testID} />;
+	return <Icon color={colors.mainDark} name="logo" testID={testID} />;
 };

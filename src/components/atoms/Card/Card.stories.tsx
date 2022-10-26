@@ -1,14 +1,17 @@
 import { action } from '@storybook/addon-actions';
-import { object, text } from '@storybook/addon-knobs';
+import { color, object, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 
 import { CenterStory } from 'utils/storybook/CenterStory';
 import { Heading, IconButton } from 'components/atoms';
 
+import { colors } from 'theme';
 import { Card } from './Card';
 
 const cardStyleKnob = {
 	height: 60,
+	paddingHorizontal: 20,
+	paddingVertical: 14,
 };
 
 storiesOf('Atoms/Card', module)
@@ -25,6 +28,7 @@ storiesOf('Atoms/Card', module)
 				text="Text inside Card"
 			/>
 			<IconButton
+				iconColor={color('iconColor', colors.mainDark)}
 				iconName="check"
 				testID="IconButton-test-id"
 				onPress={action('onPressIconButton')}

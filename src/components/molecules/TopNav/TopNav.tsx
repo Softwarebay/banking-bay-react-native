@@ -1,5 +1,6 @@
-import { Flex, Heading, IconButton } from 'components/atoms';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Flex, Heading, IconButton } from 'components/atoms';
+import { colors } from 'theme';
 
 import { styles } from './TopNav.styles';
 
@@ -15,6 +16,7 @@ export const TopNav = ({ screenTitle, testID, onPressButtonLeft }: Props) => {
 			<Flex direction="row" style={[styles.container, styles.padding]}>
 				<IconButton
 					btnStyle={[styles.padding, styles.leftBtn]}
+					iconColor={colors.mainDark}
 					iconName="chevron-left"
 					testID="left-btn-{testID}"
 					onPress={onPressButtonLeft}
