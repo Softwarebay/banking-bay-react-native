@@ -19,6 +19,7 @@ import Twitter from './twitter.svg';
 import MoneyTransfer from './money-transfer.svg';
 import Paypal from './paypal.svg';
 import Amazon from './amazon.svg';
+import FlagUSA from './flag-usa.svg';
 
 export {
 	Logo,
@@ -42,4 +43,5 @@ export {
 	Amazon,
 	MoneyTransfer,
 	Paypal,
+	FlagUSA,
 };

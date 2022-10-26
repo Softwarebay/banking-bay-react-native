@@ -10,6 +10,7 @@ import {
 	DollarSign,
 	EyeOff,
 	Facebook,
+	FlagUSA,
 	GooglePlus,
 	LoanWallet,
 	Logo,
@@ -47,6 +48,7 @@ export interface Props {
 		| 'amazon'
 		| 'money-transfer'
 		| 'paypal'
+		| 'flag-usa'
 		| string;
 	color: string | 'none';
 	testID?: string;
@@ -96,6 +98,8 @@ export const Icon = ({ name, testID, color }: Props) => {
 			return <Amazon color={color} testID={testID} />;
 		case 'money-transfer':
 			return <MoneyTransfer color={color} testID={testID} />;
+		case 'flag-usa':
+			return <FlagUSA color={color} testID={testID} />;
 		default:
 			return <View testID={testID} />;
 	}

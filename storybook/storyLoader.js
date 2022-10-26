@@ -18,6 +18,7 @@ function loadStories() {
 	require('../src/components/atoms/Paginator/Paginator.stories');
 	require('../src/components/atoms/Text/Text.stories');
 	require('../src/components/molecules/EmailInput/EmailInput.stories');
+	require('../src/components/molecules/MobileNumberInput/MobileNumberInput.stories');
 	require('../src/components/molecules/OnboardingSlide/OnboardingSlide.stories');
 	require('../src/components/molecules/PasswordInput/PasswordInput.stories');
 	require('../src/components/molecules/TopNav/TopNav.stories');
@@ -48,6 +49,7 @@ const stories = [
 	'../src/components/atoms/Paginator/Paginator.stories',
 	'../src/components/atoms/Text/Text.stories',
 	'../src/components/molecules/EmailInput/EmailInput.stories',
+	'../src/components/molecules/MobileNumberInput/MobileNumberInput.stories',
 	'../src/components/molecules/OnboardingSlide/OnboardingSlide.stories',
 	'../src/components/molecules/PasswordInput/PasswordInput.stories',
 	'../src/components/molecules/TopNav/TopNav.stories',
