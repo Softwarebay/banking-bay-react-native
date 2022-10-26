@@ -57,8 +57,9 @@ export const SignInForm = ({
 		<View>
 			<EmailInput
 				ref={emailRef}
+				isValid={isEmailValid}
 				placeholder="Enter your email"
-				setIsEmailValid={setIsEmailValid}
+				setIsValid={setIsEmailValid}
 				style={styles.emailInput}
 				testID="sign-in-form-email-input-test-id"
 				validate={validateEmail}

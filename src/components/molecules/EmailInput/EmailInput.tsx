@@ -1,39 +1,23 @@
-import {
-	Dispatch,
-	forwardRef,
-	SetStateAction,
-	useEffect,
-	useRef,
-	useState,
-} from 'react';
+import { Dispatch, forwardRef, SetStateAction } from 'react';
 import { StyleProp, TextStyle } from 'react-native';
 
 import { Card, Icon, InputField, InputFieldHandle } from 'components/atoms';
 
 import { colors } from 'theme';
+
 import { styles } from './EmailInput.styles';
 
 interface Props {
 	placeholder: string;
 	testID: string;
 	style?: StyleProp<TextStyle>;
-	validate: (text: string) => boolean;
-	setIsEmailValid: Dispatch<SetStateAction<boolean>>;
+	isValid: boolean;
+	validate?: (text: string) => boolean;
+	setIsValid?: Dispatch<SetStateAction<boolean>>;
 }
 
 export const EmailInput = forwardRef<InputFieldHandle, Props>(
-	({ placeholder, style, validate, setIsEmailValid, testID }, ref) => {
-		const [isValid, setIsValid] = useState(false);
-
-		const validRef = useRef(false);
-
-		useEffect(() => {
-			if (validRef.current !== isValid) {
-				validRef.current = isValid;
-				setIsEmailValid(isValid);
-			}
-		}, [isValid, setIsEmailValid]);
-
+	({ placeholder, style, validate, isValid, setIsValid, testID }, ref) => {
 		return (
 			<Card style={[styles.container, style]}>
 				<InputField
