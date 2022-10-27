@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
 	},
 	iconContainer: {
 		alignItems: 'center',
-		backgroundColor: colors.transactionCardIcon,
+		backgroundColor: colors.grey100,
 		borderRadius: 100,
 		height: 40,
 		justifyContent: 'center',

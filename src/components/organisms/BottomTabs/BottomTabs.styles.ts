@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
 		height: 70,
 	},
 	focused: {
-		color: colors.link,
+		color: colors.pink,
 	},
 	label: {
 		fontSize: 10,

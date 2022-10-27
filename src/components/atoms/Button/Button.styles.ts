@@ -11,6 +11,17 @@ export const styles = StyleSheet.create({
 	pressed: {
 		opacity: 0.8,
 	},
+	primaryText: {
+		color: colors.white,
+	},
+	secondary: {
+		backgroundColor: colors.grey100,
+		borderColor: colors.grey300,
+		borderWidth: 1,
+	},
+	secondaryText: {
+		color: colors.mainDark,
+	},
 	text: {
 		color: colors.white,
 		fontSize: 16,

@@ -2,32 +2,30 @@ interface Colors {
 	screenBackground: string;
 	mainDark: string;
 	bodyText: string;
-	link: string;
+	pink: string;
 	buttonLight: string;
 	buttonDark: string;
-	success: string;
-	error: string;
+	green: string;
 	white: string;
 	shadow: string;
-	checkbox: string;
-	divider: string;
-	transactionCardIcon: string;
+	grey600: string;
+	grey300: string;
+	grey100: string;
 }
 
 export const colors: Colors = {
 	screenBackground: '#FAFCFF',
 	mainDark: '#1B1D4D',
 	bodyText: '#4C4C60',
-	link: '#FF5887',
+	pink: '#FF5887',
 	buttonLight: '#97DAFF',
 	buttonDark: '#16579D',
-	success: '#3EB290',
-	error: '#FF5887',
+	green: '#3EB290',
 	white: '#FFFFFF',
 	shadow: '#161966',
-	checkbox: '#868698',
-	divider: '#CED6E1',
-	transactionCardIcon: '#F1F5FD',
+	grey600: '#868698',
+	grey300: '#CED6E1',
+	grey100: '#F1F5FD',
 };
 
 interface Shadows {

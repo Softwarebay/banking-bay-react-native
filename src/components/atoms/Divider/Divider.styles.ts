@@ -4,7 +4,7 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	line: {
-		borderColor: colors.divider,
+		borderColor: colors.grey300,
 		borderTopWidth: 1,
 	},
 });

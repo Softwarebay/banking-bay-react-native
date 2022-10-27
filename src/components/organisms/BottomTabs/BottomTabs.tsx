@@ -1,4 +1,5 @@
 import { Pressable } from 'react-native';
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 
 import { Flex, Icon, Text } from 'components/atoms';
@@ -7,8 +8,32 @@ import { colors } from 'theme';
 import { styles } from './BottomTabs.styles';
 
 export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
+	let displayBottomTabs: 'none' | 'flex' = 'flex';
+
+	const focusedScreen = state.routes.find(
+		(route, index) => index === state.index && route
+	);
+
+	const routeName =
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+		getFocusedRouteNameFromRoute(focusedScreen!) ?? 'DashboardScreen';
+	switch (routeName) {
+		case 'DashboardScreen':
+		case 'DepositsScreen':
+		case 'LoansScreen':
+		case 'NotificationsScreen':
+		case 'MoreScreen':
+			displayBottomTabs = 'flex';
+			break;
+		default:
+			displayBottomTabs = 'none';
+	}
+
 	return (
-		<Flex direction="row" style={styles.container}>
+		<Flex
+			direction="row"
+			style={[styles.container, { display: displayBottomTabs }]}
+		>
 			{state.routes.map((route, index) => {
 				const isFocused = state.index === index;
 
@@ -39,7 +64,7 @@ export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
 						onPress={onPress}
 					>
 						<Icon
-							color={isFocused ? colors.link : colors.bodyText}
+							color={isFocused ? colors.pink : colors.bodyText}
 							name={route.name.toLowerCase()}
 						/>
 						<Text

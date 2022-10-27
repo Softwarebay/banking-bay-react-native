@@ -1,3 +1,8 @@
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
+import type { DashboardStackParamList } from 'navigator/DashboardStack';
+
 import { IconProps } from 'components/atoms';
 import { DashboardTemplate } from 'components/templates';
 
@@ -12,6 +17,9 @@ interface TransactionHistoryItem {
 }
 
 export const DashboardScreen = () => {
+	const navigation =
+		useNavigation<NativeStackNavigationProp<DashboardStackParamList>>();
+
 	const latestTransactions: TransactionHistoryItem[] = [
 		{
 			title: 'Adalyn Roth',
@@ -54,7 +62,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressMobilePayment = () => {
-		console.log('onPressMobilePayment');
+		navigation.navigate('MobilePayment');
 	};
 
 	const onPressMoneyTransfer = () => {

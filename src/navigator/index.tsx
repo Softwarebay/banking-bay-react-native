@@ -30,8 +30,7 @@ export const Navigator = () => (
 					header: ({ navigation }) => (
 						<TopNav
 							screenTitle="Sign in"
-							testID="sign-in-screen-nav"
-							onPressButtonLeft={() => navigation.goBack()}
+							onPressBackButton={navigation.goBack}
 						/>
 					),
 				})}
