@@ -4,12 +4,17 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	amountCard: {
-		alignItems: 'baseline',
 		marginRight: 14,
 		paddingHorizontal: 20,
 		paddingVertical: 14,
 	},
-	amountHeading: {
+	amountFloat: {
+		fontSize: 16,
+	},
+	amountInt: {
+		fontSize: 28,
+	},
+	amountText: {
 		fontWeight: '500',
 		lineHeight: 31,
 	},

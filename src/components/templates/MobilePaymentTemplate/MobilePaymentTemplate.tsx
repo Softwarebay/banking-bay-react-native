@@ -1,12 +1,12 @@
+import { StatusBar } from 'expo-status-bar';
 import { useRef } from 'react';
 import { Keyboard, TouchableWithoutFeedback, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 
 import {
 	Button,
 	Card,
 	Flex,
-	Heading,
+	FloatNum,
 	InputFieldHandle,
 	Text,
 } from 'components/atoms';
@@ -26,7 +26,6 @@ export const MobilePaymentTemplate = ({
 }: Props) => {
 	const mobileNumberRef = useRef<InputFieldHandle>(null);
 	const amount = '10.00';
-	const [integer, float] = amount.split('.');
 
 	const onPressConfirmMobilePayment = () => {
 		const mobileNumber = mobileNumberRef.current?.getValue();
@@ -54,17 +53,11 @@ export const MobilePaymentTemplate = ({
 					/>
 					<Flex direction="row">
 						<Card style={styles.amountCard}>
-							<Heading
-								size="h3"
-								style={styles.amountHeading}
-								testID="mobile-payment-amount-integer-test-id"
-								text={`$${integer}.`}
-							/>
-							<Heading
-								size="h5"
-								style={styles.amountHeading}
-								testID="mobile-payment-amount-float-test-id"
-								text={`${float}`}
+							<FloatNum
+								floatStyle={[styles.amountText, styles.amountFloat]}
+								intStyle={[styles.amountText, styles.amountInt]}
+								number={amount}
+								prefix="$"
 							/>
 						</Card>
 						<Text
