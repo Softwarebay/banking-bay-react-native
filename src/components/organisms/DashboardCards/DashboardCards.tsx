@@ -13,7 +13,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Divider, Flex, IconButton, Paginator, Text } from 'components/atoms';
 
-import { dashboardBg } from 'assets/backgrounds';
+import { bgDashboard } from 'assets/backgrounds';
 import { card1, card2 } from 'assets/images';
 import { colors } from 'theme';
 
@@ -72,7 +72,7 @@ export const DashboardCards = ({
 
 	return (
 		<View style={styles.container}>
-			<ImageBackground source={dashboardBg} style={[styles.bgImage, { width }]}>
+			<ImageBackground source={bgDashboard} style={[styles.bgImage, { width }]}>
 				<SafeAreaView>
 					<Flex direction="row" style={styles.nav}>
 						<IconButton
