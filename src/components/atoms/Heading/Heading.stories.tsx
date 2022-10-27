@@ -57,7 +57,7 @@ storiesOf('Atoms/Heading', module)
 	))
 	.add('h3 success', () => (
 		<Heading
-			color={color('color', colors.success)}
+			color={color('color', colors.green)}
 			size="h3"
 			testID={text('testID', 'Heading-test-id')}
 			text={text('title', 'Heading')}
@@ -65,7 +65,7 @@ storiesOf('Atoms/Heading', module)
 	))
 	.add('h3 error', () => (
 		<Heading
-			color={color('color', colors.error)}
+			color={color('color', colors.pink)}
 			size="h3"
 			testID={text('testID', 'Heading-test-id')}
 			text={text('title', 'Heading')}

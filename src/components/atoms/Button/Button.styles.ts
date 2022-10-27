@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
 		color: colors.white,
 	},
 	secondary: {
-		backgroundColor: colors.transactionCardIcon,
-		borderColor: colors.divider,
+		backgroundColor: colors.grey100,
+		borderColor: colors.grey300,
 		borderWidth: 1,
 	},
 	secondaryText: {

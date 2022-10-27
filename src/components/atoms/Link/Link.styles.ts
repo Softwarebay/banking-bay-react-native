@@ -4,7 +4,7 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	link: {
-		color: colors.link,
+		color: colors.pink,
 		fontSize: 16,
 		fontWeight: '500',
 	},

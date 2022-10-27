@@ -32,7 +32,7 @@ export const SuccessPaymentTemplate = ({
 					<View style={styles.center}>
 						<Image source={successIcon} />
 						<Heading
-							color={colors.success}
+							color={colors.green}
 							size="h2"
 							testID="payment-success-heading-test-id"
 							text="Success!"

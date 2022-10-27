@@ -64,7 +64,7 @@ export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
 						onPress={onPress}
 					>
 						<Icon
-							color={isFocused ? colors.link : colors.bodyText}
+							color={isFocused ? colors.pink : colors.bodyText}
 							name={route.name.toLowerCase()}
 						/>
 						<Text
