@@ -6,11 +6,10 @@ import { styles } from './TopNav.styles';
 
 interface Props {
 	screenTitle: string;
-	onPressButtonLeft: () => void;
-	testID: string;
+	onPressBackButton: () => void;
 }
 
-export const TopNav = ({ screenTitle, testID, onPressButtonLeft }: Props) => {
+export const TopNav = ({ screenTitle, onPressBackButton }: Props) => {
 	return (
 		<SafeAreaView>
 			<Flex direction="row" style={[styles.container, styles.padding]}>
@@ -19,9 +18,9 @@ export const TopNav = ({ screenTitle, testID, onPressButtonLeft }: Props) => {
 					iconColor={colors.mainDark}
 					iconName="chevron-left"
 					testID="left-btn-{testID}"
-					onPress={onPressButtonLeft}
+					onPress={onPressBackButton}
 				/>
-				<Heading size="h4" testID={`title-${testID}`} text={screenTitle} />
+				<Heading size="h4" testID="title-top-nav" text={screenTitle} />
 			</Flex>
 		</SafeAreaView>
 	);

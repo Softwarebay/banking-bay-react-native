@@ -1,12 +1,17 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { TopNav } from 'components/molecules';
-import { DashboardScreen, MobilePaymentScreen } from 'screens';
+import {
+	DashboardScreen,
+	MobilePaymentScreen,
+	SuccessPaymentScreen,
+} from 'screens';
 
 export interface DashboardStackParamList
 	extends Record<string, object | undefined> {
 	Dashboard: undefined;
 	MobilePayment: undefined;
+	SuccessPayment: undefined;
 }
 
 const DashboardStack = createNativeStackNavigator<DashboardStackParamList>();
@@ -26,11 +31,15 @@ export const DashboardStackScreen = () => {
 					header: ({ navigation }) => (
 						<TopNav
 							screenTitle="Mobile payment"
-							testID="mobile-payment-nav"
-							onPressButtonLeft={() => navigation.goBack()}
+							onPressBackButton={navigation.goBack}
 						/>
 					),
 				})}
+			/>
+			<DashboardStack.Screen
+				component={SuccessPaymentScreen}
+				name="SuccessPayment"
+				options={{ headerShown: false }}
 			/>
 		</DashboardStack.Navigator>
 	);
