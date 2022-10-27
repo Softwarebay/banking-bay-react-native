@@ -9,6 +9,7 @@ function loadStories() {
 	require('../src/components/atoms/Checkbox/Checkbox.stories');
 	require('../src/components/atoms/Divider/Divider.stories');
 	require('../src/components/atoms/Flex/Flex.stories');
+	require('../src/components/atoms/FloatNum/FloatNum.stories');
 	require('../src/components/atoms/Heading/Heading.stories');
 	require('../src/components/atoms/Icon/Icon.stories');
 	require('../src/components/atoms/IconButton/IconButton.stories');
@@ -33,6 +34,7 @@ function loadStories() {
 	require('../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories');
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
 	require('../src/components/templates/SignInTemplate/SignInTemplate.stories');
+	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
 }
 
 const stories = [
@@ -41,6 +43,7 @@ const stories = [
 	'../src/components/atoms/Checkbox/Checkbox.stories',
 	'../src/components/atoms/Divider/Divider.stories',
 	'../src/components/atoms/Flex/Flex.stories',
+	'../src/components/atoms/FloatNum/FloatNum.stories',
 	'../src/components/atoms/Heading/Heading.stories',
 	'../src/components/atoms/Icon/Icon.stories',
 	'../src/components/atoms/IconButton/IconButton.stories',
@@ -65,6 +68,7 @@ const stories = [
 	'../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories',
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
 	'../src/components/templates/SignInTemplate/SignInTemplate.stories',
+	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
 ];
 
 module.exports = {
