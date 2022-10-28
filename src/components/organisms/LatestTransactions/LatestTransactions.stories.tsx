@@ -4,7 +4,7 @@ import { ViewStory } from 'utils/storybook/ViewStory';
 
 import {
 	LatestTransactions,
-	TransactionHistoryItem
+	TransactionHistoryItem,
 } from './LatestTransactions';
 
 const latestTransactions: TransactionHistoryItem[] = [
