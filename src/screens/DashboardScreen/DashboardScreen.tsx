@@ -1,10 +1,12 @@
-import { useNavigation } from '@react-navigation/native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import * as NavigationBar from 'expo-navigation-bar';
 
 import type { DashboardStackParamList } from 'navigator/DashboardStack';
 
 import { IconProps } from 'components/atoms';
 import { DashboardTemplate } from 'components/templates';
+import { colors } from 'theme';
 
 interface TransactionHistoryItem {
 	id: string;
@@ -19,6 +21,14 @@ interface TransactionHistoryItem {
 export const DashboardScreen = () => {
 	const navigation =
 		useNavigation<NativeStackNavigationProp<DashboardStackParamList>>();
+
+	useFocusEffect(() => {
+		void NavigationBar.setBackgroundColorAsync(colors.white);
+
+		return () => {
+			void NavigationBar.setBackgroundColorAsync(colors.screenBackground);
+		};
+	});
 
 	const latestTransactions: TransactionHistoryItem[] = [
 		{
