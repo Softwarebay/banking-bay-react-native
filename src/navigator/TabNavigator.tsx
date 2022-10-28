@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { BottomTabs } from 'components/organisms';
 
+import { BottomTabs } from 'components/organisms';
 import {
 	DepositsScreen,
 	LoansScreen,

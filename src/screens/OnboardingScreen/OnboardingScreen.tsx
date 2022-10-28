@@ -3,7 +3,7 @@ import { ImageSourcePropType } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import type { RootStackParamList } from 'navigator';
+import type { RootStackParamList } from 'navigator/RootStack';
 
 import { OnboardingTemplate } from 'components/templates';
 

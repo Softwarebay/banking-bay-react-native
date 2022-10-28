@@ -2,20 +2,21 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { OnboardingScreen, SignInScreen } from 'screens';
-import { TopNav } from 'components/molecules';
 
 import { TabNavigator } from './TabNavigator';
+import { screenOptions } from './topNavOptions';
 
 export interface RootStackParamList extends Record<string, object | undefined> {
 	Onboarding: undefined;
 	SignIn: undefined;
+	TabNavigator: undefined;
 }
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigator = () => (
 	<NavigationContainer>
-		<RootStack.Navigator>
+		<RootStack.Navigator screenOptions={screenOptions}>
 			<RootStack.Screen
 				component={OnboardingScreen}
 				name="Onboarding"
@@ -26,18 +27,13 @@ export const Navigator = () => (
 			<RootStack.Screen
 				component={SignInScreen}
 				name="SignIn"
-				options={() => ({
-					header: ({ navigation }) => (
-						<TopNav
-							screenTitle="Sign in"
-							onPressBackButton={navigation.goBack}
-						/>
-					),
-				})}
+				options={{
+					title: 'Sign in',
+				}}
 			/>
 			<RootStack.Screen
 				component={TabNavigator}
-				name="MainTabs"
+				name="TabNavigator"
 				options={{
 					headerShown: false,
 				}}
