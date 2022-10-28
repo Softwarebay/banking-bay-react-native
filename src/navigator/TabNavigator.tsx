@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { BottomTabs } from 'components/organisms';
@@ -23,10 +22,9 @@ const Tab = createBottomTabNavigator<TabParamList>();
 export const TabNavigator = () => {
 	return (
 		<Tab.Navigator
-			screenOptions={({ route }) => ({
+			screenOptions={{
 				headerShown: false,
-				// tabBarStyle: { display: getTabBarDisplay(route) },
-			})}
+			}}
 			tabBar={(props) => <BottomTabs {...props} />}
 		>
 			<Tab.Screen component={DashboardStackScreen} name="Dashboard" />
@@ -37,17 +35,3 @@ export const TabNavigator = () => {
 		</Tab.Navigator>
 	);
 };
-
-// const getTabBarDisplay = (route) => {
-// 	const routeName = getFocusedRouteNameFromRoute(route) ?? 'DashboardScreen';
-// 	switch (routeName) {
-// 		case 'DashboardScreen':
-// 		case 'DepositsScreen':
-// 		case 'LoansScreen':
-// 		case 'NotificationsScreen':
-// 		case 'MoreScreen':
-// 			return 'flex';
-// 		default:
-// 			return 'none';
-// 	}
-// };
