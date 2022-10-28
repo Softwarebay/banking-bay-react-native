@@ -21,10 +21,25 @@ export const styles = StyleSheet.create({
 		alignItems: 'center',
 		marginBottom: 50,
 	},
+	heroImg: {
+		height: undefined,
+	},
 	heroView: {
+		alignItems: 'center',
 		flex: 1.2,
+		justifyContent: 'center',
 	},
 	imgBackground: {
 		flex: 1,
+	},
+	onboarding1: {
+		top: 80,
+		width: '95%',
+	},
+	onboarding2: {
+		width: '95%',
+	},
+	onboarding3: {
+		width: '90%',
 	},
 });

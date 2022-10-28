@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import { ImageSourcePropType } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useState } from 'react';
+import { ImageSourcePropType } from 'react-native';
 
 import type { RootStackParamList } from 'navigator/RootStack';
 
 import { OnboardingTemplate } from 'components/templates';
 
-import {
-	bgOnboarding1,
-	bgOnboarding2,
-	bgOnboarding3,
-} from 'assets/backgrounds';
+import { onboarding1, onboarding2, onboarding3 } from 'assets/images';
 
 interface IOnboardingSlide {
 	id: number;
 	title: string;
 	description: string;
-	bgImage: ImageSourcePropType;
+	img: {
+		name: 'onboarding1' | 'onboarding2' | 'onboarding3';
+		src: ImageSourcePropType;
+		aspectRatio: number;
+	};
 }
 
 const onboardingSlides: IOnboardingSlide[] = [
@@ -26,21 +26,33 @@ const onboardingSlides: IOnboardingSlide[] = [
 		title: 'Welcome to BankingBay app!',
 		description:
 			'Labore sunt culpa excepteur culpa ipsum. Labore occaecat ex nisi mollit.',
-		bgImage: bgOnboarding1,
+		img: {
+			name: 'onboarding1',
+			src: onboarding1,
+			aspectRatio: 335 / 426,
+		},
 	},
 	{
 		id: 2,
 		title: 'Get a new card in a few clicks!',
 		description:
 			'Labore sunt culpa excepteur culpa ipsum. Labore occaecat ex nisi mollit.',
-		bgImage: bgOnboarding2,
+		img: {
+			name: 'onboarding2',
+			src: onboarding2,
+			aspectRatio: 357 / 309,
+		},
 	},
 	{
 		id: 3,
 		title: 'Easy payments all over the world!',
 		description:
 			'Labore sunt culpa excepteur culpa ipsum. Labore occaecat ex nisi mollit.',
-		bgImage: bgOnboarding3,
+		img: {
+			name: 'onboarding3',
+			src: onboarding3,
+			aspectRatio: 335 / 319,
+		},
 	},
 ];
 
