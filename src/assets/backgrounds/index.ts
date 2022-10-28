@@ -3,5 +3,13 @@ import bgOnboarding2 from './bg-onboarding-2.png';
 import bgOnboarding3 from './bg-onboarding-3.png';
 import bgDashboard from './dashboard.png';
 import bgSummary from './summary.png';
+import bgTransactionDetails from './transaction-details.png';
 
-export { bgOnboarding1, bgOnboarding2, bgOnboarding3, bgDashboard, bgSummary };
+export {
+	bgOnboarding1,
+	bgOnboarding2,
+	bgOnboarding3,
+	bgDashboard,
+	bgSummary,
+	bgTransactionDetails,
+};
