@@ -100,11 +100,15 @@ export const TransactionDetailsTemplate = ({
 
 						<Text
 							style={styles.sentToText}
-							testID="transaction-details-status-test-id"
+							testID="transaction-details-sent-to-test-id"
 							text={`sent to ${sentTo}`}
 						/>
 
-						<Flex direction="row" style={styles.status}>
+						<Flex
+							direction="row"
+							style={styles.status}
+							testID="transaction-details-status-test-id"
+						>
 							<View style={[styles.iconContainer, styles.statusIcon]}>
 								<Icon color={colors.white} name="check" />
 							</View>
