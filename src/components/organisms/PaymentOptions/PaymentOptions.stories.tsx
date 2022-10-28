@@ -1,11 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { PaymentOptions } from './PaymentOptions';
 
 storiesOf('Organisms/PaymentOptions', module)
-	.addDecorator((getStory) => <CenterStory>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<PaymentOptions
 			onPressMakePayment={action('onPressMakePayment')}

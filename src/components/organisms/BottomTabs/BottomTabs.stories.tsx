@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment  */
 import { TabNavigationState } from '@react-navigation/native';
-import { EdgeInsets } from 'react-native-safe-area-context';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { EdgeInsets } from 'react-native-safe-area-context';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { TabParamList } from 'navigator/TabNavigator';
 
@@ -35,9 +35,7 @@ const navigation = {
 const descriptors = {} as any;
 
 storiesOf('Organisms/BottomTabs', module)
-	.addDecorator((getStory) => (
-		<CenterStory style={{ paddingHorizontal: 0 }}>{getStory()}</CenterStory>
-	))
+	.addDecorator((getStory) => <ViewStory fullscreen>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<BottomTabs
 			descriptors={descriptors}

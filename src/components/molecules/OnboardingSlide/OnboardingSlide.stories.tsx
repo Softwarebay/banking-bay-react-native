@@ -1,11 +1,11 @@
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { OnboardingSlide } from './OnboardingSlide';
 
 storiesOf('Molecules/OnboardingSlide', module)
-	.addDecorator((getStory) => <CenterStory center>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<OnboardingSlide
 			description={text('description', 'Onboarding slide description.')}

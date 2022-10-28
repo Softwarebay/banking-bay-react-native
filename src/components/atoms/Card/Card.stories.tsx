@@ -2,8 +2,8 @@ import { action } from '@storybook/addon-actions';
 import { color, object, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 
-import { CenterStory } from 'utils/storybook/CenterStory';
 import { Heading, IconButton } from 'components/atoms';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { colors } from 'theme';
 import { Card } from './Card';
@@ -15,7 +15,7 @@ const cardStyleKnob = {
 };
 
 storiesOf('Atoms/Card', module)
-	.addDecorator((getStory) => <CenterStory>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('With text and icon button', () => (
 		<Card
 			style={object('style', cardStyleKnob)}

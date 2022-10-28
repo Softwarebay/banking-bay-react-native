@@ -1,12 +1,12 @@
 import { boolean, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { EmailInput } from './EmailInput';
 
 storiesOf('Atoms/EmailInput', module)
-	.addDecorator((getStory) => <CenterStory>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Valid', () => (
 		<EmailInput
 			isValid={boolean('isValid', true)}

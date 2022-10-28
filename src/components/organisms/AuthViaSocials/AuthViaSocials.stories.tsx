@@ -1,11 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { AuthViaSocials } from './AuthViaSocials';
 
 storiesOf('Organisms/AuthViaSocials', module)
-	.addDecorator((getStory) => <CenterStory>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<AuthViaSocials
 			onPressFacebook={action('onPressFacebook')}
