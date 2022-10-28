@@ -1,6 +1,6 @@
 import { object, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { FloatNum } from './FloatNum';
 
@@ -13,7 +13,7 @@ const floatStyleKnob = {
 };
 
 storiesOf('Atoms/FloatNum', module)
-	.addDecorator((getStory) => <CenterStory center>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<FloatNum
 			floatStyle={object('floatStyle', floatStyleKnob)}

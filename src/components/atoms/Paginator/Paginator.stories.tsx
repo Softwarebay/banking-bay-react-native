@@ -1,11 +1,11 @@
 import { number } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { Paginator } from './Paginator';
 
 storiesOf('Atoms/Paginator', module)
-	.addDecorator((getStory) => <CenterStory center>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Current at index 0', () => (
 		<Paginator
 			currentIndex={number('currentIndex', 0, {

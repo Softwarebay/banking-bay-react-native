@@ -1,11 +1,11 @@
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { Text } from './Text';
 
 storiesOf('Atoms/Text', module)
-	.addDecorator((getStory) => <CenterStory center>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Default', () => <Text text={text('text', 'Body text')} />)
 	.add('Long text', () => (
 		<Text

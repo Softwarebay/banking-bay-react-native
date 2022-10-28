@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { DashboardTemplate, TransactionHistoryItem } from './DashboardTemplate';
 
@@ -36,19 +36,18 @@ const latestTransactions: TransactionHistoryItem[] = [
 ];
 
 storiesOf('Templates/DashboardTemplate', module)
-	.addDecorator((getStory) => (
-		<CenterStory style={{ paddingHorizontal: 0 }}>{getStory()}</CenterStory>
-	))
+	.addDecorator((getStory) => <ViewStory fullscreen>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<DashboardTemplate
 			latestTransactions={latestTransactions}
 			navText={text('navText', 'navText')}
 			onPressCreditCardsIconButton={action('onPressCreditCardsIconButton')}
-			onPressHeaderLink={action('onPressHeaderLink')}
 			onPressMakePayment={action('onPressMakePayment')}
 			onPressMobilePayment={action('onPressMobilePayment')}
 			onPressMoneyTransfer={action('onPressMoneyTransfer')}
 			onPressProfileIconButton={action('onPressProfileIconButton')}
 			onPressTopUpPayment={action('onPressTopUpPayment')}
+			onPressTransactionCard={action('onPressTransactionCard')}
+			onPressViewAll={action('onPressViewAll')}
 		/>
 	));

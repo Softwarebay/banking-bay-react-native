@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions';
 import { object, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { colors } from 'theme';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { TransactionDetailsTemplate } from './TransactionDetailsTemplate';
 
@@ -22,9 +22,7 @@ const transactionDetails = {
 };
 
 storiesOf('Templates/TransactionDetailsTemplate', module)
-	.addDecorator((getStory) => (
-		<CenterStory style={{ paddingHorizontal: 0 }}>{getStory()}</CenterStory>
-	))
+	.addDecorator((getStory) => <ViewStory fullscreen>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<TransactionDetailsTemplate
 			buttonTitle={text('buttonTitle', 'Button')}

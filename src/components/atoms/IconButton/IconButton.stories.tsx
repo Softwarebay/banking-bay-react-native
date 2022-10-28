@@ -3,7 +3,7 @@ import { color, object, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { colors } from 'theme';
 
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { IconButton } from './IconButton';
 
@@ -14,7 +14,7 @@ const btnStylesKnob = {
 };
 
 storiesOf('Atoms/IconButton', module)
-	.addDecorator((getStory) => <CenterStory center>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Facebook', () => (
 		<IconButton
 			btnStyle={object('btnStyle', {

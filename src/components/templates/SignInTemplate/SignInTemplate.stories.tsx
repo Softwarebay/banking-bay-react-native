@@ -1,14 +1,12 @@
 import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { SignInTemplate } from './SignInTemplate';
 
 storiesOf('Templates/SignInTemplate', module)
-	.addDecorator((getStory) => (
-		<CenterStory style={{ paddingHorizontal: 0 }}>{getStory()}</CenterStory>
-	))
+	.addDecorator((getStory) => <ViewStory fullscreen>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<SignInTemplate
 			footerLinkText={text('footerLinkText', 'Press me!')}

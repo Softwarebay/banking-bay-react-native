@@ -1,10 +1,10 @@
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import {
 	LatestTransactions,
-	TransactionHistoryItem,
+	TransactionHistoryItem
 } from './LatestTransactions';
 
 const latestTransactions: TransactionHistoryItem[] = [
@@ -29,7 +29,7 @@ const latestTransactions: TransactionHistoryItem[] = [
 ];
 
 storiesOf('Organisms/LatestTransactions', module)
-	.addDecorator((getStory) => <CenterStory>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Last two transactions', () => (
 		<LatestTransactions
 			latestTransactions={latestTransactions}

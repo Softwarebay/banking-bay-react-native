@@ -1,15 +1,15 @@
 import { color } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { colors } from 'theme';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { Icon } from './Icon';
 
 storiesOf('Atoms/Icon', module)
 	.addDecorator((getStory) => (
-		<CenterStory style={{ backgroundColor: colors.screenBackground }} center>
+		<ViewStory style={{ backgroundColor: colors.screenBackground }} center>
 			{getStory()}
-		</CenterStory>
+		</ViewStory>
 	))
 	.add('Logo', () => (
 		<Icon color={color('color', colors.mainDark)} fill="none" name="logo" />

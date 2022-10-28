@@ -5,11 +5,15 @@ interface Props {
 	children: React.ReactNode;
 	style?: StyleProp<ViewStyle>;
 	center?: boolean;
+	fullscreen?: boolean;
 }
 
 const styles = StyleSheet.create({
 	center: {
 		alignItems: 'center',
+	},
+	fullscreen: {
+		paddingHorizontal: 0,
 	},
 	main: {
 		flex: 1,
@@ -18,9 +22,16 @@ const styles = StyleSheet.create({
 	},
 });
 
-export const CenterStory = ({ children, center, style }: Props) => {
+export const ViewStory = ({ children, center, fullscreen, style }: Props) => {
 	return (
-		<SafeAreaView style={[styles.main, center && styles.center, style]}>
+		<SafeAreaView
+			style={[
+				styles.main,
+				center && styles.center,
+				fullscreen && styles.fullscreen,
+				style,
+			]}
+		>
 			{children}
 		</SafeAreaView>
 	);

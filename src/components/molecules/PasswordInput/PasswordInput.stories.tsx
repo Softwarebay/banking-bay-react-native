@@ -1,11 +1,11 @@
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { PasswordInput } from './PasswordInput';
 
 storiesOf('Molecules/PasswordInput', module)
-	.addDecorator((getStory) => <CenterStory>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<PasswordInput
 			placeholder={text('placeholder', 'Enter your password')}

@@ -1,16 +1,16 @@
 import { boolean, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 
-import { CenterStory } from 'utils/storybook/CenterStory';
 import { colors } from 'theme';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { InputField } from './InputField';
 
 storiesOf('Atoms/InputField', module)
 	.addDecorator((getStory) => (
-		<CenterStory style={{ backgroundColor: colors.screenBackground }}>
+		<ViewStory style={{ backgroundColor: colors.screenBackground }}>
 			{getStory()}
-		</CenterStory>
+		</ViewStory>
 	))
 	.add('Text', () => (
 		<InputField

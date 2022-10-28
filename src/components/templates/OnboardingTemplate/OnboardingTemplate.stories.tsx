@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { number } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { onboarding1, onboarding2, onboarding3 } from 'assets/images';
 
@@ -41,9 +41,7 @@ const storySlides: IOnboardingSlide[] = [
 ];
 
 storiesOf('Templates/OnboardingTemplate', module)
-	.addDecorator((getStory) => (
-		<CenterStory style={{ paddingHorizontal: 0 }}>{getStory()}</CenterStory>
-	))
+	.addDecorator((getStory) => <ViewStory fullscreen>{getStory()}</ViewStory>)
 	.add('Default', () => (
 		<OnboardingTemplate
 			currentSlideIndex={number('currentSlideIndex', 0, {

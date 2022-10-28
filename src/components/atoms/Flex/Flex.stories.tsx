@@ -1,11 +1,11 @@
 import { storiesOf } from '@storybook/react-native';
 import { View } from 'react-native';
-import { CenterStory } from 'utils/storybook/CenterStory';
+import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { Flex } from './Flex';
 
 storiesOf('Atoms/Flex', module)
-	.addDecorator((getStory) => <CenterStory center>{getStory()}</CenterStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Column', () => (
 		<Flex direction="column">
 			<View
