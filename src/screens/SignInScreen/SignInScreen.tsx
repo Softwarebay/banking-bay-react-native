@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import type { RootStackParamList } from 'navigator';
+import type { RootStackParamList } from 'navigator/RootStack';
 
 import { SignInTemplate } from 'components/templates';
 
@@ -15,7 +15,7 @@ export const SignInScreen = () => {
 		persistPassword: boolean;
 	}) => {
 		console.log(userCredentials);
-		navigation.navigate('MainTabs');
+		navigation.navigate('TabNavigator');
 	};
 
 	const restorePassword = () => {
@@ -29,9 +29,11 @@ export const SignInScreen = () => {
 	const signInViaFacebook = () => {
 		console.log('Sign in via Facebook');
 	};
+
 	const signInViaGooglePlus = () => {
 		console.log('Sign in via Google+');
 	};
+
 	const signInViaTwitter = () => {
 		console.log('Sign in via Twitter');
 	};

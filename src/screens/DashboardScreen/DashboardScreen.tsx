@@ -77,6 +77,10 @@ export const DashboardScreen = () => {
 		console.log('onPressHeaderLink');
 	};
 
+	const onPressTransactionCard = () => {
+		navigation.navigate('TransactionDetails');
+	};
+
 	return (
 		<DashboardTemplate
 			latestTransactions={latestTransactions}
@@ -87,6 +91,7 @@ export const DashboardScreen = () => {
 			onPressMoneyTransfer={onPressMoneyTransfer}
 			onPressProfileIconButton={onPressProfileIconButton}
 			onPressTopUpPayment={onPressTopUpPayment}
+			onPressTransactionCard={onPressTransactionCard}
 			onPressViewAll={onPressViewAll}
 		/>
 	);

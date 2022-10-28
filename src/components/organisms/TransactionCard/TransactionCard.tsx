@@ -1,4 +1,4 @@
-import { StyleProp, View, ViewStyle } from 'react-native';
+import { Pressable, StyleProp, View, ViewStyle } from 'react-native';
 
 import { Card, Heading, Icon, IconProps, Text } from 'components/atoms';
 
@@ -14,6 +14,7 @@ interface Props {
 	category: string;
 	amount: number;
 	style?: StyleProp<ViewStyle>;
+	onPress: () => void;
 }
 
 export const TransactionCard = ({
@@ -25,37 +26,43 @@ export const TransactionCard = ({
 	type,
 	amount,
 	style,
+	onPress,
 }: Props) => {
 	const amountText = `${type === 'incoming' ? '+' : '-'} ${amount.toFixed(2)}`;
 	const amountColor = `${type === 'incoming' ? colors.green : colors.mainDark}`;
 
 	return (
-		<Card style={[styles.container, style]}>
-			<View style={styles.iconContainer}>
-				<Icon
-					color={iconColor}
-					name={iconName}
-					testID={`${id}-transaction-icon-test-id`}
-				/>
-			</View>
-			<View style={styles.description}>
+		<Pressable
+			style={({ pressed }) => pressed && styles.pressed}
+			onPress={onPress}
+		>
+			<Card style={[styles.container, style]}>
+				<View style={styles.iconContainer}>
+					<Icon
+						color={iconColor}
+						name={iconName}
+						testID={`${id}-transaction-icon-test-id`}
+					/>
+				</View>
+				<View style={styles.description}>
+					<Heading
+						size="h6"
+						testID={`${id}-transaction-title-test-id`}
+						text={title}
+					/>
+					<Text
+						style={styles.category}
+						testID={`${id}-transaction-subtitle-test-id`}
+						text={category}
+					/>
+				</View>
 				<Heading
+					color={amountColor}
 					size="h6"
-					testID={`${id}-transaction-title-test-id`}
-					text={title}
+					testID={`${id}-transaction-amount-test-id`}
+					text={amountText}
 				/>
-				<Text
-					style={styles.category}
-					testID={`${id}-transaction-subtitle-test-id`}
-					text={category}
-				/>
-			</View>
-			<Heading
-				color={amountColor}
-				size="h6"
-				testID={`${id}-transaction-amount-test-id`}
-				text={amountText}
-			/>
-		</Card>
+			</Card>
+		</Pressable>
 	);
 };

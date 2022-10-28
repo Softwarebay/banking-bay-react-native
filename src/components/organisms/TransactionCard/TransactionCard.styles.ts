@@ -24,4 +24,7 @@ export const styles = StyleSheet.create({
 		justifyContent: 'center',
 		width: 40,
 	},
+	pressed: {
+		opacity: 0.8,
+	},
 });

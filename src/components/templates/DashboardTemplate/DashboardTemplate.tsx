@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 import { Divider, IconProps } from 'components/atoms';
 import {
@@ -30,6 +30,7 @@ interface Props {
 	onPressMobilePayment: () => void;
 	onPressMoneyTransfer: () => void;
 	onPressViewAll: () => void;
+	onPressTransactionCard: () => void;
 }
 
 export const DashboardTemplate = ({
@@ -42,6 +43,7 @@ export const DashboardTemplate = ({
 	onPressMobilePayment,
 	onPressMoneyTransfer,
 	onPressViewAll,
+	onPressTransactionCard,
 }: Props) => {
 	return (
 		<>
@@ -64,6 +66,7 @@ export const DashboardTemplate = ({
 				<View style={styles.latestTransactions}>
 					<LatestTransactions
 						latestTransactions={latestTransactions}
+						onPressTransactionCard={onPressTransactionCard}
 						onPressViewAll={onPressViewAll}
 					/>
 				</View>

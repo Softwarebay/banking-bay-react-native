@@ -7,3 +7,4 @@ export { NotificationsScreen } from './NotificationScreen/NotificationsScreen';
 export { MoreScreen } from './MoreScreen/MoreScreen';
 export { MobilePaymentScreen } from './MobilePaymentScreen/MobilePaymentScreen';
 export { SuccessPaymentScreen } from './SuccessPaymentScreen/SuccessPaymentScreen';
+export { TransactionDetailsScreen } from './TransactionDetailsScreen/TransactionDetailsScreen';

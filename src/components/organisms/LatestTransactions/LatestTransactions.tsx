@@ -1,6 +1,6 @@
-import { Flex, Heading, IconProps, Link } from 'components/atoms';
 import { StyleProp, View, ViewStyle } from 'react-native';
 
+import { Flex, Heading, IconProps, Link } from 'components/atoms';
 import { TransactionCard } from '../TransactionCard/TransactionCard';
 
 import { styles } from './LatestTransactions.styles';
@@ -18,12 +18,14 @@ export interface TransactionHistoryItem {
 interface Props {
 	latestTransactions: TransactionHistoryItem[];
 	onPressViewAll: () => void;
+	onPressTransactionCard: () => void;
 	style?: StyleProp<ViewStyle>;
 }
 
 export const LatestTransactions = ({
 	latestTransactions,
 	onPressViewAll,
+	onPressTransactionCard,
 	style,
 }: Props) => {
 	return (
@@ -60,6 +62,7 @@ export const LatestTransactions = ({
 						style={styles.card}
 						title={title}
 						type={transactionType}
+						onPress={onPressTransactionCard}
 					/>
 				)
 			)}

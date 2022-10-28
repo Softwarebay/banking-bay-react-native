@@ -22,7 +22,6 @@ function loadStories() {
 	require('../src/components/molecules/MobileNumberInput/MobileNumberInput.stories');
 	require('../src/components/molecules/OnboardingSlide/OnboardingSlide.stories');
 	require('../src/components/molecules/PasswordInput/PasswordInput.stories');
-	require('../src/components/molecules/TopNav/TopNav.stories');
 	require('../src/components/organisms/AuthViaSocials/AuthViaSocials.stories');
 	require('../src/components/organisms/BottomTabs/BottomTabs.stories');
 	require('../src/components/organisms/DashboardCards/DashboardCards.stories');
@@ -35,6 +34,7 @@ function loadStories() {
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
 	require('../src/components/templates/SignInTemplate/SignInTemplate.stories');
 	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
+	require('../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories');
 }
 
 const stories = [
@@ -56,7 +56,6 @@ const stories = [
 	'../src/components/molecules/MobileNumberInput/MobileNumberInput.stories',
 	'../src/components/molecules/OnboardingSlide/OnboardingSlide.stories',
 	'../src/components/molecules/PasswordInput/PasswordInput.stories',
-	'../src/components/molecules/TopNav/TopNav.stories',
 	'../src/components/organisms/AuthViaSocials/AuthViaSocials.stories',
 	'../src/components/organisms/BottomTabs/BottomTabs.stories',
 	'../src/components/organisms/DashboardCards/DashboardCards.stories',
@@ -69,6 +68,7 @@ const stories = [
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
 	'../src/components/templates/SignInTemplate/SignInTemplate.stories',
 	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
+	'../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories',
 ];
 
 module.exports = {
