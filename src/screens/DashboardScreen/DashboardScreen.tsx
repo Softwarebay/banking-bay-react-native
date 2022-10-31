@@ -5,7 +5,7 @@ import { IconProps } from 'components/atoms';
 import { DashboardTemplate } from 'components/templates';
 import { colors } from 'theme';
 
-import type { NavigationProp } from 'navigator';
+import type { NavigationProp } from 'navigation';
 
 interface TransactionHistoryItem {
 	id: string;

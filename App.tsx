@@ -1,7 +1,7 @@
 import Constants from 'expo-constants';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
-import { Navigator } from 'navigator';
+import { Navigator } from 'navigation';
 import StorybookUI from './storybook';
 
 import { storybookStyles } from './storybook/Storybook.styles';

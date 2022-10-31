@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 
-import type { NavigationProp } from 'navigator';
+import type { NavigationProp } from 'navigation';
 
 import { SignInTemplate } from 'components/templates';
 

@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 import { ImageSourcePropType } from 'react-native';
 
-import type { NavigationProp } from 'navigator';
+import type { NavigationProp } from 'navigation';
 
 import { OnboardingTemplate } from 'components/templates';
 

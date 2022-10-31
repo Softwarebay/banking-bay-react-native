@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import { MobilePaymentTemplate } from 'components/templates';
 
-import type { NavigationProp } from 'navigator';
+import type { NavigationProp } from 'navigation';
 
 export const MobilePaymentScreen = () => {
 	const navigation = useNavigation<NavigationProp>();

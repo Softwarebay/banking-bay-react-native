@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import { EdgeInsets } from 'react-native-safe-area-context';
 import { ViewStory } from 'utils/storybook/ViewStory';
 
-import { RootTabParamList } from 'navigator/TabNavigator';
+import { RootTabParamList } from 'navigation/TabNavigator';
 
 import { BottomTabs } from './BottomTabs';
 
