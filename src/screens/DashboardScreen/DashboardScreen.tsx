@@ -1,12 +1,11 @@
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import * as NavigationBar from 'expo-navigation-bar';
-
-import type { DashboardStackParamList } from 'navigator/DashboardStack';
 
 import { IconProps } from 'components/atoms';
 import { DashboardTemplate } from 'components/templates';
 import { colors } from 'theme';
+
+import type { NavigationProp } from 'navigator';
 
 interface TransactionHistoryItem {
 	id: string;
@@ -19,8 +18,7 @@ interface TransactionHistoryItem {
 }
 
 export const DashboardScreen = () => {
-	const navigation =
-		useNavigation<NativeStackNavigationProp<DashboardStackParamList>>();
+	const navigation = useNavigation<NavigationProp>();
 
 	useFocusEffect(() => {
 		void NavigationBar.setBackgroundColorAsync(colors.white);

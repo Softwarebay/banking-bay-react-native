@@ -1,9 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useState } from 'react';
 import { ImageSourcePropType } from 'react-native';
 
-import type { RootStackParamList } from 'navigator/RootStack';
+import type { NavigationProp } from 'navigator';
 
 import { OnboardingTemplate } from 'components/templates';
 
@@ -58,8 +57,7 @@ const onboardingSlides: IOnboardingSlide[] = [
 
 export const OnboardingScreen = () => {
 	const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-	const navigation =
-		useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+	const navigation = useNavigation<NavigationProp>();
 
 	const onPressOnboardingBtn = () => {
 		navigation.navigate('SignIn');

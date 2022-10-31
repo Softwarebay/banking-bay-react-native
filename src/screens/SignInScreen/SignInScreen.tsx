@@ -1,13 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import type { RootStackParamList } from 'navigator/RootStack';
+import type { NavigationProp } from 'navigator';
 
 import { SignInTemplate } from 'components/templates';
 
 export const SignInScreen = () => {
-	const navigation =
-		useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+	const navigation = useNavigation<NavigationProp>();
 
 	const signInViaEmailPassword = (userCredentials: {
 		email: string;

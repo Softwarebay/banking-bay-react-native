@@ -5,6 +5,7 @@ import {
 import {
 	createNativeStackNavigator,
 	NativeStackNavigationOptions,
+	NativeStackNavigationProp,
 } from '@react-navigation/native-stack';
 
 import {
@@ -42,6 +43,8 @@ export type RootStackParamList = {
 	SuccessPayment: undefined;
 	TransactionDetails: undefined;
 };
+
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
