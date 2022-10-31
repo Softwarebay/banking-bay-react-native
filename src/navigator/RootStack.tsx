@@ -1,43 +1,102 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {
+	NavigationContainer,
+	NavigatorScreenParams,
+} from '@react-navigation/native';
+import {
+	createNativeStackNavigator,
+	NativeStackNavigationOptions,
+} from '@react-navigation/native-stack';
 
-import { OnboardingScreen, SignInScreen } from 'screens';
+import {
+	MobilePaymentScreen,
+	OnboardingScreen,
+	SignInScreen,
+	SuccessPaymentScreen,
+	TransactionDetailsScreen,
+} from 'screens';
 
-import { TabNavigator } from './TabNavigator';
-import { screenOptions } from './topNavOptions';
+import { chevronLeft } from 'assets/images';
+import { colors } from 'theme';
+import { RootTabParamList, TabNavigator } from './TabNavigator';
 
-export interface RootStackParamList extends Record<string, object | undefined> {
+export const headerOptions: NativeStackNavigationOptions = {
+	headerTitleAlign: 'center',
+	headerShadowVisible: false,
+	headerTitleStyle: {
+		fontSize: 20,
+		fontWeight: '500',
+		color: colors.mainDark,
+	},
+	headerStyle: {
+		backgroundColor: colors.screenBackground,
+	},
+	headerBackTitleVisible: false,
+	headerBackImageSource: chevronLeft,
+};
+
+export type RootStackParamList = {
 	Onboarding: undefined;
 	SignIn: undefined;
-	TabNavigator: undefined;
-}
+	Root: NavigatorScreenParams<RootTabParamList> | undefined;
+	MobilePayment: undefined;
+	SuccessPayment: undefined;
+	TransactionDetails: undefined;
+};
 
-const RootStack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigator = () => (
 	<NavigationContainer>
-		<RootStack.Navigator screenOptions={screenOptions}>
-			<RootStack.Screen
-				component={OnboardingScreen}
-				name="Onboarding"
-				options={{
-					headerShown: false,
-				}}
-			/>
-			<RootStack.Screen
-				component={SignInScreen}
-				name="SignIn"
-				options={{
-					title: 'Sign in',
-				}}
-			/>
-			<RootStack.Screen
+		<Stack.Navigator
+			initialRouteName="Onboarding"
+			screenOptions={headerOptions}
+		>
+			<Stack.Screen
 				component={TabNavigator}
-				name="TabNavigator"
+				name="Root"
 				options={{
 					headerShown: false,
 				}}
 			/>
-		</RootStack.Navigator>
+			<Stack.Group screenOptions={{ presentation: 'modal' }}>
+				<Stack.Screen
+					component={OnboardingScreen}
+					name="Onboarding"
+					options={{
+						headerShown: false,
+					}}
+				/>
+				<Stack.Screen
+					component={SignInScreen}
+					name="SignIn"
+					options={{
+						title: 'Sign in',
+					}}
+				/>
+				<Stack.Screen
+					component={MobilePaymentScreen}
+					name="MobilePayment"
+					options={{
+						title: 'Mobile payment',
+					}}
+				/>
+				<Stack.Screen
+					component={SuccessPaymentScreen}
+					name="SuccessPayment"
+					options={{ headerShown: false }}
+				/>
+				<Stack.Screen
+					component={TransactionDetailsScreen}
+					name="TransactionDetails"
+					options={{
+						headerTransparent: true,
+						title: '',
+						headerStyle: {
+							backgroundColor: 'transparent',
+						},
+					}}
+				/>
+			</Stack.Group>
+		</Stack.Navigator>
 	</NavigationContainer>
 );

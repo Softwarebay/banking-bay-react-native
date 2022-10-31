@@ -15,7 +15,7 @@ export const SignInScreen = () => {
 		persistPassword: boolean;
 	}) => {
 		console.log(userCredentials);
-		navigation.navigate('TabNavigator');
+		navigation.navigate('Root');
 	};
 
 	const restorePassword = () => {
