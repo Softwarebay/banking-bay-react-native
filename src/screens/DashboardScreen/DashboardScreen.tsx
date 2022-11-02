@@ -70,7 +70,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressMobilePayment = () => {
-		navigation.navigate('MobilePayment');
+		navigation.navigate('DashboardStack', { screen: 'MobilePayment' });
 	};
 
 	const onPressMoneyTransfer = () => {
@@ -86,7 +86,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressTransactionCard = () => {
-		navigation.navigate('TransactionDetails');
+		navigation.navigate('DashboardStack', { screen: 'TransactionDetails' });
 	};
 
 	return (
