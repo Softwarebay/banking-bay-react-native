@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
 		lineHeight: 28.8,
 	},
 	text: {
-		paddingHorizontal: 20,
 		textAlign: 'center',
 	},
 	title: {

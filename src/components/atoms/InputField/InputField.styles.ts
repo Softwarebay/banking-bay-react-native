@@ -6,6 +6,6 @@ export const styles = StyleSheet.create({
 	inputField: {
 		color: colors.mainDark,
 		fontFamily: 'MulishRegular',
-		fontSize: 14,
+		fontSize: 15,
 	},
 });

@@ -3,26 +3,25 @@ import { StyleSheet } from 'react-native';
 import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
-	amount: {},
 	category: {
-		fontSize: 12,
-		lineHeight: 19.2,
+		fontSize: 14,
+		lineHeight: 22.4,
 	},
 	container: {
-		paddingHorizontal: 10,
-		paddingVertical: 19,
+		paddingHorizontal: 15,
+		paddingVertical: 15,
 	},
 	description: {
 		flex: 1,
-		marginHorizontal: 14,
+		marginHorizontal: 15,
 	},
 	iconContainer: {
 		alignItems: 'center',
 		backgroundColor: colors.grey100,
 		borderRadius: 100,
-		height: 40,
+		height: 50,
 		justifyContent: 'center',
-		width: 40,
+		width: 50,
 	},
 	pressed: {
 		opacity: 0.8,

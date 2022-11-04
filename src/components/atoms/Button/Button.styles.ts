@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
 	container: {
 		alignItems: 'center',
 		borderRadius: 10,
-		height: 60,
+		height: 55,
 		justifyContent: 'center',
 	},
 	pressed: {

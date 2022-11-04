@@ -5,10 +5,10 @@ export const styles = StyleSheet.create({
 		marginVertical: 20,
 	},
 	amountFloat: {
-		fontSize: 16,
+		fontSize: 20,
 	},
 	amountInt: {
-		fontSize: 28,
+		fontSize: 33,
 	},
 	amountText: {
 		fontFamily: 'MulishBold',
@@ -23,15 +23,13 @@ export const styles = StyleSheet.create({
 	},
 	container: {
 		flex: 1,
-		paddingBottom: 20,
+		paddingBottom: 30,
 		paddingHorizontal: 20,
 	},
 	secondaryBtn: {
 		marginBottom: 14,
 	},
 	successMessage: {
-		fontSize: 16,
-		lineHeight: 25.6,
 		marginHorizontal: 62,
 		textAlign: 'center',
 	},

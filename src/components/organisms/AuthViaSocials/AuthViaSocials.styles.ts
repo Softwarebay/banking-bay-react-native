@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
 	},
 	iconBtn: {
 		borderRadius: 100,
-		height: 50,
+		height: 60,
 		marginLeft: 10,
-		width: 50,
+		width: 60,
 	},
 });

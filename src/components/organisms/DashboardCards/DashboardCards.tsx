@@ -95,7 +95,7 @@ export const DashboardCards = ({
 							onPress={onPressCreditCardsIconButton}
 						/>
 					</Flex>
-					<Divider />
+					<Divider style={styles.divider} />
 					<FlatList
 						alwaysBounceHorizontal={false}
 						contentContainerStyle={styles.cardContainer}

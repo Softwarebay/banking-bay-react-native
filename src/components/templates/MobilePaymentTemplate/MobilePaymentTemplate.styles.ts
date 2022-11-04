@@ -4,23 +4,23 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	amountCard: {
-		marginRight: 14,
-		paddingHorizontal: 20,
-		paddingVertical: 14,
+		marginRight: 15,
+		paddingHorizontal: 22,
+		paddingVertical: 18,
 	},
 	amountFloat: {
-		fontSize: 16,
+		fontSize: 20,
 	},
 	amountInt: {
-		fontSize: 28,
+		fontSize: 33,
 	},
 	amountText: {
 		fontFamily: 'MulishMedium',
-		lineHeight: 31,
+		lineHeight: 36.3,
 	},
 	balanceText: {
-		marginBottom: 6,
-		marginTop: 14,
+		marginBottom: 10,
+		marginTop: 18,
 	},
 	button: {
 		marginTop: 'auto',
@@ -28,12 +28,12 @@ export const styles = StyleSheet.create({
 	container: {
 		backgroundColor: colors.screenBackground,
 		flex: 1,
-		paddingBottom: 47,
+		paddingBottom: 30,
 		paddingHorizontal: 20,
-		paddingTop: 20,
+		paddingTop: 30,
 	},
 	text: {
-		fontSize: 12,
-		lineHeight: 19,
+		fontSize: 14,
+		lineHeight: 22.4,
 	},
 });

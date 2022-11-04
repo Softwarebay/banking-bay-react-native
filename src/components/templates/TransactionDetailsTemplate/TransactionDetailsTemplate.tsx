@@ -68,7 +68,7 @@ export const TransactionDetailsTemplate = ({
 			>
 				<SafeAreaView style={styles.container}>
 					<View style={styles.header}>
-						<View style={styles.category}>
+						<View>
 							<View
 								style={[
 									styles.iconContainer,
@@ -76,7 +76,7 @@ export const TransactionDetailsTemplate = ({
 									{ backgroundColor: iconBg },
 								]}
 							>
-								<Icon color={iconColor} name={categoryIcon} size={25} />
+								<Icon color={iconColor} name={categoryIcon} size={30} />
 							</View>
 							<Text
 								style={styles.categoryText}
@@ -111,7 +111,7 @@ export const TransactionDetailsTemplate = ({
 							testID="transaction-details-status-test-id"
 						>
 							<View style={[styles.iconContainer, styles.statusIcon]}>
-								<Icon color={colors.white} name="check" size={10} />
+								<Icon color={colors.white} name="check" size={12} />
 							</View>
 							<Text style={styles.statusText} text="Success" />
 						</Flex>

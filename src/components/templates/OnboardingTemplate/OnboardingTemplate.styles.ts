@@ -13,8 +13,8 @@ export const styles = StyleSheet.create({
 		borderTopRightRadius: 20,
 		flex: 1,
 		justifyContent: 'space-between',
-		marginHorizontal: 20,
-		paddingHorizontal: 20,
+		marginHorizontal: 25,
+		paddingHorizontal: 25,
 		paddingVertical: 60,
 	},
 	content: {

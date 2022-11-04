@@ -55,7 +55,7 @@ export const AuthViaSocials = ({
 						btnStyle={[styles.iconBtn, { backgroundColor: btnColor }]}
 						iconColor={iconColor}
 						iconName={iconName}
-						iconSize={22}
+						iconSize={27}
 						testID={`${name}-btn-test-id`}
 						onPress={onPress}
 					/>
