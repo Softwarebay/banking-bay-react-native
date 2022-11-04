@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
 		height: '100%',
 	},
 	optionTitle: {
+		fontFamily: 'MulishSemiBold',
 		fontSize: 10,
-		fontWeight: '600',
 		lineHeight: 12,
 		maxWidth: 60,
 		textAlign: 'center',

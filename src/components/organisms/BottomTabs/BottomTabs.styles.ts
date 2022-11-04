@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
 		color: colors.pink,
 	},
 	label: {
+		fontFamily: 'MulishSemiBold',
 		fontSize: 10,
 	},
 	pressed: {

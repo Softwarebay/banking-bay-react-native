@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
 		fontSize: 28,
 	},
 	amountText: {
-		fontWeight: '500',
+		fontFamily: 'MulishMedium',
 		lineHeight: 31,
 	},
 	balanceText: {

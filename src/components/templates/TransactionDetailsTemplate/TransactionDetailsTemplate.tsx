@@ -90,8 +90,8 @@ export const TransactionDetailsTemplate = ({
 						/>
 
 						<FloatNum
-							floatStyle={[styles.amountFloat]}
-							intStyle={styles.amountInt}
+							floatStyle={[styles.amountText, styles.amountFloat]}
+							intStyle={[styles.amountText, styles.amountInt]}
 							number={amount}
 							prefix={`${isIncoming ? '+' : '-'} $ `}
 							style={styles.amount}

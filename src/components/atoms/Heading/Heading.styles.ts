@@ -7,33 +7,33 @@ export const styles = StyleSheet.create({
 		color: colors.mainDark,
 	},
 	h1: {
+		fontFamily: 'MulishBold',
 		fontSize: 44,
-		fontWeight: '700',
 		lineHeight: 48.4,
 	},
 	h2: {
+		fontFamily: 'MulishBold',
 		fontSize: 36,
-		fontWeight: '700',
 		lineHeight: 39.6,
 	},
 	h3: {
+		fontFamily: 'MulishBold',
 		fontSize: 28,
-		fontWeight: '700',
 		lineHeight: 30.8,
 	},
 	h4: {
+		fontFamily: 'MulishMedium',
 		fontSize: 20,
-		fontWeight: '500',
 		lineHeight: 24,
 	},
 	h5: {
+		fontFamily: 'MulishSemiBold',
 		fontSize: 16,
-		fontWeight: '600',
 		lineHeight: 20.8,
 	},
 	h6: {
+		fontFamily: 'MulishSemiBold',
 		fontSize: 14,
-		fontWeight: '600',
 		lineHeight: 22.4,
 	},
 });

@@ -6,11 +6,12 @@ export const styles = StyleSheet.create({
 	},
 	amountFloat: {
 		fontSize: 16,
-		fontWeight: '700',
 	},
 	amountInt: {
 		fontSize: 28,
-		fontWeight: '700',
+	},
+	amountText: {
+		fontFamily: 'MulishBold',
 	},
 	backgroundImg: {
 		flex: 1,
