@@ -9,6 +9,7 @@ import {
 	FloatNum,
 	Heading,
 	Icon,
+	IconProps,
 	Text,
 } from 'components/atoms';
 
@@ -23,10 +24,10 @@ interface Props {
 	onPressPrimaryButton: () => void;
 }
 
-interface TransactionDetails {
+export interface TransactionDetails {
 	date: string;
 	category: string;
-	categoryIcon: string;
+	categoryIcon: IconProps['name'];
 	iconColor: string;
 	iconBg: string;
 	amount: string;
@@ -75,7 +76,7 @@ export const TransactionDetailsTemplate = ({
 									{ backgroundColor: iconBg },
 								]}
 							>
-								<Icon color={iconColor} name={categoryIcon} />
+								<Icon color={iconColor} name={categoryIcon} size={25} />
 							</View>
 							<Text
 								style={styles.categoryText}
@@ -110,7 +111,7 @@ export const TransactionDetailsTemplate = ({
 							testID="transaction-details-status-test-id"
 						>
 							<View style={[styles.iconContainer, styles.statusIcon]}>
-								<Icon color={colors.white} name="check" />
+								<Icon color={colors.white} name="check" size={10} />
 							</View>
 							<Text style={styles.statusText} text="Success" />
 						</Flex>

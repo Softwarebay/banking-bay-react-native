@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const Logo = ({ testID }: Props) => {
-	return <Icon color={colors.mainDark} name="logo" testID={testID} />;
+	return <Icon color={colors.mainDark} name="logo" size={40} testID={testID} />;
 };

@@ -48,58 +48,108 @@ export interface Props {
 		| 'amazon'
 		| 'money-transfer'
 		| 'paypal'
-		| 'flag-usa'
-		| string;
+		| 'flag-usa';
+	size: number;
 	color: string | 'none';
 	testID?: string;
 }
 
-export const Icon = ({ name, testID, color }: Props) => {
+export const Icon = ({ name, testID, color, size }: Props) => {
 	switch (name) {
 		case 'facebook':
-			return <Facebook color={color} testID={testID} />;
+			return (
+				<Facebook color={color} height={size} testID={testID} width={size} />
+			);
 		case 'google-plus':
-			return <GooglePlus color={color} testID={testID} />;
+			return (
+				<GooglePlus color={color} height={size} testID={testID} width={size} />
+			);
 		case 'twitter':
-			return <Twitter color={color} testID={testID} />;
+			return (
+				<Twitter color={color} height={size} testID={testID} width={size} />
+			);
 		case 'logo':
-			return <Logo color={color} testID={testID} />;
+			return <Logo color={color} height={size} testID={testID} width={size} />;
 		case 'check':
-			return <Check color={color} testID={testID} />;
+			return <Check color={color} height={size} testID={testID} width={size} />;
 		case 'eye-off':
-			return <EyeOff color={color} testID={testID} />;
+			return (
+				<EyeOff color={color} height={size} testID={testID} width={size} />
+			);
 		case 'chevron-left':
-			return <ChevronLeft color={color} testID={testID} />;
+			return (
+				<ChevronLeft color={color} height={size} testID={testID} width={size} />
+			);
 		case 'credit-card':
-			return <CreditCard color={color} testID={testID} />;
+			return (
+				<CreditCard color={color} height={size} testID={testID} width={size} />
+			);
 		case 'smartphone':
-			return <Smartphone color={color} testID={testID} />;
+			return (
+				<Smartphone color={color} height={size} testID={testID} width={size} />
+			);
 		case 'dollar-sign':
-			return <DollarSign color={color} testID={testID} />;
+			return (
+				<DollarSign color={color} height={size} testID={testID} width={size} />
+			);
 		case 'repeat':
-			return <Repeat color={color} testID={testID} />;
+			return (
+				<Repeat color={color} height={size} testID={testID} width={size} />
+			);
 		case 'profile-icon':
-			return <ProfileIcon color={color} testID={testID} />;
+			return (
+				<ProfileIcon color={color} height={size} testID={testID} width={size} />
+			);
 		case 'credit-cards':
-			return <CreditCards color={color} testID={testID} />;
+			return (
+				<CreditCards color={color} height={size} testID={testID} width={size} />
+			);
 		case 'deposits':
-			return <Deposit color={color} testID={testID} />;
+			return (
+				<Deposit color={color} height={size} testID={testID} width={size} />
+			);
 		case 'more':
-			return <MoreTiles color={color} testID={testID} />;
+			return (
+				<MoreTiles color={color} height={size} testID={testID} width={size} />
+			);
 		case 'dashboard':
-			return <Report color={color} testID={testID} />;
+			return (
+				<Report color={color} height={size} testID={testID} width={size} />
+			);
 		case 'notifications':
-			return <NotificationBell color={color} testID={testID} />;
+			return (
+				<NotificationBell
+					color={color}
+					height={size}
+					testID={testID}
+					width={size}
+				/>
+			);
 		case 'loans':
-			return <LoanWallet color={color} testID={testID} />;
+			return (
+				<LoanWallet color={color} height={size} testID={testID} width={size} />
+			);
 		case 'paypal':
-			return <Paypal color={color} testID={testID} />;
+			return (
+				<Paypal color={color} height={size} testID={testID} width={size} />
+			);
 		case 'amazon':
-			return <Amazon color={color} testID={testID} />;
+			return (
+				<Amazon color={color} height={size} testID={testID} width={size} />
+			);
 		case 'money-transfer':
-			return <MoneyTransfer color={color} testID={testID} />;
+			return (
+				<MoneyTransfer
+					color={color}
+					height={size}
+					testID={testID}
+					width={size}
+				/>
+			);
 		case 'flag-usa':
-			return <FlagUSA color={color} testID={testID} />;
+			return (
+				<FlagUSA color={color} height={size} testID={testID} width={size} />
+			);
 		default:
 			return <View testID={testID} />;
 	}

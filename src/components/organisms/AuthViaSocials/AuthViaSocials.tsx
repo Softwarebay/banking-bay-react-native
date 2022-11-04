@@ -1,4 +1,4 @@
-import { Flex, IconButton } from 'components/atoms';
+import { Flex, IconButton, IconProps } from 'components/atoms';
 import { colors } from 'theme';
 
 import { styles } from './AuthViaSocials.styles';
@@ -6,7 +6,7 @@ import { styles } from './AuthViaSocials.styles';
 interface AuthViaSocialItem {
 	name: string;
 	btnColor: string;
-	iconName: string;
+	iconName: IconProps['name'];
 	iconColor: string;
 	onPress: () => void;
 }
@@ -55,6 +55,7 @@ export const AuthViaSocials = ({
 						btnStyle={[styles.iconBtn, { backgroundColor: btnColor }]}
 						iconColor={iconColor}
 						iconName={iconName}
+						iconSize={22}
 						testID={`${name}-btn-test-id`}
 						onPress={onPress}
 					/>

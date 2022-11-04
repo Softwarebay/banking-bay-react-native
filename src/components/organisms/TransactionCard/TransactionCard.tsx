@@ -41,6 +41,7 @@ export const TransactionCard = ({
 					<Icon
 						color={iconColor}
 						name={iconName}
+						size={25}
 						testID={`${id}-transaction-icon-test-id`}
 					/>
 				</View>

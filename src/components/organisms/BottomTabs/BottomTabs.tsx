@@ -2,7 +2,7 @@ import { Pressable } from 'react-native';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 
-import { Flex, Icon, Text } from 'components/atoms';
+import { Flex, Icon, IconProps, Text } from 'components/atoms';
 import { colors } from 'theme';
 
 import { styles } from './BottomTabs.styles';
@@ -65,7 +65,8 @@ export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
 					>
 						<Icon
 							color={isFocused ? colors.pink : colors.bodyText}
-							name={route.name.toLowerCase()}
+							name={route.name.toLowerCase() as IconProps['name']}
+							size={25}
 						/>
 						<Text
 							style={[styles.label, isFocused && styles.focused]}

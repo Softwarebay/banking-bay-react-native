@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions';
 import { color, number, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { ViewStory } from 'utils/storybook/ViewStory';
@@ -15,6 +16,7 @@ storiesOf('Organisms/TransactionCard', module)
 			id="story-transaction-outgoing"
 			title={text('title', 'Jane Doe')}
 			type="outgoing"
+			onPress={action('onPress')}
 		/>
 	))
 	.add('Incoming transaction', () => (
@@ -26,5 +28,6 @@ storiesOf('Organisms/TransactionCard', module)
 			id="story-transaction-incoming"
 			title={text('title', 'Jane Doe')}
 			type="incoming"
+			onPress={action('onPress')}
 		/>
 	));

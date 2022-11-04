@@ -71,6 +71,7 @@ export const PaymentOptions = ({
 							btnStyle={[styles.btn, { backgroundColor: btnColor }]}
 							iconColor={iconColor}
 							iconName={iconName}
+							iconSize={25}
 							testID={`${id}-btn-test-id`}
 							onPress={onPress}
 						/>

@@ -4,9 +4,12 @@ import { storiesOf } from '@storybook/react-native';
 import { colors } from 'theme';
 import { ViewStory } from 'utils/storybook/ViewStory';
 
-import { TransactionDetailsTemplate } from './TransactionDetailsTemplate';
+import {
+	TransactionDetails,
+	TransactionDetailsTemplate,
+} from './TransactionDetailsTemplate';
 
-const transactionDetails = {
+const transactionDetails: TransactionDetails = {
 	date: 'Sep 10, 2022 at 11:34 AM',
 	category: 'Mobile Payment',
 	categoryIcon: 'smartphone',

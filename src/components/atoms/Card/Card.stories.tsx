@@ -30,8 +30,9 @@ storiesOf('Atoms/Card', module)
 			<IconButton
 				iconColor={color('iconColor', colors.mainDark)}
 				iconName="check"
+				iconSize={20}
 				testID="IconButton-test-id"
-				onPress={action('onPressIconButton')}
+				onPress={action('onPress')}
 			/>
 		</Card>
 	));
