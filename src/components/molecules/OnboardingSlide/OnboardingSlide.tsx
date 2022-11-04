@@ -22,7 +22,7 @@ export const OnboardingSlide = ({ title, description, id }: Props) => {
 				text={title}
 			/>
 			<Text
-				style={styles.text}
+				style={[styles.subtitle, styles.text]}
 				testID={`onboarding-text-${id}-test-id`}
 				text={description}
 			/>

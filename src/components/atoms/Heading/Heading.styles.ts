@@ -18,8 +18,8 @@ export const styles = StyleSheet.create({
 	},
 	h3: {
 		fontFamily: 'MulishBold',
-		fontSize: 28,
-		lineHeight: 30.8,
+		fontSize: 32,
+		lineHeight: 35.2,
 	},
 	h4: {
 		fontFamily: 'MulishMedium',

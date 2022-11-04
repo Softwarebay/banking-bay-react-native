@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
 		borderTopLeftRadius: 20,
 		borderTopRightRadius: 20,
 		flex: 1,
-		justifyContent: 'space-around',
+		justifyContent: 'space-between',
 		marginHorizontal: 20,
 		paddingHorizontal: 20,
 		paddingVertical: 60,

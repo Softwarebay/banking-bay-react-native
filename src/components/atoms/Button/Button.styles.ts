@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
 	container: {
 		alignItems: 'center',
 		borderRadius: 10,
-		height: 50,
+		height: 60,
 		justifyContent: 'center',
 	},
 	pressed: {
@@ -25,6 +25,6 @@ export const styles = StyleSheet.create({
 	text: {
 		color: colors.white,
 		fontFamily: 'MulishSemiBold',
-		fontSize: 16,
+		fontSize: 17,
 	},
 });
