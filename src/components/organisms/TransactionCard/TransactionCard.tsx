@@ -32,37 +32,37 @@ export const TransactionCard = ({
 	const amountColor = `${type === 'incoming' ? colors.green : colors.mainDark}`;
 
 	return (
-		<Pressable
-			style={({ pressed }) => pressed && styles.pressed}
-			onPress={onPress}
-		>
-			<Card style={[styles.container, style]}>
-				<View style={styles.iconContainer}>
-					<Icon
-						color={iconColor}
-						name={iconName}
-						testID={`${id}-transaction-icon-test-id`}
-					/>
-				</View>
-				<View style={styles.description}>
+		<Pressable onPress={onPress}>
+			{({ pressed }) => (
+				<Card style={[styles.container, style, pressed && styles.pressed]}>
+					<View style={styles.iconContainer}>
+						<Icon
+							color={iconColor}
+							name={iconName}
+							size={25}
+							testID={`${id}-transaction-icon-test-id`}
+						/>
+					</View>
+					<View style={styles.description}>
+						<Heading
+							size="h6"
+							testID={`${id}-transaction-title-test-id`}
+							text={title}
+						/>
+						<Text
+							style={styles.category}
+							testID={`${id}-transaction-subtitle-test-id`}
+							text={category}
+						/>
+					</View>
 					<Heading
+						color={amountColor}
 						size="h6"
-						testID={`${id}-transaction-title-test-id`}
-						text={title}
+						testID={`${id}-transaction-amount-test-id`}
+						text={amountText}
 					/>
-					<Text
-						style={styles.category}
-						testID={`${id}-transaction-subtitle-test-id`}
-						text={category}
-					/>
-				</View>
-				<Heading
-					color={amountColor}
-					size="h6"
-					testID={`${id}-transaction-amount-test-id`}
-					text={amountText}
-				/>
-			</Card>
+				</Card>
+			)}
 		</Pressable>
 	);
 };

@@ -9,6 +9,7 @@ import {
 	FloatNum,
 	Heading,
 	Icon,
+	IconProps,
 	Text,
 } from 'components/atoms';
 
@@ -23,10 +24,10 @@ interface Props {
 	onPressPrimaryButton: () => void;
 }
 
-interface TransactionDetails {
+export interface TransactionDetails {
 	date: string;
 	category: string;
-	categoryIcon: string;
+	categoryIcon: IconProps['name'];
 	iconColor: string;
 	iconBg: string;
 	amount: string;
@@ -67,7 +68,7 @@ export const TransactionDetailsTemplate = ({
 			>
 				<SafeAreaView style={styles.container}>
 					<View style={styles.header}>
-						<View style={styles.category}>
+						<View>
 							<View
 								style={[
 									styles.iconContainer,
@@ -75,7 +76,7 @@ export const TransactionDetailsTemplate = ({
 									{ backgroundColor: iconBg },
 								]}
 							>
-								<Icon color={iconColor} name={categoryIcon} />
+								<Icon color={iconColor} name={categoryIcon} size={30} />
 							</View>
 							<Text
 								style={styles.categoryText}
@@ -90,8 +91,8 @@ export const TransactionDetailsTemplate = ({
 						/>
 
 						<FloatNum
-							floatStyle={[styles.amountFloat]}
-							intStyle={styles.amountInt}
+							floatStyle={[styles.amountText, styles.amountFloat]}
+							intStyle={[styles.amountText, styles.amountInt]}
 							number={amount}
 							prefix={`${isIncoming ? '+' : '-'} $ `}
 							style={styles.amount}
@@ -110,7 +111,7 @@ export const TransactionDetailsTemplate = ({
 							testID="transaction-details-status-test-id"
 						>
 							<View style={[styles.iconContainer, styles.statusIcon]}>
-								<Icon color={colors.white} name="check" />
+								<Icon color={colors.white} name="check" size={12} />
 							</View>
 							<Text style={styles.statusText} text="Success" />
 						</Flex>

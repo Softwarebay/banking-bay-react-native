@@ -33,6 +33,7 @@ export const EmailInput = forwardRef<InputFieldHandle, Props>(
 					<Icon
 						color={colors.mainDark}
 						name="check"
+						size={16}
 						testID={`icon-${testID}`}
 					/>
 				)}

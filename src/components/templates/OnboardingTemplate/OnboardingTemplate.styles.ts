@@ -12,9 +12,9 @@ export const styles = StyleSheet.create({
 		borderTopLeftRadius: 20,
 		borderTopRightRadius: 20,
 		flex: 1,
-		justifyContent: 'space-around',
-		marginHorizontal: 20,
-		paddingHorizontal: 20,
+		justifyContent: 'space-between',
+		marginHorizontal: 25,
+		paddingHorizontal: 25,
 		paddingVertical: 60,
 	},
 	content: {

@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
 		borderTopLeftRadius: 10,
 		borderTopRightRadius: 10,
 		justifyContent: 'space-around',
+		paddingHorizontal: 10,
 		paddingTop: 16,
 		...Platform.select({
 			android: {
@@ -23,7 +24,8 @@ export const styles = StyleSheet.create({
 		color: colors.pink,
 	},
 	label: {
-		fontSize: 10,
+		fontFamily: 'MulishSemiBold',
+		fontSize: 12,
 	},
 	pressed: {
 		opacity: 0.8,

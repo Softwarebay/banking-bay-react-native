@@ -78,6 +78,7 @@ export const DashboardCards = ({
 						<IconButton
 							iconColor="#3B5999"
 							iconName="profile-icon"
+							iconSize={25}
 							testID="dashboard-profile-icon-btn-test-id"
 							onPress={onPressProfileIconButton}
 						/>
@@ -89,11 +90,12 @@ export const DashboardCards = ({
 						<IconButton
 							iconColor={colors.white}
 							iconName="credit-cards"
+							iconSize={25}
 							testID="dashboard-cards-btn-test-id"
 							onPress={onPressCreditCardsIconButton}
 						/>
 					</Flex>
-					<Divider />
+					<Divider style={styles.divider} />
 					<FlatList
 						alwaysBounceHorizontal={false}
 						contentContainerStyle={styles.cardContainer}

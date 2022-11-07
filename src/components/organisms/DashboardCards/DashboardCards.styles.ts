@@ -22,6 +22,10 @@ export const styles = StyleSheet.create({
 		borderBottomRightRadius: 30,
 		overflow: 'hidden',
 	},
+	divider: {
+		marginBottom: 5,
+		opacity: 0.3,
+	},
 	nav: {
 		alignItems: 'center',
 		justifyContent: 'space-between',
@@ -30,10 +34,9 @@ export const styles = StyleSheet.create({
 	},
 	navText: {
 		color: colors.white,
-		fontSize: 16,
-		lineHeight: 25.6,
 	},
 	paginatorContainer: {
 		alignItems: 'center',
+		marginTop: 5,
 	},
 });

@@ -1,4 +1,4 @@
-import { color } from '@storybook/addon-knobs';
+import { color, number } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { colors } from 'theme';
 import { ViewStory } from 'utils/storybook/ViewStory';
@@ -12,32 +12,44 @@ storiesOf('Atoms/Icon', module)
 		</ViewStory>
 	))
 	.add('Logo', () => (
-		<Icon color={color('color', colors.mainDark)} fill="none" name="logo" />
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="logo"
+			size={number('size', 20)}
+		/>
 	))
 	.add('Facebook', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			fill={color('fill', colors.mainDark)}
 			name="facebook"
+			size={number('size', 20)}
 		/>
 	))
 	.add('Twitter', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			fill={color('fill', colors.mainDark)}
 			name="twitter"
+			size={number('size', 20)}
 		/>
 	))
 	.add('Google+', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			fill={color('fill', colors.mainDark)}
 			name="google-plus"
+			size={number('size', 20)}
 		/>
 	))
 	.add('Check', () => (
-		<Icon color={color('color', colors.mainDark)} fill="none" name="check" />
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="check"
+			size={number('size', 20)}
+		/>
 	))
 	.add('Eye off', () => (
-		<Icon color={color('color', colors.mainDark)} fill="none" name="eye-off" />
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="eye-off"
+			size={number('size', 20)}
+		/>
 	));

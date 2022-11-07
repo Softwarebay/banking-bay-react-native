@@ -33,6 +33,7 @@ storiesOf('Organisms/LatestTransactions', module)
 	.add('Last two transactions', () => (
 		<LatestTransactions
 			latestTransactions={latestTransactions}
-			onPressHeaderLink={action('onPressHeaderLink')}
+			onPressTransactionCard={action('onPressTransactionCard')}
+			onPressViewAll={action('onPresViewAll')}
 		/>
 	));

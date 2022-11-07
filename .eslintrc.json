@@ -107,6 +107,15 @@
     ],
     "react/no-unstable-nested-components": "off",
 
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": {
+          "attributes": false
+        }
+      }
+    ],
+
     "jsx-a11y/anchor-is-valid": "off",
 
     "prettier/prettier": ["error", {}, { "usePrettierrc": true }]

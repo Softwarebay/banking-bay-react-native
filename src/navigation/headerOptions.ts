@@ -7,8 +7,8 @@ export const headerOptions: NativeStackNavigationOptions = {
 	headerTitleAlign: 'center',
 	headerShadowVisible: false,
 	headerTitleStyle: {
-		fontSize: 20,
-		fontWeight: '500',
+		fontSize: 22,
+		fontFamily: 'MulishMedium',
 		color: colors.mainDark,
 	},
 	headerStyle: {

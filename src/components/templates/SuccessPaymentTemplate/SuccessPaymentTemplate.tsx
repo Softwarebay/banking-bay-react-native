@@ -38,8 +38,8 @@ export const SuccessPaymentTemplate = ({
 							text="Success!"
 						/>
 						<FloatNum
-							floatStyle={styles.amountFloat}
-							intStyle={styles.amountInt}
+							floatStyle={[styles.amountText, styles.amountFloat]}
+							intStyle={[styles.amountText, styles.amountInt]}
 							number={amount}
 							prefix="$ "
 							style={styles.amount}

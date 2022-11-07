@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import { color, object, text } from '@storybook/addon-knobs';
+import { color, number, object, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { colors } from 'theme';
 
@@ -23,6 +23,7 @@ storiesOf('Atoms/IconButton', module)
 			})}
 			iconColor={color('iconColor', colors.white)}
 			iconName="facebook"
+			iconSize={number('iconSize', 20)}
 			testID={text('testID', 'IconButton-test-id')}
 			onPress={action('onPress')}
 		/>
@@ -35,6 +36,7 @@ storiesOf('Atoms/IconButton', module)
 			})}
 			iconColor={color('iconColor', colors.white)}
 			iconName="twitter"
+			iconSize={number('iconSize', 20)}
 			testID={text('testID', 'IconButton-test-id')}
 			onPress={action('onPress')}
 		/>
@@ -47,6 +49,7 @@ storiesOf('Atoms/IconButton', module)
 			})}
 			iconColor={color('iconColor', colors.white)}
 			iconName="google-plus"
+			iconSize={number('iconSize', 20)}
 			testID={text('testID', 'IconButton-test-id')}
 			onPress={action('onPress')}
 		/>

@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
 	card: {
-		marginBottom: 6,
+		marginBottom: 10,
 	},
 	header: {
 		justifyContent: 'space-between',
-		marginBottom: 14,
+		marginBottom: 20,
 	},
 });

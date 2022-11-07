@@ -14,7 +14,7 @@ export const OnboardingSlide = ({ title, description, id }: Props) => {
 	const { width } = useWindowDimensions();
 
 	return (
-		<View style={{ width: width - 80 }}>
+		<View style={{ width: width - 100 }}>
 			<Heading
 				size="h3"
 				style={[styles.title, styles.text]}
@@ -22,7 +22,7 @@ export const OnboardingSlide = ({ title, description, id }: Props) => {
 				text={title}
 			/>
 			<Text
-				style={styles.text}
+				style={[styles.subtitle, styles.text]}
 				testID={`onboarding-text-${id}-test-id`}
 				text={description}
 			/>

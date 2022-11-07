@@ -106,44 +106,6 @@ export const OnboardingTemplate = ({
 					/>
 				</View>
 			</ImageBackground>
-			{/* <ImageBackground
-				source={onboardingSlides[currentSlideIndex].bgImage}
-				style={styles.imgBackground}
-			>
-				<View style={styles.heroView} />
-				<View style={styles.container}>
-					<View style={styles.content}>
-						<Logo testID="onboarding-logo-test-id" />
-						<FlatList<IOnboardingSlide>
-							bounces={false}
-							contentContainerStyle={styles.carousel}
-							data={onboardingSlides}
-							renderItem={({ item }) => (
-								<OnboardingSlide
-									description={item.description}
-									id={item.id}
-									title={item.title}
-								/>
-							)}
-							showsHorizontalScrollIndicator={false}
-							viewabilityConfigCallbackPairs={
-								viewabilityConfigCallbackPairs.current
-							}
-							horizontal
-							pagingEnabled
-						/>
-						<Paginator
-							currentIndex={currentSlideIndex}
-							slides={onboardingSlides}
-						/>
-					</View>
-					<Button
-						testID="onboarding-btn-test-id"
-						title="Get Started"
-						onPress={onPressOnboardingBtn}
-					/>
-				</View>
-			</ImageBackground> */}
 		</>
 	);
 };

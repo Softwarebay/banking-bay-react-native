@@ -7,6 +7,7 @@ import { styles } from './IconButton.styles';
 interface Props {
 	iconName: IconProps['name'];
 	iconColor: IconProps['color'];
+	iconSize: number;
 	onPress: () => void;
 	testID: string;
 	btnStyle?: StyleProp<ViewStyle>;
@@ -18,6 +19,7 @@ export const IconButton = ({
 	btnStyle,
 	testID,
 	onPress,
+	iconSize,
 }: Props) => {
 	return (
 		<Pressable
@@ -26,7 +28,7 @@ export const IconButton = ({
 			testID={testID}
 			onPress={onPress}
 		>
-			<Icon color={iconColor} name={iconName} />
+			<Icon color={iconColor} name={iconName} size={iconSize} />
 		</Pressable>
 	);
 };

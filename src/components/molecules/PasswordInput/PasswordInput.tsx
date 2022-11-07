@@ -31,6 +31,7 @@ export const PasswordInput = forwardRef<InputFieldHandle, Props>(
 					btnStyle={styles.iconBtn}
 					iconColor={colors.mainDark}
 					iconName="eye-off"
+					iconSize={16}
 					testID={`icon-btn-${testID}`}
 					onPress={() => setHidePassword((hidden) => !hidden)}
 				/>
