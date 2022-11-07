@@ -5,11 +5,11 @@ import { storiesOf } from '@storybook/react-native';
 import { EdgeInsets } from 'react-native-safe-area-context';
 import { ViewStory } from 'utils/storybook/ViewStory';
 
-import { TabParamList } from 'navigator/TabNavigator';
+import { RootTabParamList } from 'navigation/TabNavigator';
 
 import { BottomTabs } from './BottomTabs';
 
-const state: TabNavigationState<TabParamList> = {
+const state: TabNavigationState<RootTabParamList> = {
 	type: 'tab',
 	key: 'tab-1',
 	routeNames: ['Dashboard', 'Deposits', 'Loans', 'Notifications', 'More'],

@@ -2,8 +2,10 @@ import Constants from 'expo-constants';
 import * as SplashScreen from 'expo-splash-screen';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
-import { Navigator } from 'navigator/RootStack';
 import { useInitialResources } from 'hooks/useInitialResources';
+
+import { Navigator } from 'navigation';
+
 import StorybookUI from './storybook';
 
 import { storybookStyles } from './storybook/Storybook.styles';
