@@ -1,13 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import type { RootStackParamList } from 'navigator/RootStack';
+import type { NavigationProp } from 'navigation';
 
 import { SignInTemplate } from 'components/templates';
 
 export const SignInScreen = () => {
-	const navigation =
-		useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+	const navigation = useNavigation<NavigationProp>();
 
 	const signInViaEmailPassword = (userCredentials: {
 		email: string;
@@ -15,7 +13,7 @@ export const SignInScreen = () => {
 		persistPassword: boolean;
 	}) => {
 		console.log(userCredentials);
-		navigation.navigate('TabNavigator');
+		navigation.navigate('Root');
 	};
 
 	const restorePassword = () => {

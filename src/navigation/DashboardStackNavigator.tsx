@@ -1,32 +1,26 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import {
-	DashboardScreen,
 	MobilePaymentScreen,
 	SuccessPaymentScreen,
 	TransactionDetailsScreen,
 } from 'screens';
 
-import { screenOptions } from './topNavOptions';
+import { headerOptions } from './headerOptions';
 
-export interface DashboardStackParamList
-	extends Record<string, object | undefined> {
-	Dashboard: undefined;
+export type DashboardStackParamList = {
 	MobilePayment: undefined;
 	SuccessPayment: undefined;
 	TransactionDetails: undefined;
-}
+};
 
 const DashboardStack = createNativeStackNavigator<DashboardStackParamList>();
 
-export const DashboardStackScreen = () => {
+export const DashboardStackNavigator = () => {
 	return (
-		<DashboardStack.Navigator screenOptions={screenOptions}>
-			<DashboardStack.Screen
-				component={DashboardScreen}
-				name="DashboardScreen"
-				options={{ headerShown: false }}
-			/>
+		<DashboardStack.Navigator
+			screenOptions={{ ...headerOptions, presentation: 'modal' }}
+		>
 			<DashboardStack.Screen
 				component={MobilePaymentScreen}
 				name="MobilePayment"

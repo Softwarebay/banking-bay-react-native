@@ -1,13 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import { MobilePaymentTemplate } from 'components/templates';
 
-import type { DashboardStackParamList } from 'navigator/DashboardStack';
+import type { NavigationProp } from 'navigation';
 
 export const MobilePaymentScreen = () => {
-	const navigation =
-		useNavigation<NativeStackNavigationProp<DashboardStackParamList>>();
+	const navigation = useNavigation<NavigationProp>();
 
 	const onSuccessMobilePayment = (mobileNumber: string, amount: number) => {
 		console.log('onSuccessMobilePayment', mobileNumber, amount);

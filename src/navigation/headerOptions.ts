@@ -3,7 +3,7 @@ import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 import { chevronLeft } from 'assets/images';
 import { colors } from 'theme';
 
-export const screenOptions: NativeStackNavigationOptions = {
+export const headerOptions: NativeStackNavigationOptions = {
 	headerTitleAlign: 'center',
 	headerShadowVisible: false,
 	headerTitleStyle: {

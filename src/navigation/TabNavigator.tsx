@@ -2,22 +2,22 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { BottomTabs } from 'components/organisms';
 import {
+	DashboardScreen,
 	DepositsScreen,
 	LoansScreen,
 	MoreScreen,
 	NotificationsScreen,
 } from 'screens';
-import { DashboardStackScreen } from './DashboardStack';
 
-export interface TabParamList extends Record<string, object | undefined> {
+export type RootTabParamList = {
 	Dashboard: undefined;
 	Deposits: undefined;
 	Loans: undefined;
 	Notifications: undefined;
 	More: undefined;
-}
+};
 
-const Tab = createBottomTabNavigator<TabParamList>();
+const Tab = createBottomTabNavigator<RootTabParamList>();
 
 export const TabNavigator = () => {
 	return (
@@ -27,7 +27,7 @@ export const TabNavigator = () => {
 			}}
 			tabBar={(props) => <BottomTabs {...props} />}
 		>
-			<Tab.Screen component={DashboardStackScreen} name="Dashboard" />
+			<Tab.Screen component={DashboardScreen} name="Dashboard" />
 			<Tab.Screen component={DepositsScreen} name="Deposits" />
 			<Tab.Screen component={LoansScreen} name="Loans" />
 			<Tab.Screen component={NotificationsScreen} name="Notifications" />

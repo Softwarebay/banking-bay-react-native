@@ -1,12 +1,11 @@
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import * as NavigationBar from 'expo-navigation-bar';
-
-import type { DashboardStackParamList } from 'navigator/DashboardStack';
 
 import { IconProps } from 'components/atoms';
 import { DashboardTemplate } from 'components/templates';
 import { colors } from 'theme';
+
+import type { NavigationProp } from 'navigation';
 
 interface TransactionHistoryItem {
 	id: string;
@@ -19,8 +18,7 @@ interface TransactionHistoryItem {
 }
 
 export const DashboardScreen = () => {
-	const navigation =
-		useNavigation<NativeStackNavigationProp<DashboardStackParamList>>();
+	const navigation = useNavigation<NavigationProp>();
 
 	useFocusEffect(() => {
 		void NavigationBar.setBackgroundColorAsync(colors.white);
@@ -72,7 +70,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressMobilePayment = () => {
-		navigation.navigate('MobilePayment');
+		navigation.navigate('DashboardStack', { screen: 'MobilePayment' });
 	};
 
 	const onPressMoneyTransfer = () => {
@@ -88,7 +86,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressTransactionCard = () => {
-		navigation.navigate('TransactionDetails');
+		navigation.navigate('DashboardStack', { screen: 'TransactionDetails' });
 	};
 
 	return (
