@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
 		backgroundColor: colors.white,
 		borderTopLeftRadius: 10,
 		borderTopRightRadius: 10,
-		justifyContent: 'space-around',
 		paddingHorizontal: 10,
 		paddingTop: 16,
 		...Platform.select({
@@ -29,6 +28,21 @@ export const styles = StyleSheet.create({
 	},
 	pressed: {
 		opacity: 0.8,
+	},
+	safeAreaContainer: {
+		backgroundColor: colors.white,
+		borderTopLeftRadius: 10,
+		borderTopRightRadius: 10,
+		justifyContent: 'flex-end',
+		...Platform.select({
+			android: {
+				...shadows.android,
+			},
+			ios: {
+				...shadows.ios,
+			},
+		}),
+		height: 70,
 	},
 	tabItem: {
 		alignItems: 'center',
