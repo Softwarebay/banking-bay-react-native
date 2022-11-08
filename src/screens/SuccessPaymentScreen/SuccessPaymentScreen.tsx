@@ -1,8 +1,13 @@
+import { useNavigation } from '@react-navigation/native';
+
 import { SuccessPaymentTemplate } from 'components/templates';
+import type { NavigationProp } from 'navigation';
 
 export const SuccessPaymentScreen = () => {
+	const navigation = useNavigation<NavigationProp>();
+
 	const onDone = () => {
-		console.log('onPressDone');
+		navigation.navigate('Root');
 	};
 
 	const onSendReceipt = () => {
