@@ -6,11 +6,12 @@ import { DashboardTemplate } from 'components/templates';
 import { colors } from 'theme';
 
 import type { NavigationProp } from 'navigation';
+import { Platform } from 'react-native';
 
 interface TransactionHistoryItem {
 	id: string;
 	iconName: IconProps['name'];
-	iconColor: string;
+	iconColor?: string;
 	transactionType: 'incoming' | 'outgoing';
 	title: string;
 	transactionCategory: string;
@@ -21,6 +22,9 @@ export const DashboardScreen = () => {
 	const navigation = useNavigation<NavigationProp>();
 
 	useFocusEffect(() => {
+		if (Platform.OS === 'ios') {
+			return undefined;
+		}
 		void NavigationBar.setBackgroundColorAsync(colors.white);
 
 		return () => {
@@ -41,7 +45,6 @@ export const DashboardScreen = () => {
 		{
 			title: 'Amazon',
 			id: 'amazon-124743782',
-			iconColor: 'none',
 			amount: 239.57,
 			iconName: 'amazon',
 			transactionCategory: 'Online payments',
@@ -50,7 +53,6 @@ export const DashboardScreen = () => {
 		{
 			title: 'Paypal',
 			id: 'paypal-124743782',
-			iconColor: 'none',
 			amount: 700.0,
 			iconName: 'paypal',
 			transactionCategory: 'Deposits',
@@ -70,7 +72,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressMobilePayment = () => {
-		navigation.navigate('DashboardStack', { screen: 'MobilePayment' });
+		navigation.navigate('MobilePayment');
 	};
 
 	const onPressMoneyTransfer = () => {
@@ -86,7 +88,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressTransactionCard = () => {
-		navigation.navigate('DashboardStack', { screen: 'TransactionDetails' });
+		navigation.navigate('TransactionDetails');
 	};
 
 	return (

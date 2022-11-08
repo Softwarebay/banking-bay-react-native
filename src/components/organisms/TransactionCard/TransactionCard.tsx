@@ -8,7 +8,7 @@ import { styles } from './TransactionCard.styles';
 interface Props {
 	id: string;
 	iconName: IconProps['name'];
-	iconColor: string;
+	iconColor?: string;
 	type: 'incoming' | 'outgoing';
 	title: string;
 	category: string;

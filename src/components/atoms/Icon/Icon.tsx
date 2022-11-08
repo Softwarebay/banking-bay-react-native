@@ -50,7 +50,7 @@ export interface Props {
 		| 'paypal'
 		| 'flag-usa';
 	size: number;
-	color: string | 'none';
+	color?: string;
 	testID?: string;
 }
 

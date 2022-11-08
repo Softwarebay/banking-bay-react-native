@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 import { Divider, IconProps } from 'components/atoms';
@@ -13,7 +13,7 @@ import { styles } from './DashboardTemplate.styles';
 export interface TransactionHistoryItem {
 	id: string;
 	iconName: IconProps['name'];
-	iconColor: string;
+	iconColor?: string;
 	transactionType: 'incoming' | 'outgoing';
 	title: string;
 	transactionCategory: string;
@@ -46,7 +46,7 @@ export const DashboardTemplate = ({
 	onPressTransactionCard,
 }: Props) => {
 	return (
-		<>
+		<ScrollView bounces={false}>
 			<StatusBar style="light" />
 			<DashboardCards
 				navText={navText}
@@ -71,6 +71,6 @@ export const DashboardTemplate = ({
 					/>
 				</View>
 			</View>
-		</>
+		</ScrollView>
 	);
 };

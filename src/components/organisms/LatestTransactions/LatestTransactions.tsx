@@ -8,7 +8,7 @@ import { styles } from './LatestTransactions.styles';
 export interface TransactionHistoryItem {
 	id: string;
 	iconName: IconProps['name'];
-	iconColor: string;
+	iconColor?: string;
 	transactionType: 'incoming' | 'outgoing';
 	title: string;
 	transactionCategory: string;
