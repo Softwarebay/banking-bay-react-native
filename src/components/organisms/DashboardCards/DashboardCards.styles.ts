@@ -11,7 +11,6 @@ export const styles = StyleSheet.create({
 		marginRight: 20,
 	},
 	cardContainer: {
-		borderWidth: 1,
 		flexDirection: 'row',
 		marginVertical: 20,
 		paddingLeft: 20,
