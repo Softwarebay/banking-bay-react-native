@@ -4,42 +4,40 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	carousel: {
-		marginBottom: 30,
-		marginTop: 30,
+		// marginBottom: 20,
+		marginTop: 20,
 	},
 	container: {
 		backgroundColor: colors.screenBackground,
 		borderTopLeftRadius: 20,
 		borderTopRightRadius: 20,
-		flex: 1,
-		justifyContent: 'space-between',
 		marginHorizontal: 25,
 		paddingHorizontal: 25,
-		paddingVertical: 60,
+		paddingVertical: 30,
 	},
 	content: {
 		alignItems: 'center',
-		marginBottom: 50,
+		marginBottom: 30,
 	},
 	heroImg: {
-		height: undefined,
+		// height: undefined,
 	},
 	heroView: {
 		alignItems: 'center',
-		flex: 1.2,
+		flex: 1,
 		justifyContent: 'center',
 	},
 	imgBackground: {
 		flex: 1,
 	},
 	onboarding1: {
-		top: 80,
-		width: '95%',
+		// top: 80,
+		// width: '95%',
 	},
 	onboarding2: {
-		width: '95%',
+		// width: '95%',
 	},
 	onboarding3: {
-		width: '90%',
+		// width: '95%',
 	},
 });
