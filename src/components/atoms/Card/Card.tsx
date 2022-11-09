@@ -4,7 +4,7 @@ import { Flex } from '../Flex/Flex';
 
 import { styles } from './Card.styles';
 
-interface Props {
+export interface Props {
 	children: React.ReactNode;
 	style?: StyleProp<ViewStyle>;
 	testID?: string;
