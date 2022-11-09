@@ -105,7 +105,7 @@ export const DashboardCards = ({
 						renderItem={({ item }) => (
 							<Image
 								source={item.cardImg}
-								style={[styles.card, { width: 0.8 * width }]}
+								style={[styles.card, { width: 0.9 * width }]}
 							/>
 						)}
 						showsHorizontalScrollIndicator={false}

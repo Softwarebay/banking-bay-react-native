@@ -4,21 +4,21 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	bgImage: {
-		aspectRatio: 1,
+		flex: 1,
 	},
 	card: {
 		aspectRatio: 290 / 176,
-		marginRight: 20,
+		marginHorizontal: 20,
 	},
 	cardContainer: {
 		flexDirection: 'row',
 		marginVertical: 20,
-		paddingLeft: 20,
 	},
 	container: {
 		backgroundColor: colors.mainDark,
 		borderBottomLeftRadius: 30,
 		borderBottomRightRadius: 30,
+		flex: 1,
 		overflow: 'hidden',
 	},
 	divider: {
