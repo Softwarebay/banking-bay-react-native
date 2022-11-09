@@ -29,6 +29,9 @@ export const styles = StyleSheet.create({
 	secondaryBtn: {
 		marginBottom: 14,
 	},
+	successIcon: {
+		width: 200,
+	},
 	successMessage: {
 		marginHorizontal: 62,
 		textAlign: 'center',

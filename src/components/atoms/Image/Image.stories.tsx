@@ -17,7 +17,7 @@ const darkViewStyle: StyleProp<ViewStyle> = {
 };
 
 storiesOf('Atom/Image', module)
-	.addDecorator((getStory) => <ViewStory fullscreen>{getStory()}</ViewStory>)
+	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Onboarding image 1', () => (
 		<View style={darkViewStyle}>
 			<Image name="onboarding1" style={object('style', styleKnob)} />
@@ -42,4 +42,7 @@ storiesOf('Atom/Image', module)
 		<View style={darkViewStyle}>
 			<Image name="card2" style={object('style', styleKnob)} />
 		</View>
+	))
+	.add('Success payment', () => (
+		<Image name="success-icon" style={object('style', styleKnob)} />
 	));

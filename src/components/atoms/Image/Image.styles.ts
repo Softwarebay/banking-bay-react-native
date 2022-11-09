@@ -10,4 +10,7 @@ export const styles = StyleSheet.create({
 	onboarding: {
 		aspectRatio: 843 / 1200,
 	},
+	successIcon: {
+		aspectRatio: 502 / 467,
+	},
 });

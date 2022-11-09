@@ -1,10 +1,9 @@
-import { Image, ImageBackground, View } from 'react-native';
+import { ImageBackground, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-import { Button, FloatNum, Heading, Text } from 'components/atoms';
+import { Button, FloatNum, Heading, Image, Text } from 'components/atoms';
 
 import { bgSummary } from 'assets/backgrounds';
-import { successIcon } from 'assets/images';
 import { colors } from 'theme';
 
 import { styles } from './SuccessPaymentTemplate.styles';
@@ -30,7 +29,7 @@ export const SuccessPaymentTemplate = ({
 			<ImageBackground source={bgSummary} style={styles.backgroundImg}>
 				<View style={styles.container}>
 					<View style={styles.center}>
-						<Image source={successIcon} />
+						<Image name="success-icon" style={styles.successIcon} />
 						<Heading
 							color={colors.green}
 							size="h2"
