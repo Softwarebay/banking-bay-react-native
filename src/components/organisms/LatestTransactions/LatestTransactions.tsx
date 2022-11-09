@@ -55,6 +55,7 @@ export const LatestTransactions = ({
 						transactionType,
 						iconColor,
 					},
+					index,
 				}) => (
 					<TransactionCard
 						key={id}
@@ -63,7 +64,11 @@ export const LatestTransactions = ({
 						iconColor={iconColor}
 						iconName={iconName}
 						id={id}
-						style={styles.card}
+						style={[
+							styles.card,
+							index === 0 && styles.firstCard,
+							index === latestTransactions.length - 1 && styles.lastCard,
+						]}
 						title={title}
 						type={transactionType}
 						onPress={onPressTransactionCard}

@@ -63,13 +63,12 @@ export const DashboardTemplate = ({
 					/>
 				</View>
 				<Divider />
-				<View style={styles.latestTransactions}>
-					<LatestTransactions
-						latestTransactions={latestTransactions}
-						onPressTransactionCard={onPressTransactionCard}
-						onPressViewAll={onPressViewAll}
-					/>
-				</View>
+				<LatestTransactions
+					latestTransactions={latestTransactions}
+					style={styles.latestTransactions}
+					onPressTransactionCard={onPressTransactionCard}
+					onPressViewAll={onPressViewAll}
+				/>
 			</View>
 		</View>
 	);

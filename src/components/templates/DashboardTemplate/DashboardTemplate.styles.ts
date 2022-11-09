@@ -10,7 +10,6 @@ export const styles = StyleSheet.create({
 	},
 	latestTransactions: {
 		flex: 1,
-		marginBottom: 50,
 		marginTop: 30,
 	},
 	paymentOptions: {
