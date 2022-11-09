@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { colors } from 'theme';
 import { styles } from './Button.styles';
 
-interface Props {
+export interface Props {
 	title: string;
 	type?: 'primary' | 'secondary';
 	testID: string;
