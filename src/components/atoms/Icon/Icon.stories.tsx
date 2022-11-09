@@ -11,10 +11,53 @@ storiesOf('Atoms/Icon', module)
 			{getStory()}
 		</ViewStory>
 	))
-	.add('Logo', () => (
+	.add('Amazon', () => <Icon name="amazon" size={number('size', 20)} />)
+	.add('Check', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			name="logo"
+			name="check"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Chevron Left', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="chevron-left"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Credit Card', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="credit-card"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Credit Cards', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="credit-cards"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Deposits', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="deposits"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Dollar Sign', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="dollar-sign"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Eye Off', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="eye-off"
 			size={number('size', 20)}
 		/>
 	))
@@ -25,31 +68,82 @@ storiesOf('Atoms/Icon', module)
 			size={number('size', 20)}
 		/>
 	))
-	.add('Twitter', () => (
-		<Icon
-			color={color('color', colors.mainDark)}
-			name="twitter"
-			size={number('size', 20)}
-		/>
-	))
-	.add('Google+', () => (
+	.add('FlagUSA', () => <Icon name="flag-usa" size={number('size', 20)} />)
+	.add('Google +', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
 			name="google-plus"
 			size={number('size', 20)}
 		/>
 	))
-	.add('Check', () => (
+	.add('Wallet', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			name="check"
+			name="loans"
 			size={number('size', 20)}
 		/>
 	))
-	.add('Eye off', () => (
+	.add('Logo', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			name="eye-off"
+			name="logo"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Money Transfer', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="money-transfer"
+			size={number('size', 20)}
+		/>
+	))
+	.add('More', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="more"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Notifications', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="notifications"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Paypal', () => <Icon name="paypal" size={number('size', 20)} />)
+	.add('Profile', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="profile-icon"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Repeat', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="repeat"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Dashboard', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="dashboard"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Smartphone', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="smartphone"
+			size={number('size', 20)}
+		/>
+	))
+	.add('Twitter', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="twitter"
 			size={number('size', 20)}
 		/>
 	));
