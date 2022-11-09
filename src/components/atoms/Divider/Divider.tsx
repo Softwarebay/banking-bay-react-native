@@ -2,7 +2,7 @@ import { StyleProp, View, ViewStyle } from 'react-native';
 
 import { styles } from './Divider.styles';
 
-interface Props {
+export interface Props {
 	style?: StyleProp<ViewStyle>;
 	testID?: string;
 }
