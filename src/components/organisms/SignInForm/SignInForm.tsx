@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { View } from 'react-native';
 
 import {
@@ -12,7 +12,6 @@ import {
 } from 'components/atoms';
 import { EmailInput, PasswordInput } from 'components/molecules';
 
-import { useFocusEffect } from '@react-navigation/native';
 import { styles } from './SignInForm.styles';
 
 interface Props {
@@ -34,11 +33,11 @@ export const SignInForm = ({
 
 	const [isEmailValid, setIsEmailValid] = useState(false);
 
-	useFocusEffect(() => {
+	useEffect(() => {
 		emailRef.current?.setValue('test@test.com');
 		passwordRef.current?.setValue('password');
 		setIsEmailValid(true);
-	});
+	}, []);
 
 	const onPressSubmitButton = () => {
 		const email = emailRef.current?.getValue();
