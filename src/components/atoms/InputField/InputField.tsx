@@ -21,6 +21,7 @@ interface Props {
 export interface InputFieldHandle {
 	getValue: () => string;
 	clear: () => void;
+	setValue: (text: string) => void;
 }
 
 export const InputField = forwardRef<InputFieldHandle, Props>(
@@ -36,17 +37,20 @@ export const InputField = forwardRef<InputFieldHandle, Props>(
 		},
 		ref
 	) => {
-		const [value, setValue] = useState('');
+		const [inputValue, setInputValue] = useState('');
 
 		useImperativeHandle(ref, () => ({
-			getValue: () => value,
+			getValue: () => inputValue,
 			clear: () => {
-				setValue('');
+				setInputValue('');
+			},
+			setValue: (text) => {
+				setInputValue(text);
 			},
 		}));
 
 		const onChangeText = (text: string) => {
-			setValue(text);
+			setInputValue(text);
 			if (validate && setIsValid) {
 				const isValid = validate(text);
 				setIsValid(isValid);
@@ -61,7 +65,7 @@ export const InputField = forwardRef<InputFieldHandle, Props>(
 				secureTextEntry={secureTextEntry}
 				style={[styles.inputField, style]}
 				testID={testID}
-				value={value}
+				value={inputValue}
 				onChangeText={onChangeText}
 			/>
 		);
