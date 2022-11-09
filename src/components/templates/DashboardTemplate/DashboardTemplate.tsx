@@ -46,7 +46,7 @@ export const DashboardTemplate = ({
 	onPressTransactionCard,
 }: Props) => {
 	return (
-		<>
+		<View style={styles.container}>
 			<StatusBar style="light" />
 			<DashboardCards
 				navText={navText}
@@ -71,6 +71,6 @@ export const DashboardTemplate = ({
 					/>
 				</View>
 			</View>
-		</>
+		</View>
 	);
 };

@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
 		backgroundColor: colors.mainDark,
 		borderBottomLeftRadius: 30,
 		borderBottomRightRadius: 30,
-		flex: 1,
+		flex: 0.5,
 		overflow: 'hidden',
 	},
 	divider: {
@@ -31,10 +31,6 @@ export const styles = StyleSheet.create({
 	},
 	paginatorContainer: {
 		alignItems: 'center',
-		// marginTop: 5,
-		marginBottom: 40,
-	},
-	safeAreaContainer: {
-		flex: 1,
+		marginTop: -10,
 	},
 });
