@@ -31,4 +31,15 @@ export const styles = StyleSheet.create({
 	imgBackground: {
 		flex: 1,
 	},
+	subtitle: {
+		fontSize: 18,
+		lineHeight: 28.8,
+	},
+	text: {
+		textAlign: 'center',
+	},
+	title: {
+		marginBottom: 30,
+		paddingHorizontal: 10,
+	},
 });

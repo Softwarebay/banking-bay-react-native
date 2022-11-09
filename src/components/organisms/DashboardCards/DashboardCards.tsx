@@ -79,7 +79,7 @@ export const DashboardCards = ({
 	return (
 		<View style={styles.container}>
 			<ImageBackground source={bgDashboard} style={[styles.bgImage, { width }]}>
-				<SafeAreaView style={styles.safeAreaContainer}>
+				<SafeAreaView>
 					<Flex direction="row" style={styles.nav}>
 						<IconButton
 							iconColor="#3B5999"
@@ -103,7 +103,6 @@ export const DashboardCards = ({
 					</Flex>
 					<Divider style={styles.divider} />
 					<FlatList<Card>
-						bounces={false}
 						contentContainerStyle={styles.cardContainer}
 						data={cards}
 						decelerationRate="fast"

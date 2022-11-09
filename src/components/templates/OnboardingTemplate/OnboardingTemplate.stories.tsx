@@ -3,38 +3,24 @@ import { number } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import { ViewStory } from 'utils/storybook/ViewStory';
 
-import { onboarding1, onboarding2, onboarding3 } from 'assets/images';
-
 import { IOnboardingSlide, OnboardingTemplate } from './OnboardingTemplate';
 
 const storySlides: IOnboardingSlide[] = [
 	{
 		id: 1,
-		img: {
-			name: 'onboarding1',
-			src: onboarding1,
-			aspectRatio: 335 / 426,
-		},
+		img: 'onboarding1',
 		title: 'Onboarding Slide Title 1',
 		description: 'Onboarding slide description 1.',
 	},
 	{
 		id: 2,
-		img: {
-			name: 'onboarding2',
-			src: onboarding2,
-			aspectRatio: 357 / 309,
-		},
+		img: 'onboarding2',
 		title: 'Onboarding Slide Title 2',
 		description: 'Onboarding slide description 2.',
 	},
 	{
 		id: 3,
-		img: {
-			name: 'onboarding3',
-			src: onboarding3,
-			aspectRatio: 335 / 319,
-		},
+		img: 'onboarding3',
 		title: 'Onboarding Slide Title 3',
 		description: 'Onboarding slide description 3.',
 	},

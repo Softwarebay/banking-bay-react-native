@@ -18,7 +18,6 @@ const latestTransactions: TransactionHistoryItem[] = [
 	{
 		title: 'Amazon',
 		id: 'amazon-124743782',
-		iconColor: 'none',
 		amount: 239.57,
 		iconName: 'amazon',
 		transactionCategory: 'Online payments',
@@ -27,7 +26,22 @@ const latestTransactions: TransactionHistoryItem[] = [
 	{
 		title: 'Paypal',
 		id: 'paypal-124743782',
-		iconColor: 'none',
+		amount: 700.0,
+		iconName: 'paypal',
+		transactionCategory: 'Deposits',
+		transactionType: 'incoming',
+	},
+	{
+		title: 'Amazon',
+		id: 'amazon-1',
+		amount: 239.57,
+		iconName: 'amazon',
+		transactionCategory: 'Online payments',
+		transactionType: 'outgoing',
+	},
+	{
+		title: 'Paypal',
+		id: 'paypal-1',
 		amount: 700.0,
 		iconName: 'paypal',
 		transactionCategory: 'Deposits',

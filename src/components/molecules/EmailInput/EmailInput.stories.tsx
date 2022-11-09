@@ -5,7 +5,7 @@ import { ViewStory } from 'utils/storybook/ViewStory';
 
 import { EmailInput } from './EmailInput';
 
-storiesOf('Atoms/EmailInput', module)
+storiesOf('Molecules/EmailInput', module)
 	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Valid', () => (
 		<EmailInput
