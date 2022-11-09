@@ -1,12 +1,12 @@
-import { fireEvent, render, screen } from '@testing-library/react-native';
+import { render, screen } from '@testing-library/react-native';
 import testRenderer from 'react-test-renderer';
 
 import { colors } from 'theme';
 import { Heading } from '../Heading/Heading';
 import { Icon } from '../Icon/Icon';
 
-import { Card } from './Card';
 import type { Props } from './Card';
+import { Card } from './Card';
 
 describe.only('Card', () => {
 	const props: Props = {
@@ -36,13 +36,13 @@ describe.only('Card', () => {
 	it('should render children in row', () => {
 		render(<Card {...props} />);
 
-		const el = screen.getByTestId('card-test-id');
+		const card = screen.getByTestId('card-test-id');
 		const cardText = screen.getByText('Text inside Card');
 		const cardIcon = screen.getByTestId('card-icon-test-id');
 
 		expect(cardText).toBeTruthy();
 		expect(cardIcon).toBeTruthy();
 
-		expect(el).toHaveStyle({ flexDirection: 'row', height: 100 });
+		expect(card).toHaveStyle({ flexDirection: 'row', height: 100 });
 	});
 });

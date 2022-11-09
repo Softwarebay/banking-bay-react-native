@@ -27,17 +27,17 @@ describe('Button', () => {
 	it('should display button text passed as prop', () => {
 		render(<Button {...props} />);
 
-		const el = screen.getByTestId('btn-test-id');
+		const btn = screen.getByTestId('btn-test-id');
 
-		expect(el).toHaveTextContent('Button');
+		expect(btn).toHaveTextContent('Button');
 	});
 
 	it('should default to primary button', () => {
 		render(<Button {...props} />);
 
-		const el = screen.getByTestId('btn-test-id');
+		const btn = screen.getByTestId('btn-test-id');
 
-		expect(el).not.toHaveStyle({
+		expect(btn).not.toHaveStyle({
 			backgroundColor: colors.grey100,
 			borderColor: colors.grey300,
 		});
@@ -46,9 +46,9 @@ describe('Button', () => {
 	it('should display secondary button', () => {
 		render(<Button {...secondaryProps} />);
 
-		const el = screen.getByTestId('btn-test-id');
+		const btn = screen.getByTestId('btn-test-id');
 
-		expect(el).toHaveStyle({
+		expect(btn).toHaveStyle({
 			backgroundColor: colors.grey100,
 			borderColor: colors.grey300,
 		});
@@ -57,9 +57,9 @@ describe('Button', () => {
 	it('should handle onPress events', () => {
 		render(<Button {...props} />);
 
-		const el = screen.getByTestId('btn-test-id');
+		const btn = screen.getByTestId('btn-test-id');
 
-		fireEvent.press(el);
+		fireEvent.press(btn);
 
 		expect(mockOnPress).toHaveBeenCalledTimes(1);
 	});
