@@ -6,13 +6,8 @@ export const styles = StyleSheet.create({
 	bgImage: {
 		flex: 1,
 	},
-	card: {
-		aspectRatio: 290 / 176,
-		marginHorizontal: 20,
-	},
 	cardContainer: {
 		flexDirection: 'row',
-		marginVertical: 20,
 	},
 	container: {
 		backgroundColor: colors.mainDark,
@@ -22,20 +17,24 @@ export const styles = StyleSheet.create({
 		overflow: 'hidden',
 	},
 	divider: {
-		marginBottom: 5,
+		marginVertical: 20,
 		opacity: 0.3,
 	},
 	nav: {
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		paddingHorizontal: 20,
-		paddingVertical: 20,
+		paddingTop: 20,
 	},
 	navText: {
 		color: colors.white,
 	},
 	paginatorContainer: {
 		alignItems: 'center',
-		marginTop: 5,
+		// marginTop: 5,
+		marginBottom: 40,
+	},
+	safeAreaContainer: {
+		flex: 1,
 	},
 });

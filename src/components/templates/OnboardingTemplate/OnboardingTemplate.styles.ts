@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
 		marginBottom: 50,
 	},
 	heroImg: {
-		aspectRatio: 843 / 1200,
 		top: 120,
 		width: '95%',
 	},

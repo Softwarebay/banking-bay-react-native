@@ -1,9 +1,7 @@
 import { useRef, useState } from 'react';
 import {
 	FlatList,
-	Image,
 	ImageBackground,
-	ImageSourcePropType,
 	useWindowDimensions,
 	View,
 	ViewabilityConfig,
@@ -11,10 +9,18 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Divider, Flex, IconButton, Paginator, Text } from 'components/atoms';
+import {
+	Divider,
+	Flex,
+	IconButton,
+	Image,
+	ImageProps,
+	Paginator,
+	Text,
+} from 'components/atoms';
 
 import { bgDashboard } from 'assets/backgrounds';
-import { card1, card2 } from 'assets/images';
+
 import { colors } from 'theme';
 
 import { styles } from './DashboardCards.styles';
@@ -27,21 +33,21 @@ interface Props {
 
 interface Card {
 	id: number;
-	cardImg: ImageSourcePropType;
+	img: ImageProps['name'];
 }
 
 const cards: Card[] = [
 	{
 		id: 1,
-		cardImg: card1,
+		img: 'card1',
 	},
 	{
 		id: 2,
-		cardImg: card2,
+		img: 'card2',
 	},
 	{
 		id: 3,
-		cardImg: card1,
+		img: 'card1',
 	},
 ];
 
@@ -73,7 +79,7 @@ export const DashboardCards = ({
 	return (
 		<View style={styles.container}>
 			<ImageBackground source={bgDashboard} style={[styles.bgImage, { width }]}>
-				<SafeAreaView>
+				<SafeAreaView style={styles.safeAreaContainer}>
 					<Flex direction="row" style={styles.nav}>
 						<IconButton
 							iconColor="#3B5999"
@@ -96,17 +102,14 @@ export const DashboardCards = ({
 						/>
 					</Flex>
 					<Divider style={styles.divider} />
-					<FlatList
+					<FlatList<Card>
 						bounces={false}
 						contentContainerStyle={styles.cardContainer}
 						data={cards}
 						decelerationRate="fast"
 						initialScrollIndex={cardIndex}
-						renderItem={({ item }) => (
-							<Image
-								source={item.cardImg}
-								style={[styles.card, { width: 0.9 * width }]}
-							/>
+						renderItem={({ item: { img } }) => (
+							<Image name={img} style={{ width }} />
 						)}
 						showsHorizontalScrollIndicator={false}
 						snapToAlignment="center"
