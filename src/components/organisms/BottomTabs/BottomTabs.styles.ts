@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
 			},
 		}),
 		height: 70,
+		paddingBottom: 15,
 	},
 	focused: {
 		color: colors.pink,
@@ -29,25 +30,9 @@ export const styles = StyleSheet.create({
 	pressed: {
 		opacity: 0.8,
 	},
-	safeAreaContainer: {
-		backgroundColor: colors.white,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
-		justifyContent: 'flex-end',
-		...Platform.select({
-			android: {
-				...shadows.android,
-			},
-			ios: {
-				...shadows.ios,
-			},
-		}),
-		height: 70,
-	},
 	tabItem: {
 		alignItems: 'center',
 		flex: 1,
-		height: '100%',
 		justifyContent: 'space-between',
 	},
 });
