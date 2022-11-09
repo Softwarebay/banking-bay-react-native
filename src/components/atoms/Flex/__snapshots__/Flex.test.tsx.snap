@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex should match snapshot - column 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "column",
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="flex-test-id"
+>
+  <View />
+  <View />
+</View>
+`;
+
+exports[`Flex should match snapshot - row 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="flex-test-id"
+>
+  <View />
+  <View />
+</View>
+`;

@@ -2,7 +2,7 @@ import { StyleProp, View, ViewStyle } from 'react-native';
 
 import { styles } from './Flex.styles';
 
-interface Props {
+export interface Props {
 	direction: 'column' | 'row';
 	children: React.ReactNode;
 	style?: StyleProp<ViewStyle>;
