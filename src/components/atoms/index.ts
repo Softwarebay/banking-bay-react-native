@@ -12,7 +12,9 @@ export { Card } from './Card/Card';
 export { Flex } from './Flex/Flex';
 export { Divider } from './Divider/Divider';
 export { FloatNum } from './FloatNum/FloatNum';
+export { Image } from './Image/Image';
 
 export type { CheckboxHandle } from './Checkbox/Checkbox';
 export type { InputFieldHandle } from './InputField/InputField';
 export type { Props as IconProps } from './Icon/Icon';
+export type { Props as ImageProps } from './Image/Image';

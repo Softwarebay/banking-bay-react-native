@@ -2,9 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useRef } from 'react';
 import {
 	FlatList,
-	Image,
 	ImageBackground,
-	ImageSourcePropType,
 	View,
 	ViewabilityConfig,
 	ViewToken,
@@ -13,7 +11,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { bgOnboarding } from 'assets/backgrounds';
 
-import { Button, Logo, Paginator } from 'components/atoms';
+import { Button, Image, ImageProps, Logo, Paginator } from 'components/atoms';
 import { OnboardingSlide } from 'components/molecules';
 
 import { styles } from './OnboardingTemplate.styles';
@@ -22,11 +20,7 @@ export interface IOnboardingSlide {
 	id: number;
 	title: string;
 	description: string;
-	img: {
-		name: 'onboarding1' | 'onboarding2' | 'onboarding3';
-		src: ImageSourcePropType;
-		aspectRatio: number;
-	};
+	img: ImageProps['name'];
 }
 
 interface Props {
@@ -42,9 +36,7 @@ export const OnboardingTemplate = ({
 	onPressOnboardingBtn,
 	onScroll,
 }: Props) => {
-	const {
-		img: { aspectRatio, name, src },
-	} = onboardingSlides[currentSlideIndex];
+	const { img } = onboardingSlides[currentSlideIndex];
 
 	const viewabilityConfig: ViewabilityConfig = {
 		viewAreaCoveragePercentThreshold: 50,
@@ -68,10 +60,7 @@ export const OnboardingTemplate = ({
 			<StatusBar style="light" />
 			<ImageBackground source={bgOnboarding} style={styles.imgBackground}>
 				<SafeAreaView style={styles.heroView}>
-					<Image
-						source={src}
-						style={[styles.heroImg, { aspectRatio }, styles[name]]}
-					/>
+					<Image name={img} style={styles.heroImg} />
 				</SafeAreaView>
 				<View style={styles.container}>
 					<View style={styles.content}>

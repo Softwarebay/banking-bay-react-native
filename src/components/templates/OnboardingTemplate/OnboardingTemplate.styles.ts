@@ -4,8 +4,8 @@ import { colors } from 'theme';
 
 export const styles = StyleSheet.create({
 	carousel: {
-		// marginBottom: 20,
-		marginTop: 20,
+		marginBottom: 30,
+		marginTop: 30,
 	},
 	container: {
 		backgroundColor: colors.screenBackground,
@@ -13,14 +13,16 @@ export const styles = StyleSheet.create({
 		borderTopRightRadius: 20,
 		marginHorizontal: 25,
 		paddingHorizontal: 25,
-		paddingVertical: 30,
+		paddingVertical: 60,
 	},
 	content: {
 		alignItems: 'center',
-		marginBottom: 30,
+		marginBottom: 50,
 	},
 	heroImg: {
-		// height: undefined,
+		aspectRatio: 843 / 1200,
+		top: 120,
+		width: '95%',
 	},
 	heroView: {
 		alignItems: 'center',
@@ -29,15 +31,5 @@ export const styles = StyleSheet.create({
 	},
 	imgBackground: {
 		flex: 1,
-	},
-	onboarding1: {
-		// top: 80,
-		// width: '95%',
-	},
-	onboarding2: {
-		// width: '95%',
-	},
-	onboarding3: {
-		// width: '95%',
 	},
 });
