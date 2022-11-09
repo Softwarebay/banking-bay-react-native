@@ -103,7 +103,6 @@ export const DashboardCards = ({
 					</Flex>
 					<Divider style={styles.divider} />
 					<FlatList<Card>
-						bounces={false}
 						contentContainerStyle={styles.cardContainer}
 						data={cards}
 						decelerationRate="fast"

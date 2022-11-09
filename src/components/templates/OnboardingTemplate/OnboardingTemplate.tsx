@@ -75,7 +75,6 @@ export const OnboardingTemplate = ({
 					<View style={styles.content}>
 						<Logo testID="onboarding-logo-test-id" />
 						<FlatList<IOnboardingSlide>
-							bounces={false}
 							contentContainerStyle={styles.carousel}
 							data={onboardingSlides}
 							renderItem={({ item: { description, title, id } }) => (
