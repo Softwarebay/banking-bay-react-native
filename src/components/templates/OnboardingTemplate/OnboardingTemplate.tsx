@@ -3,16 +3,24 @@ import { useRef } from 'react';
 import {
 	FlatList,
 	ImageBackground,
+	useWindowDimensions,
 	View,
 	ViewabilityConfig,
 	ViewToken,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { bgOnboarding } from 'assets/backgrounds';
+import {
+	Button,
+	Heading,
+	Image,
+	ImageProps,
+	Logo,
+	Paginator,
+	Text,
+} from 'components/atoms';
 
-import { Button, Image, ImageProps, Logo, Paginator } from 'components/atoms';
-import { OnboardingSlide } from 'components/molecules';
+import { bgOnboarding } from 'assets/backgrounds';
 
 import { styles } from './OnboardingTemplate.styles';
 
@@ -36,6 +44,7 @@ export const OnboardingTemplate = ({
 	onPressOnboardingBtn,
 	onScroll,
 }: Props) => {
+	const { width } = useWindowDimensions();
 	const { img } = onboardingSlides[currentSlideIndex];
 
 	const viewabilityConfig: ViewabilityConfig = {
@@ -69,12 +78,20 @@ export const OnboardingTemplate = ({
 							bounces={false}
 							contentContainerStyle={styles.carousel}
 							data={onboardingSlides}
-							renderItem={({ item }) => (
-								<OnboardingSlide
-									description={item.description}
-									id={item.id}
-									title={item.title}
-								/>
+							renderItem={({ item: { description, title, id } }) => (
+								<View style={{ width: width - 100 }}>
+									<Heading
+										size="h3"
+										style={[styles.title, styles.text]}
+										testID={`onboarding-heading-${id}-test-id`}
+										text={title}
+									/>
+									<Text
+										style={[styles.subtitle, styles.text]}
+										testID={`onboarding-text-${id}-test-id`}
+										text={description}
+									/>
+								</View>
 							)}
 							showsHorizontalScrollIndicator={false}
 							viewabilityConfigCallbackPairs={
