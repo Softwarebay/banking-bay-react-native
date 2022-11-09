@@ -2,7 +2,7 @@ import { Pressable, StyleProp, Text, TextStyle } from 'react-native';
 
 import { styles } from './Link.styles';
 
-interface Props {
+export interface Props {
 	text: string;
 	onPress: () => void;
 	testID: string;
