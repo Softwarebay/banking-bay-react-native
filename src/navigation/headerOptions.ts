@@ -1,6 +1,7 @@
 import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 import { chevronLeft } from 'assets/images';
+import { Platform } from 'react-native';
 import { colors } from 'theme';
 
 export const headerOptions: NativeStackNavigationOptions = {
@@ -15,5 +16,5 @@ export const headerOptions: NativeStackNavigationOptions = {
 		backgroundColor: colors.screenBackground,
 	},
 	headerBackTitleVisible: false,
-	headerBackImageSource: chevronLeft,
+	headerBackImageSource: Platform.OS === 'android' ? chevronLeft : undefined,
 };
