@@ -5,9 +5,12 @@ export const styles = StyleSheet.create({
 		flex: 1,
 	},
 	content: {
+		flex: 1,
 		paddingHorizontal: 20,
 	},
 	latestTransactions: {
+		flex: 1,
+		marginBottom: 50,
 		marginTop: 30,
 	},
 	paymentOptions: {

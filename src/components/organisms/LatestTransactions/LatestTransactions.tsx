@@ -1,4 +1,4 @@
-import { StyleProp, View, ViewStyle } from 'react-native';
+import { FlatList, StyleProp, View, ViewStyle } from 'react-native';
 
 import { Flex, Heading, IconProps, Link } from 'components/atoms';
 import { TransactionCard } from '../TransactionCard/TransactionCard';
@@ -42,15 +42,19 @@ export const LatestTransactions = ({
 					onPress={onPressViewAll}
 				/>
 			</Flex>
-			{latestTransactions.map(
-				({
-					id,
-					title,
-					transactionType,
-					transactionCategory,
-					iconName,
-					iconColor,
-					amount,
+
+			<FlatList<TransactionHistoryItem>
+				data={latestTransactions}
+				renderItem={({
+					item: {
+						amount,
+						iconName,
+						id,
+						title,
+						transactionCategory,
+						transactionType,
+						iconColor,
+					},
 				}) => (
 					<TransactionCard
 						key={id}
@@ -64,8 +68,8 @@ export const LatestTransactions = ({
 						type={transactionType}
 						onPress={onPressTransactionCard}
 					/>
-				)
-			)}
+				)}
+			/>
 		</View>
 	);
 };

@@ -1,5 +1,5 @@
-import { ScrollView, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { View } from 'react-native';
 
 import { Divider, IconProps } from 'components/atoms';
 import {
@@ -46,7 +46,7 @@ export const DashboardTemplate = ({
 	onPressTransactionCard,
 }: Props) => {
 	return (
-		<ScrollView bounces={false}>
+		<>
 			<StatusBar style="light" />
 			<DashboardCards
 				navText={navText}
@@ -71,6 +71,6 @@ export const DashboardTemplate = ({
 					/>
 				</View>
 			</View>
-		</ScrollView>
+		</>
 	);
 };

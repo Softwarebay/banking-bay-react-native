@@ -35,7 +35,7 @@ export const DashboardScreen = () => {
 	const latestTransactions: TransactionHistoryItem[] = [
 		{
 			title: 'Adalyn Roth',
-			id: 'adalyn-roth-124743782',
+			id: 'adalyn-roth-1',
 			iconColor: '#55ACEE',
 			amount: 140.0,
 			iconName: 'money-transfer',
@@ -44,7 +44,7 @@ export const DashboardScreen = () => {
 		},
 		{
 			title: 'Amazon',
-			id: 'amazon-124743782',
+			id: 'amazon-1',
 			amount: 239.57,
 			iconName: 'amazon',
 			transactionCategory: 'Online payments',
@@ -52,7 +52,32 @@ export const DashboardScreen = () => {
 		},
 		{
 			title: 'Paypal',
-			id: 'paypal-124743782',
+			id: 'paypal-1',
+			amount: 700.0,
+			iconName: 'paypal',
+			transactionCategory: 'Deposits',
+			transactionType: 'incoming',
+		},
+		{
+			title: 'Adalyn Roth',
+			id: 'adalyn-roth-2',
+			iconColor: '#55ACEE',
+			amount: 140.0,
+			iconName: 'money-transfer',
+			transactionCategory: 'Money transfer',
+			transactionType: 'outgoing',
+		},
+		{
+			title: 'Amazon',
+			id: 'amazon-2',
+			amount: 239.57,
+			iconName: 'amazon',
+			transactionCategory: 'Online payments',
+			transactionType: 'outgoing',
+		},
+		{
+			title: 'Paypal',
+			id: 'paypal-2',
 			amount: 700.0,
 			iconName: 'paypal',
 			transactionCategory: 'Deposits',
