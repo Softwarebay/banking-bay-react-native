@@ -8,17 +8,18 @@ export const styles = StyleSheet.create({
 		borderTopLeftRadius: 10,
 		borderTopRightRadius: 10,
 		paddingHorizontal: 10,
-		paddingTop: 16,
+		paddingVertical: 20,
 		...Platform.select({
 			android: {
 				...shadows.android,
+				height: 70,
 			},
 			ios: {
 				...shadows.ios,
+				paddingBottom: 30,
+				height: 90,
 			},
 		}),
-		height: 70,
-		paddingBottom: 15,
 	},
 	focused: {
 		color: colors.pink,
