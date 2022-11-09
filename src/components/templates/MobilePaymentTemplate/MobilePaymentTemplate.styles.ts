@@ -16,7 +16,6 @@ export const styles = StyleSheet.create({
 	},
 	amountText: {
 		fontFamily: 'MulishMedium',
-		lineHeight: 36.3,
 	},
 	balanceText: {
 		marginBottom: 10,
