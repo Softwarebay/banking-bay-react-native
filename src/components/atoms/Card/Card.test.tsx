@@ -17,12 +17,7 @@ describe.only('Card', () => {
 		children: (
 			<>
 				<Heading size="h6" text="Text inside Card" />
-				<Icon
-					color={colors.mainDark}
-					name="check"
-					size={20}
-					testID="card-icon-test-id"
-				/>
+				<Icon color={colors.mainDark} name="check" size={20} />
 			</>
 		),
 	};
@@ -38,7 +33,7 @@ describe.only('Card', () => {
 
 		const card = screen.getByTestId('card-test-id');
 		const cardText = screen.getByText('Text inside Card');
-		const cardIcon = screen.getByTestId('card-icon-test-id');
+		const cardIcon = screen.getByTestId('check-icon-test-id');
 
 		expect(cardText).toBeTruthy();
 		expect(cardIcon).toBeTruthy();

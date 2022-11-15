@@ -8,7 +8,6 @@ import type { Props } from './Icon';
 describe('Icon', () => {
 	const props: Omit<Props, 'name'> = {
 		size: 20,
-		testID: 'icon-test-id',
 		color: 'red',
 	};
 
@@ -182,7 +181,7 @@ describe('Icon', () => {
 	it('should render facebook icon', () => {
 		render(<Icon {...props} name="facebook" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('facebook-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -194,7 +193,7 @@ describe('Icon', () => {
 	it('should render twitter icon', () => {
 		render(<Icon {...props} name="twitter" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('twitter-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -206,7 +205,7 @@ describe('Icon', () => {
 	it('should render check icon', () => {
 		render(<Icon {...props} name="check" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('check-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -218,7 +217,7 @@ describe('Icon', () => {
 	it('should render eye-off icon', () => {
 		render(<Icon {...props} name="eye-off" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('eye-off-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -230,7 +229,7 @@ describe('Icon', () => {
 	it('should render google-plus icon', () => {
 		render(<Icon {...props} name="google-plus" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('google-plus-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -242,7 +241,7 @@ describe('Icon', () => {
 	it('should render logo icon', () => {
 		render(<Icon {...props} name="logo" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('logo-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -254,7 +253,7 @@ describe('Icon', () => {
 	it('should render chevron-left icon', () => {
 		render(<Icon {...props} name="chevron-left" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('chevron-left-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -266,7 +265,7 @@ describe('Icon', () => {
 	it('should render credit-card icon', () => {
 		render(<Icon {...props} name="credit-card" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('credit-card-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -278,7 +277,7 @@ describe('Icon', () => {
 	it('should render dollar-sign icon', () => {
 		render(<Icon {...props} name="dollar-sign" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('dollar-sign-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -290,7 +289,7 @@ describe('Icon', () => {
 	it('should render repeat icon', () => {
 		render(<Icon {...props} name="repeat" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('repeat-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -302,7 +301,7 @@ describe('Icon', () => {
 	it('should render smartphone icon', () => {
 		render(<Icon {...props} name="smartphone" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('smartphone-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -314,7 +313,7 @@ describe('Icon', () => {
 	it('should render profile icon', () => {
 		render(<Icon {...props} name="profile" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('profile-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -326,7 +325,7 @@ describe('Icon', () => {
 	it('should render credit-cards icon', () => {
 		render(<Icon {...props} name="credit-cards" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('credit-cards-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -338,7 +337,7 @@ describe('Icon', () => {
 	it('should render deposits icon', () => {
 		render(<Icon {...props} name="deposits" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('deposits-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -350,7 +349,7 @@ describe('Icon', () => {
 	it('should render loans icon', () => {
 		render(<Icon {...props} name="loans" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('loans-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -362,7 +361,7 @@ describe('Icon', () => {
 	it('should render notifications icon', () => {
 		render(<Icon {...props} name="notifications" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('notifications-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -374,7 +373,7 @@ describe('Icon', () => {
 	it('should render dashboard icon', () => {
 		render(<Icon {...props} name="dashboard" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('dashboard-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -386,7 +385,7 @@ describe('Icon', () => {
 	it('should render more icon', () => {
 		render(<Icon {...props} name="more" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('more-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -398,7 +397,7 @@ describe('Icon', () => {
 	it('should render amazon icon', () => {
 		render(<Icon {...props} name="amazon" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('amazon-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -410,7 +409,7 @@ describe('Icon', () => {
 	it('should render money-transfer icon', () => {
 		render(<Icon {...props} name="money-transfer" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('money-transfer-icon-test-id');
 
 		expect(icon).not.toBeNull();
 	});
@@ -418,7 +417,7 @@ describe('Icon', () => {
 	it('should render paypal icon', () => {
 		render(<Icon {...props} name="paypal" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('paypal-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
@@ -430,7 +429,7 @@ describe('Icon', () => {
 	it('should render flag-usa icon', () => {
 		render(<Icon {...props} name="flag-usa" />);
 
-		const icon = screen.getByTestId('icon-test-id');
+		const icon = screen.getByTestId('flag-usa-icon-test-id');
 
 		expect(icon).not.toBeNull();
 

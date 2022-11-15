@@ -36,14 +36,7 @@ export const Checkbox = forwardRef<CheckboxHandle, Props>(({ testID }, ref) => {
 			testID={testID}
 			onPress={onPress}
 		>
-			{isChecked && (
-				<Icon
-					color={colors.mainDark}
-					name="check"
-					size={15}
-					testID="checkbox-icon-test-id"
-				/>
-			)}
+			{isChecked && <Icon color={colors.mainDark} name="check" size={15} />}
 		</Pressable>
 	);
 });

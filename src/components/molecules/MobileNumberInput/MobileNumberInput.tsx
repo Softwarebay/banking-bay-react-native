@@ -22,7 +22,7 @@ export const MobileNumberInput = forwardRef<InputFieldHandle, Props>(
 	({ flagIcon, placeholder, testID, style }, ref) => {
 		return (
 			<Card style={[styles.container, style]}>
-				<Icon name={flagIcon} size={20} testID={`flag-icon-${testID}`} />
+				<Icon name={flagIcon} size={20} />
 				<InputField
 					ref={ref}
 					keyboardType="phone-pad"

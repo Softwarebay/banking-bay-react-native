@@ -50,7 +50,7 @@ exports[`Card should match snapshot 1`] = `
   <SvgMock
     color="#1B1D4D"
     height={20}
-    testID="card-icon-test-id"
+    testID="check-icon-test-id"
     width={20}
   />
 </View>

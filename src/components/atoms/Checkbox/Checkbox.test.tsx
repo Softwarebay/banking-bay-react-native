@@ -30,13 +30,13 @@ describe('Checkbox', () => {
 		const checkbox = screen.getByTestId('checkbox-test-id');
 
 		fireEvent.press(checkbox);
-		const checkedIcon = screen.queryByTestId('checkbox-icon-test-id');
+		const checkedIcon = screen.queryByTestId('check-icon-test-id');
 
 		expect(checkbox.children).toHaveLength(2);
 		expect(checkedIcon).toBeTruthy();
 
 		fireEvent.press(checkbox);
-		const uncheckedIcon = screen.queryByTestId('checkbox-icon-test-id');
+		const uncheckedIcon = screen.queryByTestId('check-icon-test-id');
 
 		expect(checkbox.children).toHaveLength(1);
 		expect(uncheckedIcon).toBeNull();
