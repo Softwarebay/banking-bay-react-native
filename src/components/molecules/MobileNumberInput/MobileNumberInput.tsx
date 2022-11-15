@@ -11,7 +11,7 @@ import {
 
 import { styles } from './MobileNumberInput.styles';
 
-interface Props {
+export interface Props {
 	flagIcon: IconProps['name'];
 	placeholder: string;
 	testID: string;
@@ -21,14 +21,14 @@ interface Props {
 export const MobileNumberInput = forwardRef<InputFieldHandle, Props>(
 	({ flagIcon, placeholder, testID, style }, ref) => {
 		return (
-			<Card style={[styles.container, style]}>
+			<Card style={[styles.container, style]} testID={testID}>
 				<Icon name={flagIcon} size={20} />
 				<InputField
 					ref={ref}
 					keyboardType="phone-pad"
 					placeholder={placeholder}
 					style={styles.inputField}
-					testID={testID}
+					testID={`input-field-${testID}`}
 				/>
 			</Card>
 		);
