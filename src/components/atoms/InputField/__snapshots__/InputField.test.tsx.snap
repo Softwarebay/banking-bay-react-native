@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField should match snapshot 1`] = `
+<TextInput
+  autoCorrect={false}
+  keyboardType="default"
+  onChangeText={[Function]}
+  placeholder="Placeholder"
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+        "fontFamily": "MulishRegular",
+        "fontSize": 15,
+      },
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+  testID="input-field-test-id"
+  value=""
+/>
+`;

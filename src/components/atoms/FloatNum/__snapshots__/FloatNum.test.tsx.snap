@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatNum should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Array [
+        Object {
+          "alignItems": "baseline",
+        },
+        Object {
+          "height": 200,
+        },
+      ],
+    ]
+  }
+  testID="floatNum-test-id"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+        },
+        Object {
+          "fontSize": 50,
+        },
+      ]
+    }
+  >
+    $20.
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+        },
+        Object {
+          "fontSize": 30,
+        },
+      ]
+    }
+  >
+    22
+  </Text>
+</View>
+`;

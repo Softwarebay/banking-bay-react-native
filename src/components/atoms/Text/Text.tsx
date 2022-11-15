@@ -2,7 +2,7 @@ import { Text as RNText, StyleProp, TextStyle } from 'react-native';
 
 import { styles } from './Text.styles';
 
-interface Props {
+export interface Props {
 	text: string;
 	style?: StyleProp<TextStyle>;
 	testID?: string;

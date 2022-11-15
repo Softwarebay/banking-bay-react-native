@@ -83,7 +83,7 @@ export const DashboardCards = ({
 					<Flex direction="row" style={styles.nav}>
 						<IconButton
 							iconColor="#3B5999"
-							iconName="profile-icon"
+							iconName="profile"
 							iconSize={25}
 							testID="dashboard-profile-icon-btn-test-id"
 							onPress={onPressProfileIconButton}

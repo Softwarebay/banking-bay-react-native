@@ -29,14 +29,7 @@ export const EmailInput = forwardRef<InputFieldHandle, Props>(
 					testID={testID}
 					validate={validate}
 				/>
-				{isValid && (
-					<Icon
-						color={colors.mainDark}
-						name="check"
-						size={16}
-						testID={`icon-${testID}`}
-					/>
-				)}
+				{isValid && <Icon color={colors.mainDark} name="check" size={16} />}
 			</Card>
 		);
 	}

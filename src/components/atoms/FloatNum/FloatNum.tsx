@@ -4,7 +4,7 @@ import { Flex } from '../Flex/Flex';
 
 import { styles } from './FloatNum.styles';
 
-interface Props {
+export interface Props {
 	number: string;
 	prefix?: string;
 	intStyle?: StyleProp<TextStyle>;

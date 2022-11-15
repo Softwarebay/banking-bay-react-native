@@ -16,7 +16,6 @@ function loadStories() {
 	require('../src/components/atoms/Image/Image.stories');
 	require('../src/components/atoms/InputField/InputField.stories');
 	require('../src/components/atoms/Link/Link.stories');
-	require('../src/components/atoms/Logo/Logo.stories');
 	require('../src/components/atoms/Paginator/Paginator.stories');
 	require('../src/components/atoms/Text/Text.stories');
 	require('../src/components/molecules/EmailInput/EmailInput.stories');
@@ -50,7 +49,6 @@ const stories = [
 	'../src/components/atoms/Image/Image.stories',
 	'../src/components/atoms/InputField/InputField.stories',
 	'../src/components/atoms/Link/Link.stories',
-	'../src/components/atoms/Logo/Logo.stories',
 	'../src/components/atoms/Paginator/Paginator.stories',
 	'../src/components/atoms/Text/Text.stories',
 	'../src/components/molecules/EmailInput/EmailInput.stories',

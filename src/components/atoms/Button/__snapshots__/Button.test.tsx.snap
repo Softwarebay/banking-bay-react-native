@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should match snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      false,
+      undefined,
+    ]
+  }
+  testID="btn-test-id"
+>
+  <ViewManagerAdapter_ExpoLinearGradient
+    proxiedProperties={
+      Object {
+        "colors": Array [
+          4288142079,
+          4279654301,
+        ],
+        "endPoint": Array [
+          1,
+          1,
+        ],
+        "locations": undefined,
+        "startPoint": Array [
+          0,
+          0,
+        ],
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "height": 55,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 17,
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </ViewManagerAdapter_ExpoLinearGradient>
+</View>
+`;

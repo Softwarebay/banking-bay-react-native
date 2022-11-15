@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading should match snapshot - h1 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+      },
+      Object {
+        "fontFamily": "MulishBold",
+        "fontSize": 51,
+        "lineHeight": 56.1,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="heading-test-id"
+>
+  Heading
+</Text>
+`;
+
+exports[`Heading should match snapshot - h2 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+      },
+      Object {
+        "fontFamily": "MulishBold",
+        "fontSize": 44,
+        "lineHeight": 48.4,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="heading-test-id"
+>
+  Heading
+</Text>
+`;
+
+exports[`Heading should match snapshot - h3 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+      },
+      Object {
+        "fontFamily": "MulishBold",
+        "fontSize": 33,
+        "lineHeight": 36.3,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="heading-test-id"
+>
+  Heading
+</Text>
+`;
+
+exports[`Heading should match snapshot - h4 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+      },
+      Object {
+        "fontFamily": "MulishMedium",
+        "fontSize": 22,
+        "lineHeight": 26.4,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="heading-test-id"
+>
+  Heading
+</Text>
+`;
+
+exports[`Heading should match snapshot - h5 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+      },
+      Object {
+        "fontFamily": "MulishSemiBold",
+        "fontSize": 17,
+        "lineHeight": 22.1,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="heading-test-id"
+>
+  Heading
+</Text>
+`;
+
+exports[`Heading should match snapshot - h6 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#1B1D4D",
+      },
+      Object {
+        "fontFamily": "MulishSemiBold",
+        "fontSize": 16,
+        "lineHeight": 25.6,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="heading-test-id"
+>
+  Heading
+</Text>
+`;

@@ -4,7 +4,7 @@ import { Icon, Props as IconProps } from '../Icon/Icon';
 
 import { styles } from './IconButton.styles';
 
-interface Props {
+export interface Props {
 	iconName: IconProps['name'];
 	iconColor: IconProps['color'];
 	iconSize: number;

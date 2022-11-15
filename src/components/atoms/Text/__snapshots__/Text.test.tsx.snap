@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should match snapshot 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4C4C60",
+        "fontFamily": "MulishRegular",
+        "fontSize": 17,
+        "lineHeight": 27.2,
+      },
+      Object {
+        "marginBottom": 20,
+      },
+    ]
+  }
+  testID="text-test-id"
+>
+  Text
+</Text>
+`;

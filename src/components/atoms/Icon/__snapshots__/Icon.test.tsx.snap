@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should match snapshot - amazon icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="amazon-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - check icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="check-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - chevron-left icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="chevron-left-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - credit-card icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="credit-card-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - credit-cards icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="credit-cards-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - dashboard icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="dashboard-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - deposits icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="deposits-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - dollar-sign icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="dollar-sign-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - eye-off icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="eye-off-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - facebook icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="facebook-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - flag-usa icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="flag-usa-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - google-plus icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="google-plus-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - loans icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="loans-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - logo icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="logo-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - money-transfer icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="money-transfer-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - more icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="more-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - notifications icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="notifications-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - paypal icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="paypal-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - profile icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="profile-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - repeat icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="repeat-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - smartphone icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="smartphone-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - twitter icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="twitter-icon-test-id"
+  width={20}
+/>
+`;

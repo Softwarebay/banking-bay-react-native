@@ -4,7 +4,7 @@ import { Flex } from '../Flex/Flex';
 
 import { styles } from './Paginator.styles';
 
-interface Props {
+export interface Props {
 	slides: { id: number }[];
 	currentIndex: number;
 	testID?: string;

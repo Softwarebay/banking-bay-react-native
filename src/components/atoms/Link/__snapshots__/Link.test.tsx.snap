@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should match snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={20}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={false}
+  testID="link-test-id"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FF5887",
+          "fontFamily": "MulishMedium",
+          "fontSize": 17,
+          "lineHeight": 27.2,
+        },
+        Object {
+          "marginBottom": 20,
+        },
+      ]
+    }
+  >
+    Link
+  </Text>
+</View>
+`;

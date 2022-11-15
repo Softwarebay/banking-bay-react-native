@@ -36,12 +36,7 @@ export const TransactionCard = ({
 			{({ pressed }) => (
 				<Card style={[styles.container, style, pressed && styles.pressed]}>
 					<View style={styles.iconContainer}>
-						<Icon
-							color={iconColor}
-							name={iconName}
-							size={25}
-							testID={`${id}-transaction-icon-test-id`}
-						/>
+						<Icon color={iconColor} name={iconName} size={25} />
 					</View>
 					<View style={styles.description}>
 						<Heading
