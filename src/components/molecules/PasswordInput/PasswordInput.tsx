@@ -10,7 +10,7 @@ import {
 import { colors } from 'theme';
 import { styles } from './PasswordInput.styles';
 
-interface Props {
+export interface Props {
 	placeholder: string;
 	testID: string;
 }
@@ -19,13 +19,13 @@ export const PasswordInput = forwardRef<InputFieldHandle, Props>(
 	({ placeholder, testID }, ref) => {
 		const [hidePassword, setHidePassword] = useState(true);
 		return (
-			<Card style={styles.container}>
+			<Card style={styles.container} testID={testID}>
 				<InputField
 					ref={ref}
 					placeholder={placeholder}
 					secureTextEntry={hidePassword}
 					style={styles.inputField}
-					testID={testID}
+					testID={`input-field-${testID}`}
 				/>
 				<IconButton
 					btnStyle={styles.iconBtn}
