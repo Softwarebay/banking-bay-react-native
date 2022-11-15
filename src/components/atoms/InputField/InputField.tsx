@@ -8,7 +8,7 @@ import {
 
 import { styles } from './InputField.styles';
 
-interface Props {
+export interface Props {
 	testID: string;
 	placeholder?: string;
 	secureTextEntry?: boolean;
