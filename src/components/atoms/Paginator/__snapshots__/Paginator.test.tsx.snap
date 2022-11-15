@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paginator should match snapshot - active index 0 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+  testID="paginator-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "#1B1D4D",
+          "borderRadius": 100,
+          "borderWidth": 3,
+          "height": 8,
+          "marginHorizontal": 8,
+          "opacity": 0.2,
+          "width": 8,
+        },
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "borderColor": "blue",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "#1B1D4D",
+          "borderRadius": 100,
+          "borderWidth": 3,
+          "height": 8,
+          "marginHorizontal": 8,
+          "opacity": 0.2,
+          "width": 8,
+        },
+        false,
+        Object {
+          "borderColor": "blue",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Paginator should match snapshot - active index 1 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+  testID="paginator-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "#1B1D4D",
+          "borderRadius": 100,
+          "borderWidth": 3,
+          "height": 8,
+          "marginHorizontal": 8,
+          "opacity": 0.2,
+          "width": 8,
+        },
+        false,
+        Object {
+          "borderColor": "blue",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "#1B1D4D",
+          "borderRadius": 100,
+          "borderWidth": 3,
+          "height": 8,
+          "marginHorizontal": 8,
+          "opacity": 0.2,
+          "width": 8,
+        },
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "borderColor": "blue",
+        },
+      ]
+    }
+  />
+</View>
+`;
