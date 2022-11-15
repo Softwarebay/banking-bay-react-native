@@ -11,7 +11,7 @@ interface AuthViaSocialItem {
 	onPress: () => void;
 }
 
-interface Props {
+export interface Props {
 	onPressFacebook: () => void;
 	onPressTwitter: () => void;
 	onPressGooglePlus: () => void;
@@ -56,7 +56,7 @@ export const AuthViaSocials = ({
 						iconColor={iconColor}
 						iconName={iconName}
 						iconSize={27}
-						testID={`${name}-btn-test-id`}
+						testID={`${name}-icon-btn-test-id`}
 						onPress={onPress}
 					/>
 				)

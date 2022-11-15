@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthViaSocials should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={20}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        Array [
+          Object {
+            "borderRadius": 100,
+            "height": 60,
+            "marginLeft": 10,
+            "width": 60,
+          },
+          Object {
+            "backgroundColor": "#3B5999",
+          },
+        ],
+        false,
+      ]
+    }
+    testID="Facebook-icon-btn-test-id"
+  >
+    <SvgMock
+      color="#FFFFFF"
+      height={27}
+      testID="facebook-icon-test-id"
+      width={27}
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={20}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        Array [
+          Object {
+            "borderRadius": 100,
+            "height": 60,
+            "marginLeft": 10,
+            "width": 60,
+          },
+          Object {
+            "backgroundColor": "#55ACEE",
+          },
+        ],
+        false,
+      ]
+    }
+    testID="Twitter-icon-btn-test-id"
+  >
+    <SvgMock
+      color="#FFFFFF"
+      height={27}
+      testID="twitter-icon-test-id"
+      width={27}
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={20}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        Array [
+          Object {
+            "borderRadius": 100,
+            "height": 60,
+            "marginLeft": 10,
+            "width": 60,
+          },
+          Object {
+            "backgroundColor": "#DD4B39",
+          },
+        ],
+        false,
+      ]
+    }
+    testID="GooglePlus-icon-btn-test-id"
+  >
+    <SvgMock
+      color="#FFFFFF"
+      height={27}
+      testID="google-plus-icon-test-id"
+      width={27}
+    />
+  </View>
+</View>
+`;
