@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
 		backgroundColor: colors.mainDark,
 		borderBottomLeftRadius: 30,
 		borderBottomRightRadius: 30,
-		flex: 0.5,
+		flex: 0.55,
 		overflow: 'hidden',
 	},
 	divider: {
