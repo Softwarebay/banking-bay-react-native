@@ -29,6 +29,7 @@ export const Image = ({ name, style }: Props) => {
 				<RNImage
 					source={onboarding1}
 					style={[styles.img, styles.onboarding, style]}
+					testID="onboarding1-img-test-id"
 				/>
 			);
 		case 'onboarding2':
@@ -36,6 +37,7 @@ export const Image = ({ name, style }: Props) => {
 				<RNImage
 					source={onboarding2}
 					style={[styles.img, styles.onboarding, style]}
+					testID="onboarding2-img-test-id"
 				/>
 			);
 		case 'onboarding3':
@@ -43,24 +45,34 @@ export const Image = ({ name, style }: Props) => {
 				<RNImage
 					source={onboarding3}
 					style={[styles.img, styles.onboarding, style]}
+					testID="onboarding3-img-test-id"
 				/>
 			);
 		case 'card1':
 			return (
-				<RNImage source={card1} style={[styles.img, styles.card, style]} />
+				<RNImage
+					source={card1}
+					style={[styles.img, styles.card, style]}
+					testID="card1-img-test-id"
+				/>
 			);
 		case 'card2':
 			return (
-				<RNImage source={card2} style={[styles.img, styles.card, style]} />
+				<RNImage
+					source={card2}
+					style={[styles.img, styles.card, style]}
+					testID="card2-img-test-id"
+				/>
 			);
 		case 'success-icon':
 			return (
 				<RNImage
 					source={successIcon}
 					style={[styles.img, styles.successIcon, style]}
+					testID="success-icon-img-test-id"
 				/>
 			);
 		default:
-			return <View />;
+			return <View testID="no-img-test-id" />;
 	}
 };

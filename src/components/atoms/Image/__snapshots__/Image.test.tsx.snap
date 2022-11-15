@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should match snapshot - card1 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 1.5472312703583062,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="card1-img-test-id"
+/>
+`;
+
+exports[`Image should match snapshot - card2 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 1.5472312703583062,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="card2-img-test-id"
+/>
+`;
+
+exports[`Image should match snapshot - onboarding1 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 0.7025,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="onboarding1-img-test-id"
+/>
+`;
+
+exports[`Image should match snapshot - onboarding2 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 0.7025,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="onboarding2-img-test-id"
+/>
+`;
+
+exports[`Image should match snapshot - onboarding3 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 0.7025,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="onboarding3-img-test-id"
+/>
+`;
+
+exports[`Image should match snapshot - success-icon 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 1.0749464668094217,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="success-icon-img-test-id"
+/>
+`;
