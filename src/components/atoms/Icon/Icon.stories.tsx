@@ -115,7 +115,7 @@ storiesOf('Atoms/Icon', module)
 	.add('Profile', () => (
 		<Icon
 			color={color('color', colors.mainDark)}
-			name="profile-icon"
+			name="profile"
 			size={number('size', 20)}
 		/>
 	))

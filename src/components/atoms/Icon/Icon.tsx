@@ -38,7 +38,7 @@ export interface Props {
 		| 'dollar-sign'
 		| 'repeat'
 		| 'smartphone'
-		| 'profile-icon'
+		| 'profile'
 		| 'credit-cards'
 		| 'deposits'
 		| 'loans'
@@ -96,7 +96,7 @@ export const Icon = ({ name, testID, color, size }: Props) => {
 			return (
 				<Repeat color={color} height={size} testID={testID} width={size} />
 			);
-		case 'profile-icon':
+		case 'profile':
 			return (
 				<ProfileIcon color={color} height={size} testID={testID} width={size} />
 			);
