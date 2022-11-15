@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileNumberInput should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Array [
+          Object {
+            "height": 55,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+          Object {
+            "height": 50,
+          },
+        ],
+      ],
+    ]
+  }
+  testID="mobile-number-input-test-id"
+>
+  <SvgMock
+    height={20}
+    testID="flag-usa-icon-test-id"
+    width={20}
+  />
+  <TextInput
+    autoCorrect={false}
+    keyboardType="phone-pad"
+    onChangeText={[Function]}
+    placeholder="Mobile number placeholder"
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+          "fontFamily": "MulishRegular",
+          "fontSize": 15,
+        },
+        Object {
+          "flex": 1,
+          "marginLeft": 8,
+        },
+      ]
+    }
+    testID="input-field-mobile-number-input-test-id"
+    value=""
+  />
+</View>
+`;

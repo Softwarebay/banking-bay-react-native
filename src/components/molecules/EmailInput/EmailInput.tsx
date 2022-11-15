@@ -7,7 +7,7 @@ import { colors } from 'theme';
 
 import { styles } from './EmailInput.styles';
 
-interface Props {
+export interface Props {
 	placeholder: string;
 	testID: string;
 	style?: StyleProp<TextStyle>;
@@ -19,14 +19,15 @@ interface Props {
 export const EmailInput = forwardRef<InputFieldHandle, Props>(
 	({ placeholder, style, validate, isValid, setIsValid, testID }, ref) => {
 		return (
-			<Card style={[styles.container, style]}>
+			<Card style={[styles.container, style]} testID={testID}>
 				<InputField
 					ref={ref}
 					keyboardType="email-address"
 					placeholder={placeholder}
+					secureTextEntry={false}
 					setIsValid={setIsValid}
 					style={styles.inputField}
-					testID={testID}
+					testID={`input-field-${testID}`}
 					validate={validate}
 				/>
 				{isValid && <Icon color={colors.mainDark} name="check" size={16} />}

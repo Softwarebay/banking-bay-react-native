@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailInput should match snapshot - input is not valid 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Array [
+          Object {
+            "height": 55,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+          Object {
+            "color": "red",
+          },
+        ],
+      ],
+    ]
+  }
+  testID="email-input-test-id"
+>
+  <TextInput
+    autoCorrect={false}
+    keyboardType="email-address"
+    onChangeText={[Function]}
+    placeholder="Enter email"
+    secureTextEntry={false}
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+          "fontFamily": "MulishRegular",
+          "fontSize": 15,
+        },
+        Object {
+          "flex": 1,
+          "marginRight": 20,
+        },
+      ]
+    }
+    testID="input-field-email-input-test-id"
+    value=""
+  />
+</View>
+`;
+
+exports[`EmailInput should match snapshot - input is valid 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Array [
+          Object {
+            "height": 55,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+          Object {
+            "color": "red",
+          },
+        ],
+      ],
+    ]
+  }
+  testID="email-input-test-id"
+>
+  <TextInput
+    autoCorrect={false}
+    keyboardType="email-address"
+    onChangeText={[Function]}
+    placeholder="Enter email"
+    secureTextEntry={false}
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+          "fontFamily": "MulishRegular",
+          "fontSize": 15,
+        },
+        Object {
+          "flex": 1,
+          "marginRight": 20,
+        },
+      ]
+    }
+    testID="input-field-email-input-test-id"
+    value=""
+  />
+  <SvgMock
+    color="#1B1D4D"
+    height={16}
+    testID="check-icon-test-id"
+    width={16}
+  />
+</View>
+`;
