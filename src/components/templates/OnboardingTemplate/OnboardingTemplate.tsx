@@ -13,15 +13,16 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import {
 	Button,
 	Heading,
+	Icon,
 	Image,
 	ImageProps,
-	Logo,
 	Paginator,
 	Text,
 } from 'components/atoms';
 
 import { bgOnboarding } from 'assets/backgrounds';
 
+import { colors } from 'theme';
 import { styles } from './OnboardingTemplate.styles';
 
 export interface IOnboardingSlide {
@@ -73,7 +74,7 @@ export const OnboardingTemplate = ({
 				</SafeAreaView>
 				<View style={styles.container}>
 					<View style={styles.content}>
-						<Logo testID="onboarding-logo-test-id" />
+						<Icon color={colors.mainDark} name="logo" size={40} />
 						<FlatList<IOnboardingSlide>
 							contentContainerStyle={styles.carousel}
 							data={onboardingSlides}
