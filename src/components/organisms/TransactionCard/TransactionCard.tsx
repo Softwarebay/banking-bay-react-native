@@ -5,7 +5,7 @@ import { Card, Heading, Icon, IconProps, Text } from 'components/atoms';
 import { colors } from 'theme';
 import { styles } from './TransactionCard.styles';
 
-interface Props {
+export interface Props {
 	id: string;
 	iconName: IconProps['name'];
 	iconColor?: string;
@@ -13,8 +13,9 @@ interface Props {
 	title: string;
 	category: string;
 	amount: number;
-	style?: StyleProp<ViewStyle>;
 	onPress: () => void;
+	style?: StyleProp<ViewStyle>;
+	testID?: string;
 }
 
 export const TransactionCard = ({
@@ -26,13 +27,14 @@ export const TransactionCard = ({
 	type,
 	amount,
 	style,
+	testID,
 	onPress,
 }: Props) => {
 	const amountText = `${type === 'incoming' ? '+' : '-'} ${amount.toFixed(2)}`;
 	const amountColor = `${type === 'incoming' ? colors.green : colors.mainDark}`;
 
 	return (
-		<Pressable onPress={onPress}>
+		<Pressable testID={testID} onPress={onPress}>
 			{({ pressed }) => (
 				<Card style={[styles.container, style, pressed && styles.pressed]}>
 					<View style={styles.iconContainer}>

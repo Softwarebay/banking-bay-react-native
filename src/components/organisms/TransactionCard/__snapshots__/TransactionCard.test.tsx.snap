@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransactionCard should match snapshot - incoming transfer 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="transaction-card-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 10,
+            "shadowColor": "#161966",
+            "shadowOffset": Object {
+              "height": 6,
+              "width": 0,
+            },
+            "shadowOpacity": 0.08,
+            "shadowRadius": 16,
+          },
+          Array [
+            Object {
+              "paddingHorizontal": 15,
+              "paddingVertical": 15,
+            },
+            Object {
+              "backgroundColor": "blue",
+            },
+            false,
+          ],
+        ],
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F1F5FD",
+          "borderRadius": 100,
+          "height": 50,
+          "justifyContent": "center",
+          "width": 50,
+        }
+      }
+    >
+      <SvgMock
+        color="blue"
+        height={25}
+        testID="smartphone-icon-test-id"
+        width={25}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginHorizontal": 15,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+            },
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 16,
+              "lineHeight": 25.6,
+            },
+            undefined,
+          ]
+        }
+        testID="mobile-transaction-title-test-id"
+      >
+        Transaction Title
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "fontSize": 14,
+              "lineHeight": 22.4,
+            },
+          ]
+        }
+        testID="mobile-transaction-subtitle-test-id"
+      >
+        Mobile Transfer
+      </Text>
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#3EB290",
+          },
+          Object {
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 16,
+            "lineHeight": 25.6,
+          },
+          undefined,
+        ]
+      }
+      testID="mobile-transaction-amount-test-id"
+    >
+      + 10.00
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`TransactionCard should match snapshot - outgoing transfer 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  testID="transaction-card-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 10,
+            "shadowColor": "#161966",
+            "shadowOffset": Object {
+              "height": 6,
+              "width": 0,
+            },
+            "shadowOpacity": 0.08,
+            "shadowRadius": 16,
+          },
+          Array [
+            Object {
+              "paddingHorizontal": 15,
+              "paddingVertical": 15,
+            },
+            Object {
+              "backgroundColor": "blue",
+            },
+            false,
+          ],
+        ],
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F1F5FD",
+          "borderRadius": 100,
+          "height": 50,
+          "justifyContent": "center",
+          "width": 50,
+        }
+      }
+    >
+      <SvgMock
+        color="blue"
+        height={25}
+        testID="smartphone-icon-test-id"
+        width={25}
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "marginHorizontal": 15,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+            },
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 16,
+              "lineHeight": 25.6,
+            },
+            undefined,
+          ]
+        }
+        testID="mobile-transaction-title-test-id"
+      >
+        Transaction Title
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "fontSize": 14,
+              "lineHeight": 22.4,
+            },
+          ]
+        }
+        testID="mobile-transaction-subtitle-test-id"
+      >
+        Mobile Transfer
+      </Text>
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1B1D4D",
+          },
+          Object {
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 16,
+            "lineHeight": 25.6,
+          },
+          undefined,
+        ]
+      }
+      testID="mobile-transaction-amount-test-id"
+    >
+      - 10.00
+    </Text>
+  </View>
+</View>
+`;
