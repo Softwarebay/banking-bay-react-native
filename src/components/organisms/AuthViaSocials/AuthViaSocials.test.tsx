@@ -40,8 +40,8 @@ describe('AuthViaSocials', () => {
 		fireEvent.press(facebookIconBtn);
 
 		expect(mockOnPressFacebook).toHaveBeenCalledTimes(1);
-		expect(mockOnPressGooglePlus).not.toHaveBeenCalledTimes(1);
-		expect(mockOnPressTwitter).not.toHaveBeenCalledTimes(1);
+		expect(mockOnPressGooglePlus).not.toHaveBeenCalled();
+		expect(mockOnPressTwitter).not.toHaveBeenCalled();
 	});
 
 	it('should handle press events on Google+ icon', () => {
@@ -54,8 +54,8 @@ describe('AuthViaSocials', () => {
 		fireEvent.press(googlePlusIconBtn);
 
 		expect(mockOnPressGooglePlus).toHaveBeenCalledTimes(1);
-		expect(mockOnPressFacebook).not.toHaveBeenCalledTimes(1);
-		expect(mockOnPressTwitter).not.toHaveBeenCalledTimes(1);
+		expect(mockOnPressFacebook).not.toHaveBeenCalled();
+		expect(mockOnPressTwitter).not.toHaveBeenCalled();
 	});
 
 	it('should handle press events on Twitter icon', () => {
@@ -66,7 +66,7 @@ describe('AuthViaSocials', () => {
 		fireEvent.press(twitterIconBtn);
 
 		expect(mockOnPressTwitter).toHaveBeenCalledTimes(1);
-		expect(mockOnPressFacebook).not.toHaveBeenCalledTimes(1);
-		expect(mockOnPressGooglePlus).not.toHaveBeenCalledTimes(1);
+		expect(mockOnPressFacebook).not.toHaveBeenCalled();
+		expect(mockOnPressGooglePlus).not.toHaveBeenCalled();
 	});
 });
