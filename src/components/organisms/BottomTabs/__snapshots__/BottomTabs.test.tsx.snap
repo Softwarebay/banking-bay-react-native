@@ -1,0 +1,1521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomTabs should match snapshot - Dashboard route focused 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "height": 90,
+        "paddingBottom": 30,
+        "paddingHorizontal": 10,
+        "paddingVertical": 20,
+        "shadowColor": "#161966",
+        "shadowOffset": Object {
+          "height": 6,
+          "width": 0,
+        },
+        "shadowOpacity": 0.08,
+        "shadowRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Dashboard-tab-item-test-id"
+  >
+    <SvgMock
+      color="#FF5887"
+      height={25}
+      testID="dashboard-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#FF5887",
+            },
+          ],
+        ]
+      }
+      testID="Dashboard-route-name-test-id"
+    >
+      Dashboard
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Deposits-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="deposits-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Deposits-route-name-test-id"
+    >
+      Deposits
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Loans-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="loans-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Loans-route-name-test-id"
+    >
+      Loans
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Notifications-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="notifications-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Notifications-route-name-test-id"
+    >
+      Notifications
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="More-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="more-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="More-route-name-test-id"
+    >
+      More
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomTabs should match snapshot - Deposits route focused 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "height": 90,
+        "paddingBottom": 30,
+        "paddingHorizontal": 10,
+        "paddingVertical": 20,
+        "shadowColor": "#161966",
+        "shadowOffset": Object {
+          "height": 6,
+          "width": 0,
+        },
+        "shadowOpacity": 0.08,
+        "shadowRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Dashboard-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="dashboard-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Dashboard-route-name-test-id"
+    >
+      Dashboard
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Deposits-tab-item-test-id"
+  >
+    <SvgMock
+      color="#FF5887"
+      height={25}
+      testID="deposits-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#FF5887",
+            },
+          ],
+        ]
+      }
+      testID="Deposits-route-name-test-id"
+    >
+      Deposits
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Loans-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="loans-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Loans-route-name-test-id"
+    >
+      Loans
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Notifications-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="notifications-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Notifications-route-name-test-id"
+    >
+      Notifications
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="More-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="more-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="More-route-name-test-id"
+    >
+      More
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomTabs should match snapshot - Loans route focused 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "height": 90,
+        "paddingBottom": 30,
+        "paddingHorizontal": 10,
+        "paddingVertical": 20,
+        "shadowColor": "#161966",
+        "shadowOffset": Object {
+          "height": 6,
+          "width": 0,
+        },
+        "shadowOpacity": 0.08,
+        "shadowRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Dashboard-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="dashboard-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Dashboard-route-name-test-id"
+    >
+      Dashboard
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Deposits-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="deposits-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Deposits-route-name-test-id"
+    >
+      Deposits
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Loans-tab-item-test-id"
+  >
+    <SvgMock
+      color="#FF5887"
+      height={25}
+      testID="loans-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#FF5887",
+            },
+          ],
+        ]
+      }
+      testID="Loans-route-name-test-id"
+    >
+      Loans
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Notifications-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="notifications-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Notifications-route-name-test-id"
+    >
+      Notifications
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="More-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="more-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="More-route-name-test-id"
+    >
+      More
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomTabs should match snapshot - More route focused 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "height": 90,
+        "paddingBottom": 30,
+        "paddingHorizontal": 10,
+        "paddingVertical": 20,
+        "shadowColor": "#161966",
+        "shadowOffset": Object {
+          "height": 6,
+          "width": 0,
+        },
+        "shadowOpacity": 0.08,
+        "shadowRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Dashboard-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="dashboard-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Dashboard-route-name-test-id"
+    >
+      Dashboard
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Deposits-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="deposits-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Deposits-route-name-test-id"
+    >
+      Deposits
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Loans-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="loans-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Loans-route-name-test-id"
+    >
+      Loans
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Notifications-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="notifications-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Notifications-route-name-test-id"
+    >
+      Notifications
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="More-tab-item-test-id"
+  >
+    <SvgMock
+      color="#FF5887"
+      height={25}
+      testID="more-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#FF5887",
+            },
+          ],
+        ]
+      }
+      testID="More-route-name-test-id"
+    >
+      More
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomTabs should match snapshot - Notifications route focused 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10,
+        "height": 90,
+        "paddingBottom": 30,
+        "paddingHorizontal": 10,
+        "paddingVertical": 20,
+        "shadowColor": "#161966",
+        "shadowOffset": Object {
+          "height": 6,
+          "width": 0,
+        },
+        "shadowOpacity": 0.08,
+        "shadowRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Dashboard-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="dashboard-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Dashboard-route-name-test-id"
+    >
+      Dashboard
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Deposits-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="deposits-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Deposits-route-name-test-id"
+    >
+      Deposits
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Loans-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="loans-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="Loans-route-name-test-id"
+    >
+      Loans
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="Notifications-tab-item-test-id"
+  >
+    <SvgMock
+      color="#FF5887"
+      height={25}
+      testID="notifications-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#FF5887",
+            },
+          ],
+        ]
+      }
+      testID="Notifications-route-name-test-id"
+    >
+      Notifications
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+    testID="More-tab-item-test-id"
+  >
+    <SvgMock
+      color="#4C4C60"
+      height={25}
+      testID="more-icon-test-id"
+      width={25}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Array [
+            Object {
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 12,
+            },
+            false,
+          ],
+        ]
+      }
+      testID="More-route-name-test-id"
+    >
+      More
+    </Text>
+  </View>
+</View>
+`;
