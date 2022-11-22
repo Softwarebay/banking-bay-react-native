@@ -32,7 +32,7 @@ export interface IOnboardingSlide {
 	img: ImageProps['name'];
 }
 
-interface Props {
+export interface Props {
 	onboardingSlides: IOnboardingSlide[];
 	currentSlideIndex: number;
 	onPressOnboardingBtn: () => void;
@@ -103,6 +103,7 @@ export const OnboardingTemplate = ({
 						<Paginator
 							currentIndex={currentSlideIndex}
 							slides={onboardingSlides}
+							testID="onboarding-template-paginator-test-id"
 						/>
 					</View>
 					<Button
