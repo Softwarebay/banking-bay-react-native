@@ -15,7 +15,7 @@ import { MobileNumberInput } from 'components/molecules';
 import { colors } from 'theme';
 import { styles } from './MobilePaymentTemplate.styles';
 
-interface Props {
+export interface Props {
 	inputPlaceholder: string;
 	onSuccessMobilePayment: (mobileNumber: string, amount: number) => void;
 }
@@ -58,6 +58,7 @@ export const MobilePaymentTemplate = ({
 								intStyle={[styles.amountText, styles.amountInt]}
 								number={amount}
 								prefix="$"
+								testID="mobile-payment-float-num-test-id"
 							/>
 						</Card>
 						<Text

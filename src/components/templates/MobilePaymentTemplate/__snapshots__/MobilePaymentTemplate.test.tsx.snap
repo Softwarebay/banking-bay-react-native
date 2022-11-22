@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobilePaymentTemplate should match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FAFCFF",
+      "flex": 1,
+      "paddingBottom": 30,
+      "paddingHorizontal": 20,
+      "paddingTop": 30,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 10,
+            "shadowColor": "#161966",
+            "shadowOffset": Object {
+              "height": 6,
+              "width": 0,
+            },
+            "shadowOpacity": 0.08,
+            "shadowRadius": 16,
+          },
+          Array [
+            Object {
+              "height": 55,
+              "paddingHorizontal": 20,
+              "paddingVertical": 14,
+            },
+            undefined,
+          ],
+        ],
+      ]
+    }
+    testID="mobile-payment-input-test-id"
+  >
+    <SvgMock
+      height={20}
+      testID="flag-usa-icon-test-id"
+      width={20}
+    />
+    <TextInput
+      autoCorrect={false}
+      keyboardType="phone-pad"
+      onChangeText={[Function]}
+      placeholder="123456"
+      style={
+        Array [
+          Object {
+            "color": "#1B1D4D",
+            "fontFamily": "MulishRegular",
+            "fontSize": 15,
+          },
+          Object {
+            "flex": 1,
+            "marginLeft": 8,
+          },
+        ]
+      }
+      testID="input-field-mobile-payment-input-test-id"
+      value=""
+    />
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#4C4C60",
+          "fontFamily": "MulishRegular",
+          "fontSize": 17,
+          "lineHeight": 27.2,
+        },
+        Array [
+          Object {
+            "fontSize": 14,
+            "lineHeight": 22.4,
+          },
+          Object {
+            "marginBottom": 10,
+            "marginTop": 18,
+          },
+        ],
+      ]
+    }
+    testID="mobile-payment-balance-text-test-id"
+  >
+    Your balance: 4863.27 USD
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "shadowColor": "#161966",
+              "shadowOffset": Object {
+                "height": 6,
+                "width": 0,
+              },
+              "shadowOpacity": 0.08,
+              "shadowRadius": 16,
+            },
+            Object {
+              "marginRight": 15,
+              "paddingHorizontal": 22,
+              "paddingVertical": 18,
+            },
+          ],
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Array [
+              Object {
+                "alignItems": "baseline",
+              },
+              undefined,
+            ],
+          ]
+        }
+        testID="mobile-payment-float-num-test-id"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Array [
+                Object {
+                  "fontFamily": "MulishMedium",
+                },
+                Object {
+                  "fontSize": 33,
+                },
+              ],
+            ]
+          }
+        >
+          $10.
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Array [
+                Object {
+                  "fontFamily": "MulishMedium",
+                },
+                Object {
+                  "fontSize": 20,
+                },
+              ],
+            ]
+          }
+        >
+          00
+        </Text>
+      </View>
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Object {
+            "fontSize": 14,
+            "lineHeight": 22.4,
+          },
+        ]
+      }
+      testID="mobile-payment-fees-text-test-id"
+    >
+      No fees
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        false,
+        Object {
+          "marginTop": "auto",
+        },
+      ]
+    }
+    testID="confirm-mobile-payment-btn-test-id"
+  >
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            4288142079,
+            4279654301,
+          ],
+          "endPoint": Array [
+            1,
+            1,
+          ],
+          "locations": undefined,
+          "startPoint": Array [
+            0,
+            0,
+          ],
+        }
+      }
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 10,
+          "height": 55,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            },
+            Object {
+              "color": "#FFFFFF",
+            },
+          ]
+        }
+      >
+        Confirm
+      </Text>
+    </ViewManagerAdapter_ExpoLinearGradient>
+  </View>
+</View>
+`;
