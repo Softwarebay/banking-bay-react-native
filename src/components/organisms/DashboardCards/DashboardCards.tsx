@@ -25,7 +25,7 @@ import { colors } from 'theme';
 
 import { styles } from './DashboardCards.styles';
 
-interface Props {
+export interface Props {
 	navText: string;
 	onPressProfileIconButton: () => void;
 	onPressCreditCardsIconButton: () => void;
@@ -101,7 +101,10 @@ export const DashboardCards = ({
 							onPress={onPressCreditCardsIconButton}
 						/>
 					</Flex>
-					<Divider style={styles.divider} />
+					<Divider
+						style={styles.divider}
+						testID="dashboards-cards-divider-test-id"
+					/>
 					<FlatList<Card>
 						contentContainerStyle={styles.cardContainer}
 						data={cards}
