@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentOptions should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "justifyContent": "space-around",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 70,
+              "marginBottom": 10,
+              "width": 70,
+            },
+            Object {
+              "backgroundColor": "#3EB290",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="top-up-payment-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={25}
+        testID="credit-card-icon-test-id"
+        width={25}
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Object {
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 12,
+            "lineHeight": 14.4,
+            "maxWidth": 70,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="top-up-payment-title-test-id"
+    >
+      Top-Up Payment
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 70,
+              "marginBottom": 10,
+              "width": 70,
+            },
+            Object {
+              "backgroundColor": "#FF8A71",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="mobile-payment-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={25}
+        testID="smartphone-icon-test-id"
+        width={25}
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Object {
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 12,
+            "lineHeight": 14.4,
+            "maxWidth": 70,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="mobile-payment-title-test-id"
+    >
+      Mobile Payment
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 70,
+              "marginBottom": 10,
+              "width": 70,
+            },
+            Object {
+              "backgroundColor": "#55ACEE",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="money-transfer-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={25}
+        testID="repeat-icon-test-id"
+        width={25}
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Object {
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 12,
+            "lineHeight": 14.4,
+            "maxWidth": 70,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="money-transfer-title-test-id"
+    >
+      Money Transfer
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 70,
+              "marginBottom": 10,
+              "width": 70,
+            },
+            Object {
+              "backgroundColor": "#EECC55",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="make-payment-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={25}
+        testID="dollar-sign-icon-test-id"
+        width={25}
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          Object {
+            "fontFamily": "MulishSemiBold",
+            "fontSize": 12,
+            "lineHeight": 14.4,
+            "maxWidth": 70,
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="make-payment-title-test-id"
+    >
+      Make a Payment
+    </Text>
+  </View>
+</View>
+`;

@@ -42,6 +42,7 @@ export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
 					<Pressable
 						key={route.key}
 						style={({ pressed }) => [styles.tabItem, pressed && styles.pressed]}
+						testID={`${route.name}-tab-item-test-id`}
 						onLongPress={() => onLongPress(route)}
 						onPress={() => onPress(route, isFocused)}
 					>
@@ -52,6 +53,7 @@ export const BottomTabs = ({ state, navigation }: BottomTabBarProps) => {
 						/>
 						<Text
 							style={[styles.label, isFocused && styles.focused]}
+							testID={`${route.name}-route-name-test-id`}
 							text={route.name}
 						/>
 					</Pressable>

@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LatestTransactions should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "blue",
+    }
+  }
+  testID="latest-transactions-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#1B1D4D",
+          },
+          Object {
+            "fontFamily": "MulishMedium",
+            "fontSize": 22,
+            "lineHeight": 26.4,
+          },
+          undefined,
+        ]
+      }
+      testID="latest-transactions-title-test-id"
+    >
+      Latest transactions
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={false}
+      testID="latest-transaction-link-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FF5887",
+              "fontFamily": "MulishMedium",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            undefined,
+          ]
+        }
+      >
+        View All
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "amount": 2,
+          "iconName": "amazon",
+          "id": "item1",
+          "title": "Item1",
+          "transactionCategory": "Mobile",
+          "transactionType": "outgoing",
+        },
+        Object {
+          "amount": 3,
+          "iconName": "amazon",
+          "id": "item2",
+          "title": "Item2",
+          "transactionCategory": "Mobile",
+          "transactionType": "outgoing",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="item1-latest-transaction-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 10,
+                      },
+                      Object {
+                        "marginTop": 20,
+                      },
+                      false,
+                    ],
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                height={25}
+                testID="amazon-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="item1-transaction-title-test-id"
+              >
+                Item1
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="item1-transaction-subtitle-test-id"
+              >
+                Mobile
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1B1D4D",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="item1-transaction-amount-test-id"
+            >
+              - 2.00
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="item2-latest-transaction-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 10,
+                      },
+                      false,
+                      Object {
+                        "marginBottom": 20,
+                      },
+                    ],
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                height={25}
+                testID="amazon-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="item2-transaction-title-test-id"
+              >
+                Item2
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="item2-transaction-subtitle-test-id"
+              >
+                Mobile
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1B1D4D",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="item2-transaction-amount-test-id"
+            >
+              - 3.00
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

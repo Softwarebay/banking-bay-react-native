@@ -14,7 +14,7 @@ export interface PaymentOption {
 	onPress: () => void;
 }
 
-interface Props {
+export interface Props {
 	onPressTopUpPayment: () => void;
 	onPressMobilePayment: () => void;
 	onPressMoneyTransfer: () => void;
@@ -54,7 +54,7 @@ export const PaymentOptions = ({
 		},
 		{
 			id: 'make-payment',
-			title: 'Make a payment',
+			title: 'Make a Payment',
 			btnColor: '#EECC55',
 			iconColor: colors.white,
 			iconName: 'dollar-sign',
@@ -72,7 +72,7 @@ export const PaymentOptions = ({
 							iconColor={iconColor}
 							iconName={iconName}
 							iconSize={25}
-							testID={`${id}-btn-test-id`}
+							testID={`${id}-icon-btn-test-id`}
 							onPress={onPress}
 						/>
 						<Text

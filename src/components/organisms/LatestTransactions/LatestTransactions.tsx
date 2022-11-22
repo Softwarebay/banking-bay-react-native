@@ -15,11 +15,12 @@ export interface TransactionHistoryItem {
 	amount: number;
 }
 
-interface Props {
+export interface Props {
 	latestTransactions: TransactionHistoryItem[];
 	onPressViewAll: () => void;
 	onPressTransactionCard: () => void;
 	style?: StyleProp<ViewStyle>;
+	testID?: string;
 }
 
 export const LatestTransactions = ({
@@ -27,9 +28,10 @@ export const LatestTransactions = ({
 	onPressViewAll,
 	onPressTransactionCard,
 	style,
+	testID,
 }: Props) => {
 	return (
-		<View style={style}>
+		<View style={style} testID={testID}>
 			<Flex direction="row" style={styles.header}>
 				<Heading
 					size="h4"
@@ -37,7 +39,7 @@ export const LatestTransactions = ({
 					text="Latest transactions"
 				/>
 				<Link
-					testID="latest-transaction-link"
+					testID="latest-transaction-link-test-id"
 					text="View All"
 					onPress={onPressViewAll}
 				/>
@@ -69,6 +71,7 @@ export const LatestTransactions = ({
 							index === 0 && styles.firstCard,
 							index === latestTransactions.length - 1 && styles.lastCard,
 						]}
+						testID={`${id}-latest-transaction-item-test-id`}
 						title={title}
 						type={transactionType}
 						onPress={onPressTransactionCard}
