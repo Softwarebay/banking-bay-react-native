@@ -14,7 +14,7 @@ import { EmailInput, PasswordInput } from 'components/molecules';
 
 import { styles } from './SignInForm.styles';
 
-interface Props {
+export interface Props {
 	onRestorePassword: () => void;
 	onSubmitSignInForm: (userCredentials: {
 		email: string;
