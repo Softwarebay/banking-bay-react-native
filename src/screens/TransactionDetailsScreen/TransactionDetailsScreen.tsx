@@ -1,10 +1,11 @@
+import { IconProps } from 'components/atoms';
 import { TransactionDetailsTemplate } from 'components/templates';
 import { colors } from 'theme';
 
 interface TransactionDetails {
 	date: string;
 	category: string;
-	categoryIcon: string;
+	categoryIcon: IconProps['name'];
 	iconColor: string;
 	iconBg: string;
 	amount: string;
