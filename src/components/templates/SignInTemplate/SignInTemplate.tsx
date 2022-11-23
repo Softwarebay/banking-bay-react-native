@@ -8,7 +8,7 @@ import { colors } from 'theme';
 
 import { styles } from './SignInTemplate.styles';
 
-interface Props {
+export interface Props {
 	headingText: string;
 	footerText: string;
 	footerLinkText: string;

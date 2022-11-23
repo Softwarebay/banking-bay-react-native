@@ -18,7 +18,7 @@ import { colors } from 'theme';
 
 import { styles } from './TransactionDetailsTemplate.styles';
 
-interface Props {
+export interface Props {
 	transactionDetails: TransactionDetails;
 	buttonTitle: string;
 	onPressPrimaryButton: () => void;
@@ -80,13 +80,13 @@ export const TransactionDetailsTemplate = ({
 							</View>
 							<Text
 								style={styles.categoryText}
-								testID="transaction-details-category-test-id"
+								testID="transaction-details-header-category-test-id"
 								text={category}
 							/>
 						</View>
 						<Text
 							style={styles.date}
-							testID="transaction-details-date-test-id"
+							testID="transaction-details-header-date-test-id"
 							text={date}
 						/>
 
@@ -101,76 +101,76 @@ export const TransactionDetailsTemplate = ({
 
 						<Text
 							style={styles.sentToText}
-							testID="transaction-details-sent-to-test-id"
+							testID="transaction-details-header-sent-to-test-id"
 							text={`sent to ${sentTo}`}
 						/>
 
-						<Flex
-							direction="row"
-							style={styles.status}
-							testID="transaction-details-status-test-id"
-						>
+						<Flex direction="row" style={styles.status}>
 							<View style={[styles.iconContainer, styles.statusIcon]}>
 								<Icon color={colors.white} name="check" size={12} />
 							</View>
-							<Text style={styles.statusText} text="Success" />
+							<Text
+								style={styles.statusText}
+								testID="transaction-details-header-status-text-test-id"
+								text="Success"
+							/>
 						</Flex>
 					</View>
 
-					<Divider />
+					<Divider testID="transaction-details-divider-test-id" />
 					<View style={styles.content}>
 						<View>
-							<Flex direction="row" style={styles.detailText}>
+							<Flex
+								direction="row"
+								style={styles.detailText}
+								testID="transaction-details-row-sent-to-test-id"
+							>
 								<Text text="Sent to" />
-								<Heading
-									size="h5"
-									testID="transaction-details-sent-to-test-id"
-									text={sentTo}
-								/>
+								<Heading size="h5" text={sentTo} />
 							</Flex>
 							<Divider />
 						</View>
 						<View>
-							<Flex direction="row" style={styles.detailText}>
+							<Flex
+								direction="row"
+								style={styles.detailText}
+								testID="transaction-details-row-card-test-id"
+							>
 								<Text text="Card" />
-								<Heading
-									size="h5"
-									testID="transaction-details-card-test-id"
-									text={card}
-								/>
+								<Heading size="h5" text={card} />
 							</Flex>
 							<Divider />
 						</View>
 						<View>
-							<Flex direction="row" style={styles.detailText}>
+							<Flex
+								direction="row"
+								style={styles.detailText}
+								testID="transaction-details-row-amount-test-id"
+							>
 								<Text text="Amount" />
-								<Heading
-									size="h5"
-									testID="transaction-details-amount-test-id"
-									text={`${amount} ${currency}`}
-								/>
+								<Heading size="h5" text={`${amount} ${currency}`} />
 							</Flex>
 							<Divider />
 						</View>
 						<View>
-							<Flex direction="row" style={styles.detailText}>
+							<Flex
+								direction="row"
+								style={styles.detailText}
+								testID="transaction-details-row-fee-test-id"
+							>
 								<Text text="Fee" />
-								<Heading
-									size="h5"
-									testID="transaction-details-fee-test-id"
-									text={`${fee} ${currency}`}
-								/>
+								<Heading size="h5" text={`${fee} ${currency}`} />
 							</Flex>
 							<Divider />
 						</View>
 						<View>
-							<Flex direction="row" style={styles.detailText}>
+							<Flex
+								direction="row"
+								style={styles.detailText}
+								testID="transaction-details-row-balance-test-id"
+							>
 								<Text text="Residual balance" />
-								<Heading
-									size="h5"
-									testID="transaction-details-balance-test-id"
-									text={`${balance} ${currency}`}
-								/>
+								<Heading size="h5" text={`${balance} ${currency}`} />
 							</Flex>
 							<Divider />
 						</View>

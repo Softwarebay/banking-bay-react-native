@@ -20,7 +20,7 @@ export interface TransactionHistoryItem {
 	amount: number;
 }
 
-interface Props {
+export interface Props {
 	navText: string;
 	latestTransactions: TransactionHistoryItem[];
 	onPressCreditCardsIconButton: () => void;
@@ -62,7 +62,7 @@ export const DashboardTemplate = ({
 						onPressTopUpPayment={onPressTopUpPayment}
 					/>
 				</View>
-				<Divider />
+				<Divider testID="dashboard-template-divider-test-id" />
 				<LatestTransactions
 					latestTransactions={latestTransactions}
 					style={styles.latestTransactions}

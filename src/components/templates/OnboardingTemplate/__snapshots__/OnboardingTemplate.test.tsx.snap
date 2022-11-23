@@ -1,0 +1,1516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OnboardingTemplate should match snapshot - slide 1 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Array [
+          Object {
+            "height": undefined,
+          },
+          Object {
+            "aspectRatio": 0.7025,
+          },
+          Object {
+            "top": 120,
+            "width": "95%",
+          },
+        ]
+      }
+      testID="onboarding1-img-test-id"
+    />
+  </RNCSafeAreaView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FAFCFF",
+        "borderTopLeftRadius": 20,
+        "borderTopRightRadius": 20,
+        "marginHorizontal": 25,
+        "paddingHorizontal": 25,
+        "paddingVertical": 60,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginBottom": 50,
+        }
+      }
+    >
+      <SvgMock
+        color="#1B1D4D"
+        height={40}
+        testID="logo-icon-test-id"
+        width={40}
+      />
+      <RCTScrollView
+        contentContainerStyle={
+          Object {
+            "marginBottom": 30,
+            "marginTop": 30,
+          }
+        }
+        data={
+          Array [
+            Object {
+              "description": "Description 1",
+              "id": 1,
+              "img": "onboarding1",
+              "title": "Slide 1",
+            },
+            Object {
+              "description": "Description 2",
+              "id": 2,
+              "img": "onboarding2",
+              "title": "Slide 2",
+            },
+            Object {
+              "description": "Description 3",
+              "id": 3,
+              "img": "onboarding3",
+              "title": "Slide 3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={true}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        pagingEnabled={true}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        showsHorizontalScrollIndicator={false}
+        stickyHeaderIndices={Array []}
+        viewabilityConfigCallbackPairs={
+          Array [
+            Object {
+              "onViewableItemsChanged": [Function],
+              "viewabilityConfig": Object {
+                "viewAreaCoveragePercentThreshold": 50,
+              },
+            },
+          ]
+        }
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-1-test-id"
+              >
+                Slide 1
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-1-test-id"
+              >
+                Description 1
+              </Text>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-2-test-id"
+              >
+                Slide 2
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-2-test-id"
+              >
+                Description 2
+              </Text>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-3-test-id"
+              >
+                Slide 3
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-3-test-id"
+              >
+                Description 3
+              </Text>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            undefined,
+          ]
+        }
+        testID="onboarding-template-paginator-test-id"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          undefined,
+        ]
+      }
+      testID="onboarding-btn-test-id"
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4288142079,
+              4279654301,
+            ],
+            "endPoint": Array [
+              1,
+              1,
+            ],
+            "locations": undefined,
+            "startPoint": Array [
+              0,
+              0,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Get Started
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`OnboardingTemplate should match snapshot - slide 2 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Array [
+          Object {
+            "height": undefined,
+          },
+          Object {
+            "aspectRatio": 0.7025,
+          },
+          Object {
+            "top": 120,
+            "width": "95%",
+          },
+        ]
+      }
+      testID="onboarding2-img-test-id"
+    />
+  </RNCSafeAreaView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FAFCFF",
+        "borderTopLeftRadius": 20,
+        "borderTopRightRadius": 20,
+        "marginHorizontal": 25,
+        "paddingHorizontal": 25,
+        "paddingVertical": 60,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginBottom": 50,
+        }
+      }
+    >
+      <SvgMock
+        color="#1B1D4D"
+        height={40}
+        testID="logo-icon-test-id"
+        width={40}
+      />
+      <RCTScrollView
+        contentContainerStyle={
+          Object {
+            "marginBottom": 30,
+            "marginTop": 30,
+          }
+        }
+        data={
+          Array [
+            Object {
+              "description": "Description 1",
+              "id": 1,
+              "img": "onboarding1",
+              "title": "Slide 1",
+            },
+            Object {
+              "description": "Description 2",
+              "id": 2,
+              "img": "onboarding2",
+              "title": "Slide 2",
+            },
+            Object {
+              "description": "Description 3",
+              "id": 3,
+              "img": "onboarding3",
+              "title": "Slide 3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={true}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        pagingEnabled={true}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        showsHorizontalScrollIndicator={false}
+        stickyHeaderIndices={Array []}
+        viewabilityConfigCallbackPairs={
+          Array [
+            Object {
+              "onViewableItemsChanged": [Function],
+              "viewabilityConfig": Object {
+                "viewAreaCoveragePercentThreshold": 50,
+              },
+            },
+          ]
+        }
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-1-test-id"
+              >
+                Slide 1
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-1-test-id"
+              >
+                Description 1
+              </Text>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-2-test-id"
+              >
+                Slide 2
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-2-test-id"
+              >
+                Description 2
+              </Text>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-3-test-id"
+              >
+                Slide 3
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-3-test-id"
+              >
+                Description 3
+              </Text>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            undefined,
+          ]
+        }
+        testID="onboarding-template-paginator-test-id"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          undefined,
+        ]
+      }
+      testID="onboarding-btn-test-id"
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4288142079,
+              4279654301,
+            ],
+            "endPoint": Array [
+              1,
+              1,
+            ],
+            "locations": undefined,
+            "startPoint": Array [
+              0,
+              0,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Get Started
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`OnboardingTemplate should match snapshot - slide 3 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Array [
+          Object {
+            "height": undefined,
+          },
+          Object {
+            "aspectRatio": 0.7025,
+          },
+          Object {
+            "top": 120,
+            "width": "95%",
+          },
+        ]
+      }
+      testID="onboarding3-img-test-id"
+    />
+  </RNCSafeAreaView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FAFCFF",
+        "borderTopLeftRadius": 20,
+        "borderTopRightRadius": 20,
+        "marginHorizontal": 25,
+        "paddingHorizontal": 25,
+        "paddingVertical": 60,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "marginBottom": 50,
+        }
+      }
+    >
+      <SvgMock
+        color="#1B1D4D"
+        height={40}
+        testID="logo-icon-test-id"
+        width={40}
+      />
+      <RCTScrollView
+        contentContainerStyle={
+          Object {
+            "marginBottom": 30,
+            "marginTop": 30,
+          }
+        }
+        data={
+          Array [
+            Object {
+              "description": "Description 1",
+              "id": 1,
+              "img": "onboarding1",
+              "title": "Slide 1",
+            },
+            Object {
+              "description": "Description 2",
+              "id": 2,
+              "img": "onboarding2",
+              "title": "Slide 2",
+            },
+            Object {
+              "description": "Description 3",
+              "id": 3,
+              "img": "onboarding3",
+              "title": "Slide 3",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        horizontal={true}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        pagingEnabled={true}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        showsHorizontalScrollIndicator={false}
+        stickyHeaderIndices={Array []}
+        viewabilityConfigCallbackPairs={
+          Array [
+            Object {
+              "onViewableItemsChanged": [Function],
+              "viewabilityConfig": Object {
+                "viewAreaCoveragePercentThreshold": 50,
+              },
+            },
+          ]
+        }
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-1-test-id"
+              >
+                Slide 1
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-1-test-id"
+              >
+                Description 1
+              </Text>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-2-test-id"
+              >
+                Slide 2
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-2-test-id"
+              >
+                Description 2
+              </Text>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                },
+                null,
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": 650,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishBold",
+                      "fontSize": 33,
+                      "lineHeight": 36.3,
+                    },
+                    Array [
+                      Object {
+                        "marginBottom": 30,
+                        "paddingHorizontal": 10,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-heading-3-test-id"
+              >
+                Slide 3
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                        "lineHeight": 28.8,
+                      },
+                      Object {
+                        "textAlign": "center",
+                      },
+                    ],
+                  ]
+                }
+                testID="onboarding-text-3-test-id"
+              >
+                Description 3
+              </Text>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            undefined,
+          ]
+        }
+        testID="onboarding-template-paginator-test-id"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#1B1D4D",
+                "borderRadius": 100,
+                "borderWidth": 3,
+                "height": 8,
+                "marginHorizontal": 8,
+                "opacity": 0.2,
+                "width": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "borderColor": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          undefined,
+        ]
+      }
+      testID="onboarding-btn-test-id"
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4288142079,
+              4279654301,
+            ],
+            "endPoint": Array [
+              1,
+              1,
+            ],
+            "locations": undefined,
+            "startPoint": Array [
+              0,
+              0,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Get Started
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+</View>
+`;

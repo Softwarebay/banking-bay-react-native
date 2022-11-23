@@ -8,7 +8,7 @@ import { colors } from 'theme';
 
 import { styles } from './SuccessPaymentTemplate.styles';
 
-interface Props {
+export interface Props {
 	amount: string;
 	primaryButtonTitle: string;
 	secondaryButtonTitle: string;
@@ -42,6 +42,7 @@ export const SuccessPaymentTemplate = ({
 							number={amount}
 							prefix="$ "
 							style={styles.amount}
+							testID="payment-success-float-num-test-id"
 						/>
 						<Text
 							style={styles.successMessage}
