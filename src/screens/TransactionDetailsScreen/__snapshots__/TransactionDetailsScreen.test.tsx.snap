@@ -1,0 +1,674 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransactionDetailsScreen should match snapshot 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Object {
+        "flex": 1,
+        "paddingBottom": 30,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 0.6666666666666666,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 100,
+                "justifyContent": "center",
+              },
+              Object {
+                "height": 70,
+                "marginBottom": 6,
+                "width": 70,
+              },
+              Object {
+                "backgroundColor": "#FF8A71",
+              },
+            ]
+          }
+        >
+          <SvgMock
+            color="#FFFFFF"
+            height={30}
+            testID="smartphone-icon-test-id"
+            width={30}
+          />
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 12,
+                "lineHeight": 14,
+                "marginTop": 5,
+                "textAlign": "center",
+                "width": 70,
+              },
+            ]
+          }
+          testID="transaction-details-header-category-test-id"
+        >
+          Mobile Payment
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "fontSize": 14,
+              "lineHeight": 22.4,
+              "marginTop": 5,
+            },
+          ]
+        }
+        testID="transaction-details-header-date-test-id"
+      >
+        Sep 10, 2022 at 11:34 AM
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Array [
+              Object {
+                "alignItems": "baseline",
+              },
+              Object {
+                "marginVertical": 12,
+              },
+            ],
+          ]
+        }
+        testID="transaction-details-header-amount-test-id"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Array [
+                Object {
+                  "fontFamily": "MulishBold",
+                },
+                Object {
+                  "fontSize": 33,
+                },
+              ],
+            ]
+          }
+        >
+          - $ 10.
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Array [
+                Object {
+                  "fontFamily": "MulishBold",
+                },
+                Object {
+                  "fontSize": 20,
+                },
+              ],
+            ]
+          }
+        >
+          00
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "fontSize": 18,
+              "lineHeight": 28.8,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="transaction-details-header-sent-to-test-id"
+      >
+        sent to Hillary Holmes
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "marginTop": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 100,
+                "justifyContent": "center",
+              },
+              Object {
+                "backgroundColor": "#3EB290",
+                "height": 18,
+                "marginRight": 8,
+                "width": 18,
+              },
+            ]
+          }
+        >
+          <SvgMock
+            color="#FFFFFF"
+            height={12}
+            testID="check-icon-test-id"
+            width={12}
+          />
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "color": "#3EB290",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 16,
+              },
+            ]
+          }
+          testID="transaction-details-header-status-text-test-id"
+        >
+          Success
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "borderColor": "#CED6E1",
+            "borderTopWidth": 1,
+          },
+          undefined,
+        ]
+      }
+      testID="transaction-details-divider-test-id"
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingHorizontal": 20,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "justifyContent": "space-between",
+                "paddingVertical": 22,
+              },
+            ]
+          }
+          testID="transaction-details-row-sent-to-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#4C4C60",
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 27.2,
+                },
+                undefined,
+              ]
+            }
+          >
+            Sent to
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+                undefined,
+              ]
+            }
+          >
+            Hillary Holmes
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#CED6E1",
+                "borderTopWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "justifyContent": "space-between",
+                "paddingVertical": 22,
+              },
+            ]
+          }
+          testID="transaction-details-row-card-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#4C4C60",
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 27.2,
+                },
+                undefined,
+              ]
+            }
+          >
+            Card
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+                undefined,
+              ]
+            }
+          >
+            **** 4253
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#CED6E1",
+                "borderTopWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "justifyContent": "space-between",
+                "paddingVertical": 22,
+              },
+            ]
+          }
+          testID="transaction-details-row-amount-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#4C4C60",
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 27.2,
+                },
+                undefined,
+              ]
+            }
+          >
+            Amount
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+                undefined,
+              ]
+            }
+          >
+            10.00 USD
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#CED6E1",
+                "borderTopWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "justifyContent": "space-between",
+                "paddingVertical": 22,
+              },
+            ]
+          }
+          testID="transaction-details-row-fee-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#4C4C60",
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 27.2,
+                },
+                undefined,
+              ]
+            }
+          >
+            Fee
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+                undefined,
+              ]
+            }
+          >
+            0.00 USD
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#CED6E1",
+                "borderTopWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "justifyContent": "space-between",
+                "paddingVertical": 22,
+              },
+            ]
+          }
+          testID="transaction-details-row-balance-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#4C4C60",
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 27.2,
+                },
+                undefined,
+              ]
+            }
+          >
+            Residual balance
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+                undefined,
+              ]
+            }
+          >
+            4853.27 USD
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#CED6E1",
+                "borderTopWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            false,
+            Object {
+              "marginTop": "auto",
+            },
+          ]
+        }
+        testID="transaction-details-btn-test-id"
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4288142079,
+                4279654301,
+              ],
+              "endPoint": Array [
+                1,
+                1,
+              ],
+              "locations": undefined,
+              "startPoint": Array [
+                0,
+                0,
+              ],
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "borderRadius": 10,
+              "height": 55,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 17,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            Download PDF
+          </Text>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </RNCSafeAreaView>
+</View>
+`;
