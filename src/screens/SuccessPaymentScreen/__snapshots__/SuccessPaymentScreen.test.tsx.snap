@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuccessPaymentScreen should match snapshot 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingBottom": 30,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Array [
+            Object {
+              "height": undefined,
+            },
+            Object {
+              "aspectRatio": 1.0749464668094217,
+            },
+            Object {
+              "width": 200,
+            },
+          ]
+        }
+        testID="success-icon-img-test-id"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#3EB290",
+            },
+            Object {
+              "fontFamily": "MulishBold",
+              "fontSize": 44,
+              "lineHeight": 48.4,
+            },
+            undefined,
+          ]
+        }
+        testID="payment-success-heading-test-id"
+      >
+        Success!
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Array [
+              Object {
+                "alignItems": "baseline",
+              },
+              Object {
+                "marginVertical": 20,
+              },
+            ],
+          ]
+        }
+        testID="payment-success-float-num-test-id"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Array [
+                Object {
+                  "fontFamily": "MulishBold",
+                },
+                Object {
+                  "fontSize": 33,
+                },
+              ],
+            ]
+          }
+        >
+          $ 10.
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Array [
+                Object {
+                  "fontFamily": "MulishBold",
+                },
+                Object {
+                  "fontSize": 20,
+                },
+              ],
+            ]
+          }
+        >
+          00
+        </Text>
+      </View>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "marginHorizontal": 62,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="payment-success-message-test-id"
+      >
+        Your payment has been processed!
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#F1F5FD",
+            "borderColor": "#CED6E1",
+            "borderWidth": 1,
+          },
+          Object {
+            "marginBottom": 14,
+          },
+        ]
+      }
+      testID="payment-success-secondary-btn-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            },
+            Object {
+              "color": "#1B1D4D",
+            },
+          ]
+        }
+      >
+        Send Receipt
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          undefined,
+        ]
+      }
+      testID="payment-success-primary-btn-test-id"
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4288142079,
+              4279654301,
+            ],
+            "endPoint": Array [
+              1,
+              1,
+            ],
+            "locations": undefined,
+            "startPoint": Array [
+              0,
+              0,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Done
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+</View>
+`;
