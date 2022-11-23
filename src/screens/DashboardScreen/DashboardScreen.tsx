@@ -109,7 +109,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressViewAll = () => {
-		console.log('onPressHeaderLink');
+		console.log('onPressViewAll');
 	};
 
 	const onPressTransactionCard = () => {
