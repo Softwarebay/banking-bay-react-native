@@ -34,7 +34,7 @@ exports[`FloatNum should match snapshot 1`] = `
       ]
     }
   >
-    $20.
+    20.
   </Text>
   <Text
     style={

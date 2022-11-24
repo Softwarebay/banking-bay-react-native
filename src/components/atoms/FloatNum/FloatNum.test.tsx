@@ -6,9 +6,8 @@ import { FloatNum } from './FloatNum';
 import type { Props } from './FloatNum';
 
 describe('FloatNum', () => {
-	const props: Props = {
+	const props: Omit<Props, 'prefix'> = {
 		number: '20.22',
-		prefix: '$',
 		testID: 'floatNum-test-id',
 		floatStyle: { fontSize: 30 },
 		intStyle: { fontSize: 50 },
@@ -34,7 +33,7 @@ describe('FloatNum', () => {
 	it('should apply separate styles for integer and float', () => {
 		render(<FloatNum {...props} />);
 
-		const int = screen.getByText(/20/);
+		const int = screen.getByText('20.');
 		const float = screen.getByText('22');
 
 		expect(int).toHaveStyle({ fontSize: 50 });
@@ -42,7 +41,7 @@ describe('FloatNum', () => {
 	});
 
 	it('should display prefix with the same styles as integer text', () => {
-		render(<FloatNum {...props} />);
+		render(<FloatNum {...props} prefix="$" />);
 
 		const int = screen.getByText(/20/);
 		const prefix = screen.getByText(/\$/);
