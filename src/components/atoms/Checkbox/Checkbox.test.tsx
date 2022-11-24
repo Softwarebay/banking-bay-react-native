@@ -1,7 +1,8 @@
-import { fireEvent, render, screen } from '@testing-library/react-native';
+import { createRef } from 'react';
+import { act, fireEvent, render, screen } from '@testing-library/react-native';
 import testRenderer from 'react-test-renderer';
 
-import { Checkbox } from './Checkbox';
+import { Checkbox, CheckboxHandle } from './Checkbox';
 
 import type { Props } from './Checkbox';
 
@@ -39,6 +40,23 @@ describe('Checkbox', () => {
 		const uncheckedIcon = screen.queryByTestId('check-icon-test-id');
 
 		expect(checkbox.children).toHaveLength(1);
+		expect(uncheckedIcon).toBeNull();
+	});
+
+	it('should clear checkbox through ref', () => {
+		const checkboxRef = createRef<CheckboxHandle>();
+		render(<Checkbox {...props} ref={checkboxRef} />);
+
+		const checkbox = screen.getByTestId('checkbox-test-id');
+		fireEvent.press(checkbox);
+		const checkedIcon = screen.queryByTestId('check-icon-test-id');
+		expect(checkedIcon).not.toBeNull();
+
+		act(() => {
+			checkboxRef.current?.clear();
+		});
+
+		const uncheckedIcon = screen.queryByTestId('check-icon-test-id');
 		expect(uncheckedIcon).toBeNull();
 	});
 });

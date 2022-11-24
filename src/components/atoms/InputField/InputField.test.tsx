@@ -1,7 +1,8 @@
-import { fireEvent, render, screen } from '@testing-library/react-native';
+import { createRef } from 'react';
+import { act, fireEvent, render, screen } from '@testing-library/react-native';
 import testRenderer from 'react-test-renderer';
 
-import { InputField } from './InputField';
+import { InputField, InputFieldHandle } from './InputField';
 
 import type { Props } from './InputField';
 
@@ -54,5 +55,20 @@ describe('InputField', () => {
 		fireEvent.changeText(input, 'Input text');
 
 		expect(input.props).toHaveProperty('value', 'Input text');
+	});
+
+	it('should clear input value through ref', () => {
+		const inputRef = createRef<InputFieldHandle>();
+		render(<InputField {...props} ref={inputRef} />);
+
+		const input = screen.getByTestId('input-field-test-id');
+
+		fireEvent.changeText(input, 'Input text');
+
+		act(() => {
+			inputRef.current?.clear();
+		});
+
+		expect(input.props).toHaveProperty('value', '');
 	});
 });
