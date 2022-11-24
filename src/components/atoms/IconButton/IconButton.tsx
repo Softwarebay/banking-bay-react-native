@@ -11,6 +11,7 @@ export interface Props {
 	onPress: () => void;
 	testID: string;
 	btnStyle?: StyleProp<ViewStyle>;
+	testOnly_pressed?: boolean;
 }
 
 export const IconButton = ({
@@ -20,12 +21,14 @@ export const IconButton = ({
 	testID,
 	onPress,
 	iconSize,
+	testOnly_pressed,
 }: Props) => {
 	return (
 		<Pressable
 			hitSlop={20}
 			style={({ pressed }) => [styles.btn, btnStyle, pressed && styles.pressed]}
 			testID={testID}
+			testOnly_pressed={testOnly_pressed}
 			onPress={onPress}
 		>
 			<Icon color={iconColor} name={iconName} size={iconSize} />

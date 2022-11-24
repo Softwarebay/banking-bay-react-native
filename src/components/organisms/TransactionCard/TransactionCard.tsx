@@ -16,6 +16,7 @@ export interface Props {
 	onPress: () => void;
 	style?: StyleProp<ViewStyle>;
 	testID?: string;
+	testOnly_pressed?: boolean;
 }
 
 export const TransactionCard = ({
@@ -29,12 +30,17 @@ export const TransactionCard = ({
 	style,
 	testID,
 	onPress,
+	testOnly_pressed,
 }: Props) => {
 	const amountText = `${type === 'incoming' ? '+' : '-'} ${amount.toFixed(2)}`;
 	const amountColor = `${type === 'incoming' ? colors.green : colors.mainDark}`;
 
 	return (
-		<Pressable testID={testID} onPress={onPress}>
+		<Pressable
+			testID={testID}
+			testOnly_pressed={testOnly_pressed}
+			onPress={onPress}
+		>
 			{({ pressed }) => (
 				<Card style={[styles.container, style, pressed && styles.pressed]}>
 					<View style={styles.iconContainer}>

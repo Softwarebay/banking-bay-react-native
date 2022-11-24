@@ -49,6 +49,16 @@ describe('IconButton', () => {
 		expect(iconBtn).toHaveStyle({ backgroundColor: 'blue' });
 	});
 
+	it('should apply active styles when button is pressed', () => {
+		render(<IconButton {...props} testOnly_pressed />);
+
+		const iconBtn = screen.getByTestId('facebook-icon-button-test-id');
+
+		expect(iconBtn).toHaveStyle({
+			opacity: 0.8,
+		});
+	});
+
 	it('should handle press events', () => {
 		render(<IconButton {...props} />);
 

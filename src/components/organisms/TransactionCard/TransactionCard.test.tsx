@@ -84,6 +84,16 @@ describe('TransactionCard', () => {
 		});
 	});
 
+	it('should apply active styles when pressed', () => {
+		render(<TransactionCard {...props} type="outgoing" testOnly_pressed />);
+
+		const [card] = screen.getByTestId('transaction-card-test-id').children;
+
+		expect(card).toHaveStyle({
+			opacity: 0.8,
+		});
+	});
+
 	it('should handle press events', () => {
 		render(<TransactionCard {...props} type="outgoing" />);
 

@@ -54,6 +54,16 @@ describe('Button', () => {
 		});
 	});
 
+	it('should apply active styles when  button is pressed', () => {
+		render(<Button {...props} testOnly_pressed />);
+
+		const btn = screen.getByTestId('btn-test-id');
+
+		expect(btn).toHaveStyle({
+			opacity: 0.8,
+		});
+	});
+
 	it('should handle onPress events', () => {
 		render(<Button {...props} />);
 

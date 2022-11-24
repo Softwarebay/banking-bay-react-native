@@ -40,6 +40,16 @@ describe('Link', () => {
 		});
 	});
 
+	it('should apply active styles when link is pressed', () => {
+		render(<Link {...props} testOnly_pressed />);
+
+		const link = screen.getByTestId('link-test-id');
+
+		expect(link).toHaveStyle({
+			opacity: 0.8,
+		});
+	});
+
 	it('should handle press events', () => {
 		render(<Link {...props} />);
 

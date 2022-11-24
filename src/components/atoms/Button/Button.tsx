@@ -10,6 +10,7 @@ export interface Props {
 	testID: string;
 	onPress: () => void;
 	style?: StyleProp<ViewStyle>;
+	testOnly_pressed?: boolean;
 }
 
 export const Button = ({
@@ -18,6 +19,7 @@ export const Button = ({
 	style,
 	type = 'primary',
 	onPress,
+	testOnly_pressed,
 }: Props) => {
 	const secondaryContainerStyles =
 		type === 'secondary' ? [styles.container, styles.secondary] : [];
@@ -30,6 +32,7 @@ export const Button = ({
 				style,
 			]}
 			testID={testID}
+			testOnly_pressed={testOnly_pressed}
 			onPress={onPress}
 		>
 			{type === 'secondary' && (
