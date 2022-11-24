@@ -44,11 +44,11 @@ export const SignInForm = ({
 		const password = passwordRef.current?.getValue();
 		const persistPassword = checkboxRef.current?.getValue();
 
-		if (email && password && isEmailValid) {
+		if (email && password && persistPassword !== undefined && isEmailValid) {
 			onSubmitSignInForm({
 				email,
 				password,
-				persistPassword: persistPassword ?? false,
+				persistPassword,
 			});
 		}
 	};
