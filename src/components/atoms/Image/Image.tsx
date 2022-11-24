@@ -1,4 +1,4 @@
-import { ImageStyle, Image as RNImage, StyleProp, View } from 'react-native';
+import { ImageStyle, Image as RNImage, StyleProp } from 'react-native';
 
 import {
 	card1,
@@ -22,6 +22,7 @@ export interface Props {
 	style?: StyleProp<ImageStyle>;
 }
 
+// eslint-disable-next-line consistent-return
 export const Image = ({ name, style }: Props) => {
 	switch (name) {
 		case 'onboarding1':
@@ -72,7 +73,6 @@ export const Image = ({ name, style }: Props) => {
 					testID="success-icon-img-test-id"
 				/>
 			);
-		default:
-			return <View testID="no-img-test-id" />;
+		// no default
 	}
 };

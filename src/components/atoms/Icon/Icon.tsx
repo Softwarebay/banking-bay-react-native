@@ -1,5 +1,3 @@
-import { View } from 'react-native';
-
 import {
 	Amazon,
 	Check,
@@ -53,6 +51,7 @@ export interface Props {
 	color?: string;
 }
 
+// eslint-disable-next-line consistent-return
 export const Icon = ({ name, color, size }: Props) => {
 	switch (name) {
 		case 'facebook':
@@ -253,7 +252,6 @@ export const Icon = ({ name, color, size }: Props) => {
 					width={size}
 				/>
 			);
-		default:
-			return <View testID="no-icon-test-id" />;
+		// no default
 	}
 };
