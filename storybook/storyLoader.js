@@ -28,6 +28,7 @@ function loadStories() {
 	require('../src/components/organisms/LatestTransactions/LatestTransactions.stories');
 	require('../src/components/organisms/PaymentOptions/PaymentOptions.stories');
 	require('../src/components/organisms/SignInForm/SignInForm.stories');
+	require('../src/components/organisms/SignUpForm/SignUpForm.stories');
 	require('../src/components/organisms/TransactionCard/TransactionCard.stories');
 	require('../src/components/templates/ChangePasswordTemplate/ChangePasswordTemplate.stories');
 	require('../src/components/templates/DashboardTemplate/DashboardTemplate.stories');
@@ -63,6 +64,7 @@ const stories = [
 	'../src/components/organisms/LatestTransactions/LatestTransactions.stories',
 	'../src/components/organisms/PaymentOptions/PaymentOptions.stories',
 	'../src/components/organisms/SignInForm/SignInForm.stories',
+	'../src/components/organisms/SignUpForm/SignUpForm.stories',
 	'../src/components/organisms/TransactionCard/TransactionCard.stories',
 	'../src/components/templates/ChangePasswordTemplate/ChangePasswordTemplate.stories',
 	'../src/components/templates/DashboardTemplate/DashboardTemplate.stories',
