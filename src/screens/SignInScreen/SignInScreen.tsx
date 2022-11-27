@@ -17,7 +17,7 @@ export const SignInScreen = () => {
 	};
 
 	const restorePassword = () => {
-		console.log('Restore password');
+		navigation.navigate('ChangePassword');
 	};
 
 	const navigateToSignUp = () => {

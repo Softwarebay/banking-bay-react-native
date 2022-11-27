@@ -28,6 +28,7 @@ function loadStories() {
 	require('../src/components/organisms/PaymentOptions/PaymentOptions.stories');
 	require('../src/components/organisms/SignInForm/SignInForm.stories');
 	require('../src/components/organisms/TransactionCard/TransactionCard.stories');
+	require('../src/components/templates/ChangePasswordTemplate/ChangePasswordTemplate.stories');
 	require('../src/components/templates/DashboardTemplate/DashboardTemplate.stories');
 	require('../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories');
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
@@ -61,6 +62,7 @@ const stories = [
 	'../src/components/organisms/PaymentOptions/PaymentOptions.stories',
 	'../src/components/organisms/SignInForm/SignInForm.stories',
 	'../src/components/organisms/TransactionCard/TransactionCard.stories',
+	'../src/components/templates/ChangePasswordTemplate/ChangePasswordTemplate.stories',
 	'../src/components/templates/DashboardTemplate/DashboardTemplate.stories',
 	'../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories',
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',

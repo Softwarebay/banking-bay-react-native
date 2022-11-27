@@ -123,11 +123,14 @@ exports[`SignInTemplate should match snapshot 1`] = `
               "shadowOpacity": 0.08,
               "shadowRadius": 16,
             },
-            Object {
-              "height": 55,
-              "paddingHorizontal": 20,
-              "paddingVertical": 14,
-            },
+            Array [
+              Object {
+                "height": 55,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              },
+              undefined,
+            ],
           ],
         ]
       }

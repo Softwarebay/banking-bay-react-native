@@ -8,3 +8,4 @@ export { MoreScreen } from './MoreScreen/MoreScreen';
 export { MobilePaymentScreen } from './MobilePaymentScreen/MobilePaymentScreen';
 export { SuccessPaymentScreen } from './SuccessPaymentScreen/SuccessPaymentScreen';
 export { TransactionDetailsScreen } from './TransactionDetailsScreen/TransactionDetailsScreen';
+export { ChangePasswordScreen } from './ChangePasswordScreen/ChangePasswordScreen';
