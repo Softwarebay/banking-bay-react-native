@@ -67,7 +67,7 @@ exports[`SuccessRegistrationTemplate should match snapshot 1`] = `
         style={
           Array [
             Object {
-              "color": "#3EB290",
+              "color": "#1B1D4D",
             },
             Object {
               "fontFamily": "MulishBold",
@@ -92,6 +92,7 @@ exports[`SuccessRegistrationTemplate should match snapshot 1`] = `
             },
             Object {
               "marginHorizontal": 62,
+              "marginTop": 20,
               "textAlign": "center",
             },
           ]
