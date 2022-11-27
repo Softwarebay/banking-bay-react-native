@@ -6,6 +6,7 @@ import {
 	onboarding1,
 	onboarding2,
 	onboarding3,
+	registrationIcon,
 	successIcon,
 } from 'assets/images';
 
@@ -18,7 +19,8 @@ export interface Props {
 		| 'onboarding3'
 		| 'card1'
 		| 'card2'
-		| 'success-icon';
+		| 'success-icon'
+		| 'registration-icon';
 	style?: StyleProp<ImageStyle>;
 }
 
@@ -71,6 +73,14 @@ export const Image = ({ name, style }: Props) => {
 					source={successIcon}
 					style={[styles.img, styles.successIcon, style]}
 					testID="success-icon-img-test-id"
+				/>
+			);
+		case 'registration-icon':
+			return (
+				<RNImage
+					source={registrationIcon}
+					style={[styles.img, styles.registrationIcon, style]}
+					testID="registration-icon-img-test-id"
 				/>
 			);
 		// no default

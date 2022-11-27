@@ -6,3 +6,4 @@ export { SuccessPaymentTemplate } from './SuccessPaymentTemplate/SuccessPaymentT
 export { TransactionDetailsTemplate } from './TransactionDetailsTemplate/TransactionDetailsTemplate';
 export { ChangePasswordTemplate } from './ChangePasswordTemplate/ChangePasswordTemplate';
 export { SignUpTemplate } from './SignUpTemplate/SignUpTemplate';
+export { SuccessRegistrationTemplate } from './SuccessRegistrationTemplate/SuccessRegistrationTemplate';

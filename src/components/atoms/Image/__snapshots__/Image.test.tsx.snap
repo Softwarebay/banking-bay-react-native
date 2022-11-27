@@ -100,6 +100,26 @@ exports[`Image should match snapshot - onboarding3 1`] = `
 />
 `;
 
+exports[`Image should match snapshot - registration-icon 1`] = `
+<Image
+  source={1}
+  style={
+    Array [
+      Object {
+        "height": undefined,
+      },
+      Object {
+        "aspectRatio": 1.0727699530516432,
+      },
+      Object {
+        "width": 100,
+      },
+    ]
+  }
+  testID="registration-icon-img-test-id"
+/>
+`;
+
 exports[`Image should match snapshot - success-icon 1`] = `
 <Image
   source={1}

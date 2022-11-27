@@ -5,6 +5,7 @@ import chevronLeft from './chevron-left.png';
 import onboarding1 from './onboarding-1.png';
 import onboarding2 from './onboarding-2.png';
 import onboarding3 from './onboarding-3.png';
+import registrationIcon from './registration-icon.png';
 
 export {
 	card1,
@@ -14,4 +15,5 @@ export {
 	onboarding1,
 	onboarding2,
 	onboarding3,
+	registrationIcon,
 };
