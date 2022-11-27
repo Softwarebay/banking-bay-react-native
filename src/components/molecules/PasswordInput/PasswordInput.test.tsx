@@ -9,6 +9,9 @@ describe('PasswordInput', () => {
 	const props: Props = {
 		placeholder: 'Enter password',
 		testID: 'password-input-test-id',
+		style: {
+			height: 50,
+		},
 	};
 
 	it('should match snapshot', () => {
@@ -29,6 +32,16 @@ describe('PasswordInput', () => {
 		expect(inputField).not.toBeNull();
 		expect(iconBtn).not.toBeNull();
 		expect(eyeOffIcon).not.toBeNull();
+	});
+
+	it('should apply additional styles', () => {
+		render(<PasswordInput {...props} />);
+
+		const passwordInput = screen.getByTestId('password-input-test-id');
+
+		expect(passwordInput).toHaveStyle({
+			height: 50,
+		});
 	});
 
 	it('should initially hide password', () => {
