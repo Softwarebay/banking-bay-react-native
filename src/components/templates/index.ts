@@ -5,3 +5,4 @@ export { MobilePaymentTemplate } from './MobilePaymentTemplate/MobilePaymentTemp
 export { SuccessPaymentTemplate } from './SuccessPaymentTemplate/SuccessPaymentTemplate';
 export { TransactionDetailsTemplate } from './TransactionDetailsTemplate/TransactionDetailsTemplate';
 export { ChangePasswordTemplate } from './ChangePasswordTemplate/ChangePasswordTemplate';
+export { SignUpTemplate } from './SignUpTemplate/SignUpTemplate';

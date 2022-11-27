@@ -35,6 +35,7 @@ function loadStories() {
 	require('../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories');
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
 	require('../src/components/templates/SignInTemplate/SignInTemplate.stories');
+	require('../src/components/templates/SignUpTemplate/SignUpTemplate.stories');
 	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
 	require('../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories');
 }
@@ -71,6 +72,7 @@ const stories = [
 	'../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories',
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
 	'../src/components/templates/SignInTemplate/SignInTemplate.stories',
+	'../src/components/templates/SignUpTemplate/SignUpTemplate.stories',
 	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
 	'../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories',
 ];
