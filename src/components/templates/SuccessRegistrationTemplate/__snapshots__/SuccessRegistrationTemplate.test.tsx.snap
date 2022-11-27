@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuccessRegistrationTemplate should match snapshot 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingBottom": 30,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Array [
+            Object {
+              "height": undefined,
+            },
+            Object {
+              "aspectRatio": 1.0727699530516432,
+            },
+            Object {
+              "width": 200,
+            },
+          ]
+        }
+        testID="registration-icon-img-test-id"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+            },
+            Object {
+              "fontFamily": "MulishBold",
+              "fontSize": 44,
+              "lineHeight": 48.4,
+            },
+            undefined,
+          ]
+        }
+        testID="registration-success-heading-test-id"
+      >
+        Account created!
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "marginHorizontal": 62,
+              "marginTop": 20,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="registration-success-message-test-id"
+      >
+        Your account had been created successfully.
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          undefined,
+        ]
+      }
+      testID="registration-success-primary-btn-test-id"
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4288142079,
+              4279654301,
+            ],
+            "endPoint": Array [
+              1,
+              1,
+            ],
+            "locations": undefined,
+            "startPoint": Array [
+              0,
+              0,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Primary Action
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+</View>
+`;

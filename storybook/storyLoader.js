@@ -37,6 +37,7 @@ function loadStories() {
 	require('../src/components/templates/SignInTemplate/SignInTemplate.stories');
 	require('../src/components/templates/SignUpTemplate/SignUpTemplate.stories');
 	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
+	require('../src/components/templates/SuccessRegistrationTemplate/SuccessRegistrationTemplate.stories');
 	require('../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories');
 }
 
@@ -74,6 +75,7 @@ const stories = [
 	'../src/components/templates/SignInTemplate/SignInTemplate.stories',
 	'../src/components/templates/SignUpTemplate/SignUpTemplate.stories',
 	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
+	'../src/components/templates/SuccessRegistrationTemplate/SuccessRegistrationTemplate.stories',
 	'../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories',
 ];
 

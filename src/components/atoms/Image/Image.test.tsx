@@ -60,6 +60,14 @@ describe('Image', () => {
 		expect(tree).toMatchSnapshot();
 	});
 
+	it('should match snapshot - registration-icon', () => {
+		const tree = testRenderer
+			.create(<Image {...props} name="registration-icon" />)
+			.toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
 	it('should render onboarding1 image', () => {
 		render(<Image {...props} name="onboarding1" />);
 
@@ -124,6 +132,18 @@ describe('Image', () => {
 		render(<Image {...props} name="success-icon" />);
 
 		const img = screen.getByTestId('success-icon-img-test-id');
+
+		expect(img).not.toBeNull();
+
+		expect(img).toHaveStyle({
+			width: 100,
+		});
+	});
+
+	it('should render registration-icon image', () => {
+		render(<Image {...props} name="registration-icon" />);
+
+		const img = screen.getByTestId('registration-icon-img-test-id');
 
 		expect(img).not.toBeNull();
 
