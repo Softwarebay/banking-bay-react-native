@@ -50,7 +50,9 @@ exports[`TextInput should match snapshot 1`] = `
           "fontFamily": "MulishRegular",
           "fontSize": 15,
         },
-        undefined,
+        Object {
+          "flex": 1,
+        },
       ]
     }
     testID="input-field-text-input-test-id"

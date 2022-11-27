@@ -20,6 +20,7 @@ export const TextInput = forwardRef<InputFieldHandle, Props>(
 					keyboardType="default"
 					placeholder={placeholder}
 					secureTextEntry={false}
+					style={styles.inputField}
 					testID={`input-field-${testID}`}
 				/>
 			</Card>
