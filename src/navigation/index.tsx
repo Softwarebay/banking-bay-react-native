@@ -8,6 +8,7 @@ import {
 } from '@react-navigation/native-stack';
 
 import {
+	ChangePasswordScreen,
 	MobilePaymentScreen,
 	OnboardingScreen,
 	SignInScreen,
@@ -22,6 +23,7 @@ import { headerOptions } from './headerOptions';
 export type RootStackParamList = {
 	Onboarding: undefined;
 	SignIn: undefined;
+	ChangePassword: undefined;
 	Root: NavigatorScreenParams<RootTabParamList> | undefined;
 	MobilePayment: undefined;
 	SuccessPayment: undefined;
@@ -54,6 +56,14 @@ export const Navigator = () => (
 				options={{
 					...headerOptions,
 					title: 'Sign in',
+				}}
+			/>
+			<Stack.Screen
+				component={ChangePasswordScreen}
+				name="ChangePassword"
+				options={{
+					...headerOptions,
+					title: 'New password',
 				}}
 			/>
 			<Stack.Group>

@@ -39,7 +39,7 @@ describe('SignInScreen', () => {
 		expect(footerLink).toHaveTextContent('Register now');
 	});
 
-	it("should log 'Restore password' after pressing on restore password link", () => {
+	it('should navigate to ChangePasswordScreen after pressing on restore password link', () => {
 		render(<SignInScreen />);
 		console.log = jest.fn();
 
@@ -49,7 +49,7 @@ describe('SignInScreen', () => {
 
 		fireEvent.press(restorePassLink);
 
-		expect(console.log).toHaveBeenCalledWith('Restore password');
+		expect(mockNavigate).toHaveBeenCalledWith('ChangePassword');
 	});
 
 	it("should log 'To SignUp' after pressing on form footer link", () => {
