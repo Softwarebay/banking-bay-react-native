@@ -9,3 +9,5 @@ export { MobilePaymentScreen } from './MobilePaymentScreen/MobilePaymentScreen';
 export { SuccessPaymentScreen } from './SuccessPaymentScreen/SuccessPaymentScreen';
 export { TransactionDetailsScreen } from './TransactionDetailsScreen/TransactionDetailsScreen';
 export { ChangePasswordScreen } from './ChangePasswordScreen/ChangePasswordScreen';
+export { SignUpScreen } from './SignUpScreen/SignUpScreen';
+export { SuccessRegistrationScreen } from './SuccessRegistrationScreen/SuccessRegistrationScreen';

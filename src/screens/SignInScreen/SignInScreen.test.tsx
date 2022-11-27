@@ -52,7 +52,7 @@ describe('SignInScreen', () => {
 		expect(mockNavigate).toHaveBeenCalledWith('ChangePassword');
 	});
 
-	it("should log 'To SignUp' after pressing on form footer link", () => {
+	it('should navigate to SignUpScreen after pressing on form footer link', () => {
 		render(<SignInScreen />);
 		console.log = jest.fn();
 
@@ -60,7 +60,7 @@ describe('SignInScreen', () => {
 
 		fireEvent.press(footerLink);
 
-		expect(console.log).toHaveBeenCalledWith('To SignUp');
+		expect(mockNavigate).toHaveBeenCalledWith('SignUp');
 	});
 
 	it('should log user credentials after successful sign in', () => {

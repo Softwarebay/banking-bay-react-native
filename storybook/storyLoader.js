@@ -21,18 +21,21 @@ function loadStories() {
 	require('../src/components/molecules/EmailInput/EmailInput.stories');
 	require('../src/components/molecules/MobileNumberInput/MobileNumberInput.stories');
 	require('../src/components/molecules/PasswordInput/PasswordInput.stories');
+	require('../src/components/molecules/TextInput/TextInput.stories');
 	require('../src/components/organisms/AuthViaSocials/AuthViaSocials.stories');
 	require('../src/components/organisms/BottomTabs/BottomTabs.stories');
 	require('../src/components/organisms/DashboardCards/DashboardCards.stories');
 	require('../src/components/organisms/LatestTransactions/LatestTransactions.stories');
 	require('../src/components/organisms/PaymentOptions/PaymentOptions.stories');
 	require('../src/components/organisms/SignInForm/SignInForm.stories');
+	require('../src/components/organisms/SignUpForm/SignUpForm.stories');
 	require('../src/components/organisms/TransactionCard/TransactionCard.stories');
 	require('../src/components/templates/ChangePasswordTemplate/ChangePasswordTemplate.stories');
 	require('../src/components/templates/DashboardTemplate/DashboardTemplate.stories');
 	require('../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories');
 	require('../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories');
 	require('../src/components/templates/SignInTemplate/SignInTemplate.stories');
+	require('../src/components/templates/SignUpTemplate/SignUpTemplate.stories');
 	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
 	require('../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories');
 }
@@ -55,18 +58,21 @@ const stories = [
 	'../src/components/molecules/EmailInput/EmailInput.stories',
 	'../src/components/molecules/MobileNumberInput/MobileNumberInput.stories',
 	'../src/components/molecules/PasswordInput/PasswordInput.stories',
+	'../src/components/molecules/TextInput/TextInput.stories',
 	'../src/components/organisms/AuthViaSocials/AuthViaSocials.stories',
 	'../src/components/organisms/BottomTabs/BottomTabs.stories',
 	'../src/components/organisms/DashboardCards/DashboardCards.stories',
 	'../src/components/organisms/LatestTransactions/LatestTransactions.stories',
 	'../src/components/organisms/PaymentOptions/PaymentOptions.stories',
 	'../src/components/organisms/SignInForm/SignInForm.stories',
+	'../src/components/organisms/SignUpForm/SignUpForm.stories',
 	'../src/components/organisms/TransactionCard/TransactionCard.stories',
 	'../src/components/templates/ChangePasswordTemplate/ChangePasswordTemplate.stories',
 	'../src/components/templates/DashboardTemplate/DashboardTemplate.stories',
 	'../src/components/templates/MobilePaymentTemplate/MobilePaymentTemplate.stories',
 	'../src/components/templates/OnboardingTemplate/OnboardingTemplate.stories',
 	'../src/components/templates/SignInTemplate/SignInTemplate.stories',
+	'../src/components/templates/SignUpTemplate/SignUpTemplate.stories',
 	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
 	'../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories',
 ];
