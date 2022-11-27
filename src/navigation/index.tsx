@@ -12,7 +12,9 @@ import {
 	MobilePaymentScreen,
 	OnboardingScreen,
 	SignInScreen,
+	SignUpScreen,
 	SuccessPaymentScreen,
+	SuccessRegistrationScreen,
 	TransactionDetailsScreen,
 } from 'screens';
 
@@ -23,6 +25,8 @@ import { headerOptions } from './headerOptions';
 export type RootStackParamList = {
 	Onboarding: undefined;
 	SignIn: undefined;
+	SignUp: undefined;
+	SuccessRegistration: undefined;
 	ChangePassword: undefined;
 	Root: NavigatorScreenParams<RootTabParamList> | undefined;
 	MobilePayment: undefined;
@@ -57,6 +61,19 @@ export const Navigator = () => (
 					...headerOptions,
 					title: 'Sign in',
 				}}
+			/>
+			<Stack.Screen
+				component={SignUpScreen}
+				name="SignUp"
+				options={{
+					...headerOptions,
+					title: 'Sign up',
+				}}
+			/>
+			<Stack.Screen
+				component={SuccessRegistrationScreen}
+				name="SuccessRegistration"
+				options={{ headerShown: false }}
 			/>
 			<Stack.Screen
 				component={ChangePasswordScreen}

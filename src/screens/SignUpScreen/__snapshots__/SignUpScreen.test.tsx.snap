@@ -1,0 +1,630 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpScreen should match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FAFCFF",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingHorizontal": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+        },
+        Object {
+          "fontFamily": "MulishBold",
+          "fontSize": 51,
+          "lineHeight": 56.1,
+        },
+        Object {
+          "marginBottom": 30,
+          "paddingHorizontal": 35,
+          "textAlign": "center",
+        },
+      ]
+    }
+    testID="sign-up-heading-test-id"
+  >
+    Sign up!
+  </Text>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "shadowColor": "#161966",
+              "shadowOffset": Object {
+                "height": 6,
+                "width": 0,
+              },
+              "shadowOpacity": 0.08,
+              "shadowRadius": 16,
+            },
+            Array [
+              Object {
+                "height": 55,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              },
+              Object {
+                "marginBottom": 14,
+              },
+            ],
+          ],
+        ]
+      }
+      testID="sign-up-form-name-input-test-id"
+    >
+      <TextInput
+        autoCorrect={false}
+        keyboardType="default"
+        onChangeText={[Function]}
+        placeholder="Enter your name"
+        secureTextEntry={false}
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+              "fontFamily": "MulishRegular",
+              "fontSize": 15,
+            },
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+        testID="input-field-sign-up-form-name-input-test-id"
+        value=""
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "shadowColor": "#161966",
+              "shadowOffset": Object {
+                "height": 6,
+                "width": 0,
+              },
+              "shadowOpacity": 0.08,
+              "shadowRadius": 16,
+            },
+            Array [
+              Object {
+                "height": 55,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              },
+              Object {
+                "marginBottom": 14,
+              },
+            ],
+          ],
+        ]
+      }
+      testID="sign-up-form-email-input-test-id"
+    >
+      <TextInput
+        autoCorrect={false}
+        keyboardType="email-address"
+        onChangeText={[Function]}
+        placeholder="Enter your email"
+        secureTextEntry={false}
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+              "fontFamily": "MulishRegular",
+              "fontSize": 15,
+            },
+            Object {
+              "flex": 1,
+              "marginRight": 20,
+            },
+          ]
+        }
+        testID="input-field-sign-up-form-email-input-test-id"
+        value=""
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "shadowColor": "#161966",
+              "shadowOffset": Object {
+                "height": 6,
+                "width": 0,
+              },
+              "shadowOpacity": 0.08,
+              "shadowRadius": 16,
+            },
+            Array [
+              Object {
+                "height": 55,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              },
+              Object {
+                "marginBottom": 14,
+              },
+            ],
+          ],
+        ]
+      }
+      testID="sign-up-form-password-input-test-id"
+    >
+      <TextInput
+        autoCorrect={false}
+        keyboardType="default"
+        onChangeText={[Function]}
+        placeholder="Enter your password"
+        secureTextEntry={true}
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+              "fontFamily": "MulishRegular",
+              "fontSize": 15,
+            },
+            Object {
+              "flex": 1,
+              "marginRight": 20,
+            },
+          ]
+        }
+        testID="input-field-sign-up-form-password-input-test-id"
+        value=""
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={20}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
+            Object {
+              "right": 0,
+            },
+            false,
+          ]
+        }
+        testID="icon-btn-sign-up-form-password-input-test-id"
+      >
+        <SvgMock
+          color="#1B1D4D"
+          height={16}
+          testID="eye-off-icon-test-id"
+          width={16}
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 10,
+              "shadowColor": "#161966",
+              "shadowOffset": Object {
+                "height": 6,
+                "width": 0,
+              },
+              "shadowOpacity": 0.08,
+              "shadowRadius": 16,
+            },
+            Array [
+              Object {
+                "height": 55,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              },
+              Object {
+                "marginBottom": 14,
+              },
+            ],
+          ],
+        ]
+      }
+      testID="sign-up-form-confirm-password-input-test-id"
+    >
+      <TextInput
+        autoCorrect={false}
+        keyboardType="default"
+        onChangeText={[Function]}
+        placeholder="Confirm your password"
+        secureTextEntry={true}
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+              "fontFamily": "MulishRegular",
+              "fontSize": 15,
+            },
+            Object {
+              "flex": 1,
+              "marginRight": 20,
+            },
+          ]
+        }
+        testID="input-field-sign-up-form-confirm-password-input-test-id"
+        value=""
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={20}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
+            Object {
+              "right": 0,
+            },
+            false,
+          ]
+        }
+        testID="icon-btn-sign-up-form-confirm-password-input-test-id"
+      >
+        <SvgMock
+          color="#1B1D4D"
+          height={16}
+          testID="eye-off-icon-test-id"
+          width={16}
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          undefined,
+        ]
+      }
+      testID="sign-up-form-submit-button-test-id"
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4288142079,
+              4279654301,
+            ],
+            "endPoint": Array [
+              1,
+              1,
+            ],
+            "locations": undefined,
+            "startPoint": Array [
+              0,
+              0,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Sign Up
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginBottom": 50,
+          "marginTop": 30,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#4C4C60",
+            "fontFamily": "MulishRegular",
+            "fontSize": 17,
+            "lineHeight": 27.2,
+          },
+          undefined,
+        ]
+      }
+      testID="sign-up-footer-text-test-id"
+    >
+      Already have an account? 
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={false}
+      testID="sign-up-footer-link-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FF5887",
+              "fontFamily": "MulishMedium",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            undefined,
+          ]
+        }
+      >
+        Sign in
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 60,
+              "marginLeft": 10,
+              "width": 60,
+            },
+            Object {
+              "backgroundColor": "#3B5999",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="Facebook-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={27}
+        testID="facebook-icon-test-id"
+        width={27}
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 60,
+              "marginLeft": 10,
+              "width": 60,
+            },
+            Object {
+              "backgroundColor": "#55ACEE",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="Twitter-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={27}
+        testID="twitter-icon-test-id"
+        width={27}
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "borderRadius": 100,
+              "height": 60,
+              "marginLeft": 10,
+              "width": 60,
+            },
+            Object {
+              "backgroundColor": "#DD4B39",
+            },
+          ],
+          false,
+        ]
+      }
+      testID="GooglePlus-icon-btn-test-id"
+    >
+      <SvgMock
+        color="#FFFFFF"
+        height={27}
+        testID="google-plus-icon-test-id"
+        width={27}
+      />
+    </View>
+  </View>
+</View>
+`;

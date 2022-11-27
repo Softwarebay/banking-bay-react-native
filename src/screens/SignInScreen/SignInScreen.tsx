@@ -7,7 +7,7 @@ import { SignInTemplate } from 'components/templates';
 export const SignInScreen = () => {
 	const navigation = useNavigation<NavigationProp>();
 
-	const signInViaEmailPassword = (userCredentials: {
+	const signInWithEmailPassword = (userCredentials: {
 		email: string;
 		password: string;
 		persistPassword: boolean;
@@ -21,7 +21,7 @@ export const SignInScreen = () => {
 	};
 
 	const navigateToSignUp = () => {
-		console.log('To SignUp');
+		navigation.navigate('SignUp');
 	};
 
 	const signInViaFacebook = () => {
@@ -46,7 +46,7 @@ export const SignInScreen = () => {
 			onPressGooglePlus={signInViaGooglePlus}
 			onPressTwitter={signInViaTwitter}
 			onRestorePassword={restorePassword}
-			onSubmitSignInForm={signInViaEmailPassword}
+			onSubmitSignInForm={signInWithEmailPassword}
 		/>
 	);
 };
