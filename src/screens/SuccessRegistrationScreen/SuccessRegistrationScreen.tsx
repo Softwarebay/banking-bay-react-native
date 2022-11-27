@@ -1,9 +1,19 @@
-import { Text, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
+import { SuccessRegistrationTemplate } from 'components/templates';
+import type { NavigationProp } from 'navigation';
 
 export const SuccessRegistrationScreen = () => {
+	const navigation = useNavigation<NavigationProp>();
+
+	const onDone = () => {
+		navigation.navigate('Root');
+	};
+
 	return (
-		<View>
-			<Text>SuccessRegistrationScreen</Text>
-		</View>
+		<SuccessRegistrationTemplate
+			primaryButtonTitle="Done"
+			onPressPrimaryButton={onDone}
+		/>
 	);
 };
