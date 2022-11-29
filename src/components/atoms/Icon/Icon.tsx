@@ -19,6 +19,7 @@ import {
 	ProfileIcon,
 	Repeat,
 	Report,
+	Search,
 	Smartphone,
 	Twitter,
 } from 'assets/icons';
@@ -46,7 +47,8 @@ export interface Props {
 		| 'amazon'
 		| 'money-transfer'
 		| 'paypal'
-		| 'flag-usa';
+		| 'flag-usa'
+		| 'search';
 	size: number;
 	color?: string;
 }
@@ -249,6 +251,15 @@ export const Icon = ({ name, color, size }: Props) => {
 					color={color}
 					height={size}
 					testID="flag-usa-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'search':
+			return (
+				<Search
+					color={color}
+					height={size}
+					testID="search-icon-test-id"
 					width={size}
 				/>
 			);

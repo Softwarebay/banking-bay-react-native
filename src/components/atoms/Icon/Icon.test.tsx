@@ -178,6 +178,14 @@ describe('Icon', () => {
 		expect(tree).toMatchSnapshot();
 	});
 
+	it('should match snapshot - search icon', () => {
+		const tree = testRenderer
+			.create(<Icon {...props} name="search" />)
+			.toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
 	it('should render facebook icon', () => {
 		render(<Icon {...props} name="facebook" />);
 
@@ -430,6 +438,18 @@ describe('Icon', () => {
 		render(<Icon {...props} name="flag-usa" />);
 
 		const icon = screen.getByTestId('flag-usa-icon-test-id');
+
+		expect(icon).not.toBeNull();
+
+		expect(icon.props).toHaveProperty('height', 20);
+		expect(icon.props).toHaveProperty('width', 20);
+		expect(icon.props).toHaveProperty('color', 'red');
+	});
+
+	it('should render search icon', () => {
+		render(<Icon {...props} name="search" />);
+
+		const icon = screen.getByTestId('search-icon-test-id');
 
 		expect(icon).not.toBeNull();
 

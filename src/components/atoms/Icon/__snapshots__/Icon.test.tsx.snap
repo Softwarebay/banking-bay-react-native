@@ -180,6 +180,15 @@ exports[`Icon should match snapshot - repeat icon 1`] = `
 />
 `;
 
+exports[`Icon should match snapshot - search icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="search-icon-test-id"
+  width={20}
+/>
+`;
+
 exports[`Icon should match snapshot - smartphone icon 1`] = `
 <SvgMock
   color="red"

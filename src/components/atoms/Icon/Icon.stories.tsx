@@ -146,4 +146,11 @@ storiesOf('Atoms/Icon', module)
 			name="twitter"
 			size={number('size', 20)}
 		/>
+	))
+	.add('Search', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="search"
+			size={number('size', 20)}
+		/>
 	));
