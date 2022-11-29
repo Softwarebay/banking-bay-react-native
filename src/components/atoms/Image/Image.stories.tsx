@@ -16,7 +16,7 @@ const darkViewStyle: StyleProp<ViewStyle> = {
 	alignItems: 'center',
 };
 
-storiesOf('Atom/Image', module)
+storiesOf('Atoms/Image', module)
 	.addDecorator((getStory) => <ViewStory center>{getStory()}</ViewStory>)
 	.add('Onboarding image 1', () => (
 		<View style={darkViewStyle}>
@@ -45,4 +45,7 @@ storiesOf('Atom/Image', module)
 	))
 	.add('Success payment', () => (
 		<Image name="success-icon" style={object('style', styleKnob)} />
+	))
+	.add('Success registration', () => (
+		<Image name="registration-icon" style={object('style', styleKnob)} />
 	));
