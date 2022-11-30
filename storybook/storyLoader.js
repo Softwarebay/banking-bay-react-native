@@ -40,6 +40,7 @@ function loadStories() {
 	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
 	require('../src/components/templates/SuccessRegistrationTemplate/SuccessRegistrationTemplate.stories');
 	require('../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories');
+	require('../src/components/templates/TransactionHistoryTemplate/TransactionHistoryTemplate.stories');
 }
 
 const stories = [
@@ -79,6 +80,7 @@ const stories = [
 	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
 	'../src/components/templates/SuccessRegistrationTemplate/SuccessRegistrationTemplate.stories',
 	'../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories',
+	'../src/components/templates/TransactionHistoryTemplate/TransactionHistoryTemplate.stories',
 ];
 
 module.exports = {
