@@ -7,3 +7,4 @@ export { TransactionDetailsTemplate } from './TransactionDetailsTemplate/Transac
 export { ChangePasswordTemplate } from './ChangePasswordTemplate/ChangePasswordTemplate';
 export { SignUpTemplate } from './SignUpTemplate/SignUpTemplate';
 export { SuccessRegistrationTemplate } from './SuccessRegistrationTemplate/SuccessRegistrationTemplate';
+export { TransactionHistoryTemplate } from './TransactionHistoryTemplate/TransactionHistoryTemplate';

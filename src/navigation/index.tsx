@@ -16,6 +16,7 @@ import {
 	SuccessPaymentScreen,
 	SuccessRegistrationScreen,
 	TransactionDetailsScreen,
+	TransactionHistoryScreen,
 } from 'screens';
 
 import { RootTabParamList, TabNavigator } from './TabNavigator';
@@ -32,6 +33,7 @@ export type RootStackParamList = {
 	MobilePayment: undefined;
 	SuccessPayment: undefined;
 	TransactionDetails: undefined;
+	TransactionHistory: undefined;
 };
 
 export type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -105,6 +107,13 @@ export const Navigator = () => (
 						headerStyle: {
 							backgroundColor: 'transparent',
 						},
+					}}
+				/>
+				<Stack.Screen
+					component={TransactionHistoryScreen}
+					name="TransactionHistory"
+					options={{
+						title: 'Transaction history',
 					}}
 				/>
 			</Stack.Group>

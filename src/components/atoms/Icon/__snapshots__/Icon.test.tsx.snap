@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Icon should match snapshot - ATM icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="atm-icon-test-id"
+  width={20}
+/>
+`;
+
 exports[`Icon should match snapshot - amazon icon 1`] = `
 <SvgMock
   color="red"
@@ -72,6 +81,15 @@ exports[`Icon should match snapshot - dollar-sign icon 1`] = `
 />
 `;
 
+exports[`Icon should match snapshot - eBay icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="ebay-icon-test-id"
+  width={20}
+/>
+`;
+
 exports[`Icon should match snapshot - eye-off icon 1`] = `
 <SvgMock
   color="red"
@@ -104,6 +122,15 @@ exports[`Icon should match snapshot - google-plus icon 1`] = `
   color="red"
   height={20}
   testID="google-plus-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - home icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="home-icon-test-id"
   width={20}
 />
 `;
@@ -176,6 +203,15 @@ exports[`Icon should match snapshot - repeat icon 1`] = `
   color="red"
   height={20}
   testID="repeat-icon-test-id"
+  width={20}
+/>
+`;
+
+exports[`Icon should match snapshot - search icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="search-icon-test-id"
   width={20}
 />
 `;

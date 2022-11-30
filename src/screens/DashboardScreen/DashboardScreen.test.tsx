@@ -108,15 +108,14 @@ describe('DashboardScreen', () => {
 		expect(console.log).toHaveBeenCalledWith('onPressTopUpPayment');
 	});
 
-	it("should log 'onPressViewAll' after pressing on 'View All' link in latest transactions section", () => {
+	it("should navigate to TransactionHistory after pressing on 'View All' link in latest transactions section", () => {
 		render(<DashboardScreen />);
-		console.log = jest.fn();
 
 		const link = screen.getByTestId('latest-transaction-link-test-id');
 
 		fireEvent.press(link);
 
-		expect(console.log).toHaveBeenCalledWith('onPressViewAll');
+		expect(mockNavigate).toHaveBeenCalledWith('TransactionHistory');
 	});
 
 	it('should navigate to transaction details screen after pressing on transaction card in latest transactions section', () => {

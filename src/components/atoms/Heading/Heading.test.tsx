@@ -58,8 +58,8 @@ describe('Heading', () => {
 		expect(heading).toHaveTextContent('Heading');
 		expect(heading).toHaveStyle({
 			fontFamily: 'MulishBold',
-			fontSize: 51,
-			lineHeight: 56.1,
+			fontSize: 46,
+			lineHeight: 50.5,
 		});
 	});
 

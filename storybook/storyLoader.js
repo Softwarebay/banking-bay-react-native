@@ -21,6 +21,7 @@ function loadStories() {
 	require('../src/components/molecules/EmailInput/EmailInput.stories');
 	require('../src/components/molecules/MobileNumberInput/MobileNumberInput.stories');
 	require('../src/components/molecules/PasswordInput/PasswordInput.stories');
+	require('../src/components/molecules/SearchBar/SearchBar.stories');
 	require('../src/components/molecules/TextInput/TextInput.stories');
 	require('../src/components/organisms/AuthViaSocials/AuthViaSocials.stories');
 	require('../src/components/organisms/BottomTabs/BottomTabs.stories');
@@ -39,6 +40,7 @@ function loadStories() {
 	require('../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories');
 	require('../src/components/templates/SuccessRegistrationTemplate/SuccessRegistrationTemplate.stories');
 	require('../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories');
+	require('../src/components/templates/TransactionHistoryTemplate/TransactionHistoryTemplate.stories');
 }
 
 const stories = [
@@ -59,6 +61,7 @@ const stories = [
 	'../src/components/molecules/EmailInput/EmailInput.stories',
 	'../src/components/molecules/MobileNumberInput/MobileNumberInput.stories',
 	'../src/components/molecules/PasswordInput/PasswordInput.stories',
+	'../src/components/molecules/SearchBar/SearchBar.stories',
 	'../src/components/molecules/TextInput/TextInput.stories',
 	'../src/components/organisms/AuthViaSocials/AuthViaSocials.stories',
 	'../src/components/organisms/BottomTabs/BottomTabs.stories',
@@ -77,6 +80,7 @@ const stories = [
 	'../src/components/templates/SuccessPaymentTemplate/SuccessPaymentTemplate.stories',
 	'../src/components/templates/SuccessRegistrationTemplate/SuccessRegistrationTemplate.stories',
 	'../src/components/templates/TransactionDetailsTemplate/TransactionDetailsTemplate.stories',
+	'../src/components/templates/TransactionHistoryTemplate/TransactionHistoryTemplate.stories',
 ];
 
 module.exports = {

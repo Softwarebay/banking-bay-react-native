@@ -1,0 +1,1025 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransactionHistoryScreen should match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FAFCFF",
+      "flex": 1,
+      "paddingHorizontal": 20,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 10,
+            "shadowColor": "#161966",
+            "shadowOffset": Object {
+              "height": 6,
+              "width": 0,
+            },
+            "shadowOpacity": 0.08,
+            "shadowRadius": 16,
+          },
+          Array [
+            Object {
+              "height": 55,
+              "paddingHorizontal": 20,
+              "paddingVertical": 14,
+            },
+            Object {
+              "marginBottom": 10,
+            },
+          ],
+        ],
+      ]
+    }
+    testID="transaction-history-searchbar-test-id"
+  >
+    <TextInput
+      autoCorrect={false}
+      keyboardType="default"
+      onChangeText={[Function]}
+      placeholder="Search"
+      style={
+        Array [
+          Object {
+            "color": "#1B1D4D",
+            "fontFamily": "MulishRegular",
+            "fontSize": 15,
+          },
+          Object {
+            "flex": 1,
+            "marginRight": 20,
+          },
+        ]
+      }
+      testID="input-field-transaction-history-searchbar-test-id"
+      value=""
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={20}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Object {
+            "right": 0,
+          },
+          false,
+        ]
+      }
+      testID="icon-btn-transaction-history-searchbar-test-id"
+    >
+      <SvgMock
+        color="#1B1D4D"
+        height={16}
+        testID="search-icon-test-id"
+        width={16}
+      />
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "data": Array [
+            Object {
+              "amount": 140,
+              "iconColor": "#55ACEE",
+              "iconName": "money-transfer",
+              "id": "1",
+              "title": "Adalyn Roth",
+              "transactionCategory": "Money Transfer",
+              "transactionType": "outgoing",
+            },
+            Object {
+              "amount": 239.57,
+              "iconColor": "#55ACEE",
+              "iconName": "amazon",
+              "id": "2",
+              "title": "Amazon",
+              "transactionCategory": "Online payments",
+              "transactionType": "outgoing",
+            },
+          ],
+          "date": "Today",
+        },
+        Object {
+          "data": Array [
+            Object {
+              "amount": 700,
+              "iconColor": "#55ACEE",
+              "iconName": "paypal",
+              "id": "3",
+              "title": "Paypal",
+              "transactionCategory": "Deposits",
+              "transactionType": "incoming",
+            },
+            Object {
+              "amount": 1200,
+              "iconColor": "#FF8A71",
+              "iconName": "atm",
+              "id": "4",
+              "title": "ATM",
+              "transactionCategory": "Cash withdrawal",
+              "transactionType": "outgoing",
+            },
+            Object {
+              "amount": 287.84,
+              "iconColor": "#FF8A71",
+              "iconName": "ebay",
+              "id": "5",
+              "title": "eBay",
+              "transactionCategory": "Online payments",
+              "transactionType": "outgoing",
+            },
+          ],
+          "date": "Sep 10, 2022",
+        },
+        Object {
+          "data": Array [
+            Object {
+              "amount": 10,
+              "iconColor": "#FF8A71",
+              "iconName": "smartphone",
+              "id": "6",
+              "title": "+17869871235",
+              "transactionCategory": "Mobile payment",
+              "transactionType": "outgoing",
+            },
+            Object {
+              "amount": 568,
+              "iconColor": "#55ACEE",
+              "iconName": "money-transfer",
+              "id": "7",
+              "title": "Maribel Farrell",
+              "transactionCategory": "Money transfer",
+              "transactionType": "incoming",
+            },
+            Object {
+              "amount": 198.27,
+              "iconColor": "#55ACEE",
+              "iconName": "home",
+              "id": "8",
+              "title": "Electricity",
+              "transactionCategory": "Utility bills",
+              "transactionType": "outgoing",
+            },
+          ],
+          "date": "Sep 5, 2022",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={
+      Array [
+        0,
+        4,
+        9,
+      ]
+    }
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "fontSize": 14,
+                "lineHeight": 22.4,
+                "marginBottom": 10,
+                "marginTop": 10,
+              },
+            ]
+          }
+          testID="transaction-history-title-test-id"
+        >
+          Today
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="1-transaction-history-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                color="#55ACEE"
+                height={25}
+                testID="money-transfer-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="1-transaction-title-test-id"
+              >
+                Adalyn Roth
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="1-transaction-subtitle-test-id"
+              >
+                Money Transfer
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1B1D4D",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="1-transaction-amount-test-id"
+            >
+              - 140.00
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="2-transaction-history-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                color="#55ACEE"
+                height={25}
+                testID="amazon-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="2-transaction-title-test-id"
+              >
+                Amazon
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="2-transaction-subtitle-test-id"
+              >
+                Online payments
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1B1D4D",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="2-transaction-amount-test-id"
+            >
+              - 239.57
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "fontSize": 14,
+                "lineHeight": 22.4,
+                "marginBottom": 10,
+                "marginTop": 10,
+              },
+            ]
+          }
+          testID="transaction-history-title-test-id"
+        >
+          Sep 10, 2022
+        </Text>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="3-transaction-history-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                color="#55ACEE"
+                height={25}
+                testID="paypal-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="3-transaction-title-test-id"
+              >
+                Paypal
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="3-transaction-subtitle-test-id"
+              >
+                Deposits
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#3EB290",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="3-transaction-amount-test-id"
+            >
+              + 700.00
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="4-transaction-history-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                color="#FF8A71"
+                height={25}
+                testID="atm-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="4-transaction-title-test-id"
+              >
+                ATM
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="4-transaction-subtitle-test-id"
+              >
+                Cash withdrawal
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1B1D4D",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="4-transaction-amount-test-id"
+            >
+              - 1200.00
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          testID="5-transaction-history-item-test-id"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "flexDirection": "row",
+                },
+                Array [
+                  Object {
+                    "backgroundColor": "#FFFFFF",
+                    "borderRadius": 10,
+                    "shadowColor": "#161966",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.08,
+                    "shadowRadius": 16,
+                  },
+                  Array [
+                    Object {
+                      "paddingHorizontal": 15,
+                      "paddingVertical": 15,
+                    },
+                    Object {
+                      "marginBottom": 10,
+                    },
+                    false,
+                  ],
+                ],
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F1F5FD",
+                  "borderRadius": 100,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "width": 50,
+                }
+              }
+            >
+              <SvgMock
+                color="#FF8A71"
+                height={25}
+                testID="ebay-icon-test-id"
+                width={25}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "marginHorizontal": 15,
+                }
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#1B1D4D",
+                    },
+                    Object {
+                      "fontFamily": "MulishSemiBold",
+                      "fontSize": 16,
+                      "lineHeight": 25.6,
+                    },
+                    undefined,
+                  ]
+                }
+                testID="5-transaction-title-test-id"
+              >
+                eBay
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#4C4C60",
+                      "fontFamily": "MulishRegular",
+                      "fontSize": 17,
+                      "lineHeight": 27.2,
+                    },
+                    Object {
+                      "fontSize": 14,
+                      "lineHeight": 22.4,
+                    },
+                  ]
+                }
+                testID="5-transaction-subtitle-test-id"
+              >
+                Online payments
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#1B1D4D",
+                  },
+                  Object {
+                    "fontFamily": "MulishSemiBold",
+                    "fontSize": 16,
+                    "lineHeight": 25.6,
+                  },
+                  undefined,
+                ]
+              }
+              testID="5-transaction-amount-test-id"
+            >
+              - 287.84
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "fontSize": 14,
+                "lineHeight": 22.4,
+                "marginBottom": 10,
+                "marginTop": 10,
+              },
+            ]
+          }
+          testID="transaction-history-title-test-id"
+        >
+          Sep 5, 2022
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -8,8 +8,8 @@ export const styles = StyleSheet.create({
 	},
 	h1: {
 		fontFamily: 'MulishBold',
-		fontSize: 51,
-		lineHeight: 56.1,
+		fontSize: 46,
+		lineHeight: 50.5,
 	},
 	h2: {
 		fontFamily: 'MulishBold',

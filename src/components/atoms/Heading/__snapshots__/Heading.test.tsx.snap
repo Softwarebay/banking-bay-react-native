@@ -9,8 +9,8 @@ exports[`Heading should match snapshot - h1 1`] = `
       },
       Object {
         "fontFamily": "MulishBold",
-        "fontSize": 51,
-        "lineHeight": 56.1,
+        "fontSize": 46,
+        "lineHeight": 50.5,
       },
       Object {
         "marginBottom": 20,

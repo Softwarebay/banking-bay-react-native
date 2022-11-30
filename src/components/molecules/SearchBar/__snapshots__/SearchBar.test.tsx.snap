@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PasswordInput should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Array [
+          Object {
+            "height": 55,
+            "paddingHorizontal": 20,
+            "paddingVertical": 14,
+          },
+          Object {
+            "height": 50,
+          },
+        ],
+      ],
+    ]
+  }
+  testID="searchbar-test-id"
+>
+  <TextInput
+    autoCorrect={false}
+    keyboardType="default"
+    onChangeText={[Function]}
+    placeholder="Search"
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+          "fontFamily": "MulishRegular",
+          "fontSize": 15,
+        },
+        Object {
+          "flex": 1,
+          "marginRight": 20,
+        },
+      ]
+    }
+    testID="input-field-searchbar-test-id"
+    value=""
+  />
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    hitSlop={20}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+        Object {
+          "right": 0,
+        },
+        false,
+      ]
+    }
+    testID="icon-btn-searchbar-test-id"
+  >
+    <SvgMock
+      color="#1B1D4D"
+      height={16}
+      testID="search-icon-test-id"
+      width={16}
+    />
+  </View>
+</View>
+`;

@@ -20,6 +20,10 @@ import MoneyTransfer from './money-transfer.svg';
 import Paypal from './paypal.svg';
 import Amazon from './amazon.svg';
 import FlagUSA from './flag-usa.svg';
+import Search from './search.svg';
+import Home from './home.svg';
+import Ebay from './ebay.svg';
+import Atm from './atm.svg';
 
 export {
 	Logo,
@@ -44,4 +48,8 @@ export {
 	MoneyTransfer,
 	Paypal,
 	FlagUSA,
+	Search,
+	Home,
+	Ebay,
+	Atm,
 };

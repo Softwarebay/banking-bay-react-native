@@ -178,6 +178,32 @@ describe('Icon', () => {
 		expect(tree).toMatchSnapshot();
 	});
 
+	it('should match snapshot - search icon', () => {
+		const tree = testRenderer
+			.create(<Icon {...props} name="search" />)
+			.toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
+	it('should match snapshot - home icon', () => {
+		const tree = testRenderer.create(<Icon {...props} name="home" />).toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
+	it('should match snapshot - ATM icon', () => {
+		const tree = testRenderer.create(<Icon {...props} name="atm" />).toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
+	it('should match snapshot - eBay icon', () => {
+		const tree = testRenderer.create(<Icon {...props} name="ebay" />).toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
 	it('should render facebook icon', () => {
 		render(<Icon {...props} name="facebook" />);
 
@@ -430,6 +456,54 @@ describe('Icon', () => {
 		render(<Icon {...props} name="flag-usa" />);
 
 		const icon = screen.getByTestId('flag-usa-icon-test-id');
+
+		expect(icon).not.toBeNull();
+
+		expect(icon.props).toHaveProperty('height', 20);
+		expect(icon.props).toHaveProperty('width', 20);
+		expect(icon.props).toHaveProperty('color', 'red');
+	});
+
+	it('should render search icon', () => {
+		render(<Icon {...props} name="search" />);
+
+		const icon = screen.getByTestId('search-icon-test-id');
+
+		expect(icon).not.toBeNull();
+
+		expect(icon.props).toHaveProperty('height', 20);
+		expect(icon.props).toHaveProperty('width', 20);
+		expect(icon.props).toHaveProperty('color', 'red');
+	});
+
+	it('should render home icon', () => {
+		render(<Icon {...props} name="home" />);
+
+		const icon = screen.getByTestId('home-icon-test-id');
+
+		expect(icon).not.toBeNull();
+
+		expect(icon.props).toHaveProperty('height', 20);
+		expect(icon.props).toHaveProperty('width', 20);
+		expect(icon.props).toHaveProperty('color', 'red');
+	});
+
+	it('should render ATM icon', () => {
+		render(<Icon {...props} name="atm" />);
+
+		const icon = screen.getByTestId('atm-icon-test-id');
+
+		expect(icon).not.toBeNull();
+
+		expect(icon.props).toHaveProperty('height', 20);
+		expect(icon.props).toHaveProperty('width', 20);
+		expect(icon.props).toHaveProperty('color', 'red');
+	});
+
+	it('should render eBay icon', () => {
+		render(<Icon {...props} name="ebay" />);
+
+		const icon = screen.getByTestId('ebay-icon-test-id');
 
 		expect(icon).not.toBeNull();
 
