@@ -109,7 +109,7 @@ export const DashboardScreen = () => {
 	};
 
 	const onPressViewAll = () => {
-		console.log('onPressViewAll');
+		navigation.navigate('TransactionHistory');
 	};
 
 	const onPressTransactionCard = () => {

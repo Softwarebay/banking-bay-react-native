@@ -7,12 +7,12 @@ import { styles } from './TextInput.styles';
 
 export interface Props {
 	placeholder: string;
-	testID?: string;
+	testID: string;
 	style?: StyleProp<TextStyle>;
 }
 
 export const TextInput = forwardRef<InputFieldHandle, Props>(
-	({ placeholder, style, testID = 'test-id' }, ref) => {
+	({ placeholder, style, testID }, ref) => {
 		return (
 			<Card style={[styles.container, style]} testID={testID}>
 				<InputField

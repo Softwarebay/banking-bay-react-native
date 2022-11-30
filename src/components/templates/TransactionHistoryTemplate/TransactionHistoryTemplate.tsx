@@ -32,10 +32,19 @@ export interface Props {
 	transactionHistory: TransactionHistoryItem[];
 	onSearch: () => void;
 	onPressTransactionCard: () => void;
+	testOnly_initialNumToRender?: number;
 }
 
 export const TransactionHistoryTemplate = forwardRef<InputFieldHandle, Props>(
-	({ transactionHistory, onSearch, onPressTransactionCard }, ref) => {
+	(
+		{
+			transactionHistory,
+			onSearch,
+			onPressTransactionCard,
+			testOnly_initialNumToRender,
+		},
+		ref
+	) => {
 		return (
 			<>
 				<StatusBar backgroundColor={colors.screenBackground} style="dark" />
@@ -50,6 +59,7 @@ export const TransactionHistoryTemplate = forwardRef<InputFieldHandle, Props>(
 						/>
 
 						<SectionList<Transaction, TransactionHistoryItem>
+							initialNumToRender={testOnly_initialNumToRender}
 							renderItem={({
 								item: {
 									id,
