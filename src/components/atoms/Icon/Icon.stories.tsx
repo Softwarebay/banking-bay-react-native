@@ -153,4 +153,25 @@ storiesOf('Atoms/Icon', module)
 			name="search"
 			size={number('size', 20)}
 		/>
+	))
+	.add('Home', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="home"
+			size={number('size', 20)}
+		/>
+	))
+	.add('ATM', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="atm"
+			size={number('size', 20)}
+		/>
+	))
+	.add('eBay', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="ebay"
+			size={number('size', 20)}
+		/>
 	));

@@ -1,15 +1,18 @@
 import {
 	Amazon,
+	Atm,
 	Check,
 	ChevronLeft,
 	CreditCard,
 	CreditCards,
 	Deposit,
 	DollarSign,
+	Ebay,
 	EyeOff,
 	Facebook,
 	FlagUSA,
 	GooglePlus,
+	Home,
 	LoanWallet,
 	Logo,
 	MoneyTransfer,
@@ -48,7 +51,10 @@ export interface Props {
 		| 'money-transfer'
 		| 'paypal'
 		| 'flag-usa'
-		| 'search';
+		| 'search'
+		| 'atm'
+		| 'ebay'
+		| 'home';
 	size: number;
 	color?: string;
 }
@@ -260,6 +266,33 @@ export const Icon = ({ name, color, size }: Props) => {
 					color={color}
 					height={size}
 					testID="search-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'home':
+			return (
+				<Home
+					color={color}
+					height={size}
+					testID="home-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'atm':
+			return (
+				<Atm
+					color={color}
+					height={size}
+					testID="atm-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'ebay':
+			return (
+				<Ebay
+					color={color}
+					height={size}
+					testID="ebay-icon-test-id"
 					width={size}
 				/>
 			);
