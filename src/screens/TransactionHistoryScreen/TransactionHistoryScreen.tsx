@@ -1,9 +1,9 @@
+import { useRef, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
 import { TransactionHistoryTemplate } from 'components/templates';
 import { IconProps, InputFieldHandle } from 'components/atoms';
-import { NavigationProp } from 'navigation';
-import { useRef, useState } from 'react';
+import type { NavigationProp } from 'navigation';
 
 interface Transaction {
 	id: string;
