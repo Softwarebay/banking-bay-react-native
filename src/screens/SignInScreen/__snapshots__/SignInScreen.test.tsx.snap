@@ -28,8 +28,8 @@ exports[`SignInScreen should match snapshot 1`] = `
         },
         Object {
           "fontFamily": "MulishBold",
-          "fontSize": 51,
-          "lineHeight": 56.1,
+          "fontSize": 46,
+          "lineHeight": 50.5,
         },
         Object {
           "marginBottom": 30,
