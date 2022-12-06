@@ -1,6 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should match snapshot 1`] = `
+exports[`Card should match snapshot - column 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "column",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Object {
+          "height": 100,
+        },
+      ],
+    ]
+  }
+  testID="card-test-id"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#1B1D4D",
+        },
+        Object {
+          "fontFamily": "MulishSemiBold",
+          "fontSize": 16,
+          "lineHeight": 25.6,
+        },
+        undefined,
+      ]
+    }
+  >
+    Text inside Card
+  </Text>
+  <SvgMock
+    color="#1B1D4D"
+    height={20}
+    testID="check-icon-test-id"
+    width={20}
+  />
+</View>
+`;
+
+exports[`Card should match snapshot - row 1`] = `
 <View
   style={
     Array [

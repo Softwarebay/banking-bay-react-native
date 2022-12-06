@@ -8,11 +8,12 @@ export interface Props {
 	children: React.ReactNode;
 	style?: StyleProp<ViewStyle>;
 	testID?: string;
+	direction?: 'row' | 'column';
 }
 
-export const Card = ({ children, style, testID }: Props) => {
+export const Card = ({ children, style, direction = 'row', testID }: Props) => {
 	return (
-		<Flex direction="row" style={[styles.card, style]} testID={testID}>
+		<Flex direction={direction} style={[styles.card, style]} testID={testID}>
 			{children}
 		</Flex>
 	);

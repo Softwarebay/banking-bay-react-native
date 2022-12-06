@@ -22,8 +22,16 @@ describe.only('Card', () => {
 		),
 	};
 
-	it('should match snapshot', () => {
+	it('should match snapshot - row', () => {
 		const tree = testRenderer.create(<Card {...props} />).toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
+	it('should match snapshot - column', () => {
+		const tree = testRenderer
+			.create(<Card {...props} direction="column" />)
+			.toJSON();
 
 		expect(tree).toMatchSnapshot();
 	});
@@ -39,5 +47,18 @@ describe.only('Card', () => {
 		expect(cardIcon).toBeTruthy();
 
 		expect(card).toHaveStyle({ flexDirection: 'row', height: 100 });
+	});
+
+	it('should render children in column', () => {
+		render(<Card {...props} direction="column" />);
+
+		const card = screen.getByTestId('card-test-id');
+		const cardText = screen.getByText('Text inside Card');
+		const cardIcon = screen.getByTestId('check-icon-test-id');
+
+		expect(cardText).toBeTruthy();
+		expect(cardIcon).toBeTruthy();
+
+		expect(card).toHaveStyle({ flexDirection: 'column', height: 100 });
 	});
 });
