@@ -8,3 +8,4 @@ export { ChangePasswordTemplate } from './ChangePasswordTemplate/ChangePasswordT
 export { SignUpTemplate } from './SignUpTemplate/SignUpTemplate';
 export { SuccessRegistrationTemplate } from './SuccessRegistrationTemplate/SuccessRegistrationTemplate';
 export { TransactionHistoryTemplate } from './TransactionHistoryTemplate/TransactionHistoryTemplate';
+export { DepositsTemplate } from './DepositsTemplate/DepositsTemplate';
