@@ -1,0 +1,760 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DepositCard should match snapshot - deposit finished 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "column",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Array [
+          Object {
+            "padding": 20,
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ],
+      ],
+    ]
+  }
+  testID="deposit-card-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-start",
+          "marginRight": 12,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#3EB290",
+            "borderRadius": 50,
+            "height": 27,
+            "justifyContent": "center",
+            "width": 27,
+          }
+        }
+      >
+        <SvgMock
+          color="#FFFFFF"
+          height={14}
+          testID="check-icon-test-id"
+          width={14}
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "column",
+          },
+          Object {
+            "flex": 1,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "justifyContent": "space-between",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Array [
+                Object {
+                  "alignItems": "baseline",
+                },
+                undefined,
+              ],
+            ]
+          }
+          testID="amount-deposit-card-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 22,
+                  "lineHeight": 22.1,
+                },
+              ]
+            }
+          >
+            1000.
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+              ]
+            }
+          >
+            00
+          </Text>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Object {
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+                "lineHeight": 22.1,
+              },
+              Object {
+                "fontFamily": "MulishBold",
+                "marginLeft": 5,
+              },
+            ]
+          }
+          testID="currency-deposit-card-test-id"
+        >
+          USD
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Object {
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+                "lineHeight": 22.1,
+              },
+              Object {
+                "marginLeft": "auto",
+              },
+            ]
+          }
+          testID="rate-deposit-card-test-id"
+        >
+          3%
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "justifyContent": "space-between",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "fontSize": 14,
+              },
+            ]
+          }
+          testID="date-deposit-card-test-id"
+        >
+          Sep 1 - Mar 1, 2022
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Array [
+                Object {
+                  "fontSize": 14,
+                },
+                Object {
+                  "color": "#3EB290",
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 14,
+                },
+              ],
+            ]
+          }
+          testID="last-income-deposit-card-test-id"
+        >
+          + 60.57
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#3EB290",
+            "borderWidth": 0,
+            "height": 40,
+          },
+          Object {
+            "backgroundColor": "#FF8A71",
+            "flex": 1,
+            "marginRight": 5,
+          },
+        ]
+      }
+      testID="extend-btn-deposit-card-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            },
+            Object {
+              "fontSize": 15,
+            },
+          ]
+        }
+      >
+        Extend
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#3EB290",
+            "borderWidth": 0,
+            "height": 40,
+          },
+          Object {
+            "flex": 1,
+            "marginLeft": 5,
+          },
+        ]
+      }
+      testID="withdrawal-btn-deposit-card-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            },
+            Object {
+              "fontSize": 15,
+            },
+          ]
+        }
+      >
+        Withdrawal
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "flexDirection": "column",
+      },
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 10,
+          "shadowColor": "#161966",
+          "shadowOffset": Object {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.08,
+          "shadowRadius": 16,
+        },
+        Array [
+          Object {
+            "padding": 20,
+          },
+          Object {
+            "marginBottom": 10,
+          },
+        ],
+      ],
+    ]
+  }
+  testID="deposit-card-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignSelf": "flex-start",
+          "marginRight": 12,
+        }
+      }
+    >
+      <SvgMock
+        color="#1B1D4D"
+        height={27}
+        testID="deposits-icon-test-id"
+        width={27}
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "column",
+          },
+          Object {
+            "flex": 1,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "justifyContent": "space-between",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+              },
+              Object {
+                "flexDirection": "row",
+              },
+              Array [
+                Object {
+                  "alignItems": "baseline",
+                },
+                undefined,
+              ],
+            ]
+          }
+          testID="amount-deposit-card-test-id"
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 22,
+                  "lineHeight": 22.1,
+                },
+              ]
+            }
+          >
+            1000.
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#1B1D4D",
+                },
+                Object {
+                  "fontFamily": "MulishRegular",
+                  "fontSize": 17,
+                  "lineHeight": 22.1,
+                },
+              ]
+            }
+          >
+            00
+          </Text>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Object {
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+                "lineHeight": 22.1,
+              },
+              Object {
+                "fontFamily": "MulishBold",
+                "marginLeft": 5,
+              },
+            ]
+          }
+          testID="currency-deposit-card-test-id"
+        >
+          USD
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#1B1D4D",
+              },
+              Object {
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+                "lineHeight": 22.1,
+              },
+              Object {
+                "marginLeft": "auto",
+              },
+            ]
+          }
+          testID="rate-deposit-card-test-id"
+        >
+          3%
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+            Object {
+              "justifyContent": "space-between",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Object {
+                "fontSize": 14,
+              },
+            ]
+          }
+          testID="date-deposit-card-test-id"
+        >
+          Sep 1 - Mar 1, 2022
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#4C4C60",
+                "fontFamily": "MulishRegular",
+                "fontSize": 17,
+                "lineHeight": 27.2,
+              },
+              Array [
+                Object {
+                  "fontSize": 14,
+                },
+                Object {
+                  "color": "#3EB290",
+                  "fontFamily": "MulishSemiBold",
+                  "fontSize": 14,
+                },
+              ],
+            ]
+          }
+          testID="last-income-deposit-card-test-id"
+        >
+          + 60.57
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexDirection": "row",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#3EB290",
+            "borderWidth": 0,
+            "height": 40,
+          },
+          Object {
+            "backgroundColor": "#55ACEE",
+            "flex": 1,
+            "marginRight": 5,
+          },
+        ]
+      }
+      testID="top-up-btn-deposit-card-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            },
+            Object {
+              "fontSize": 15,
+            },
+          ]
+        }
+      >
+        Top - Up
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          false,
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 55,
+            "justifyContent": "center",
+          },
+          Object {
+            "backgroundColor": "#3EB290",
+            "borderWidth": 0,
+            "height": 40,
+          },
+          Object {
+            "flex": 1,
+            "marginLeft": 5,
+          },
+        ]
+      }
+      testID="withdrawal-btn-deposit-card-test-id"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            },
+            Object {
+              "fontSize": 15,
+            },
+          ]
+        }
+      >
+        Withdrawal
+      </Text>
+    </View>
+  </View>
+</View>
+`;
