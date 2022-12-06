@@ -174,4 +174,11 @@ storiesOf('Atoms/Icon', module)
 			name="ebay"
 			size={number('size', 20)}
 		/>
+	))
+	.add('Info', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="info"
+			size={number('size', 20)}
+		/>
 	));

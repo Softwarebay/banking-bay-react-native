@@ -13,6 +13,7 @@ import {
 	FlagUSA,
 	GooglePlus,
 	Home,
+	Info,
 	LoanWallet,
 	Logo,
 	MoneyTransfer,
@@ -54,7 +55,8 @@ export interface Props {
 		| 'search'
 		| 'atm'
 		| 'ebay'
-		| 'home';
+		| 'home'
+		| 'info';
 	size: number;
 	color?: string;
 }
@@ -293,6 +295,15 @@ export const Icon = ({ name, color, size }: Props) => {
 					color={color}
 					height={size}
 					testID="ebay-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'info':
+			return (
+				<Info
+					color={color}
+					height={size}
+					testID="info-icon-test-id"
 					width={size}
 				/>
 			);
