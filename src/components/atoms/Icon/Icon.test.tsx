@@ -210,6 +210,14 @@ describe('Icon', () => {
 		expect(tree).toMatchSnapshot();
 	});
 
+	it('should match snapshot - piggy-bank icon', () => {
+		const tree = testRenderer
+			.create(<Icon {...props} name="piggy-bank" />)
+			.toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
 	it('should render facebook icon', () => {
 		render(<Icon {...props} name="facebook" />);
 
@@ -522,6 +530,18 @@ describe('Icon', () => {
 		render(<Icon {...props} name="info" />);
 
 		const icon = screen.getByTestId('info-icon-test-id');
+
+		expect(icon).not.toBeNull();
+
+		expect(icon.props).toHaveProperty('height', 20);
+		expect(icon.props).toHaveProperty('width', 20);
+		expect(icon.props).toHaveProperty('color', 'red');
+	});
+
+	it('should render piggy-bank icon', () => {
+		render(<Icon {...props} name="piggy-bank" />);
+
+		const icon = screen.getByTestId('piggy-bank-icon-test-id');
 
 		expect(icon).not.toBeNull();
 

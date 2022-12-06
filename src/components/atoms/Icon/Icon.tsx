@@ -20,6 +20,7 @@ import {
 	MoreTiles,
 	NotificationBell,
 	Paypal,
+	PiggyBank,
 	ProfileIcon,
 	Repeat,
 	Report,
@@ -56,7 +57,8 @@ export interface Props {
 		| 'atm'
 		| 'ebay'
 		| 'home'
-		| 'info';
+		| 'info'
+		| 'piggy-bank';
 	size: number;
 	color?: string;
 }
@@ -304,6 +306,15 @@ export const Icon = ({ name, color, size }: Props) => {
 					color={color}
 					height={size}
 					testID="info-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'piggy-bank':
+			return (
+				<PiggyBank
+					color={color}
+					height={size}
+					testID="piggy-bank-icon-test-id"
 					width={size}
 				/>
 			);

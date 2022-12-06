@@ -181,4 +181,11 @@ storiesOf('Atoms/Icon', module)
 			name="info"
 			size={number('size', 20)}
 		/>
+	))
+	.add('Piggy Bank', () => (
+		<Icon
+			color={color('color', colors.mainDark)}
+			name="piggy-bank"
+			size={number('size', 20)}
+		/>
 	));
