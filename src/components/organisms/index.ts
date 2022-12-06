@@ -7,3 +7,4 @@ export { BottomTabs } from './BottomTabs/BottomTabs';
 export { DashboardCards } from './DashboardCards/DashboardCards';
 export { SignUpForm } from './SignUpForm/SignUpForm';
 export { DepositCard } from './DepositCard/DepositCard';
+export { MoneyboxCard } from './MoneyboxCard/MoneyboxCard';
