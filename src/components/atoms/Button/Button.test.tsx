@@ -18,8 +18,25 @@ describe('Button', () => {
 		type: 'secondary',
 	};
 
-	it('should match snapshot', () => {
+	const ternaryProps: Props = {
+		...props,
+		type: 'ternary',
+	};
+
+	it('should match snapshot - primary button', () => {
 		const tree = testRenderer.create(<Button {...props} />).toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
+	it('should match snapshot - secondary button', () => {
+		const tree = testRenderer.create(<Button {...secondaryProps} />).toJSON();
+
+		expect(tree).toMatchSnapshot();
+	});
+
+	it('should match snapshot - ternary button', () => {
+		const tree = testRenderer.create(<Button {...ternaryProps} />).toJSON();
 
 		expect(tree).toMatchSnapshot();
 	});
@@ -54,7 +71,18 @@ describe('Button', () => {
 		});
 	});
 
-	it('should apply active styles when  button is pressed', () => {
+	it('should display ternary button', () => {
+		render(<Button {...ternaryProps} />);
+
+		const btn = screen.getByTestId('btn-test-id');
+
+		expect(btn).toHaveStyle({
+			backgroundColor: colors.green,
+			borderWidth: 0,
+		});
+	});
+
+	it('should apply active styles when button is pressed', () => {
 		render(<Button {...props} testOnly_pressed />);
 
 		const btn = screen.getByTestId('btn-test-id');

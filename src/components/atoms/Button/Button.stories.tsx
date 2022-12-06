@@ -9,7 +9,7 @@ storiesOf('Atoms/Button', module)
 	.addDecorator((getStory) => <ViewStory>{getStory()}</ViewStory>)
 	.add('Primary', () => (
 		<Button
-			testID={text('testID', 'btn-test-id')}
+			testID="btn-test-id"
 			title={text('title', 'Button')}
 			type="primary"
 			onPress={action('onPress')}
@@ -17,9 +17,17 @@ storiesOf('Atoms/Button', module)
 	))
 	.add('Secondary', () => (
 		<Button
-			testID={text('testID', 'btn-test-id')}
+			testID="btn-test-id"
 			title={text('title', 'Button')}
 			type="secondary"
+			onPress={action('onPress')}
+		/>
+	))
+	.add('Ternary', () => (
+		<Button
+			testID="btn-test-id"
+			title={text('title', 'Button')}
+			type="ternary"
 			onPress={action('onPress')}
 		/>
 	));
