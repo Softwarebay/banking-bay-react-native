@@ -198,6 +198,15 @@ exports[`Icon should match snapshot - paypal icon 1`] = `
 />
 `;
 
+exports[`Icon should match snapshot - piggy-bank icon 1`] = `
+<SvgMock
+  color="red"
+  height={20}
+  testID="piggy-bank-icon-test-id"
+  width={20}
+/>
+`;
+
 exports[`Icon should match snapshot - profile icon 1`] = `
 <SvgMock
   color="red"
