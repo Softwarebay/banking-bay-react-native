@@ -652,16 +652,11 @@ exports[`TransactionDetailsTemplate should match snapshot - incoming transaction
         >
           <Text
             style={
-              Array [
-                Object {
-                  "color": "#FFFFFF",
-                  "fontFamily": "MulishSemiBold",
-                  "fontSize": 17,
-                },
-                Object {
-                  "color": "#FFFFFF",
-                },
-              ]
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              }
             }
           >
             Button
@@ -1325,16 +1320,11 @@ exports[`TransactionDetailsTemplate should match snapshot - outgoing transaction
         >
           <Text
             style={
-              Array [
-                Object {
-                  "color": "#FFFFFF",
-                  "fontFamily": "MulishSemiBold",
-                  "fontSize": 17,
-                },
-                Object {
-                  "color": "#FFFFFF",
-                },
-              ]
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              }
             }
           >
             Button

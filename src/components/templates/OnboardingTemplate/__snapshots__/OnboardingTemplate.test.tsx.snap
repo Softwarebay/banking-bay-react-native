@@ -485,16 +485,11 @@ exports[`OnboardingTemplate should match snapshot - slide 1 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "MulishSemiBold",
-                "fontSize": 17,
-              },
-              Object {
-                "color": "#FFFFFF",
-              },
-            ]
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            }
           }
         >
           Get Started
@@ -990,16 +985,11 @@ exports[`OnboardingTemplate should match snapshot - slide 2 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "MulishSemiBold",
-                "fontSize": 17,
-              },
-              Object {
-                "color": "#FFFFFF",
-              },
-            ]
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            }
           }
         >
           Get Started
@@ -1495,16 +1485,11 @@ exports[`OnboardingTemplate should match snapshot - slide 3 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "MulishSemiBold",
-                "fontSize": 17,
-              },
-              Object {
-                "color": "#FFFFFF",
-              },
-            ]
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            }
           }
         >
           Get Started
