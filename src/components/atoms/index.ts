@@ -12,6 +12,7 @@ export { Flex } from './Flex/Flex';
 export { Divider } from './Divider/Divider';
 export { FloatNum } from './FloatNum/FloatNum';
 export { Image } from './Image/Image';
+export { ProgressBar } from './ProgressBar/ProgressBar';
 
 export type { CheckboxHandle } from './Checkbox/Checkbox';
 export type { InputFieldHandle } from './InputField/InputField';

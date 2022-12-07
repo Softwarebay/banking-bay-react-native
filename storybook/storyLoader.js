@@ -17,6 +17,7 @@ function loadStories() {
 	require('../src/components/atoms/InputField/InputField.stories');
 	require('../src/components/atoms/Link/Link.stories');
 	require('../src/components/atoms/Paginator/Paginator.stories');
+	require('../src/components/atoms/ProgressBar/ProgressBar.stories');
 	require('../src/components/atoms/Text/Text.stories');
 	require('../src/components/molecules/EmailInput/EmailInput.stories');
 	require('../src/components/molecules/MobileNumberInput/MobileNumberInput.stories');
@@ -28,6 +29,7 @@ function loadStories() {
 	require('../src/components/organisms/DashboardCards/DashboardCards.stories');
 	require('../src/components/organisms/DepositCard/DepositCard.stories');
 	require('../src/components/organisms/LatestTransactions/LatestTransactions.stories');
+	require('../src/components/organisms/MoneyboxCard/MoneyboxCard.stories');
 	require('../src/components/organisms/PaymentOptions/PaymentOptions.stories');
 	require('../src/components/organisms/SignInForm/SignInForm.stories');
 	require('../src/components/organisms/SignUpForm/SignUpForm.stories');
@@ -58,6 +60,7 @@ const stories = [
 	'../src/components/atoms/InputField/InputField.stories',
 	'../src/components/atoms/Link/Link.stories',
 	'../src/components/atoms/Paginator/Paginator.stories',
+	'../src/components/atoms/ProgressBar/ProgressBar.stories',
 	'../src/components/atoms/Text/Text.stories',
 	'../src/components/molecules/EmailInput/EmailInput.stories',
 	'../src/components/molecules/MobileNumberInput/MobileNumberInput.stories',
@@ -69,6 +72,7 @@ const stories = [
 	'../src/components/organisms/DashboardCards/DashboardCards.stories',
 	'../src/components/organisms/DepositCard/DepositCard.stories',
 	'../src/components/organisms/LatestTransactions/LatestTransactions.stories',
+	'../src/components/organisms/MoneyboxCard/MoneyboxCard.stories',
 	'../src/components/organisms/PaymentOptions/PaymentOptions.stories',
 	'../src/components/organisms/SignInForm/SignInForm.stories',
 	'../src/components/organisms/SignUpForm/SignUpForm.stories',

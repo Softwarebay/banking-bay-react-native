@@ -7,6 +7,7 @@ import {
 	FloatNum,
 	Heading,
 	Icon,
+	ProgressBar,
 	Text,
 } from 'components/atoms';
 import { colors } from 'theme';
@@ -36,8 +37,7 @@ export const MoneyboxCard = ({
 	onPressExtendButton,
 	onPressTopUpButton,
 }: Props) => {
-	const progress = saved / goal > 1 ? 100 : (saved / goal) * 100;
-	const isFinished = progress >= 100;
+	const isFinished = saved / goal >= 1;
 
 	const onPressSecondaryButton = isFinished
 		? onPressExtendButton
@@ -55,7 +55,11 @@ export const MoneyboxCard = ({
 						<Icon color={colors.bodyText} name="piggy-bank" size={27} />
 					)}
 				</View>
-				<Text style={styles.goalTitle} text={title} />
+				<Text
+					style={styles.goalTitle}
+					testID={`goal-title-${testID}`}
+					text={title}
+				/>
 				<Flex direction="row" style={styles.goal}>
 					<FloatNum
 						floatStyle={styles.floatStyle}
@@ -66,22 +70,18 @@ export const MoneyboxCard = ({
 					<Heading
 						size="h5"
 						style={styles.currency}
-						testID={`currency-${testID}`}
+						testID={`goal-currency-${testID}`}
 						text={currency}
 					/>
 				</Flex>
 			</Flex>
 
-			<View style={styles.progressContainer}>
-				<View
-					style={[
-						styles.progress,
-						styles.progressLine,
-						{ width: `${progress}%` },
-					]}
-				/>
-				<View style={[styles.progress, styles.progressShadow]} />
-			</View>
+			<ProgressBar
+				maxValue={goal}
+				style={styles.progressBar}
+				testID={`progress-bar-${testID}`}
+				value={saved}
+			/>
 
 			<Flex direction="row" style={styles.saved}>
 				<FloatNum
@@ -92,7 +92,11 @@ export const MoneyboxCard = ({
 					testID={`saved-${testID}`}
 				/>
 
-				<Text style={styles.savedFloat} text={currency} />
+				<Text
+					style={styles.savedFloat}
+					testID={`saved-currency-${testID}`}
+					text={currency}
+				/>
 			</Flex>
 
 			<Flex direction="row">

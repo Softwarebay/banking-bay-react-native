@@ -44,23 +44,8 @@ export const styles = StyleSheet.create({
 		fontSize: 22,
 		lineHeight: 22.1,
 	},
-
-	progress: {
-		borderRadius: 10,
-		height: 5,
-	},
-	progressContainer: {
+	progressBar: {
 		marginTop: 10,
-	},
-	progressLine: {
-		backgroundColor: colors.green,
-		left: 0,
-		position: 'absolute',
-		top: 0,
-	},
-	progressShadow: {
-		backgroundColor: colors.bodyText,
-		opacity: 0.2,
 	},
 	saved: {
 		alignItems: 'center',

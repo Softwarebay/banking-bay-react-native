@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar should match snapshot 1`] = `
+<View
+  testID="progress-bar-test-id"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 10,
+          "height": 5,
+        },
+        Object {
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+        },
+        Object {
+          "backgroundColor": "#3EB290",
+          "width": "80%",
+        },
+      ]
+    }
+    testID="progress-line-progress-bar-test-id"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 10,
+          "height": 5,
+        },
+        Object {
+          "backgroundColor": "#4C4C60",
+          "opacity": 0.2,
+        },
+      ]
+    }
+  />
+</View>
+`;
