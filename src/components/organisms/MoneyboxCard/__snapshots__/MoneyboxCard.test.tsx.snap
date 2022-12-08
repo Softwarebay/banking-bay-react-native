@@ -79,7 +79,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
           },
         ]
       }
-      testID="goal-title-moneybox-card-test-id"
+      testID="moneybox-goal-title-test-id"
     >
       Test
     </Text>
@@ -115,7 +115,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
             ],
           ]
         }
-        testID="goal-moneybox-card-test-id"
+        testID="moneybox-goal-test-id"
       >
         <Text
           style={
@@ -167,7 +167,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
             },
           ]
         }
-        testID="goal-currency-moneybox-card-test-id"
+        testID="moneybox-goal-currency-test-id"
       >
         USD
       </Text>
@@ -179,7 +179,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
         "marginTop": 10,
       }
     }
-    testID="progress-bar-moneybox-card-test-id"
+    testID="moneybox-progress-bar-test-id"
   >
     <View
       style={
@@ -199,7 +199,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
           },
         ]
       }
-      testID="progress-line-progress-bar-moneybox-card-test-id"
+      testID="progress-line-moneybox-progress-bar-test-id"
     />
     <View
       style={
@@ -253,7 +253,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
           ],
         ]
       }
-      testID="saved-moneybox-card-test-id"
+      testID="moneybox-saved-test-id"
     >
       <Text
         style={
@@ -303,7 +303,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
           },
         ]
       }
-      testID="saved-currency-moneybox-card-test-id"
+      testID="moneybox-saved-currency-test-id"
     >
       USD
     </Text>
@@ -355,7 +355,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
           },
         ]
       }
-      testID="top-up-btn-moneybox-card-test-id"
+      testID="moneybox-top-up-btn-test-id"
     >
       <Text
         style={
@@ -407,7 +407,7 @@ exports[`MoneyboxCard should match snapshot - goal not reached 1`] = `
           },
         ]
       }
-      testID="withdrawal-btn-moneybox-card-test-id"
+      testID="moneybox-withdrawal-btn-test-id"
     >
       <Text
         style={
@@ -522,7 +522,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
           },
         ]
       }
-      testID="goal-title-moneybox-card-test-id"
+      testID="moneybox-goal-title-test-id"
     >
       Test
     </Text>
@@ -558,7 +558,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
             ],
           ]
         }
-        testID="goal-moneybox-card-test-id"
+        testID="moneybox-goal-test-id"
       >
         <Text
           style={
@@ -610,7 +610,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
             },
           ]
         }
-        testID="goal-currency-moneybox-card-test-id"
+        testID="moneybox-goal-currency-test-id"
       >
         USD
       </Text>
@@ -622,7 +622,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
         "marginTop": 10,
       }
     }
-    testID="progress-bar-moneybox-card-test-id"
+    testID="moneybox-progress-bar-test-id"
   >
     <View
       style={
@@ -642,7 +642,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
           },
         ]
       }
-      testID="progress-line-progress-bar-moneybox-card-test-id"
+      testID="progress-line-moneybox-progress-bar-test-id"
     />
     <View
       style={
@@ -696,7 +696,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
           ],
         ]
       }
-      testID="saved-moneybox-card-test-id"
+      testID="moneybox-saved-test-id"
     >
       <Text
         style={
@@ -746,7 +746,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
           },
         ]
       }
-      testID="saved-currency-moneybox-card-test-id"
+      testID="moneybox-saved-currency-test-id"
     >
       USD
     </Text>
@@ -798,7 +798,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
           },
         ]
       }
-      testID="extend-btn-moneybox-card-test-id"
+      testID="moneybox-extend-btn-test-id"
     >
       <Text
         style={
@@ -850,7 +850,7 @@ exports[`MoneyboxCard should match snapshot - goal reached 1`] = `
           },
         ]
       }
-      testID="withdrawal-btn-moneybox-card-test-id"
+      testID="moneybox-withdrawal-btn-test-id"
     >
       <Text
         style={

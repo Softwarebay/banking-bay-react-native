@@ -47,8 +47,8 @@ describe('DepositCard', () => {
 	it('should display current deposit value with currency', () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const depositAmount = screen.getByTestId('amount-deposit-card-test-id');
-		const currency = screen.getByTestId('currency-deposit-card-test-id');
+		const depositAmount = screen.getByTestId('deposit-amount-test-id');
+		const currency = screen.getByTestId('deposit-currency-test-id');
 
 		expect(depositAmount).toHaveTextContent('1000.00');
 		expect(currency).toHaveTextContent('USD');
@@ -57,7 +57,7 @@ describe('DepositCard', () => {
 	it('should display percentage of deposit rate', () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const rate = screen.getByTestId('rate-deposit-card-test-id');
+		const rate = screen.getByTestId('deposit-rate-test-id');
 
 		expect(rate).toHaveTextContent('3%');
 	});
@@ -65,7 +65,7 @@ describe('DepositCard', () => {
 	it('should display date', () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const date = screen.getByTestId('date-deposit-card-test-id');
+		const date = screen.getByTestId('deposit-date-test-id');
 
 		expect(date).toHaveTextContent('Sep 1 - Mar 1, 2022');
 	});
@@ -73,7 +73,7 @@ describe('DepositCard', () => {
 	it('should display value of last income', () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const lastIncome = screen.getByTestId('last-income-deposit-card-test-id');
+		const lastIncome = screen.getByTestId('deposit-last-income-test-id');
 
 		expect(lastIncome).toHaveTextContent('+ 60.57');
 	});
@@ -81,7 +81,7 @@ describe('DepositCard', () => {
 	it('should display two buttons', () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const buttons = screen.getAllByTestId(/-btn-deposit-card-test-id/);
+		const buttons = screen.getAllByTestId(/-btn-test-id/);
 
 		expect(buttons).toHaveLength(2);
 	});
@@ -89,11 +89,9 @@ describe('DepositCard', () => {
 	it("should render 'Withdrawal' and 'Extend' buttons for finished deposits", () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const withdrawalBtn = screen.getByTestId(
-			'withdrawal-btn-deposit-card-test-id'
-		);
-		const extendBtn = screen.getByTestId('extend-btn-deposit-card-test-id');
-		const topUpBtn = screen.queryByTestId('top-up-btn-deposit-card-test-id');
+		const withdrawalBtn = screen.getByTestId('deposit-withdrawal-btn-test-id');
+		const extendBtn = screen.getByTestId('deposit-extend-btn-test-id');
+		const topUpBtn = screen.queryByTestId('deposit-top-up-btn-test-id');
 
 		expect(withdrawalBtn).toHaveTextContent('Withdrawal');
 		expect(extendBtn).toHaveTextContent('Extend');
@@ -103,10 +101,8 @@ describe('DepositCard', () => {
 	it('should handle press events on both buttons for finished deposits', () => {
 		render(<DepositCard {...props} isFinished />);
 
-		const withdrawalBtn = screen.getByTestId(
-			'withdrawal-btn-deposit-card-test-id'
-		);
-		const extendBtn = screen.getByTestId('extend-btn-deposit-card-test-id');
+		const withdrawalBtn = screen.getByTestId('deposit-withdrawal-btn-test-id');
+		const extendBtn = screen.getByTestId('deposit-extend-btn-test-id');
 
 		fireEvent.press(withdrawalBtn);
 		expect(onPressWithdrawalButton).toHaveBeenCalledTimes(1);
@@ -120,11 +116,9 @@ describe('DepositCard', () => {
 	it("should render 'Withdrawal' and 'Top - Up' buttons for ongoing deposits", () => {
 		render(<DepositCard {...props} isFinished={false} />);
 
-		const withdrawalBtn = screen.getByTestId(
-			'withdrawal-btn-deposit-card-test-id'
-		);
-		const topUpBtn = screen.getByTestId('top-up-btn-deposit-card-test-id');
-		const extendBtn = screen.queryByTestId('extend-btn-deposit-card-test-id');
+		const withdrawalBtn = screen.getByTestId('deposit-withdrawal-btn-test-id');
+		const topUpBtn = screen.getByTestId('deposit-top-up-btn-test-id');
+		const extendBtn = screen.queryByTestId('deposit-extend-btn-test-id');
 
 		expect(withdrawalBtn).toHaveTextContent('Withdrawal');
 		expect(topUpBtn).toHaveTextContent('Top - Up');
@@ -134,10 +128,8 @@ describe('DepositCard', () => {
 	it('should handle press events on both buttons for ongoing deposits', () => {
 		render(<DepositCard {...props} isFinished={false} />);
 
-		const withdrawalBtn = screen.getByTestId(
-			'withdrawal-btn-deposit-card-test-id'
-		);
-		const topUpBtn = screen.getByTestId('top-up-btn-deposit-card-test-id');
+		const withdrawalBtn = screen.getByTestId('deposit-withdrawal-btn-test-id');
+		const topUpBtn = screen.getByTestId('deposit-top-up-btn-test-id');
 
 		fireEvent.press(withdrawalBtn);
 		expect(onPressWithdrawalButton).toHaveBeenCalledTimes(1);

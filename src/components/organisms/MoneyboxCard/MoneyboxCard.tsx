@@ -57,7 +57,7 @@ export const MoneyboxCard = ({
 				</View>
 				<Text
 					style={styles.goalTitle}
-					testID={`goal-title-${testID}`}
+					testID="moneybox-goal-title-test-id"
 					text={title}
 				/>
 				<Flex direction="row" style={styles.goal}>
@@ -65,12 +65,12 @@ export const MoneyboxCard = ({
 						floatStyle={styles.floatStyle}
 						intStyle={styles.intStyle}
 						number={`${(goal / 100).toFixed(2)}`}
-						testID={`goal-${testID}`}
+						testID="moneybox-goal-test-id"
 					/>
 					<Heading
 						size="h5"
 						style={styles.currency}
-						testID={`goal-currency-${testID}`}
+						testID="moneybox-goal-currency-test-id"
 						text={currency}
 					/>
 				</Flex>
@@ -79,7 +79,7 @@ export const MoneyboxCard = ({
 			<ProgressBar
 				maxValue={goal}
 				style={styles.progressBar}
-				testID={`progress-bar-${testID}`}
+				testID="moneybox-progress-bar-test-id"
 				value={saved}
 			/>
 
@@ -89,12 +89,12 @@ export const MoneyboxCard = ({
 					intStyle={styles.savedInt}
 					number={`${(saved / 100).toFixed(2)}`}
 					style={styles.savedFloatNum}
-					testID={`saved-${testID}`}
+					testID="moneybox-saved-test-id"
 				/>
 
 				<Text
 					style={styles.savedFloat}
-					testID={`saved-currency-${testID}`}
+					testID="moneybox-saved-currency-test-id"
 					text={currency}
 				/>
 			</Flex>
@@ -102,14 +102,14 @@ export const MoneyboxCard = ({
 			<Flex direction="row">
 				<Button
 					style={isFinished ? styles.extendButton : styles.topUpButton}
-					testID={`${isFinished ? 'extend' : 'top-up'}-btn-${testID}`}
+					testID={`moneybox-${isFinished ? 'extend' : 'top-up'}-btn-test-id`}
 					title={isFinished ? 'Extend' : 'Top - Up'}
 					type="ternary"
 					onPress={onPressSecondaryButton}
 				/>
 				<Button
 					style={styles.withdrawalButton}
-					testID={`withdrawal-btn-${testID}`}
+					testID="moneybox-withdrawal-btn-test-id"
 					title="Withdrawal"
 					type="ternary"
 					onPress={onPressWithdrawalButton}

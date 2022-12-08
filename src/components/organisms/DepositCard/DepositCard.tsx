@@ -62,30 +62,30 @@ export const DepositCard = ({
 							floatStyle={styles.floatStyle}
 							intStyle={styles.intStyle}
 							number={`${(amount / 100).toFixed(2)}`}
-							testID={`amount-${testID}`}
+							testID="deposit-amount-test-id"
 						/>
 						<Heading
 							size="h5"
 							style={styles.currency}
-							testID={`currency-${testID}`}
+							testID="deposit-currency-test-id"
 							text={currency}
 						/>
 						<Heading
 							size="h5"
 							style={styles.rate}
-							testID={`rate-${testID}`}
+							testID="deposit-rate-test-id"
 							text={`${(rate * 100).toFixed(0)}%`}
 						/>
 					</Flex>
 					<Flex direction="row" style={styles.row}>
 						<Text
 							style={styles.subheaderText}
-							testID={`date-${testID}`}
+							testID="deposit-date-test-id"
 							text={date}
 						/>
 						<Text
 							style={[styles.subheaderText, styles.lastIncome]}
-							testID={`last-income-${testID}`}
+							testID="deposit-last-income-test-id"
 							text={`+ ${(lastIncome / 100).toFixed(2)}`}
 						/>
 					</Flex>
@@ -94,14 +94,14 @@ export const DepositCard = ({
 			<Flex direction="row">
 				<Button
 					style={isFinished ? styles.extendButton : styles.topUpButton}
-					testID={`${isFinished ? 'extend' : 'top-up'}-btn-${testID}`}
+					testID={`deposit-${isFinished ? 'extend' : 'top-up'}-btn-test-id`}
 					title={isFinished ? 'Extend' : 'Top - Up'}
 					type="ternary"
 					onPress={onPressSecondaryButton}
 				/>
 				<Button
 					style={styles.withdrawalButton}
-					testID={`withdrawal-btn-${testID}`}
+					testID="deposit-withdrawal-btn-test-id"
 					title="Withdrawal"
 					type="ternary"
 					onPress={onPressWithdrawalButton}

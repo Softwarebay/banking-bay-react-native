@@ -125,7 +125,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
               ],
             ]
           }
-          testID="amount-deposit-card-test-id"
+          testID="deposit-amount-test-id"
         >
           <Text
             style={
@@ -177,7 +177,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
               },
             ]
           }
-          testID="currency-deposit-card-test-id"
+          testID="deposit-currency-test-id"
         >
           USD
         </Text>
@@ -197,7 +197,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
               },
             ]
           }
-          testID="rate-deposit-card-test-id"
+          testID="deposit-rate-test-id"
         >
           3%
         </Text>
@@ -232,7 +232,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
               },
             ]
           }
-          testID="date-deposit-card-test-id"
+          testID="deposit-date-test-id"
         >
           Sep 1 - Mar 1, 2022
         </Text>
@@ -257,7 +257,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
               ],
             ]
           }
-          testID="last-income-deposit-card-test-id"
+          testID="deposit-last-income-test-id"
         >
           + 60.57
         </Text>
@@ -311,7 +311,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
           },
         ]
       }
-      testID="extend-btn-deposit-card-test-id"
+      testID="deposit-extend-btn-test-id"
     >
       <Text
         style={
@@ -363,7 +363,7 @@ exports[`DepositCard should match snapshot - deposit finished 1`] = `
           },
         ]
       }
-      testID="withdrawal-btn-deposit-card-test-id"
+      testID="deposit-withdrawal-btn-test-id"
     >
       <Text
         style={
@@ -498,7 +498,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
               ],
             ]
           }
-          testID="amount-deposit-card-test-id"
+          testID="deposit-amount-test-id"
         >
           <Text
             style={
@@ -550,7 +550,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
               },
             ]
           }
-          testID="currency-deposit-card-test-id"
+          testID="deposit-currency-test-id"
         >
           USD
         </Text>
@@ -570,7 +570,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
               },
             ]
           }
-          testID="rate-deposit-card-test-id"
+          testID="deposit-rate-test-id"
         >
           3%
         </Text>
@@ -605,7 +605,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
               },
             ]
           }
-          testID="date-deposit-card-test-id"
+          testID="deposit-date-test-id"
         >
           Sep 1 - Mar 1, 2022
         </Text>
@@ -630,7 +630,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
               ],
             ]
           }
-          testID="last-income-deposit-card-test-id"
+          testID="deposit-last-income-test-id"
         >
           + 60.57
         </Text>
@@ -684,7 +684,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
           },
         ]
       }
-      testID="top-up-btn-deposit-card-test-id"
+      testID="deposit-top-up-btn-test-id"
     >
       <Text
         style={
@@ -736,7 +736,7 @@ exports[`DepositCard should match snapshot - deposit ongoing 1`] = `
           },
         ]
       }
-      testID="withdrawal-btn-deposit-card-test-id"
+      testID="deposit-withdrawal-btn-test-id"
     >
       <Text
         style={
