@@ -33,7 +33,7 @@ interface MoneyboxItem {
 	onPressExtendButton: () => void;
 }
 
-interface Props {
+export interface Props {
 	deposits: DepositItem[];
 	moneyboxes: MoneyboxItem[];
 	heading: string;
@@ -64,7 +64,11 @@ export const DepositsTemplate = ({
 			<ImageBackground source={bgMain} style={styles.backgroundImg}>
 				<SafeAreaView style={styles.container}>
 					<Flex direction="row" style={styles.header}>
-						<Heading size="h2" text={heading} />
+						<Heading
+							size="h2"
+							testID="deposits-template-heading-test-id"
+							text={heading}
+						/>
 						<IconButton
 							iconColor={colors.white}
 							iconName="info"
@@ -75,7 +79,11 @@ export const DepositsTemplate = ({
 					</Flex>
 
 					<View style={styles.deposits}>
-						<Text style={styles.subheading} text={depositsSubheading} />
+						<Text
+							style={styles.subheading}
+							testID="deposits-template-deposits-section-subheading-test-id"
+							text={depositsSubheading}
+						/>
 						<FlatList<DepositItem>
 							data={deposits}
 							renderItem={({
@@ -111,7 +119,11 @@ export const DepositsTemplate = ({
 					</View>
 
 					<View style={styles.moneyboxes}>
-						<Text style={styles.subheading} text={moneyboxSubheading} />
+						<Text
+							style={styles.subheading}
+							testID="deposits-template-moneyboxes-section-subheading-test-id"
+							text={moneyboxSubheading}
+						/>
 						<FlatList
 							data={moneyboxes}
 							renderItem={({
