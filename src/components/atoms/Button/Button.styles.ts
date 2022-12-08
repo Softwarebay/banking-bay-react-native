@@ -11,9 +11,6 @@ export const styles = StyleSheet.create({
 	pressed: {
 		opacity: 0.8,
 	},
-	primaryText: {
-		color: colors.white,
-	},
 	secondary: {
 		backgroundColor: colors.grey100,
 		borderColor: colors.grey300,
@@ -21,6 +18,14 @@ export const styles = StyleSheet.create({
 	},
 	secondaryText: {
 		color: colors.mainDark,
+	},
+	ternary: {
+		backgroundColor: colors.green,
+		borderWidth: 0,
+		height: 40,
+	},
+	ternaryText: {
+		fontSize: 15,
 	},
 	text: {
 		color: colors.white,

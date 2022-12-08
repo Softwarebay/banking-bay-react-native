@@ -1,6 +1,6 @@
 import bgDashboard from './dashboard.png';
 import bgSummary from './summary.png';
-import bgTransactionDetails from './transaction-details.png';
+import bgMain from './main.png';
 import bgOnboarding from './onboarding.png';
 
-export { bgDashboard, bgSummary, bgTransactionDetails, bgOnboarding };
+export { bgDashboard, bgSummary, bgMain, bgOnboarding };

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should match snapshot 1`] = `
+exports[`Button should match snapshot - primary button 1`] = `
 <View
   accessible={true}
   collapsable={false}
@@ -51,20 +51,119 @@ exports[`Button should match snapshot 1`] = `
   >
     <Text
       style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "MulishSemiBold",
-            "fontSize": 17,
-          },
-          Object {
-            "color": "#FFFFFF",
-          },
-        ]
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "MulishSemiBold",
+          "fontSize": 17,
+        }
       }
     >
       Button
     </Text>
   </ViewManagerAdapter_ExpoLinearGradient>
+</View>
+`;
+
+exports[`Button should match snapshot - secondary button 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      false,
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "height": 55,
+        "justifyContent": "center",
+      },
+      Object {
+        "backgroundColor": "#F1F5FD",
+        "borderColor": "#CED6E1",
+        "borderWidth": 1,
+      },
+      undefined,
+    ]
+  }
+  testID="btn-test-id"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "MulishSemiBold",
+          "fontSize": 17,
+        },
+        Object {
+          "color": "#1B1D4D",
+        },
+      ]
+    }
+  >
+    Button
+  </Text>
+</View>
+`;
+
+exports[`Button should match snapshot - ternary button 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      false,
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "height": 55,
+        "justifyContent": "center",
+      },
+      Object {
+        "backgroundColor": "#3EB290",
+        "borderWidth": 0,
+        "height": 40,
+      },
+      undefined,
+    ]
+  }
+  testID="btn-test-id"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "MulishSemiBold",
+          "fontSize": 17,
+        },
+        Object {
+          "fontSize": 15,
+        },
+      ]
+    }
+  >
+    Button
+  </Text>
 </View>
 `;

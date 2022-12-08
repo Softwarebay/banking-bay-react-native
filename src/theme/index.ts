@@ -11,6 +11,8 @@ interface Colors {
 	grey600: string;
 	grey300: string;
 	grey100: string;
+	coral: string;
+	blue: string;
 }
 
 export const colors: Colors = {
@@ -26,6 +28,8 @@ export const colors: Colors = {
 	grey600: '#868698',
 	grey300: '#CED6E1',
 	grey100: '#F1F5FD',
+	coral: '#FF8A71',
+	blue: '#55ACEE',
 };
 
 interface Shadows {

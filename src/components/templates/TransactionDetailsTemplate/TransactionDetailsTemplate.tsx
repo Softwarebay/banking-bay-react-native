@@ -13,7 +13,7 @@ import {
 	Text,
 } from 'components/atoms';
 
-import { bgTransactionDetails } from 'assets/backgrounds';
+import { bgMain } from 'assets/backgrounds';
 import { colors } from 'theme';
 
 import { styles } from './TransactionDetailsTemplate.styles';
@@ -62,10 +62,7 @@ export const TransactionDetailsTemplate = ({
 	return (
 		<>
 			<StatusBar style="dark" />
-			<ImageBackground
-				source={bgTransactionDetails}
-				style={styles.backgroundImg}
-			>
+			<ImageBackground source={bgMain} style={styles.backgroundImg}>
 				<SafeAreaView style={styles.container}>
 					<View style={styles.header}>
 						<View>

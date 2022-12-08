@@ -6,7 +6,7 @@ import { styles } from './Button.styles';
 
 export interface Props {
 	title: string;
-	type?: 'primary' | 'secondary';
+	type?: 'primary' | 'secondary' | 'ternary';
 	testID: string;
 	onPress: () => void;
 	style?: StyleProp<ViewStyle>;
@@ -21,14 +21,25 @@ export const Button = ({
 	onPress,
 	testOnly_pressed,
 }: Props) => {
-	const secondaryContainerStyles =
-		type === 'secondary' ? [styles.container, styles.secondary] : [];
+	let containerStyles: StyleProp<ViewStyle>[] = [];
+
+	switch (type) {
+		case 'secondary':
+			containerStyles = [styles.container, styles.secondary];
+			break;
+		case 'ternary':
+			containerStyles = [styles.container, styles.ternary];
+			break;
+		default:
+			containerStyles = [];
+			break;
+	}
 
 	return (
 		<Pressable
 			style={({ pressed }) => [
 				pressed && styles.pressed,
-				...secondaryContainerStyles,
+				...containerStyles,
 				style,
 			]}
 			testID={testID}
@@ -36,7 +47,11 @@ export const Button = ({
 			onPress={onPress}
 		>
 			{type === 'secondary' && (
-				<Text style={[styles.text, styles[`${type}Text`]]}>{title}</Text>
+				<Text style={[styles.text, styles.secondaryText]}>{title}</Text>
+			)}
+
+			{type === 'ternary' && (
+				<Text style={[styles.text, styles.ternaryText]}>{title}</Text>
 			)}
 
 			{type === 'primary' && (
@@ -46,7 +61,7 @@ export const Button = ({
 					start={{ x: 0, y: 0 }}
 					style={styles.container}
 				>
-					<Text style={[styles.text, styles[`${type}Text`]]}>{title}</Text>
+					<Text style={styles.text}>{title}</Text>
 				</LinearGradient>
 			)}
 		</Pressable>

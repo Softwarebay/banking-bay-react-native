@@ -13,12 +13,14 @@ import {
 	FlagUSA,
 	GooglePlus,
 	Home,
+	Info,
 	LoanWallet,
 	Logo,
 	MoneyTransfer,
 	MoreTiles,
 	NotificationBell,
 	Paypal,
+	PiggyBank,
 	ProfileIcon,
 	Repeat,
 	Report,
@@ -54,7 +56,9 @@ export interface Props {
 		| 'search'
 		| 'atm'
 		| 'ebay'
-		| 'home';
+		| 'home'
+		| 'info'
+		| 'piggy-bank';
 	size: number;
 	color?: string;
 }
@@ -293,6 +297,24 @@ export const Icon = ({ name, color, size }: Props) => {
 					color={color}
 					height={size}
 					testID="ebay-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'info':
+			return (
+				<Info
+					color={color}
+					height={size}
+					testID="info-icon-test-id"
+					width={size}
+				/>
+			);
+		case 'piggy-bank':
+			return (
+				<PiggyBank
+					color={color}
+					height={size}
+					testID="piggy-bank-icon-test-id"
 					width={size}
 				/>
 			);

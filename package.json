@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start:app": "set LOAD_STORYBOOK=false&&expo start",
-    "start:storybook": "npm run prestorybook && set LOAD_STORYBOOK=true&&expo start",
+    "start:app": "LOAD_STORYBOOK=false expo start",
+    "start:storybook": "LOAD_STORYBOOK=true npm-run-all -s prestorybook start",
     "storybook:open": "npm-run-all -p storybook start:storybook",
     "prestorybook": "rnstl",
     "test": "jest",

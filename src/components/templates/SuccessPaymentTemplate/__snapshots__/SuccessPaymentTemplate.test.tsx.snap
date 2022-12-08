@@ -262,16 +262,11 @@ exports[`SuccessPaymentTemplate should match snapshot 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "MulishSemiBold",
-                "fontSize": 17,
-              },
-              Object {
-                "color": "#FFFFFF",
-              },
-            ]
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "MulishSemiBold",
+              "fontSize": 17,
+            }
           }
         >
           Primary Action

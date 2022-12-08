@@ -24,6 +24,8 @@ import Search from './search.svg';
 import Home from './home.svg';
 import Ebay from './ebay.svg';
 import Atm from './atm.svg';
+import Info from './info.svg';
+import PiggyBank from './piggy-bank.svg';
 
 export {
 	Logo,
@@ -52,4 +54,6 @@ export {
 	Home,
 	Ebay,
 	Atm,
+	Info,
+	PiggyBank,
 };
