@@ -84,10 +84,10 @@ const moneyboxData: MoneyboxData[] = [
 	},
 	{
 		id: '2',
-		goal: 120000,
-		currency: 'USD',
-		saved: 120000,
-		title: 'New iPhone Pro Max',
+		goal: 1200,
+		currency: 'EUR',
+		saved: 1200,
+		title: 'Christmas Socks',
 	},
 ];
 
@@ -132,7 +132,7 @@ export const DepositsScreen = () => {
 	};
 
 	const extendMoneybox = (id: string) => {
-		console.log(`Extending deposit id: ${id}`);
+		console.log(`Extending moneybox id: ${id}`);
 	};
 
 	const extendDeposit = (id: string) => {
@@ -152,14 +152,14 @@ export const DepositsScreen = () => {
 		...deposit,
 		onPressWithdrawalButton: () =>
 			withdrawFromDeposit(deposit.id, deposit.amount),
-		onPressTopUpButton: () => addToDeposit(deposit.id, 10000),
+		onPressTopUpButton: () => addToDeposit(deposit.id, 100000),
 		onPressExtendButton: () => extendDeposit(deposit.id),
 	}));
 
 	const moneyboxes: MoneyboxItem[] = moneyboxData.map((box) => ({
 		...box,
 		onPressWithdrawalButton: () => withdrawFromMoneybox(box.id, box.saved),
-		onPressTopUpButton: () => addToMoneybox(box.id, 10000),
+		onPressTopUpButton: () => addToMoneybox(box.id, 100000),
 		onPressExtendButton: () => extendMoneybox(box.id),
 	}));
 

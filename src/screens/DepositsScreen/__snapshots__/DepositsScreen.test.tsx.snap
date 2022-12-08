@@ -1,0 +1,2844 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DepositsScreen should match snapshot 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Object {
+        "flex": 1,
+        "paddingBottom": 20,
+        "paddingHorizontal": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Object {
+            "justifyContent": "space-between",
+            "marginTop": 40,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#1B1D4D",
+            },
+            Object {
+              "fontFamily": "MulishBold",
+              "fontSize": 44,
+              "lineHeight": 48.4,
+            },
+            undefined,
+          ]
+        }
+        testID="deposits-template-heading-test-id"
+      >
+        Deposits
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={20}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
+            undefined,
+            false,
+          ]
+        }
+        testID="deposits-template-info-icon-btn-test-id"
+      >
+        <SvgMock
+          color="#FFFFFF"
+          height={20}
+          testID="info-icon-test-id"
+          width={20}
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1.5,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "fontSize": 14,
+              "marginTop": 15,
+            },
+          ]
+        }
+        testID="deposits-template-deposits-section-subheading-test-id"
+      >
+        Current deposits
+      </Text>
+      <RCTScrollView
+        data={
+          Array [
+            Object {
+              "amount": 300000,
+              "currency": "USD",
+              "date": "Sep 1 - Mar 1, 2022",
+              "id": "1",
+              "isFinished": false,
+              "lastIncome": 6057,
+              "onPressExtendButton": [Function],
+              "onPressTopUpButton": [Function],
+              "onPressWithdrawalButton": [Function],
+              "rate": 0.08,
+            },
+            Object {
+              "amount": 150000,
+              "currency": "USD",
+              "date": "Sep 1, 2021 - Sep 1, 2022",
+              "id": "2",
+              "isFinished": true,
+              "lastIncome": 15000,
+              "onPressExtendButton": [Function],
+              "onPressTopUpButton": [Function],
+              "onPressWithdrawalButton": [Function],
+              "rate": 0.1,
+            },
+            Object {
+              "amount": 300000,
+              "currency": "USD",
+              "date": "Sep 1 - Mar 1, 2022",
+              "id": "3",
+              "isFinished": false,
+              "lastIncome": 6057,
+              "onPressExtendButton": [Function],
+              "onPressTopUpButton": [Function],
+              "onPressWithdrawalButton": [Function],
+              "rate": 0.08,
+            },
+            Object {
+              "amount": 150000,
+              "currency": "USD",
+              "date": "Sep 1, 2021 - Sep 1, 2022",
+              "id": "4",
+              "isFinished": true,
+              "lastIncome": 15000,
+              "onPressExtendButton": [Function],
+              "onPressTopUpButton": [Function],
+              "onPressWithdrawalButton": [Function],
+              "rate": 0.1,
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={Array []}
+        viewabilityConfigCallbackPairs={Array []}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                  },
+                  Object {
+                    "flexDirection": "column",
+                  },
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 10,
+                      "shadowColor": "#161966",
+                      "shadowOffset": Object {
+                        "height": 6,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.08,
+                      "shadowRadius": 16,
+                    },
+                    Array [
+                      Object {
+                        "padding": 20,
+                      },
+                      Array [
+                        Object {
+                          "marginTop": 10,
+                        },
+                        Object {
+                          "marginBottom": 10,
+                        },
+                      ],
+                    ],
+                  ],
+                ]
+              }
+              testID="1-deposit-card-test-id"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-start",
+                      "marginRight": 12,
+                    }
+                  }
+                >
+                  <SvgMock
+                    color="#1B1D4D"
+                    height={27}
+                    testID="deposits-icon-test-id"
+                    width={27}
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "column",
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginBottom": 10,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                          },
+                          Object {
+                            "flexDirection": "row",
+                          },
+                          Array [
+                            Object {
+                              "alignItems": "baseline",
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                      testID="deposit-amount-test-id"
+                    >
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 22,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        3000.
+                      </Text>
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 17,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        00
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "fontFamily": "MulishBold",
+                            "marginLeft": 5,
+                          },
+                        ]
+                      }
+                      testID="deposit-currency-test-id"
+                    >
+                      USD
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "marginLeft": "auto",
+                          },
+                        ]
+                      }
+                      testID="deposit-rate-test-id"
+                    >
+                      8%
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Object {
+                            "fontSize": 14,
+                          },
+                        ]
+                      }
+                      testID="deposit-date-test-id"
+                    >
+                      Sep 1 - Mar 1, 2022
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Array [
+                            Object {
+                              "fontSize": 14,
+                            },
+                            Object {
+                              "color": "#3EB290",
+                              "fontFamily": "MulishSemiBold",
+                              "fontSize": 14,
+                            },
+                          ],
+                        ]
+                      }
+                      testID="deposit-last-income-test-id"
+                    >
+                      + 60.57
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "backgroundColor": "#55ACEE",
+                        "flex": 1,
+                        "marginRight": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-top-up-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Top - Up
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginLeft": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-withdrawal-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Withdrawal
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                  },
+                  Object {
+                    "flexDirection": "column",
+                  },
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 10,
+                      "shadowColor": "#161966",
+                      "shadowOffset": Object {
+                        "height": 6,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.08,
+                      "shadowRadius": 16,
+                    },
+                    Array [
+                      Object {
+                        "padding": 20,
+                      },
+                      Array [
+                        false,
+                        Object {
+                          "marginBottom": 10,
+                        },
+                      ],
+                    ],
+                  ],
+                ]
+              }
+              testID="2-deposit-card-test-id"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-start",
+                      "marginRight": 12,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#3EB290",
+                        "borderRadius": 50,
+                        "height": 27,
+                        "justifyContent": "center",
+                        "width": 27,
+                      }
+                    }
+                  >
+                    <SvgMock
+                      color="#FFFFFF"
+                      height={14}
+                      testID="check-icon-test-id"
+                      width={14}
+                    />
+                  </View>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "column",
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginBottom": 10,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                          },
+                          Object {
+                            "flexDirection": "row",
+                          },
+                          Array [
+                            Object {
+                              "alignItems": "baseline",
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                      testID="deposit-amount-test-id"
+                    >
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 22,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        1500.
+                      </Text>
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 17,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        00
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "fontFamily": "MulishBold",
+                            "marginLeft": 5,
+                          },
+                        ]
+                      }
+                      testID="deposit-currency-test-id"
+                    >
+                      USD
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "marginLeft": "auto",
+                          },
+                        ]
+                      }
+                      testID="deposit-rate-test-id"
+                    >
+                      10%
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Object {
+                            "fontSize": 14,
+                          },
+                        ]
+                      }
+                      testID="deposit-date-test-id"
+                    >
+                      Sep 1, 2021 - Sep 1, 2022
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Array [
+                            Object {
+                              "fontSize": 14,
+                            },
+                            Object {
+                              "color": "#3EB290",
+                              "fontFamily": "MulishSemiBold",
+                              "fontSize": 14,
+                            },
+                          ],
+                        ]
+                      }
+                      testID="deposit-last-income-test-id"
+                    >
+                      + 150.00
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "backgroundColor": "#FF8A71",
+                        "flex": 1,
+                        "marginRight": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-extend-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Extend
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginLeft": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-withdrawal-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Withdrawal
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                  },
+                  Object {
+                    "flexDirection": "column",
+                  },
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 10,
+                      "shadowColor": "#161966",
+                      "shadowOffset": Object {
+                        "height": 6,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.08,
+                      "shadowRadius": 16,
+                    },
+                    Array [
+                      Object {
+                        "padding": 20,
+                      },
+                      Array [
+                        false,
+                        Object {
+                          "marginBottom": 10,
+                        },
+                      ],
+                    ],
+                  ],
+                ]
+              }
+              testID="3-deposit-card-test-id"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-start",
+                      "marginRight": 12,
+                    }
+                  }
+                >
+                  <SvgMock
+                    color="#1B1D4D"
+                    height={27}
+                    testID="deposits-icon-test-id"
+                    width={27}
+                  />
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "column",
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginBottom": 10,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                          },
+                          Object {
+                            "flexDirection": "row",
+                          },
+                          Array [
+                            Object {
+                              "alignItems": "baseline",
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                      testID="deposit-amount-test-id"
+                    >
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 22,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        3000.
+                      </Text>
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 17,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        00
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "fontFamily": "MulishBold",
+                            "marginLeft": 5,
+                          },
+                        ]
+                      }
+                      testID="deposit-currency-test-id"
+                    >
+                      USD
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "marginLeft": "auto",
+                          },
+                        ]
+                      }
+                      testID="deposit-rate-test-id"
+                    >
+                      8%
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Object {
+                            "fontSize": 14,
+                          },
+                        ]
+                      }
+                      testID="deposit-date-test-id"
+                    >
+                      Sep 1 - Mar 1, 2022
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Array [
+                            Object {
+                              "fontSize": 14,
+                            },
+                            Object {
+                              "color": "#3EB290",
+                              "fontFamily": "MulishSemiBold",
+                              "fontSize": 14,
+                            },
+                          ],
+                        ]
+                      }
+                      testID="deposit-last-income-test-id"
+                    >
+                      + 60.57
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "backgroundColor": "#55ACEE",
+                        "flex": 1,
+                        "marginRight": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-top-up-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Top - Up
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginLeft": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-withdrawal-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Withdrawal
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                  },
+                  Object {
+                    "flexDirection": "column",
+                  },
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 10,
+                      "shadowColor": "#161966",
+                      "shadowOffset": Object {
+                        "height": 6,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.08,
+                      "shadowRadius": 16,
+                    },
+                    Array [
+                      Object {
+                        "padding": 20,
+                      },
+                      Array [
+                        false,
+                        Object {
+                          "marginBottom": 10,
+                        },
+                      ],
+                    ],
+                  ],
+                ]
+              }
+              testID="4-deposit-card-test-id"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-start",
+                      "marginRight": 12,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#3EB290",
+                        "borderRadius": 50,
+                        "height": 27,
+                        "justifyContent": "center",
+                        "width": 27,
+                      }
+                    }
+                  >
+                    <SvgMock
+                      color="#FFFFFF"
+                      height={14}
+                      testID="check-icon-test-id"
+                      width={14}
+                    />
+                  </View>
+                </View>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "column",
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginBottom": 10,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                          },
+                          Object {
+                            "flexDirection": "row",
+                          },
+                          Array [
+                            Object {
+                              "alignItems": "baseline",
+                            },
+                            undefined,
+                          ],
+                        ]
+                      }
+                      testID="deposit-amount-test-id"
+                    >
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 22,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        1500.
+                      </Text>
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#1B1D4D",
+                            },
+                            Object {
+                              "fontFamily": "MulishRegular",
+                              "fontSize": 17,
+                              "lineHeight": 22.1,
+                            },
+                          ]
+                        }
+                      >
+                        00
+                      </Text>
+                    </View>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "fontFamily": "MulishBold",
+                            "marginLeft": 5,
+                          },
+                        ]
+                      }
+                      testID="deposit-currency-test-id"
+                    >
+                      USD
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishSemiBold",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                          Object {
+                            "marginLeft": "auto",
+                          },
+                        ]
+                      }
+                      testID="deposit-rate-test-id"
+                    >
+                      10%
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Object {
+                          "justifyContent": "space-between",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Object {
+                            "fontSize": 14,
+                          },
+                        ]
+                      }
+                      testID="deposit-date-test-id"
+                    >
+                      Sep 1, 2021 - Sep 1, 2022
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#4C4C60",
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 27.2,
+                          },
+                          Array [
+                            Object {
+                              "fontSize": 14,
+                            },
+                            Object {
+                              "color": "#3EB290",
+                              "fontFamily": "MulishSemiBold",
+                              "fontSize": 14,
+                            },
+                          ],
+                        ]
+                      }
+                      testID="deposit-last-income-test-id"
+                    >
+                      + 150.00
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "backgroundColor": "#FF8A71",
+                        "flex": 1,
+                        "marginRight": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-extend-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Extend
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginLeft": 5,
+                      },
+                    ]
+                  }
+                  testID="deposit-withdrawal-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Withdrawal
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1.4,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#4C4C60",
+              "fontFamily": "MulishRegular",
+              "fontSize": 17,
+              "lineHeight": 27.2,
+            },
+            Object {
+              "fontSize": 14,
+              "marginTop": 15,
+            },
+          ]
+        }
+        testID="deposits-template-moneyboxes-section-subheading-test-id"
+      >
+        Current moneyboxes
+      </Text>
+      <RCTScrollView
+        data={
+          Array [
+            Object {
+              "currency": "USD",
+              "goal": 120000,
+              "id": "1",
+              "onPressExtendButton": [Function],
+              "onPressTopUpButton": [Function],
+              "onPressWithdrawalButton": [Function],
+              "saved": 65027,
+              "title": "New iPhone Pro Max",
+            },
+            Object {
+              "currency": "EUR",
+              "goal": 1200,
+              "id": "2",
+              "onPressExtendButton": [Function],
+              "onPressTopUpButton": [Function],
+              "onPressWithdrawalButton": [Function],
+              "saved": 1200,
+              "title": "Christmas Socks",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={Array []}
+        viewabilityConfigCallbackPairs={Array []}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                  },
+                  Object {
+                    "flexDirection": "column",
+                  },
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 10,
+                      "shadowColor": "#161966",
+                      "shadowOffset": Object {
+                        "height": 6,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.08,
+                      "shadowRadius": 16,
+                    },
+                    Array [
+                      Object {
+                        "alignItems": "stretch",
+                        "padding": 20,
+                      },
+                      Array [
+                        Object {
+                          "marginTop": 10,
+                        },
+                        Object {
+                          "marginBottom": 10,
+                        },
+                      ],
+                    ],
+                  ],
+                ]
+              }
+              testID="1-moneybox-card-test-id"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-start",
+                      "marginRight": 12,
+                    }
+                  }
+                >
+                  <SvgMock
+                    color="#4C4C60"
+                    height={27}
+                    testID="piggy-bank-icon-test-id"
+                    width={27}
+                  />
+                </View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4C4C60",
+                        "fontFamily": "MulishRegular",
+                        "fontSize": 17,
+                        "lineHeight": 27.2,
+                      },
+                      Object {
+                        "fontSize": 15,
+                        "marginLeft": 10,
+                      },
+                    ]
+                  }
+                  testID="moneybox-goal-title-test-id"
+                >
+                  New iPhone Pro Max
+                </Text>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                      Object {
+                        "marginLeft": "auto",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Array [
+                          Object {
+                            "alignItems": "baseline",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="moneybox-goal-test-id"
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 22,
+                            "lineHeight": 22.1,
+                          },
+                        ]
+                      }
+                    >
+                      1200.
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                        ]
+                      }
+                    >
+                      00
+                    </Text>
+                  </View>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#1B1D4D",
+                        },
+                        Object {
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                          "lineHeight": 22.1,
+                        },
+                        Object {
+                          "fontFamily": "MulishBold",
+                          "marginLeft": 5,
+                        },
+                      ]
+                    }
+                    testID="moneybox-goal-currency-test-id"
+                  >
+                    USD
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+                testID="moneybox-progress-bar-test-id"
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 10,
+                        "height": 5,
+                      },
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "width": "54.189166666666665%",
+                      },
+                    ]
+                  }
+                  testID="progress-line-moneybox-progress-bar-test-id"
+                />
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 10,
+                        "height": 5,
+                      },
+                      Object {
+                        "backgroundColor": "#4C4C60",
+                        "opacity": 0.2,
+                      },
+                    ]
+                  }
+                />
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "marginBottom": 20,
+                      "marginTop": 10,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                      Array [
+                        Object {
+                          "alignItems": "baseline",
+                        },
+                        Object {
+                          "marginRight": 5,
+                        },
+                      ],
+                    ]
+                  }
+                  testID="moneybox-saved-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#1B1D4D",
+                        },
+                        Object {
+                          "color": "#4C4C60",
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    650.
+                  </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#1B1D4D",
+                        },
+                        Object {
+                          "color": "#4C4C60",
+                          "fontSize": 12,
+                          "lineHeight": 22.1,
+                        },
+                      ]
+                    }
+                  >
+                    27
+                  </Text>
+                </View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4C4C60",
+                        "fontFamily": "MulishRegular",
+                        "fontSize": 17,
+                        "lineHeight": 27.2,
+                      },
+                      Object {
+                        "color": "#4C4C60",
+                        "fontSize": 12,
+                        "lineHeight": 22.1,
+                      },
+                    ]
+                  }
+                  testID="moneybox-saved-currency-test-id"
+                >
+                  USD
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "backgroundColor": "#55ACEE",
+                        "flex": 1,
+                        "marginRight": 5,
+                      },
+                    ]
+                  }
+                  testID="moneybox-top-up-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Top - Up
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginLeft": 5,
+                      },
+                    ]
+                  }
+                  testID="moneybox-withdrawal-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Withdrawal
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                  },
+                  Object {
+                    "flexDirection": "column",
+                  },
+                  Array [
+                    Object {
+                      "backgroundColor": "#FFFFFF",
+                      "borderRadius": 10,
+                      "shadowColor": "#161966",
+                      "shadowOffset": Object {
+                        "height": 6,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.08,
+                      "shadowRadius": 16,
+                    },
+                    Array [
+                      Object {
+                        "alignItems": "stretch",
+                        "padding": 20,
+                      },
+                      Array [
+                        false,
+                        Object {
+                          "marginBottom": 10,
+                        },
+                      ],
+                    ],
+                  ],
+                ]
+              }
+              testID="2-moneybox-card-test-id"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignSelf": "flex-start",
+                      "marginRight": 12,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#3EB290",
+                        "borderRadius": 50,
+                        "height": 27,
+                        "justifyContent": "center",
+                        "width": 27,
+                      }
+                    }
+                  >
+                    <SvgMock
+                      color="#FFFFFF"
+                      height={14}
+                      testID="check-icon-test-id"
+                      width={14}
+                    />
+                  </View>
+                </View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4C4C60",
+                        "fontFamily": "MulishRegular",
+                        "fontSize": 17,
+                        "lineHeight": 27.2,
+                      },
+                      Object {
+                        "fontSize": 15,
+                        "marginLeft": 10,
+                      },
+                    ]
+                  }
+                  testID="moneybox-goal-title-test-id"
+                >
+                  Christmas Socks
+                </Text>
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                      Object {
+                        "marginLeft": "auto",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "flexDirection": "row",
+                        },
+                        Array [
+                          Object {
+                            "alignItems": "baseline",
+                          },
+                          undefined,
+                        ],
+                      ]
+                    }
+                    testID="moneybox-goal-test-id"
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 22,
+                            "lineHeight": 22.1,
+                          },
+                        ]
+                      }
+                    >
+                      12.
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#1B1D4D",
+                          },
+                          Object {
+                            "fontFamily": "MulishRegular",
+                            "fontSize": 17,
+                            "lineHeight": 22.1,
+                          },
+                        ]
+                      }
+                    >
+                      00
+                    </Text>
+                  </View>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#1B1D4D",
+                        },
+                        Object {
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                          "lineHeight": 22.1,
+                        },
+                        Object {
+                          "fontFamily": "MulishBold",
+                          "marginLeft": 5,
+                        },
+                      ]
+                    }
+                    testID="moneybox-goal-currency-test-id"
+                  >
+                    EUR
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginTop": 10,
+                  }
+                }
+                testID="moneybox-progress-bar-test-id"
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 10,
+                        "height": 5,
+                      },
+                      Object {
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "width": "100%",
+                      },
+                    ]
+                  }
+                  testID="progress-line-moneybox-progress-bar-test-id"
+                />
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 10,
+                        "height": 5,
+                      },
+                      Object {
+                        "backgroundColor": "#4C4C60",
+                        "opacity": 0.2,
+                      },
+                    ]
+                  }
+                />
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                      "marginBottom": 20,
+                      "marginTop": 10,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                      },
+                      Object {
+                        "flexDirection": "row",
+                      },
+                      Array [
+                        Object {
+                          "alignItems": "baseline",
+                        },
+                        Object {
+                          "marginRight": 5,
+                        },
+                      ],
+                    ]
+                  }
+                  testID="moneybox-saved-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#1B1D4D",
+                        },
+                        Object {
+                          "color": "#4C4C60",
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    12.
+                  </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#1B1D4D",
+                        },
+                        Object {
+                          "color": "#4C4C60",
+                          "fontSize": 12,
+                          "lineHeight": 22.1,
+                        },
+                      ]
+                    }
+                  >
+                    00
+                  </Text>
+                </View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#4C4C60",
+                        "fontFamily": "MulishRegular",
+                        "fontSize": 17,
+                        "lineHeight": 27.2,
+                      },
+                      Object {
+                        "color": "#4C4C60",
+                        "fontSize": 12,
+                        "lineHeight": 22.1,
+                      },
+                    ]
+                  }
+                  testID="moneybox-saved-currency-test-id"
+                >
+                  EUR
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                    },
+                    Object {
+                      "flexDirection": "row",
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "backgroundColor": "#FF8A71",
+                        "flex": 1,
+                        "marginRight": 5,
+                      },
+                    ]
+                  }
+                  testID="moneybox-extend-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Extend
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "height": 55,
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#3EB290",
+                        "borderWidth": 0,
+                        "height": 40,
+                      },
+                      Object {
+                        "flex": 1,
+                        "marginLeft": 5,
+                      },
+                    ]
+                  }
+                  testID="moneybox-withdrawal-btn-test-id"
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontFamily": "MulishSemiBold",
+                          "fontSize": 17,
+                        },
+                        Object {
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Withdrawal
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "flexDirection": "row",
+          },
+          Object {
+            "alignItems": "flex-end",
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            false,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 10,
+              "height": 55,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#F1F5FD",
+              "borderColor": "#CED6E1",
+              "borderWidth": 1,
+            },
+            Object {
+              "flex": 0.48,
+            },
+          ]
+        }
+        testID="deposits-template-secondary-btn-test-id"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              },
+              Object {
+                "color": "#1B1D4D",
+              },
+            ]
+          }
+        >
+          + Moneybox
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            false,
+            Object {
+              "flex": 0.48,
+            },
+          ]
+        }
+        testID="deposits-template-primary-btn-test-id"
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4288142079,
+                4279654301,
+              ],
+              "endPoint": Array [
+                1,
+                1,
+              ],
+              "locations": undefined,
+              "startPoint": Array [
+                0,
+                0,
+              ],
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "borderRadius": 10,
+              "height": 55,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "MulishSemiBold",
+                "fontSize": 17,
+              }
+            }
+          >
+            + Deposit
+          </Text>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+    </View>
+  </RNCSafeAreaView>
+</View>
+`;
