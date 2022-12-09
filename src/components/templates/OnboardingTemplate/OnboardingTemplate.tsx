@@ -72,11 +72,11 @@ export const OnboardingTemplate = ({
 				<SafeAreaView style={styles.heroView}>
 					<Image name={img} style={styles.heroImg} />
 				</SafeAreaView>
+
 				<View style={styles.container}>
 					<View style={styles.content}>
 						<Icon color={colors.mainDark} name="logo" size={40} />
 						<FlatList<IOnboardingSlide>
-							contentContainerStyle={styles.carousel}
 							data={onboardingSlides}
 							renderItem={({ item: { description, title, id } }) => (
 								<View style={{ width: width - 100 }}>
@@ -106,7 +106,9 @@ export const OnboardingTemplate = ({
 							testID="onboarding-template-paginator-test-id"
 						/>
 					</View>
+
 					<Button
+						style={styles.button}
 						testID="onboarding-btn-test-id"
 						title="Get Started"
 						onPress={onPressOnboardingBtn}

@@ -27,6 +27,7 @@ module.exports = {
     },
     androidNavigationBar: {
         backgroundColor: "#FAFCFF",
+        barStyle: 'dark-content'
     },
     web: {
         favicon: "./assets/favicon.png"

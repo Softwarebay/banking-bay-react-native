@@ -41,7 +41,6 @@ exports[`OnboardingScreen should match snapshot 1`] = `
       Object {
         "alignItems": "center",
         "flex": 1,
-        "justifyContent": "center",
       }
     }
   >
@@ -56,7 +55,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
             "aspectRatio": 0.7025,
           },
           Object {
-            "top": 120,
+            "top": 50,
             "width": "95%",
           },
         ]
@@ -70,9 +69,11 @@ exports[`OnboardingScreen should match snapshot 1`] = `
         "backgroundColor": "#FAFCFF",
         "borderTopLeftRadius": 20,
         "borderTopRightRadius": 20,
+        "flex": 1,
         "marginHorizontal": 25,
+        "paddingBottom": 0,
         "paddingHorizontal": 25,
-        "paddingVertical": 60,
+        "paddingTop": 60,
       }
     }
   >
@@ -80,7 +81,6 @@ exports[`OnboardingScreen should match snapshot 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginBottom": 50,
         }
       }
     >
@@ -91,12 +91,6 @@ exports[`OnboardingScreen should match snapshot 1`] = `
         width={40}
       />
       <RCTScrollView
-        contentContainerStyle={
-          Object {
-            "marginBottom": 30,
-            "marginTop": 30,
-          }
-        }
         data={
           Array [
             Object {
@@ -179,8 +173,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
                     },
                     Array [
                       Object {
-                        "marginBottom": 30,
-                        "paddingHorizontal": 10,
+                        "marginVertical": 20,
                       },
                       Object {
                         "textAlign": "center",
@@ -205,6 +198,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
                       Object {
                         "fontSize": 18,
                         "lineHeight": 28.8,
+                        "marginBottom": 20,
                       },
                       Object {
                         "textAlign": "center",
@@ -249,8 +243,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
                     },
                     Array [
                       Object {
-                        "marginBottom": 30,
-                        "paddingHorizontal": 10,
+                        "marginVertical": 20,
                       },
                       Object {
                         "textAlign": "center",
@@ -275,6 +268,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
                       Object {
                         "fontSize": 18,
                         "lineHeight": 28.8,
+                        "marginBottom": 20,
                       },
                       Object {
                         "textAlign": "center",
@@ -319,8 +313,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
                     },
                     Array [
                       Object {
-                        "marginBottom": 30,
-                        "paddingHorizontal": 10,
+                        "marginVertical": 20,
                       },
                       Object {
                         "textAlign": "center",
@@ -345,6 +338,7 @@ exports[`OnboardingScreen should match snapshot 1`] = `
                       Object {
                         "fontSize": 18,
                         "lineHeight": 28.8,
+                        "marginBottom": 20,
                       },
                       Object {
                         "textAlign": "center",
@@ -451,7 +445,11 @@ exports[`OnboardingScreen should match snapshot 1`] = `
       style={
         Array [
           false,
-          undefined,
+          Object {
+            "alignSelf": "stretch",
+            "marginBottom": 50,
+            "marginTop": "auto",
+          },
         ]
       }
       testID="onboarding-btn-test-id"
