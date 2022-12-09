@@ -93,7 +93,7 @@ export const MoneyboxCard = ({
 				/>
 
 				<Text
-					style={styles.savedFloat}
+					style={[styles.savedFloat, styles.savedCurrency]}
 					testID="moneybox-saved-currency-test-id"
 					text={currency}
 				/>

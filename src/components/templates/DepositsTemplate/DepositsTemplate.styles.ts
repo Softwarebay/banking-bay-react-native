@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
 	backgroundImg: {
@@ -8,19 +8,22 @@ export const styles = StyleSheet.create({
 		flex: 0.48,
 	},
 	buttonContainer: {
-		alignItems: 'flex-end',
 		justifyContent: 'space-between',
+		marginTop: 'auto',
 	},
 	card: {
 		marginBottom: 10,
 	},
 	container: {
 		flex: 1,
-		paddingBottom: 20,
+		paddingBottom: Platform.select({
+			ios: -10,
+			android: 20,
+		}),
 		paddingHorizontal: 20,
 	},
 	deposits: {
-		flex: 1.5,
+		flex: 1.2,
 	},
 	firstItem: {
 		marginTop: 10,
@@ -28,9 +31,10 @@ export const styles = StyleSheet.create({
 	header: {
 		justifyContent: 'space-between',
 		marginTop: 40,
+		// flex: 1
 	},
 	moneyboxes: {
-		flex: 1.4,
+		flex: 1,
 	},
 	subheading: {
 		fontSize: 14,

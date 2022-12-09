@@ -40,7 +40,7 @@ exports[`DepositsTemplate should match snapshot 1`] = `
     style={
       Object {
         "flex": 1,
-        "paddingBottom": 20,
+        "paddingBottom": -10,
         "paddingHorizontal": 20,
       }
     }
@@ -116,7 +116,7 @@ exports[`DepositsTemplate should match snapshot 1`] = `
     <View
       style={
         Object {
-          "flex": 1.5,
+          "flex": 1.2,
         }
       }
     >
@@ -962,7 +962,7 @@ exports[`DepositsTemplate should match snapshot 1`] = `
     <View
       style={
         Object {
-          "flex": 1.4,
+          "flex": 1,
         }
       }
     >
@@ -1078,7 +1078,7 @@ exports[`DepositsTemplate should match snapshot 1`] = `
                   style={
                     Object {
                       "alignSelf": "flex-start",
-                      "marginRight": 12,
+                      "marginRight": 10,
                     }
                   }
                 >
@@ -1100,7 +1100,6 @@ exports[`DepositsTemplate should match snapshot 1`] = `
                       },
                       Object {
                         "fontSize": 15,
-                        "marginLeft": 10,
                       },
                     ]
                   }
@@ -1149,6 +1148,7 @@ exports[`DepositsTemplate should match snapshot 1`] = `
                             "color": "#1B1D4D",
                           },
                           Object {
+                            "alignSelf": "flex-start",
                             "fontFamily": "MulishRegular",
                             "fontSize": 22,
                             "lineHeight": 22.1,
@@ -1251,10 +1251,9 @@ exports[`DepositsTemplate should match snapshot 1`] = `
                       "flexDirection": "row",
                     },
                     Object {
-                      "alignItems": "center",
                       "justifyContent": "center",
-                      "marginBottom": 20,
-                      "marginTop": 10,
+                      "marginBottom": 10,
+                      "marginTop": 5,
                     },
                   ]
                 }
@@ -1304,7 +1303,6 @@ exports[`DepositsTemplate should match snapshot 1`] = `
                         Object {
                           "color": "#4C4C60",
                           "fontSize": 12,
-                          "lineHeight": 22.1,
                         },
                       ]
                     }
@@ -1321,11 +1319,15 @@ exports[`DepositsTemplate should match snapshot 1`] = `
                         "fontSize": 17,
                         "lineHeight": 27.2,
                       },
-                      Object {
-                        "color": "#4C4C60",
-                        "fontSize": 12,
-                        "lineHeight": 22.1,
-                      },
+                      Array [
+                        Object {
+                          "color": "#4C4C60",
+                          "fontSize": 12,
+                        },
+                        Object {
+                          "top": 1,
+                        },
+                      ],
                     ]
                   }
                   testID="moneybox-saved-currency-test-id"
@@ -1467,8 +1469,8 @@ exports[`DepositsTemplate should match snapshot 1`] = `
             "flexDirection": "row",
           },
           Object {
-            "alignItems": "flex-end",
             "justifyContent": "space-between",
+            "marginTop": "auto",
           },
         ]
       }

@@ -25,7 +25,6 @@ export const styles = StyleSheet.create({
 	},
 	goalTitle: {
 		fontSize: 15,
-		marginLeft: 10,
 	},
 	iconBackground: {
 		alignItems: 'center',
@@ -37,9 +36,10 @@ export const styles = StyleSheet.create({
 	},
 	iconContainer: {
 		alignSelf: 'flex-start',
-		marginRight: 12,
+		marginRight: 10,
 	},
 	intStyle: {
+		alignSelf: 'flex-start',
 		fontFamily: 'MulishRegular',
 		fontSize: 22,
 		lineHeight: 22.1,
@@ -48,15 +48,16 @@ export const styles = StyleSheet.create({
 		marginTop: 10,
 	},
 	saved: {
-		alignItems: 'center',
 		justifyContent: 'center',
-		marginBottom: 20,
-		marginTop: 10,
+		marginBottom: 10,
+		marginTop: 5,
+	},
+	savedCurrency: {
+		top: 1,
 	},
 	savedFloat: {
 		color: colors.bodyText,
 		fontSize: 12,
-		lineHeight: 22.1,
 	},
 	savedFloatNum: {
 		marginRight: 5,
